@@ -1,0 +1,186 @@
+/********************************************
+ *	ana's site                  						*
+\********************************************/
+
+html, * {
+	margin: 0px;
+	padding: 0px
+}
+
+body {
+	background-color: #f2f2f2;
+	height: 100%;
+	width: 100%;
+	text-align: left;
+	font-family: "lucida sans", lucida-sans, sans-serif;
+	color: #999;
+	font-size: 11px;
+}
+
+a { text-decoration: none }
+a:link { color: #999 }    
+a:visited { color: #999 } 
+a:hover {	color:#ff3333 }   
+a:active { color: #ff3333 }
+
+img { border: none }
+
+p { font-weight: normal}
+
+.clear {
+	clear: both;
+	line-height: 0px;
+	height: 0px;
+}
+
+img, div, input { behavior: url("scripts/iepngfix.htc") }
+
+/********************************************
+ *	header									                *
+\********************************************/
+
+#header {
+	height: 112px;
+	width: 100%;
+}
+
+#navigation {
+	height: 78px;
+  float: right;
+	width: 668px;
+	position: relative;
+}
+
+.nav_links {
+  float: left;
+  height: 51px;
+  width: 100%;
+	border-bottom: 1px solid #e6e6e6;
+}
+
+.nav_links div {
+	position: absolute;
+	top: 29px;
+	height:27px;
+	text-align: center;
+	width:74px;
+}
+
+#home {
+  left: 0px;
+}
+
+#blog {
+  left: 74px;
+}
+
+#showcase {
+  left: 158px;
+}
+
+#links {
+  left: 242px;
+}
+
+#gallery {
+  left: 326px;
+}
+
+#search {
+  top: 19px;
+  right:0px;
+  background-color: #e6e6e6;
+  width: 228px;
+  height: 26px;
+}
+
+#search img {
+  position: absolute;
+  right: 0px;
+}
+
+#search input {
+  border: none;
+  position: absolute;
+  left:0px;
+  background-color: #e6e6e6;
+  padding: 5px;
+  width: 180px;
+  
+}
+
+/********************************************
+ *	home									                  *
+\********************************************/
+
+#main {
+	width: 1024px;
+	padding: 0 20px;
+	margin: 0 auto 0 auto;
+}
+
+#content {
+  float: left;
+  width:100%;
+  min-height: 400px;
+  position:relative;
+}
+
+.medium_box {
+  position: absolute;
+  right: 200px;
+  width: 470px;
+  background-image: url('/images/textfield_med_bg.jpg');
+}
+
+.medium_box div {
+  height: 17px;
+  width: 100%;
+  background-repeat: no-repeat
+}
+  
+.top { background-image: url('/images/textfield_med_top.jpg') }  
+  
+.bottom { background-image: url('/images/textfield_med_bottom.jpg') }
+
+.medium_box p {
+  margin: 10px 0;
+  padding: 0 25px;
+  line-height:1.5em;
+}
+
+.main_content {
+	float: left;
+	width: 660px;
+	margin-right: 40px;
+}
+
+/********************************************
+ *	footer									                *
+\********************************************/
+
+#footer {
+  float:left;
+	width: 100%;
+	margin-top: 20px;
+	height: 55px;
+}
+
+#footer_navigation {
+  border-top: 1px solid #e6e6e6;
+	height: 100%;
+  float: left;
+	width: 480px;
+	position: relative;
+}
+
+a#contact { 
+  height: 20px;
+}
+
+a#contact:hover { border-bottom: 1px solid #000 }   
+
+a#contact, #footer_navigation p  {
+  float: left;
+  margin: 10px;
+}
