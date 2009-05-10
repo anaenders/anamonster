@@ -130,18 +130,14 @@ img, div, input { behavior: url("scripts/iepngfix.htc") }
   position: absolute;
   right: 200px;
   width: 470px;
-  background-image: url('/images/textfield_med_bg.jpg');
+  background-image: url('/images/med_bg.jpg');
 }
 
-.medium_box div {
-  height: 17px;
-  width: 100%;
-  background-repeat: no-repeat
-}
+.medium_box div { height: 17px }
   
-.top { background-image: url('/images/textfield_med_top.jpg') }  
+.top { background-image: url('/images/med_topbar.jpg') }  
   
-.bottom { background-image: url('/images/textfield_med_bottom.jpg') }
+.bottom { background-image: url('/images/med_bottombar.jpg') }
 
 .medium_box p {
   margin: 10px 0;
