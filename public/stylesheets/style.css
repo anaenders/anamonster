@@ -40,12 +40,14 @@ img, div, input { behavior: url("scripts/iepngfix.htc") }
 \********************************************/
 
 #header {
+  float: left;
 	height: 112px;
 	width: 100%;
 }
 
 #navigation {
-	height: 78px;
+	height: auto;
+	margin-top: 30px;
   float: right;
 	width: 668px;
 	position: relative;
@@ -88,7 +90,7 @@ img, div, input { behavior: url("scripts/iepngfix.htc") }
 
 #search {
   top: 19px;
-  right:0px;
+  right: 0px;
   background-color: #e6e6e6;
   width: 228px;
   height: 26px;
@@ -102,7 +104,7 @@ img, div, input { behavior: url("scripts/iepngfix.htc") }
 #search input {
   border: none;
   position: absolute;
-  left:0px;
+  left: 0px;
   background-color: #e6e6e6;
   padding: 5px;
   width: 180px;
@@ -120,25 +122,36 @@ img, div, input { behavior: url("scripts/iepngfix.htc") }
 }
 
 #content {
+  float: left;
   width:100%;
-  min-height: 400px;
-  position:relative;
+  height:auto;
 }
 
 .medium_box {
-  position: absolute;
-  right: 200px;
   width: 470px;
+  float: right;
+  margin: 0 206px 10px 0;
   background-image: url('/images/med_bg.jpg');
 }
 
-.medium_box div { height: 17px }
-  
-.top { background-image: url('/images/med_topbar.jpg') }  
-  
-.bottom { background-image: url('/images/med_bottombar.jpg') }
+.large_box {
+  width: 677px;
+  float: right;
+  margin: 0 67px 10px 0;
+  background-image: url('/images/large_bg.jpg');
+}
 
-.medium_box p {
+.large_box div, .medium_box div { height: 17px }
+  
+.medium_box .top { background-image: url('/images/med_topbar.jpg') }  
+  
+.medium_box .bottom { background-image: url('/images/med_bottombar.jpg') }
+
+.large_box .top { background-image: url('/images/large_topbar.jpg') }  
+  
+.large_box .bottom { background-image: url('/images/large_bottombar.jpg') }
+
+.large_box p, .medium_box p {
   margin: 10px 0;
   padding: 0 25px;
   line-height:1.5em;
@@ -151,10 +164,31 @@ img, div, input { behavior: url("scripts/iepngfix.htc") }
 }
 
 /********************************************
+ *	portfolio								                *
+\********************************************/
+
+.portfolio {
+  float: right;
+  margin-bottom: 20px;
+  width: auto;
+}
+
+.portfolio img {
+  float: left;
+  border: 1px solid #c5c5c5;
+  margin: 0 9px 10px 0;
+}
+
+.portfolio img.last {
+  margin-right: 0px;
+}
+
+/********************************************
  *	footer									                *
 \********************************************/
 
 #footer {
+  float:left;
 	width: 100%;
 	margin-top: 20px;
 	height: 55px;
