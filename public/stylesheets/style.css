@@ -13,13 +13,13 @@ body {
 	width: 100%;
 	text-align: left;
 	font-family: "lucida sans", lucida-sans, sans-serif;
-	color: #999;
+	color: #7c7c7c;
 	font-size: 11px;
 }
 
 a { text-decoration: none }
-a:link { color: #999 }    
-a:visited { color: #999 } 
+a:link { color: #7c7c7c }    
+a:visited { color: #7c7c7c } 
 a:hover {	color:#ff3333 }   
 a:active { color: #ff3333 }
 
@@ -55,7 +55,7 @@ img, div, input { behavior: url("scripts/iepngfix.htc") }
   float: left;
   height: 51px;
   width: 100%;
-	border-bottom: 1px solid #e6e6e6;
+	border-bottom: 1px solid #c5c5c5;
 }
 
 .nav_links div {
@@ -114,13 +114,12 @@ img, div, input { behavior: url("scripts/iepngfix.htc") }
 \********************************************/
 
 #main {
-	width: 1024px;
+	width: 984px;
 	padding: 0 20px;
 	margin: 0 auto 0 auto;
 }
 
 #content {
-  float: left;
   width:100%;
   min-height: 400px;
   position:relative;
@@ -156,14 +155,13 @@ img, div, input { behavior: url("scripts/iepngfix.htc") }
 \********************************************/
 
 #footer {
-  float:left;
 	width: 100%;
 	margin-top: 20px;
 	height: 55px;
 }
 
 #footer_navigation {
-  border-top: 1px solid #e6e6e6;
+  border-top: 1px solid #c5c5c5;
 	height: 100%;
   float: left;
 	width: 480px;
