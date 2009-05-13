@@ -175,12 +175,67 @@ img, div, input { behavior: url("scripts/iepngfix.htc") }
 
 .portfolio img {
   float: left;
+  margin-bottom: 10px;
+}
+
+.portfolio .last {
+  margin-right: 0px;
+}
+
+.site_container {
+  float: left;
+  width: 320px;
+  background-color: #fff;
   border: 1px solid #c5c5c5;
   margin: 0 9px 10px 0;
 }
 
-.portfolio img.last {
-  margin-right: 0px;
+.proj_description {
+  float: left;
+  width: 300px;
+  margin: 0 10px;
+}
+
+.proj_description p, .proj_description ul, .proj_description a {
+  color: #3A9CEC;
+  float: left;
+  margin-bottom: 8px;
+}
+
+.technologies ul, .proj_description ul {
+  float: left;
+  list-style-type:none;
+}
+
+.technologies ul li, .proj_description ul li {
+  color: #3A9CEC; 
+  float:left;
+  margin-right:5px;
+}
+
+.proj_description a {
+  font-weight: bold;
+  font-size: 12px;
+  height: 1.8em;
+  width: 300px;
+  border-bottom: 1px solid #3A9CEC;
+}
+
+.proj_description span, .technologies span {
+  float: left;
+  color: #454545;
+  margin-right:5px;
+}
+
+.proj_description a:hover {
+  text-decoration: underline;
+}
+
+.technologies {
+  float: left;
+  width: 300px;
+  padding: 10px;
+  background-color: #d2d2d2;
 }
 
 /********************************************
