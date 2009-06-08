@@ -25,8 +25,6 @@ a:active { color: #ff3333 }
 
 img { border: none }
 
-p { font-weight: normal}
-
 .clear {
 	clear: both;
 	line-height: 0px;
@@ -108,7 +106,7 @@ img, div, input { behavior: url("scripts/iepngfix.htc") }
   background-color: #e6e6e6;
   padding: 5px;
   width: 180px;
-  
+  color: #ff3333;
 }
 
 /********************************************
@@ -116,15 +114,24 @@ img, div, input { behavior: url("scripts/iepngfix.htc") }
 \********************************************/
 
 #main {
-	width: 984px;
+	width: 1100px;
 	padding: 0 20px;
 	margin: 0 auto 0 auto;
+	position: relative;
+}
+
+img.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+/*  margin-top:10px;
+  float:left;*/
 }
 
 #content {
   float: left;
-  width:100%;
-  height:auto;
+  width: 100%;
+  height: auto;
 }
 
 .medium_box {
@@ -175,7 +182,6 @@ img, div, input { behavior: url("scripts/iepngfix.htc") }
 
 .portfolio img {
   float: left;
-  margin-bottom: 10px;
 }
 
 .portfolio .last {
