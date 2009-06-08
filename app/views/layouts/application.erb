@@ -8,7 +8,7 @@
 	<title>anamonster</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 	<meta name="keywords" content="anamonster, Anamonster, Ana Carter, ana portfolio, graphic design, design, ana carter, designer, typography, multidisciplinary design, cross disciplinary, Parsons, parsons school of design, New York designer"/>
-	<meta name="description" content="Ana Carter, Ana Carter mfa dt, Ana Carter design portfolio"/> 
+	<meta name="description" content="Ana Carter, Ana Carter, Ana Carter design portfolio"/> 
 	
 	<%= javascript_include_tag :defaults %>
 	<%= stylesheet_link_tag 'style' %>
@@ -17,31 +17,18 @@
 </head>
 
 <body>
-  <div id="main">
-    <div id="content">
-      <%= link_to(image_tag('/images/anamonster-test.png', :alt => 'anamonster', :class => 'logo'), '/') %>
+  <div id="main">    
       <div id="header">
+        <%= link_to(image_tag('/images/logo.png', :alt => 'anamonster', :class => 'logo'), '/') %>
         <div id="navigation">
           <div class="nav_links">
-            <div id="home"><a href="/home/">Home</a></div>
-            <div id="blog"><a href="/blogs/">Blogs</a></div>
-            <div id="showcase"><a href="/showcase/">Showcase</a></div>
-            <div id="links"><a href="/links/">Links</a></div>
-            <div id="gallery"><a href="/gallery/">Gallery</a></div>         
-            <div id="search">
-              <form>
-                <input type="text" name="search" /><a href="#"><img src="/images/button_go.jpg" alt="GO"></a>
-              </form>
-            </div>
+            <div id="blog"><%= link_to(image_tag('/images/button_blog_on.png', :alt => 'blog', :class => ''), '/') %></div>
+            <div id="showcase"><%= link_to(image_tag('/images/button_showcase_off.png', :alt => 'showcase', :class => ''), '/') %></div>
+            <div id="links"><%= link_to(image_tag('/images/button_links_off.png', :alt => 'links', :class => ''), '/') %></div>
+            <div id="gallery"><%= link_to(image_tag('/images/button_gallery_off.png', :alt => 'gallery', :class => ''), '/') %></div>         
           </div>      
         </div>    
       </div>
-    <%= yield %>
-      <div id="footer">
-        <div id="footer_navigation">
-          <a id="contact" href="/contact/">Contact</a>
-          <p>&#169; Copyright 2009. Ana Carter. All rights reserved</p>
-        </div>
 			<% if flash[:message] %>
 			  <div class="message"><%= h flash[:message] %></div>
 			<% elsif flash[:warning] %>
@@ -49,14 +36,17 @@
 			<% elsif flash[:error] %>
 			  <div class="message warning"><%= h flash[:error] %></div>
 			<% end %>
-      <%= yield %>
-    </div>
-    <div id="footer">
-      <div id="footer_navigation">
-        <a id="contact" href="contact.html">Contact</a>
-        <p>&#169; Copyright 2009. Ana Carter. All rights reserved</p>
+			<div id="content">
+			  <%= link_to(image_tag('/images/margin.png', :alt => 'anamonster', :id => 'top_margin'), '/') %>
+        <%= yield %>
+        <%= link_to(image_tag('/images/margin.png', :alt => 'anamonster', :id => 'bottom_margin'), '/') %>
       </div>
-    </div>
+      <div id="footer">
+        <div id="footer_navigation">
+          <a id="contact" href="contact.html">Contact</a>
+          <p>&#169; Copyright 2009. Ana Carter. All rights reserved</p>
+        </div>
+      </div>
   </div>
 </body>
 </html>

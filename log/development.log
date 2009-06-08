@@ -5287,3 +5287,488 @@ Rendering blogs/show
   [4;36;1mBlogPhoto Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `blog_photos`[0m
 Completed in 55ms (View: 45, DB: 5) | 200 OK [http://localhost/blogs/1]
 >>>>>>> 150ac49f96e3d321a32083289f2d6dfc43475677:log/development.log
+/!\ FAILSAFE /!\  Sun Jun 07 21:51:43 -0400 2009
+  Status: 500 Internal Server Error
+  Unknown database 'anamonster_development'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/mysql_adapter.rb:576:in `real_connect'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/mysql_adapter.rb:576:in `connect'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/mysql_adapter.rb:204:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/mysql_adapter.rb:76:in `new'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/mysql_adapter.rb:76:in `mysql_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/head.rb:9:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/methodoverride.rb:24:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:46:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `each'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `call'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/content_length.rb:13:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/chunked.rb:15:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/mongrel.rb:61:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/mongrel.rb:34:in `run'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Sun Jun 07 21:51:54 -0400 2009
+  Status: 500 Internal Server Error
+  Unknown database 'anamonster_development'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/mysql_adapter.rb:576:in `real_connect'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/mysql_adapter.rb:576:in `connect'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/mysql_adapter.rb:204:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/mysql_adapter.rb:76:in `new'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/mysql_adapter.rb:76:in `mysql_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/head.rb:9:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/methodoverride.rb:24:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:46:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `each'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `call'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/content_length.rb:13:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/chunked.rb:15:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/mongrel.rb:61:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/mongrel.rb:34:in `run'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (62.5ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (52.6ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20090329220246)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (2.7ms)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(40), `name` varchar(100) DEFAULT '', `email` varchar(100), `crypted_password` varchar(40), `salt` varchar(40), `created_at` datetime, `updated_at` datetime, `remember_token` varchar(40), `remember_token_expires_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (37.0ms)[0m   [0;1mCREATE UNIQUE INDEX `index_users_on_login` ON `users` (`login`)[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090329220246')[0m
+Migrating to CreateBlogs (20090606181340)
+  [4;36;1mSQL (2.4ms)[0m   [0;1mCREATE TABLE `blogs` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `content` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090606181340')[0m
+Migrating to CreateBlogPhotos (20090606181415)
+  [4;36;1mSQL (2.0ms)[0m   [0;1mCREATE TABLE `blog_photos` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `blog_id` int(11), `parent_id` int(11), `content_type` varchar(255), `filename` varchar(255), `thumbnail` varchar(255), `size` int(11), `width` int(11), `height` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (6.2ms)[0m   [0mCREATE INDEX `index_blog_photos_on_blog_id` ON `blog_photos` (`blog_id`)[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090606181415')[0m
+Migrating to CreateComments (20090606181440)
+  [4;35;1mSQL (2.5ms)[0m   [0mCREATE TABLE `comments` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `blog_id` int(11), `user_name` varchar(255), `email` varchar(255), `website_url` varchar(255), `content` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (6.4ms)[0m   [0;1mCREATE INDEX `index_comments_on_blog_id` ON `comments` (`blog_id`)[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090606181440')[0m
+Migrating to ActsAsTaggableMigration (20090607172113)
+  [4;36;1mSQL (2.5ms)[0m   [0;1mCREATE TABLE `tags` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255)) ENGINE=InnoDB[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mCREATE TABLE `taggings` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `tag_id` int(11), `taggable_id` int(11), `taggable_type` varchar(255), `created_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (5.4ms)[0m   [0;1mCREATE INDEX `index_taggings_on_tag_id` ON `taggings` (`tag_id`)[0m
+  [4;35;1mSQL (6.7ms)[0m   [0mCREATE INDEX `index_taggings_on_taggable_id_and_taggable_type` ON `taggings` (`taggable_id`, `taggable_type`)[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090607172113')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mSHOW FIELDS FROM `blog_photos`[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mdescribe `blog_photos`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `blog_photos`[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+  [4;36;1mSQL (2.8ms)[0m   [0;1mdescribe `blogs`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW KEYS FROM `blogs`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mdescribe `comments`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW KEYS FROM `comments`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSHOW FIELDS FROM `taggings`[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mdescribe `taggings`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW KEYS FROM `taggings`[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSHOW FIELDS FROM `tags`[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mdescribe `tags`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `tags`[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-07 21:52:56) [GET]
+  [4;35;1mBlog Load (0.5ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 112ms (View: 68, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-07 21:57:50) [GET]
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 60ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-07 22:06:12) [GET]
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-07 22:06:12) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-07 22:06:27) [GET]
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-07 22:11:23) [GET]
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-07 22:18:31) [GET]
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-07 22:19:03) [GET]
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 9ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-07 22:19:48) [GET]
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 9ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-07 22:20:10) [GET]
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 9ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-07 22:21:04) [GET]
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 14ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-07 22:22:48) [GET]
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-07 22:24:16) [GET]
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-07 22:33:40) [GET]
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-07 22:35:25) [GET]
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-07 22:50:55) [GET]
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 63ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-07 22:58:18) [GET]
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-07 22:59:14) [GET]
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-07 23:00:25) [GET]
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-07 23:00:49) [GET]
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-07 23:01:00) [GET]
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-07 23:02:32) [GET]
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 9ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-07 23:02:57) [GET]
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-07 23:05:00) [GET]
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-07 23:38:15) [GET]
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 68ms (View: 59, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-07 23:38:16) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_go.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-07 23:38:42) [GET]
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-07 23:39:49) [GET]
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-07 23:40:10) [GET]
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 9ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-07 23:40:40) [GET]
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 72ms (View: 63, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-07 23:42:14) [GET]
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-07 23:42:27) [GET]
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-08 00:17:43) [GET]
+  [4;35;1mBlog Load (0.4ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 87ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-08 00:32:48) [GET]
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 14ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-08 00:34:18) [GET]
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-08 00:36:19) [GET]
+  [4;35;1mBlog Load (0.4ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 15ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-08 00:37:05) [GET]
+  [4;35;1mBlog Load (0.5ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 15ms (View: 8, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-08 00:37:54) [GET]
+  [4;35;1mBlog Load (0.7ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 11ms (View: 2, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-08 00:38:04) [GET]
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-08 01:07:10) [GET]
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/]
