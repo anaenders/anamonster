@@ -9,7 +9,10 @@
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 	<meta name="keywords" content="Ana Carter, ana portfolio, graphic design, design,ana carter, designer, typography, multidisciplinary design, cross disciplinary, Parsons, parsons school of design, New York designer"/>
 	<meta name="description" content="Ana Carter, Ana Carter mfa dt, Ana Carter design portfolio"/> 
-	<link rel="stylesheet" href="/stylesheets/style.css" type="text/css"/> 
+	
+	<%= javascript_include_tag :defaults %>
+	<%= stylesheet_link_tag 'style' %>
+	
 	<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
 </head>
 
@@ -32,13 +35,14 @@
       </div>
     </div>
     <div id="content">
-      <div class="medium_box">
-        <div class="top"></div>
-        <p>content goes here.....</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce imperdiet elementum sapien quis interdum. Duis sit amet massa eros, quis pellentesque odio. Suspendisse dapibus libero ac tortor pulvinar consectetur. Proin dapibus euismod elit sit amet ullamcorper. Fusce dignissim lectus ligula. Nulla nisl augue, dictum vel semper in, porta eu nunc. Nam interdum varius risus vitae facilisis. Sed non neque purus, ac vulputate tortor. Cras dictum congue lectus quis varius. Nulla ornare scelerisque mi non tristique. Cras ante risus, fringilla nec auctor quis, fringilla ac ligula.</p>
-        <p>Suspendisse potenti. Nulla hendrerit libero nec libero feugiat a commodo lorem convallis. Curabitur nec ante vel elit imperdiet dapibus. Vivamus dictum felis at magna placerat iaculis. Cras sagittis est a nisl eleifend ultricies. Aliquam rhoncus dui vitae leo tincidunt eget pretium sapien euismod. Donec dignissim diam in ipsum consequat suscipit ornare velit pulvinar. Aliquam erat volutpat. Nunc a dui nunc. Donec eu pellentesque urna. Fusce ac tellus sed turpis lobortis egestas.</p>
-        <div class="bottom"></div>
-      </div>
+			<% if flash[:message] %>
+			  <div class="message"><%= h flash[:message] %></div>
+			<% elsif flash[:warning] %>
+			  <div class="message warning"><%= h flash[:warning] %></div>
+			<% elsif flash[:error] %>
+			  <div class="message warning"><%= h flash[:error] %></div>
+			<% end %>
+      <%= yield %>
     </div>
     <div id="footer">
       <div id="footer_navigation">

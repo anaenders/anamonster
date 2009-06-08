@@ -1,0 +1,36 @@
+<% form_for(@blog, :html => { :multipart => true }) do |f| %>
+  <script type = "text/javascript">
+    var num_photos = 1;
+    function add_photo_field() {
+      num_photos++;
+      <%= remote_function(:url => { :action => 'new_photo_field' }, :with => "'num=' + num_photos", :update => "new_photos_#{f.object.id}", :position => :before) %>
+    }
+  </script>
+
+  <%= f.error_messages %>
+
+  <h4>Title:</h4>
+  <%= f.text_field :title %>
+
+  <h4>Content:</h4>
+  <%= f.text_area :content, :rows => 30, :cols => 80 %>
+
+  <h4>Tags:</h4>
+  <%= f.text_field :tag_list, :size => 90 %>
+
+  <%= render :partial => 'blog_photo_fields', :locals => { :num => 1 } %>
+
+  <% if f.object.blog_photos.size > 0 %>
+    <div class = "edit_photos">
+      <% f.object.blog_photos.each do |blog_photo| %>
+        <%= render :partial => 'blog_photo', :object => blog_photo %>
+      <% end %>
+    </div>
+  <% end %>
+
+  <div id = "new_photos_<%= f.object.id %>" class = "new_photos_entry">
+    <%= link_to_function('+ Add Another Photo', "add_photo_field()") %>
+  </div>
+
+  <%= f.submit submit_button %>
+<% end %>

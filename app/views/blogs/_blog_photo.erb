@@ -1,0 +1,7 @@
+<div class = "blog_photo_edit">
+  <%= image_tag(blog_photo.public_filename) %>
+  <strong><%= link_to 'Delete Photo', blog_photo_path(blog_photo), :method => :delete, :confirm => 'Are you sure?' %></strong><br />
+  To include in your blog, use the following text: #{img:<%= blog_photo.filename %> [align]} where align = left, right or center
+  
+</div>
+<div class = "clear"></div>
