@@ -1,0 +1,7 @@
+<%= link_to 'Edit', edit_blog_path(@blog) %> | <%= link_to 'Back', blogs_path %>
+
+<h3 id = "blog_title"><%=h @blog.title %></h3>
+
+<div class = "blog_text">
+  <%= markdown(@blog.image_replaced_content) %>
+</div>

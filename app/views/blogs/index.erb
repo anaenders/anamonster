@@ -1,8 +1,15 @@
+<h1>Listing blogs</h1>
 
-<div class="medium_box">
-  <div class="top"></div>
-  <p>content goes here.....</p>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce imperdiet elementum sapien quis interdum. Duis sit amet massa eros, quis pellentesque odio. Suspendisse dapibus libero ac tortor pulvinar consectetur. Proin dapibus euismod elit sit amet ullamcorper. Fusce dignissim lectus ligula. Nulla nisl augue, dictum vel semper in, porta eu nunc. Nam interdum varius risus vitae facilisis. Sed non neque purus, ac vulputate tortor. Cras dictum congue lectus quis varius. Nulla ornare scelerisque mi non tristique. Cras ante risus, fringilla nec auctor quis, fringilla ac ligula.</p>
-  <p>Suspendisse potenti. Nulla hendrerit libero nec libero feugiat a commodo lorem convallis. Curabitur nec ante vel elit imperdiet dapibus. Vivamus dictum felis at magna placerat iaculis. Cras sagittis est a nisl eleifend ultricies. Aliquam rhoncus dui vitae leo tincidunt eget pretium sapien euismod. Donec dignissim diam in ipsum consequat suscipit ornare velit pulvinar. Aliquam erat volutpat. Nunc a dui nunc. Donec eu pellentesque urna. Fusce ac tellus sed turpis lobortis egestas.</p>
-  <div class="bottom"></div>
-</div>
+<table>
+  <% @blogs.each do |blog| %>
+    <tr>
+      <td><%= link_to 'Show', blog %></td>
+      <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
+      <td><%= link_to 'Destroy', blog, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<br />
+
+<%= link_to 'New blog', new_blog_path %>

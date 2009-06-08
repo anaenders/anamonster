@@ -1,0 +1,25 @@
+# == Schema Information
+# Schema version: 20090606181440
+#
+# Table name: blog_photos
+#
+#  id           :integer(4)      not null, primary key
+#  blog_id      :integer(4)
+#  parent_id    :integer(4)
+#  content_type :string(255)
+#  filename     :string(255)
+#  thumbnail    :string(255)
+#  size         :integer(4)
+#  width        :integer(4)
+#  height       :integer(4)
+#  created_at   :datetime
+#  updated_at   :datetime
+#
+
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+# one:
+#   column: value
+#
+# two:
+#   column: value
