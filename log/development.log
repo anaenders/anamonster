@@ -5772,3 +5772,1021 @@ Processing BlogsController#index (for 127.0.0.1 at 2009-06-08 01:07:10) [GET]
 Rendering template within layouts/application
 Rendering blogs/index
 Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-08 18:25:15) [GET]
+  [4;35;1mBlog Load (0.6ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 107ms (View: 52, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-08 18:25:16) [GET]
+
+ActionController::RoutingError (No route matches "/images/favicon.ico" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-08 18:25:19) [GET]
+
+ActionController::RoutingError (No route matches "/images/favicon.ico" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-08 18:33:08) [GET]
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 11ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-08 18:34:08) [GET]
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 9ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-08 18:41:54) [GET]
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-08 18:43:29) [GET]
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 60ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-08 18:48:17) [GET]
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 11ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-08 18:49:55) [GET]
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-08 18:56:12) [GET]
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 13ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-08 18:57:25) [GET]
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 62ms (View: 56, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-08 18:58:18) [GET]
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 14ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-08 19:02:12) [GET]
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 19ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-08 19:02:54) [GET]
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-08 19:03:34) [GET]
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 64ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-08 19:03:51) [GET]
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 9ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-08 19:04:14) [GET]
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-08 19:04:32) [GET]
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-08 19:05:42) [GET]
+  [4;35;1mBlog Load (0.4ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-08 19:06:46) [GET]
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 9ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-08 19:06:48) [GET]
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-08 19:06:49) [GET]
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-08 19:08:43) [GET]
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 13ms (View: 7, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-08 19:08:45) [GET]
+
+ActionController::RoutingError (No route matches "/showcase" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-08 19:09:03) [GET]
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-08 19:09:04) [GET]
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 9ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-08 19:09:05) [GET]
+
+ActionController::RoutingError (No route matches "/showcase/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-08 19:09:13) [GET]
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-08 19:09:32) [GET]
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-08 19:09:34) [GET]
+
+ActionController::RoutingError (No route matches "/showcase/index" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-08 19:10:39) [GET]
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 69ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-08 19:10:41) [GET]
+
+ActionController::RoutingError (No route matches "/showcase/index" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-08 19:10:58) [GET]
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-08 19:11:00) [GET]
+
+ActionController::RoutingError (No route matches "/gallery" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-08 19:12:34) [GET]
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 13ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-08 19:12:36) [GET]
+
+ActionController::RoutingError (No route matches "/gallery" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-09 00:07:48) [GET]
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 9ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-09 00:07:50) [GET]
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 9ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-09 00:07:51) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-09 00:07:53) [GET]
+
+NameError (uninitialized constant PicturesController):
+  
+
+Rendered rescues/_trace (28.2ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LinksController#index (for 127.0.0.1 at 2009-06-09 00:07:59) [GET]
+Rendering template within layouts/application
+Rendering links/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/links]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-09 00:08:01) [GET]
+
+NameError (uninitialized constant PicturesController):
+  
+
+Rendered rescues/_trace (28.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-09 00:09:35) [GET]
+
+NameError (uninitialized constant PicturesController):
+  
+
+Rendered rescues/_trace (26.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LinksController#index (for 127.0.0.1 at 2009-06-09 00:09:37) [GET]
+Rendering template within layouts/application
+Rendering links/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/links]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LinksController#index (for 127.0.0.1 at 2009-06-09 00:09:38) [GET]
+Rendering template within layouts/application
+Rendering links/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/links]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-09 00:09:41) [GET]
+
+NameError (uninitialized constant PicturesController):
+  
+
+Rendered rescues/_trace (27.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LinksController#index (for 127.0.0.1 at 2009-06-09 00:09:43) [GET]
+Rendering template within layouts/application
+Rendering links/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/links]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-09 00:10:01) [GET]
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 9ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-09 00:10:03) [GET]
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-09 00:10:05) [GET]
+
+NameError (uninitialized constant PicturesController):
+  
+
+Rendered rescues/_trace (85.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-09 00:10:11) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LinksController#index (for 127.0.0.1 at 2009-06-09 00:10:13) [GET]
+Rendering template within layouts/application
+Rendering links/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/links]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-09 00:10:15) [GET]
+
+NameError (uninitialized constant PicturesController):
+  
+
+Rendered rescues/_trace (26.7ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LinksController#index (for 127.0.0.1 at 2009-06-09 00:10:16) [GET]
+Rendering template within layouts/application
+Rendering links/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/links]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-09 00:10:18) [GET]
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LinksController#index (for 127.0.0.1 at 2009-06-09 00:14:13) [GET]
+Rendering template within layouts/application
+Rendering links/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/links]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing GalleryController#index (for 127.0.0.1 at 2009-06-09 00:14:14) [GET]
+Rendering template within layouts/application
+Rendering gallery/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/gallery]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LinksController#index (for 127.0.0.1 at 2009-06-09 00:14:16) [GET]
+Rendering template within layouts/application
+Rendering links/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/links]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-09 00:14:17) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-09 00:14:19) [GET]
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 9ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-09 00:14:35) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-09 00:33:59) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 14ms (View: 11, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-09 00:34:00) [GET]
+
+ActionController::RoutingError (No route matches "/images/nav_blog_off.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-09 00:34:00) [GET]
+
+ActionController::RoutingError (No route matches "/images/nav_showcase_off.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-09 00:34:00) [GET]
+
+ActionController::RoutingError (No route matches "/images/nav_gallery_off.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-09 00:34:00) [GET]
+
+ActionController::RoutingError (No route matches "/images/nav_links_off.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-09 00:34:02) [GET]
+
+ActionController::RoutingError (No route matches "/images/nav_gallery_on.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-09 00:34:02) [GET]
+
+ActionController::RoutingError (No route matches "/images/nav_gallery_on.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-09 00:34:02) [GET]
+
+ActionController::RoutingError (No route matches "/images/nav_showcase_on.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-09 00:34:02) [GET]
+
+ActionController::RoutingError (No route matches "/images/nav_blog_on.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-09 00:34:03) [GET]
+
+ActionController::RoutingError (No route matches "/images/nav_links_on.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-09 00:35:33) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-09 00:36:37) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-09 00:37:04) [GET]
+
+ActionController::RoutingError (No route matches "/pictures" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LinksController#index (for 127.0.0.1 at 2009-06-09 00:54:40) [GET]
+Rendering template within layouts/application
+Rendering links/index
+
+ActionView::TemplateError (undefined method `set_page_title' for #<ActionView::Base:0x23f0c44>) on line #1 of app/views/links/index.erb:
+1: <% set_page_title('Links') %>
+2: <% set_current_section(:links) %>
+
+    app/views/links/index.erb:1
+
+Rendered rescues/_trace (95.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LinksController#index (for 127.0.0.1 at 2009-06-09 00:55:09) [GET]
+Rendering template within layouts/application
+Rendering links/index
+
+ActionView::TemplateError (undefined method `set_page_title' for #<ActionView::Base:0x2530320>) on line #1 of app/views/links/index.erb:
+1: <!-- <% set_page_title('Links') %> -->
+2: <% set_current_section(:links) %>
+
+    app/views/links/index.erb:1
+
+Rendered rescues/_trace (39.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LinksController#index (for 127.0.0.1 at 2009-06-09 00:55:19) [GET]
+Rendering template within layouts/application
+Rendering links/index
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://localhost/links]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LinksController#index (for 127.0.0.1 at 2009-06-09 00:55:23) [GET]
+Rendering template within layouts/application
+Rendering links/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/links]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-09 00:55:25) [GET]
+
+ActionController::RoutingError (No route matches "/plugs" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LinksController#index (for 127.0.0.1 at 2009-06-09 00:56:32) [GET]
+Rendering template within layouts/application
+Rendering links/index
+
+ActionView::TemplateError (undefined method `set_page_title' for #<ActionView::Base:0x24e8250>) on line #1 of app/views/links/index.erb:
+1: <% set_page_title('Links') %>
+2: <% set_current_section(:links) %>
+
+    app/views/links/index.erb:1
+
+Rendered rescues/_trace (39.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-09 00:56:32) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-09 00:57:32) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-09 00:57:35) [GET]
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 9ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-09 00:57:36) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing GalleryController#index (for 127.0.0.1 at 2009-06-09 00:57:37) [GET]
+Rendering template within layouts/application
+Rendering gallery/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/gallery]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LinksController#index (for 127.0.0.1 at 2009-06-09 00:57:38) [GET]
+Rendering template within layouts/application
+Rendering links/index
+
+ActionView::TemplateError (undefined method `set_page_title' for #<ActionView::Base:0x23aeb8c>) on line #1 of app/views/links/index.erb:
+1: <% set_page_title('Links') %>
+2: <% set_current_section(:links) %>
+
+    app/views/links/index.erb:1
+
+Rendered rescues/_trace (95.6ms)
+Rendered rescues/_request_and_response (0.9ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing GalleryController#index (for 127.0.0.1 at 2009-06-09 01:02:31) [GET]
+Rendering template within layouts/application
+Rendering gallery/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/gallery]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-09 01:02:35) [GET]
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 9ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-09 01:02:37) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing GalleryController#index (for 127.0.0.1 at 2009-06-09 01:02:39) [GET]
+Rendering template within layouts/application
+Rendering gallery/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/gallery]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LinksController#index (for 127.0.0.1 at 2009-06-09 01:02:40) [GET]
+Rendering template within layouts/application
+Rendering links/index
+
+ActionView::TemplateError (undefined method `set_page_title' for #<ActionView::Base:0x232443c>) on line #1 of app/views/links/index.erb:
+1: <% set_page_title('Links') %>
+2: <% set_current_section(:links) %>
+3: 
+4: hey
+
+    app/views/links/index.erb:1
+
+Rendered rescues/_trace (100.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing GalleryController#index (for 127.0.0.1 at 2009-06-09 01:02:43) [GET]
+Rendering template within layouts/application
+Rendering gallery/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/gallery]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing GalleryController#index (for 127.0.0.1 at 2009-06-09 01:03:40) [GET]
+Rendering template within layouts/application
+Rendering gallery/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/gallery]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-09 01:03:43) [GET]
+
+NoMethodError (undefined method `set_current_section' for #<BlogsController:0x2399318>):
+  app/controllers/blogs_controller.rb:49:in `set_section'
+
+Rendered rescues/_trace (32.6ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-09 01:04:12) [GET]
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 12ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-09 01:04:16) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-09 01:04:17) [GET]
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 9ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-09 01:06:17) [GET]
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 9ms (View: 2, DB: 1) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LinksController#index (for 127.0.0.1 at 2009-06-09 01:06:20) [GET]
+Rendering template within layouts/application
+Rendering links/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/links]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LinksController#index (for 127.0.0.1 at 2009-06-09 01:07:26) [GET]
+Rendering template within layouts/application
+Rendering links/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/links]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-09 01:07:36) [GET]
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 9ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LinksController#index (for 127.0.0.1 at 2009-06-09 01:09:26) [GET]
+Rendering template within layouts/application
+Rendering links/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/links]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing GalleryController#index (for 127.0.0.1 at 2009-06-09 01:09:28) [GET]
+Rendering template within layouts/application
+Rendering gallery/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/gallery]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LinksController#index (for 127.0.0.1 at 2009-06-09 01:09:39) [GET]
+Rendering template within layouts/application
+Rendering links/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/links]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing GalleryController#index (for 127.0.0.1 at 2009-06-09 01:16:52) [GET]
+Rendering template within layouts/application
+Rendering gallery/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/gallery]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-09 01:16:53) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing GalleryController#index (for 127.0.0.1 at 2009-06-09 01:17:07) [GET]
+Rendering template within layouts/application
+Rendering gallery/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/gallery]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing GalleryController#index (for 127.0.0.1 at 2009-06-09 01:18:47) [GET]
+Rendering template within layouts/application
+Rendering gallery/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/gallery]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-09 01:18:48) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-09 01:18:50) [GET]
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 9ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-09 01:19:11) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-09 01:19:18) [GET]
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 9ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-10 00:27:03) [GET]
+  [4;35;1mBlog Load (44.8ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 99ms (View: 18, DB: 45) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-10 00:54:42) [GET]
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 9ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-10 01:04:34) [GET]
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 9ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-10 01:04:39) [GET]
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 9ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-10 01:11:37) [GET]
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 9ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing GalleryController#index (for 127.0.0.1 at 2009-06-10 01:11:50) [GET]
+Rendering template within layouts/application
+Rendering gallery/index
+Completed in 42ms (View: 39, DB: 0) | 200 OK [http://localhost/gallery]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LinksController#index (for 127.0.0.1 at 2009-06-10 01:11:55) [GET]
+Rendering template within layouts/application
+Rendering links/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/links]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-10 01:12:01) [GET]
+  [4;35;1mBlog Load (0.4ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 9ms (View: 2, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-10 01:12:04) [GET]
+
+ActionController::RoutingError (No route matches "/contact.html" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-10 01:12:06) [GET]
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Completed in 67ms (View: 3, DB: 0) | 200 OK [http://localhost/]

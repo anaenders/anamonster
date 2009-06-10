@@ -47,55 +47,14 @@ img, div, input { behavior: url("scripts/iepngfix.htc") }
 }
 
 #navigation {
-	height: auto;
-	margin-top: 30px;
   float: right;
-	width: 668px;
 	position: relative;
+	margin-top: 58px;
+	z-index: 100;
 }
 
-.nav_links {
-  float: left;
-  width: 100%;
-}
-
-.nav_links div {
-	position: absolute;
-	top: 29px;
-	text-align: center;
-	width:74px;
-}
-
-#home {
-  left: 0px;
-}
-
-#blog {
-  left: 74px;
-}
-
-#showcase {
-  left: 158px;
-}
-
-#links {
-  left: 242px;
-}
-
-#gallery {
-  left: 326px;
-}
-
-#search {
-
-}
-
-#search img {
-
-}
-
-#search input {
-
+.nav_links img {
+  float: right;
 }
 
 /********************************************
@@ -125,7 +84,7 @@ img.logo {
 
 img#top_margin, #bottom_margin { 
   position: absolute; 
-  left: 0 
+  left: 0;
 }
 
 img#top_margin { top: 1px }

@@ -1,5 +1,6 @@
 class BlogsController < ApplicationController
 
+  before_filter :set_section
   before_filter :load_blog, :only => [ :show, :edit, :update, :destroy ]
 
   def index
@@ -42,6 +43,10 @@ class BlogsController < ApplicationController
   protected
   def load_blog
     @blog = Blog.find(params[:id])
+  end
+  
+  def set_section
+    set_current_section(:blog)
   end
   
 end

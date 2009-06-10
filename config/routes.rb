@@ -12,7 +12,30 @@ ActionController::Routing::Routes.draw do |map|
   map.resource :session
 
   map.root :controller => 'blogs'
-
-  # map.connect ':controller/:action/:id'
-  # map.connect ':controller/:action/:id.:format'
+  
+  # Contact
+  map.contact '/contact', :controller => 'contact', :action => 'index'
+  
+  # Links
+  map.link_category '/links/category/:category', :controller => 'links', :action => 'index'
+  map.resources :links
+  
+  # Sessions
+  map.logout '/logout', :controller => 'sessions', :action => 'destroy'
+  map.login '/login', :controller => 'sessions', :action => 'new'
+  map.register '/register', :controller => 'users', :action => 'create'
+  map.signup '/signup', :controller => 'users', :action => 'new'
+  map.resources :users
+  map.resource :session
+  
+  # Showcase
+  map.resources :showcase
+  
+  # Gallery
+  map.pictures '/gallery', :controller => 'gallery'
+  map.pictures_album '/gallery/album/:id', :controller => 'pictures', :action => 'album'
+  map.pictures_album '/gallery/photo/:id', :controller => 'pictures', :action => 'photo'
+  map.resources :albums # For admin only
+  map.new_photo_field '/albums/new_photo_field', :controller => 'albums', :action => 'new_photo_field'
+  map.resources :photos # For admin only
 end

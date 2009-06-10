@@ -21,11 +21,11 @@
       <div id="header">
         <%= link_to(image_tag('/images/logo.png', :alt => 'anamonster', :class => 'logo'), '/') %>
         <div id="navigation">
-          <div class="nav_links">
-            <div id="blog"><%= link_to(image_tag('/images/button_blog_on.png', :alt => 'blog', :class => ''), '/') %></div>
-            <div id="showcase"><%= link_to(image_tag('/images/button_showcase_off.png', :alt => 'showcase', :class => ''), '/') %></div>
-            <div id="links"><%= link_to(image_tag('/images/button_links_off.png', :alt => 'links', :class => ''), '/') %></div>
-            <div id="gallery"><%= link_to(image_tag('/images/button_gallery_off.png', :alt => 'gallery', :class => ''), '/') %></div>         
+          <div class="nav_links">  
+            <% [ ['links', '/links' ], [ 'gallery', '/gallery' ], [ 'showcase', '/showcase' ], [ 'blog', '/' ] ].each do |nav| %>
+              <% on_off = (nav[0] == get_current_section) ? '_on.png' : '_off.png' %>
+              <%= link_to(image_tag('button_'+ nav[0] + on_off), nav[1]) %>
+            <% end %>             
           </div>      
         </div>    
       </div>
@@ -37,9 +37,9 @@
 			  <div class="message warning"><%= h flash[:error] %></div>
 			<% end %>
 			<div id="content">
-			  <%= link_to(image_tag('/images/margin.png', :alt => 'anamonster', :id => 'top_margin'), '/') %>
+			  <%= image_tag('/images/margin.png', :alt => 'anamonster', :id => 'top_margin') %>
         <%= yield %>
-        <%= link_to(image_tag('/images/margin.png', :alt => 'anamonster', :id => 'bottom_margin'), '/') %>
+        <%= image_tag('/images/margin.png', :alt => 'anamonster', :id => 'bottom_margin') %>
       </div>
       <div id="footer">
         <div id="footer_navigation">
