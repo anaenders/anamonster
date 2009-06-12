@@ -1,15 +1,15 @@
-<h1>Listing blogs</h1>
+<div id="blog_container">
+  <h3>Listing blogs</h3>  
+  <table>
+    <% @blogs.each do |blog| %>
+      <tr>
+        <td><%= link_to 'Show', blog %></td>
+        <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
+        <td><%= link_to 'Destroy', blog, :confirm => 'Are you sure?', :method => :delete %></td>
+      </tr>
+    <% end %>
+  </table>
+  <br />
+  <%= link_to 'New blog', new_blog_path %>
+</div>
 
-<table>
-  <% @blogs.each do |blog| %>
-    <tr>
-      <td><%= link_to 'Show', blog %></td>
-      <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
-      <td><%= link_to 'Destroy', blog, :confirm => 'Are you sure?', :method => :delete %></td>
-    </tr>
-  <% end %>
-</table>
-
-<br />
-
-<%= link_to 'New blog', new_blog_path %>
