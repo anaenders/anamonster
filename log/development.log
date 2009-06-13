@@ -9471,3 +9471,367 @@ Processing BlogsController#show (for 127.0.0.1 at 2009-06-12 11:33:50) [GET]
 Rendering template within layouts/application
 Rendering blogs/show
 Completed in 32ms (View: 23, DB: 2) | 200 OK [http://localhost/blogs/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-13 01:02:42) [GET]
+  [4;35;1mBlog Load (0.5ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+  [4;36;1mBlog Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+Completed in 79ms (View: 14, DB: 3) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-13 01:05:25) [GET]
+  [4;36;1mBlog Load (0.4ms)[0m   [0;1mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+  [4;35;1mBlog Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+Completed in 14ms (View: 4, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-13 01:06:03) [GET]
+  [4;35;1mBlog Load (0.4ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+  [4;36;1mBlog Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+Completed in 14ms (View: 5, DB: 3) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-13 01:10:05) [GET]
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+  [4;35;1mBlog Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+Completed in 13ms (View: 4, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-13 01:18:55) [GET]
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+  [4;36;1mBlog Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+Completed in 13ms (View: 4, DB: 3) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-13 01:20:53) [GET]
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+  [4;35;1mBlog Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+Completed in 13ms (View: 4, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-13 01:21:07) [GET]
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+  [4;36;1mBlog Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+Completed in 13ms (View: 4, DB: 2) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-13 01:25:01) [GET]
+  [4;36;1mBlog Load (0.4ms)[0m   [0;1mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+  [4;35;1mBlog Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+Completed in 13ms (View: 4, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-13 01:25:18) [GET]
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+  [4;36;1mBlog Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+Completed in 13ms (View: 4, DB: 2) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-13 01:26:47) [GET]
+  [4;36;1mBlog Load (0.4ms)[0m   [0;1mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+  [4;35;1mBlog Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+Completed in 18ms (View: 9, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-13 01:26:47) [GET]
+
+ActionController::RoutingError (No route matches "/images/searchBG.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-13 01:27:41) [GET]
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+  [4;35;1mBlog Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+Completed in 13ms (View: 4, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-13 01:27:57) [GET]
+  [4;35;1mBlog Load (0.4ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+  [4;36;1mBlog Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+Completed in 68ms (View: 5, DB: 2) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-13 01:28:17) [GET]
+  [4;36;1mBlog Load (0.4ms)[0m   [0;1mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+  [4;35;1mBlog Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+Completed in 13ms (View: 4, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-13 01:28:38) [GET]
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+  [4;36;1mBlog Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+Completed in 14ms (View: 4, DB: 2) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-13 01:29:01) [GET]
+  [4;36;1mBlog Load (0.4ms)[0m   [0;1mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+  [4;35;1mBlog Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+Completed in 13ms (View: 4, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-13 01:32:48) [GET]
+  [4;35;1mBlog Load (0.4ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+  [4;36;1mBlog Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+Completed in 66ms (View: 4, DB: 3) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-13 01:33:48) [GET]
+  [4;36;1mBlog Load (0.4ms)[0m   [0;1mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+  [4;35;1mBlog Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+Completed in 14ms (View: 4, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-13 01:48:49) [GET]
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+  [4;36;1mBlog Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+Completed in 17ms (View: 9, DB: 3) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-13 01:49:11) [GET]
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+  [4;35;1mBlog Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+Completed in 13ms (View: 4, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-13 01:50:30) [GET]
+  [4;35;1mBlog Load (0.4ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+  [4;36;1mBlog Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+Completed in 18ms (View: 9, DB: 3) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-13 01:50:50) [GET]
+  [4;36;1mBlog Load (0.4ms)[0m   [0;1mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+  [4;35;1mBlog Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+Completed in 20ms (View: 10, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-13 01:51:29) [GET]
+  [4;35;1mBlog Load (0.4ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+  [4;36;1mBlog Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+Completed in 20ms (View: 10, DB: 3) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-13 01:51:41) [GET]
+  [4;36;1mBlog Load (0.4ms)[0m   [0;1mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+  [4;35;1mBlog Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+Completed in 19ms (View: 10, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-13 01:52:37) [GET]
+  [4;35;1mBlog Load (0.4ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+  [4;36;1mBlog Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+Completed in 21ms (View: 11, DB: 3) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-13 01:56:22) [GET]
+  [4;36;1mBlog Load (0.4ms)[0m   [0;1mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+  [4;35;1mBlog Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+Completed in 13ms (View: 4, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-13 01:57:56) [GET]
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+  [4;36;1mBlog Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+Completed in 13ms (View: 4, DB: 3) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-13 02:01:16) [GET]
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+  [4;35;1mBlog Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+Completed in 64ms (View: 56, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-13 02:02:00) [GET]
+  [4;35;1mBlog Load (0.4ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+  [4;36;1mBlog Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+Completed in 13ms (View: 4, DB: 3) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-13 02:02:08) [GET]
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+  [4;35;1mBlog Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+Completed in 13ms (View: 4, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-13 02:02:15) [GET]
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+  [4;36;1mBlog Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+Completed in 13ms (View: 4, DB: 3) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-13 02:02:58) [GET]
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+  [4;35;1mBlog Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+Completed in 64ms (View: 55, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-13 02:03:08) [GET]
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+  [4;36;1mBlog Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+Completed in 13ms (View: 5, DB: 3) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-13 02:03:24) [GET]
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+  [4;35;1mBlog Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+Completed in 13ms (View: 4, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-13 02:03:40) [GET]
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+  [4;36;1mBlog Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+Completed in 13ms (View: 4, DB: 2) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-13 02:06:08) [GET]
+  [4;36;1mBlog Load (0.4ms)[0m   [0;1mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+  [4;35;1mBlog Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+Completed in 64ms (View: 4, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2009-06-13 02:06:12) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mBlog Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering blogs/show
+Completed in 38ms (View: 29, DB: 2) | 200 OK [http://localhost/blogs/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-13 02:08:35) [GET]
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+  [4;35;1mBlog Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+Completed in 13ms (View: 4, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-13 02:08:45) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing GalleryController#index (for 127.0.0.1 at 2009-06-13 02:08:50) [GET]
+Rendering template within layouts/application
+Rendering gallery/index
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/gallery]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LinksController#index (for 127.0.0.1 at 2009-06-13 02:09:07) [GET]
+Rendering template within layouts/application
+Rendering links/index
+Completed in 65ms (View: 7, DB: 0) | 200 OK [http://localhost/links]
