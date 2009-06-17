@@ -16,9 +16,9 @@ ActionController::Routing::Routes.draw do |map|
   # Contact
   map.contact '/contact', :controller => 'contact', :action => 'index'
   
-  # Links
-  map.link_category '/links/category/:category', :controller => 'links', :action => 'index'
-  map.resources :links
+  # About
+  map.link_category '/about/category/:category', :controller => 'about', :action => 'index'
+  map.resources :about
   
   # Sessions
   map.logout '/logout', :controller => 'sessions', :action => 'destroy'

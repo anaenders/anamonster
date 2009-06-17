@@ -1,0 +1,77 @@
+<div id="search_features">
+  <%= image_tag('header_calendar.png', :alt => 'calendar', :class => 'search_header') %>
+  <table id="calendar" cellpadding="0" cellspacing="0">
+    <tr class="month">
+      <th><%= link_to '&lt;&lt;', '#'%></th>
+      <th colspan="5">june 2009</th>
+      <th><%= link_to '&gt;&gt;', '#' %></th>
+    </tr>
+    <tr>
+      <th class = "weekend ">S</th>
+      <th>M</th>
+      <th>T</th>
+      <th>W</th>
+      <th>T</th>
+      <th>F</th>
+      <th class = "weekend">S</th>
+    </tr>
+    <tr>
+      <td class = "weekend other_month">31</td>
+      <td class = "blog_post"><%= link_to '1', '#' %></td>
+      <td>2</td>
+      <td>3</td>
+      <td class = "blog_post"><%= link_to '4', '#' %></td>
+      <td>5</td>
+      <td class = "weekend">6</td>
+    </tr> 
+    <tr>
+      <td class = "weekend blog_post"><%= link_to '7', '#' %></td>
+      <td>8</td>
+      <td>9</td>
+      <td>10</td>
+      <td class = "today">11</td>
+      <td>12</td>
+      <td class = "weekend">13</td>
+    </tr>
+    <tr>
+      <td class = "weekend">14</td>
+      <td>15</td>
+      <td>16</td>
+      <td>17</td>
+      <td>18</td>
+      <td>19</td>
+      <td class = "weekend">20</td>
+    </tr>
+    <tr>
+      <td class = "weekend">21</td>
+      <td>22</td>
+      <td>23</td>
+      <td>24</td>
+      <td>25</td>
+      <td>26</td>
+      <td class = "weekend">27</td>
+    </tr>
+    <tr>
+      <td class = "weekend">28</td>
+      <td>29</td>
+      <td>30</td>
+      <td class = "other_month">1</td>
+      <td class = "other_month">2</td>
+      <td class = "other_month">3</td>
+      <td class = "weekend other_month">4</td>
+    </tr>
+  </table>
+  <%= image_tag('header_images.png', :alt => 'calendar', :class => 'search_header') %>
+  <div id="thumb_pics">
+    <%= image_tag('blog_thumb1.png', :alt => 'blog pic') %>
+    <%= image_tag('blog_thumb2.png', :alt => 'blog pic') %>
+    <%= image_tag('blog_thumb3.png', :alt => 'blog pic') %>
+    <%= image_tag('blog_thumb4.png', :alt => 'blog pic') %>
+    <%= image_tag('blog_thumb5.png', :alt => 'blog pic') %>
+    <%= image_tag('blog_thumb6.png', :alt => 'blog pic') %>
+    <%= image_tag('blog_thumb1.png', :alt => 'blog pic') %>
+    <%= image_tag('blog_thumb2.png', :alt => 'blog pic') %>
+  </div>
+  <%= image_tag('header_tags.png', :alt => 'popular tags', :class => 'search_header') %>
+  <span class="tags"><%= link_to('buns', '#') %><%= link_to('toronto  ', '#') %><%= link_to('tobers', '#') %><%= link_to('chocolate chip cookies', '#') %></span>
+</div>

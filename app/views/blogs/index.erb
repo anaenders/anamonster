@@ -1,15 +1,21 @@
-<div id="blog_container">
-  <h3>Listing blogs</h3>  
-  <table>
-    <% @blogs.each do |blog| %>
-      <tr>
-        <td><%= link_to 'Show', blog %></td>
-        <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
-        <td><%= link_to 'Destroy', blog, :confirm => 'Are you sure?', :method => :delete %></td>
-      </tr>
+<div class="padding">
+  <div id="blog_container">
+    <% if @blogs %>
+      <%= render :partial => 'blog', :collection => @blogs %>
+    <% else %>
+      <%= render :partial => 'blog', :object => @blog %>
     <% end %>
-  </table>
-  <br />
-  <%= link_to 'New blog', new_blog_path %>
+    
+    <% if_authorized? do %>
+      <%= link_to 'New blog', new_blog_path %>
+    <% end %>
+  </div>
+  
+  <%= render :partial => 'search' %>
+  
+  <%= will_paginate(@blogs,
+      :previous_label => image_tag((@blogs.previous_page ? 'previous.png' : 'previous_ghosted.png'), :alt => 'previous'),
+      :next_label     => image_tag((@blogs.next_page ? 'next.png' : 'next_ghosted.png'), :alt => 'next'),
+      :inner_window   => 3
+  ) %> 
 </div>
-

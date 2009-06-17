@@ -66,6 +66,7 @@ img, div, input { behavior: url("scripts/iepngfix.htc") }
 	padding: 0 20px;
 	margin: 0 auto 0 auto;
 	position: relative;
+	height: 100%;
 }
 
 img.logo {
@@ -78,8 +79,8 @@ img.logo {
   float: left;
   position: relative;
   width: 100%;
-  min-height: 520px;
-  padding: 47px 0 28px 0;
+  min-height: 500px;
+  padding: 35px 0 20px 0;
   background-color: #fff;
 }
 
@@ -96,42 +97,6 @@ img#top_margin, #bottom_margin {
 img#top_margin { top: 1px }
 
 img#bottom_margin { bottom: 1px }
-
-.medium_box {
-  width: 470px;
-  float: right;
-  margin: 0 206px 10px 0;
-  background-image: url('/images/med_bg.jpg');
-}
-
-.large_box {
-  width: 677px;
-  float: right;
-  margin: 0 67px 10px 0;
-  background-image: url('/images/large_bg.jpg');
-}
-
-.large_box div, .medium_box div { height: 17px }
-  
-.medium_box .top { background-image: url('/images/med_topbar.jpg') }  
-  
-.medium_box .bottom { background-image: url('/images/med_bottombar.jpg') }
-
-.large_box .top { background-image: url('/images/large_topbar.jpg') }  
-  
-.large_box .bottom { background-image: url('/images/large_bottombar.jpg') }
-
-.large_box p, .medium_box p {
-  margin: 10px 0;
-  padding: 0 25px;
-  line-height:1.5em;
-}
-
-.main_content {
-	float: left;
-	width: 660px;
-	margin-right: 40px;
-}
 
 /********************************************
  *	blog    								                *
@@ -154,12 +119,13 @@ img#bottom_margin { bottom: 1px }
   color: #d2e1fe;
   font-size: 16px;
   padding-left: 2px;
+  width: 528px;
 }
 
 #blog_container h2 {
   color: #000;
   font-size: 18px;
-  margin: 30px 0 10px 0;
+  margin: 10px 0;
 }
 
 #blog_container p { float: left }
@@ -169,16 +135,21 @@ img#bottom_margin { bottom: 1px }
 .blog_text {
   border: 1px solid #f131c6;
   padding: 20px;
+  margin-bottom: 30px;
 }
 
 .pagination {
   float: left;
   width: 100%;
+  text-align: center;
 }
 
-span.tags a {
-  margin-right: 8px;
+.pagination a { 
+  margin: 2px;
+  color: #000; 
 }
+
+span.current { color: #f131c6 }
 
 .pagination img { margin-top: 3px }
 
@@ -188,14 +159,7 @@ span.tags a {
   margin: 10px 0;
 }
 
-.pagination ul li {
-  display: inline;
-  padding: 0 3px;
-}
-
-.pagination ul li a.selected { color: #f131c6 }
-
-.pagination ul li a { color: #000 }
+span.tags a { margin-right: 5px }
 
 /********************************************
  *	search features					                *
@@ -242,7 +206,10 @@ span.tags a {
 
 #calendar td.weekend { background-color: #e2d6e2 }
 
-#calendar td.other_month { background-color: #fafafa; color: #b6b6b6 }
+#calendar td.other_month { 
+  background-color: #fafafa; 
+  color: #b6b6b6
+}
 
 #calendar td.blog_post a { 
   color: #000; 
@@ -275,7 +242,25 @@ span.tags a {
 
 #large_image img { float: left;}
 
-#large_image, #menu { margin-bottom: 10px;}
+#large_image { position: relative }
+
+#large_image .description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0.5;
+  /* for IE */
+  filter: alpha(opacity=50);
+  /* CSS3 standard */
+}
+
+#large_image .description p { 
+  padding: 5px;
+  width: 630px; 
+  opacity: 1;
+  color: #89e8ff;
+}
 
 #menu img.gallery_scroll { margin-bottom: 2px}
 
@@ -327,83 +312,134 @@ h2.album_name {
 .thumb_holder a.right_arrow { right: 5px }
 
 /********************************************
- *	portfolio								                *
+ *	showcase   							                *
 \********************************************/
 
-/*.portfolio {
-  float: right;
-  margin-bottom: 20px;
-  width: auto;
-}
-
-.portfolio img {
-  float: left;
-}
-
-.portfolio .last {
-  margin-right: 0px;
-}
-
 .site_container {
+  width: 378px;
+  margin: 1px;
   float: left;
-  width: 320px;
-  background-color: #fff;
-  border: 1px solid #b8b8b8;
-  margin: 0 9px 10px 0;
 }
 
-.proj_description {
+.site_container img {
+  padding: 20px 0 20px 0;
   float: left;
-  width: 300px;
-  padding: 0 10px;
+  margin-left: 20px;
 }
 
-.proj_description p, .proj_description ul, .proj_description a {
-  color: #3A9CEC;
+.technologies { 
   float: left;
-  margin-bottom: 8px;
+  margin-bottom: 10px 
 }
 
-.technologies ul, .proj_description ul {
-  float: left;
+.technologies ul { 
   list-style-type: none;
+  margin: 0 20px;
+  float: left;
+  width: 338px;
+  font-family: Geosans
 }
 
-.technologies ul li, .proj_description ul li {
-  color: #3A9CEC; 
+.technologies span, .technologies ul li {
   float: left;
   margin-right: 5px;
+  color: #000;
 }
 
-.technologies ul {
-  font-size: 10px;
+.yellow {
+  background-color: #fffb80;
 }
 
-.proj_description a {
-  font-weight: bold;
-  font-size: 12px;
-  height: 1.8em;
-  width: 300px;
-  border-bottom: 1px solid #3A9CEC;
+.green{
+  background-color: #a5e070;
 }
 
-.proj_description span, .technologies ul span {
-  float: left;
-  color: #7C7C7C;
-  margin-right: 5px;
+.blue {
+  background-color: #97ccfc;
 }
 
-.proj_description a:hover {
-  text-decoration: underline;
+.orange {
+  background-color: #ffca80;
 }
 
-.technologies {
-  float: left;
-  width: 300px;
-  padding: 2px 10px;
-  background-color: #ccc;
+.red {
+  background-color: #ff8080;
 }
-*/
+
+/********************************************
+ *	contact   							                *
+\********************************************/
+
+.contactBG { 
+  position: absolute;
+  right: 20px;
+  top: 34px;
+  z-index: 300; 
+}
+
+.input_fields {
+  position: relative;
+  z-index: 400;
+}
+
+.input_fields p {
+  position: absolute;
+  color: #000;
+}
+
+.input_fields label { font-family: Geosans }
+
+.input_fields input {
+  border: 1px solid #F8F8F8;
+  position: absolute;
+  width: 200px;
+  padding: 2px;
+  font-family: "lucida sans", lucida-sans, sans-serif;
+}
+
+p.name {
+  top: 10px;
+  left: 298px;
+}
+
+p.email {
+  top: 85px;
+  left: 195px;
+}
+
+p.name input, p.email input {
+  top: 18px;
+  left: 0px;
+  width: 240px;
+}
+
+p.message {
+  top: 172px;
+  right: 340px;
+}
+
+.input_fields textarea {
+  position: absolute;
+  border: 1px solid #f8f8f8;
+  padding: 2px;
+  top: 193px;
+  right: 26px;
+  z-index: 200;
+}
+
+input.submit {
+  position: absolute;
+  top: 480px;
+  right: 20px;
+}
+
+.screaming_monster {
+  position: absolute;
+  top: 153px;
+  left: 24px;
+  z-index: 200;
+}
+
 /********************************************
  *	footer									                *
 \********************************************/
@@ -411,7 +447,7 @@ h2.album_name {
 #footer {
   float:left;
 	width: 100%;
-	height: 50px;
+	height: 60px;
 	background-color: #000;
 	font-family: GeosansLight;
 	color: #fff;
@@ -445,7 +481,7 @@ h2.album_name {
   font-size: 14px;
 }
 
-a#contact { 
+a.contact { 
   font-size: 14px;
   float: left;
   margin: 10px 0 0 20px;
@@ -455,4 +491,12 @@ a#contact {
   float: right;
   margin: 10px 20px 0 0;
   font-size: 13px
+}
+
+/********************************************
+ *	admin   								                *
+\********************************************/
+
+.admin_links {
+  clear: both;
 }

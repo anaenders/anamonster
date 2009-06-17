@@ -22,7 +22,7 @@
         <%= link_to(image_tag('/images/logo.png', :alt => 'anamonster', :class => 'logo'), '/') %>
         <div id="navigation">
           <div class="nav_links">  
-            <% [ ['links', '/links' ], [ 'gallery', '/gallery' ], [ 'showcase', '/showcase' ], [ 'blog', '/' ] ].each do |nav| %>
+            <% [ ['about', '/about' ], [ 'gallery', '/gallery' ], [ 'showcase', '/showcase' ], [ 'blog', '/' ] ].each do |nav| %>
               <% on_off = (nav[0] == get_current_section) ? '_on.png' : '_off.png' %>
               <%= link_to(image_tag('button_'+ nav[0] + on_off), nav[1]) %>
             <% end %>             
@@ -43,7 +43,7 @@
       </div>
       <div id="footer">
         <div id="footer_navigation">
-          <a id="contact" href="contact.html">Contact</a>
+          <%= link_to('contact', 'contact', :class => 'contact') %>
           <div id="search">
             <%= text_field_tag 'year', nil %>
             <%= link_to('search', '#') %>

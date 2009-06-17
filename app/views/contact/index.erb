@@ -1,0 +1,11 @@
+<div class="padding">
+  <%= image_tag('contact_BG.png', :alt => 'contact', :class => 'contactBG') %>
+  <div class="input_fields">
+    <p class="name"><label>name:</label><%= text_field  'email', :size => '20' %></p>
+    <p class="email"><label>your email:</label><%= text_field_tag 'email', nil %></p>
+    <p class="message">message:</p>
+    <textarea rows="6" cols="44"></textarea>
+  </div>
+  <%= image_submit_tag('button_submit.png', :class => 'submit') %>
+  <%= image_tag('anamonster-yelling.png', :alt => 'anamonster', :class => 'screaming_monster') %>
+</div>

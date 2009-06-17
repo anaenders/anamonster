@@ -2,9 +2,10 @@ class BlogsController < ApplicationController
 
   before_filter :set_section
   before_filter :load_blog, :only => [ :show, :edit, :update, :destroy ]
+  before_filter :login_required, :only => [ :edit, :new, :create, :update, :destroy ]
 
   def index
-    @blogs = Blog.all
+    @blogs = Blog.paginate(:per_page => 2, :page => params[:page] || 1, :order => 'created_at DESC')
   end
   
   def show; end
