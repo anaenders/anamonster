@@ -1,58 +1,91 @@
 <div class="padding">
-  <div class="portfolio">
-    <div class="site_container yellow">
-      <a href="www.thorntontomasetti.com" target="_blank"><img src="/images/small_thornton.png" alt="thornton tomasetti" /></a>
-      <div class="technologies">  
-        <!-- <ul><span>site:</span><li>thornton tomasetti</li></ul> -->
+
+    <div class="image_holder">
+      <%= image_tag('large_thornton.png') %>
+      <div class="project_description">
+        <p class="name">Project name: Thornton Tomasetti<span class="url">url: <%= link_to('www.thorntontomasetti.com', 'www.thorntontomasetti.com') %></span></p>
+        <p class="description">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consectetur mauris sed velit. Vivamus eleifend quam ac erat.</p>
       </div>
+    </div>
+    <div class="image_holder">
+      <%= image_tag('large_liz.png') %>
+      <div class="project_description">
+        <p class="name">Project name: Liz Claiborne<span class="url">url: <%= link_to('http://www.lizclaiborneinc.com/', 'http://www.lizclaiborneinc.com/') %></span></p>        
+        <p class="description">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consectetur mauris sed velit. Vivamus eleifend quam ac erat.</p>
+      </div>
+    </div>
+    
+    <div class="site_container yellow">
+      <a href="#" target="_blank"><img src="/images/small_thornton.png" alt="thornton tomasetti" /></a>
     </div>
     <div class="site_container green">
-      <a href="www.lizclaiborne.com" target="_blank"><img src="/images/small_liz.png" alt="liz claiborne" /></a>
-      <div class="technologies">  
-        <!-- <ul><span>site:</span><li>liz claiborne</li></ul> -->
+      <a href="#" target="_blank"><img src="/images/small_liz.png" alt="liz claiborne" /></a>
+    </div>
+    
+    <div class="image_holder">
+      <%= image_tag('large_citibabes.png') %>
+      <div class="project_description">
+        <p class="name">Project name: Citibabes<span class="url">url: <%= link_to('www.citibabes.com', 'www.citibabes.com') %></span></p>
+        <p class="description">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consectetur mauris sed velit. Vivamus eleifend quam ac erat.</p>
+      </div>
+    </div>    
+    <div class="image_holder">
+      <%= image_tag('large_mally.png') %>
+      <div class="project_description">
+        <p class="name">Project name: Mally Beauty<span class="url">url: <%= link_to('www.mallybeauty.com', 'www.mallybeauty.com') %></span></p>
+        <p class="description">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consectetur mauris sed velit. Vivamus eleifend quam ac erat.</p>
       </div>
     </div>
+    
     <div class="site_container blue">
-      <a href="www.citibabes.com"><img src="/images/small_citibabes.png" alt="citibabes" /></a>
-      <div class="technologies">  
-        <!-- <ul><span>site:</span><li>citibabes</li></ul> -->
-      </div>
+      <a href="#"><img src="/images/small_citibabes.png" alt="citibabes" /></a>
     </div>
     <div class="site_container orange">
       <a href="#"><img src="/images/small_mally.png" alt="mally" /></a>
-      <div class="technologies">  
-        <!-- <ul><span>site:</span><li>mally beauty</li></ul> -->
+    </div>
+    
+    <div class="image_holder">
+      <%= image_tag('large_kates.png') %>
+      <div class="project_description">
+        <p class="name">Project name: Kates Paperie<span class="url">url: <%= link_to('www.katespaperie.com', 'www.katespaperie.com') %></span></p>
+        <p class="description">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consectetur mauris sed velit. Vivamus eleifend quam ac erat.</p>
       </div>
     </div>
+    <div class="image_holder">  
+      <%= image_tag('large_kimara.png') %>
+      <div class="project_description">
+        <p class="name">Project name: Kimara<span class="url">url: <%= link_to('www.kimara.com', 'www.kimara.com') %></span></p>
+        <p class="description">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consectetur mauris sed velit. Vivamus eleifend quam ac erat.</p>
+      </div>
+    </div>
+      
     <div class="site_container red">
       <a href="#"><img src="/images/small_kates.png" alt="kates" /></a>
-      <div class="technologies">  
-        <!-- <ul><span>site:</span><li>kates papery</li></ul> -->
-      </div>
     </div>
     <div class="site_container yellow">
       <a href="#"><img class="last" src="/images/small_kimara.png" alt="kimara" /></a>
-      <div class="technologies">  
-        <!-- <ul><span>Features:</span><li>ruby</li><li>rails</li><li>html</li><li>css</li><li>jquery</li><li>flash</li><li>sifr</li></ul> -->
+    </div>
+    
+    <div class="image_holder">
+      <%= image_tag('large_cinemax.png') %>
+      <div class="project_description">
+        <p class="name">Project name: Cinemax<span class="url">url: <%= link_to('www.cinemax.com', 'www.cinemax.com') %></span></p>
+        <p class="description">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consectetur mauris sed velit. Vivamus eleifend quam ac erat.</p>
       </div>
     </div>
+    <div class="image_holder">
+      <%= image_tag('large_summitsprings.png') %>
+      <div class="project_description">
+        <p class="name">Project name: Summit Springs<span class="url">url: <%= link_to('www.summitsprings.com', 'www.summitsprings.com') %></span></p>
+        <p class="description">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consectetur mauris sed velit. Vivamus eleifend quam ac erat.</p>
+      </div>
+    </div>
+    
     <div class="site_container green">
       <a href="#"><img src="/images/small_cinemax.png" alt="cinemax" /></a>
-      <div class="technologies">  
-        <!-- <ul><span>Features:</span><li>ruby</li><li>rails</li><li>html</li><li>css</li><li>jquery</li><li>flash</li><li>sifr</li></ul> -->
-      </div>
     </div>
     <div class="site_container blue">
-      <a href="#"><img src="/images/small_nse.png" alt="nippon shin eisei" /></a>
-      <div class="technologies">  
-        <!-- <ul><span>Features:</span><li>ruby</li><li>rails</li><li>html</li><li>css</li><li>jquery</li><li>flash</li><li>sifr</li></ul> -->
-      </div>
-    </div>
-    <div class="site_container orange">
       <a href="#"><img class="last" src="/images/small_summitsprings.png" alt="summit springs" /></a>
-      <div class="technologies">  
-        <!-- <ul><span>Features:</span><li>ruby</li><li>rails</li><li>html</li><li>css</li><li>jquery</li><li>flash</li><li>sifr</li></ul> -->
-      </div>
     </div>
-  </div>
+
 </div>

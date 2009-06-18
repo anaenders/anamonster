@@ -346,24 +346,46 @@ h2.album_name {
   color: #000;
 }
 
-.yellow {
-  background-color: #fffb80;
+.yellow { background-color: #fffb80 }
+
+.green{ background-color: #a5e070 }
+
+.blue { background-color: #97ccfc }
+
+.orange { background-color: #ffca80 }
+
+.red { background-color: #ff8080 }
+
+.image_holder img { float: left }
+
+.image_holder {
+  float: left;
+  position: relative;
 }
 
-.green{
-  background-color: #a5e070;
+.project_description {
+  position: absolute;
+  z-index: 10;
+  bottom: 0px;
+  height: 55px;
+  width: 100%;
+  opacity: 0.7;
+  /* for IE */
+  filter: alpha(opacity=70);
+  /* CSS3 standard */
+  background-color: #000;
 }
 
-.blue {
-  background-color: #97ccfc;
-}
+.project_description p.name { width: 305px }
 
-.orange {
-  background-color: #ffca80;
-}
+.project_description span.url { clear: both; float: left; margin-top: 5px; }
 
-.red {
-  background-color: #ff8080;
+.project_description p.description { width: 395px }
+
+.project_description p {
+  float: left;
+  padding: 10px;
+  color: #fff;
 }
 
 /********************************************
@@ -435,8 +457,8 @@ input.submit {
 
 .screaming_monster {
   position: absolute;
-  top: 153px;
-  left: 24px;
+  bottom: 0px;
+  left: 173px;
   z-index: 200;
 }
 
