@@ -13707,3 +13707,271 @@ Processing ContactController#index (for 127.0.0.1 at 2009-06-17 11:59:22) [GET]
 Rendering template within layouts/application
 Rendering contact/index
 Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-17 19:39:55) [GET]
+  [4;35;1mBlog Load (0.5ms)[0m   [0mSELECT * FROM `blogs` ORDER BY created_at DESC LIMIT 0, 2[0m
+  [4;36;1mBlog Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Rendered blogs/_blog (88.0ms)
+Rendered blogs/_blog (19.0ms)
+Rendered blogs/_search (4.3ms)
+Completed in 140ms (View: 130, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing GalleryController#index (for 127.0.0.1 at 2009-06-17 19:43:50) [GET]
+Rendering template within layouts/application
+Rendering gallery/index
+Completed in 13ms (View: 11, DB: 0) | 200 OK [http://localhost/gallery]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing GalleryController#index (for 127.0.0.1 at 2009-06-17 19:48:42) [GET]
+Rendering template within layouts/application
+Rendering gallery/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/gallery]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing GalleryController#index (for 127.0.0.1 at 2009-06-17 19:53:56) [GET]
+Rendering template within layouts/application
+Rendering gallery/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/gallery]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing GalleryController#index (for 127.0.0.1 at 2009-06-17 19:58:25) [GET]
+Rendering template within layouts/application
+Rendering gallery/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/gallery]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-17 19:58:27) [GET]
+  [4;35;1mBlog Load (0.4ms)[0m   [0mSELECT * FROM `blogs` ORDER BY created_at DESC LIMIT 0, 2[0m
+  [4;36;1mBlog Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Rendered blogs/_blog (5.1ms)
+Rendered blogs/_blog (17.7ms)
+Rendered blogs/_search (1.1ms)
+Completed in 37ms (View: 27, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-17 19:58:33) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing GalleryController#index (for 127.0.0.1 at 2009-06-17 20:10:02) [GET]
+Rendering template within layouts/application
+Rendering gallery/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/gallery]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-17 20:10:12) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AboutController#index (for 127.0.0.1 at 2009-06-17 20:12:42) [GET]
+Rendering template within layouts/application
+Rendering about/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/about]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AboutController#index (for 127.0.0.1 at 2009-06-17 20:15:51) [GET]
+Rendering template within layouts/application
+Rendering about/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/about]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-17 20:15:52) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-17 20:17:15) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing GalleryController#index (for 127.0.0.1 at 2009-06-17 20:17:17) [GET]
+Rendering template within layouts/application
+Rendering gallery/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/gallery]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-17 20:17:27) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing GalleryController#index (for 127.0.0.1 at 2009-06-17 20:17:47) [GET]
+Rendering template within layouts/application
+Rendering gallery/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/gallery]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing GalleryController#index (for 127.0.0.1 at 2009-06-17 20:22:27) [GET]
+Rendering template within layouts/application
+Rendering gallery/index
+Completed in 69ms (View: 66, DB: 0) | 200 OK [http://localhost/gallery]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing GalleryController#index (for 127.0.0.1 at 2009-06-17 20:22:32) [GET]
+Rendering template within layouts/application
+Rendering gallery/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/gallery]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-17 20:22:42) [GET]
+  [4;35;1mBlog Load (0.4ms)[0m   [0mSELECT * FROM `blogs` ORDER BY created_at DESC LIMIT 0, 2[0m
+  [4;36;1mBlog Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Rendered blogs/_blog (5.0ms)
+Rendered blogs/_blog (19.3ms)
+Rendered blogs/_search (1.1ms)
+Completed in 39ms (View: 29, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-17 20:29:36) [GET]
+  [4;35;1mBlog Load (0.8ms)[0m   [0mSELECT * FROM `blogs` ORDER BY created_at DESC LIMIT 0, 2[0m
+  [4;36;1mBlog Columns (3.9ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mSELECT count(*) AS count_all FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Rendered blogs/_blog (7.1ms)
+Rendered blogs/_blog (18.0ms)
+Rendered blogs/_search (1.7ms)
+Completed in 47ms (View: 30, DB: 6) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing GalleryController#index (for 127.0.0.1 at 2009-06-17 20:29:43) [GET]
+Rendering template within layouts/application
+Rendering gallery/index
+Completed in 56ms (View: 54, DB: 0) | 200 OK [http://localhost/gallery]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing GalleryController#index (for 127.0.0.1 at 2009-06-17 20:32:13) [GET]
+Rendering template within layouts/application
+Rendering gallery/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/gallery]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AboutController#index (for 127.0.0.1 at 2009-06-17 20:32:16) [GET]
+Rendering template within layouts/application
+Rendering about/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/about]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing GalleryController#index (for 127.0.0.1 at 2009-06-17 20:32:42) [GET]
+Rendering template within layouts/application
+Rendering gallery/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/gallery]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing GalleryController#index (for 127.0.0.1 at 2009-06-17 20:39:30) [GET]
+Rendering template within layouts/application
+Rendering gallery/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/gallery]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AboutController#index (for 127.0.0.1 at 2009-06-17 20:39:39) [GET]
+Rendering template within layouts/application
+Rendering about/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/about]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AboutController#index (for 127.0.0.1 at 2009-06-17 20:42:52) [GET]
+Rendering template within layouts/application
+Rendering about/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/about]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AboutController#index (for 127.0.0.1 at 2009-06-17 20:42:59) [GET]
+Rendering template within layouts/application
+Rendering about/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/about]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-17 20:43:04) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-17 20:46:08) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-17 20:46:15) [GET]
+  [4;35;1mBlog Load (0.5ms)[0m   [0mSELECT * FROM `blogs` ORDER BY created_at DESC LIMIT 0, 2[0m
+  [4;36;1mBlog Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Rendered blogs/_blog (5.5ms)
+Rendered blogs/_blog (19.5ms)
+Rendered blogs/_search (1.1ms)
+Completed in 40ms (View: 29, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-17 20:46:35) [GET]
+Rendering template within layouts/application
+Rendering contact/index
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AboutController#index (for 127.0.0.1 at 2009-06-17 20:48:20) [GET]
+Rendering template within layouts/application
+Rendering about/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/about]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing GalleryController#index (for 127.0.0.1 at 2009-06-17 20:48:22) [GET]
+Rendering template within layouts/application
+Rendering gallery/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/gallery]
