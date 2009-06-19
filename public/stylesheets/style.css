@@ -139,15 +139,14 @@ img#bottom_margin { bottom: 1px }
 }
 
 .pagination {
-  float: left;
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
   width: 100%;
   text-align: center;
 }
 
-.pagination a { 
-  margin: 2px;
-  color: #000; 
-}
+.pagination a { color: #000 }
 
 span.current { color: #f131c6 }
 
@@ -160,6 +159,34 @@ span.current { color: #f131c6 }
 }
 
 span.tags a { margin-right: 5px }
+
+#new_blog { float: left; width: 760px;}
+
+#new_blog h1, #login h1 { font-size: 20px }
+
+#login p { line-height: 2em }
+
+#new_blog h1, #new_blog h4, #login h1, #login p  {
+  font-weight: normal;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+#new_blog a { margin-bottom: 10px; float: left;}
+
+#new_blog span { float: left; margin: 0 5px }
+
+#new_blog input#blog_submit {
+  cursor:pointer;
+  width: 100%
+}
+
+#login input, #new_blog input, #new_blog textarea { 
+  border: 1px solid #999;
+  padding: 2px;
+}
+
+#new_blog input, #new_blog textarea { width: 754px; margin-bottom: 10px; }
 
 /********************************************
  *	search features					                *
@@ -458,8 +485,9 @@ p.message {
 
 input.submit {
   position: absolute;
-  top: 480px;
+  top: 380px;
   right: 20px;
+  z-index: 500;
 }
 
 .screaming_monster {

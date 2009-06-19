@@ -13,7 +13,7 @@
     $('.site_container').click(function() {
       var num = $(this).attr('rel');
       if (showing != num) {
-        $('.image_holder').hide('slow');
+        $('.image_holder').hide();
         showing = num;
       } else {
         showing = null;
