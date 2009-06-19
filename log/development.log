@@ -14537,3 +14537,423 @@ Processing AboutController#index (for 127.0.0.1 at 2009-06-18 11:34:37) [GET]
 Rendering template within layouts/application
 Rendering about/index
 Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/about]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-18 20:53:34) [GET]
+  Parameters: {"1245257834"=>nil}
+
+ActionController::RoutingError (No route matches "/images/button_products_on.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-18 20:53:38) [GET]
+  [4;36;1mBlog Load (86.3ms)[0m   [0;1mSELECT * FROM `blogs` ORDER BY created_at DESC LIMIT 0, 2[0m
+  [4;35;1mBlog Columns (22.1ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Rendered blogs/_blog (87.3ms)
+Rendered blogs/_blog (17.5ms)
+Rendered blogs/_search (24.2ms)
+Completed in 266ms (View: 149, DB: 109) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-18 20:53:53) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 15ms (View: 13, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-18 20:59:57) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 18ms (View: 16, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-18 21:00:07) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-18 21:01:11) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-18 21:05:10) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-18 21:07:52) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-18 22:04:42) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 18ms (View: 16, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-18 22:09:44) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 65ms (View: 62, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-18 22:28:45) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 19ms (View: 16, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-18 22:29:29) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 18ms (View: 16, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-18 22:29:51) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 17ms (View: 15, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-18 22:29:56) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-18 22:30:08) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 19ms (View: 16, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-18 22:30:20) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 19ms (View: 16, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-18 22:30:45) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 19ms (View: 16, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-18 22:32:40) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 19ms (View: 16, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-18 22:33:33) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 19ms (View: 16, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-18 22:35:23) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 19ms (View: 17, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-18 22:36:21) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 18ms (View: 16, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-18 22:38:54) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 19ms (View: 16, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-18 22:40:21) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 19ms (View: 17, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-18 22:42:42) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 18ms (View: 15, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-18 22:43:43) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 19ms (View: 17, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-18 22:45:23) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 18ms (View: 16, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-18 22:46:01) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-18 22:49:10) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 20ms (View: 18, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-18 22:56:12) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 20ms (View: 17, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-18 22:56:32) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 20ms (View: 18, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-18 22:57:00) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 19ms (View: 17, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-18 22:57:35) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 20ms (View: 18, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-18 22:58:01) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 20ms (View: 17, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-18 22:59:31) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 20ms (View: 17, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-18 22:59:43) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 18ms (View: 16, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-18 22:59:57) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 20ms (View: 18, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-18 23:01:25) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 20ms (View: 17, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-18 23:07:39) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 20ms (View: 17, DB: 1) | 200 OK [http://localhost/showcase]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-18 23:08:10) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 22ms (View: 19, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-18 23:09:03) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 20ms (View: 17, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-18 23:09:04) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-18 23:10:41) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 20ms (View: 16, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-18 23:11:21) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 18ms (View: 16, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-18 23:11:51) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 19ms (View: 16, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-18 23:21:16) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 14ms (View: 11, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-18 23:22:14) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 19ms (View: 17, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing GalleryController#index (for 127.0.0.1 at 2009-06-18 23:29:53) [GET]
+Rendering template within layouts/application
+Rendering gallery/index
+Completed in 343ms (View: 341, DB: 0) | 200 OK [http://localhost/gallery]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-18 23:30:16) [GET]
+  [4;35;1mBlog Load (0.4ms)[0m   [0mSELECT * FROM `blogs` ORDER BY created_at DESC LIMIT 0, 2[0m
+  [4;36;1mBlog Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Rendered blogs/_blog (5.1ms)
+Rendered blogs/_blog (17.8ms)
+Rendered blogs/_search (1.1ms)
+Completed in 37ms (View: 27, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-18 23:30:49) [GET]
+Rendering template within layouts/application
+Rendering contact/index
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-18 23:31:18) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 13ms (View: 11, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing GalleryController#index (for 127.0.0.1 at 2009-06-18 23:31:19) [GET]
+Rendering template within layouts/application
+Rendering gallery/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/gallery]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-18 23:31:21) [GET]
+  [4;36;1mBlog Load (0.4ms)[0m   [0;1mSELECT * FROM `blogs` ORDER BY created_at DESC LIMIT 0, 2[0m
+  [4;35;1mBlog Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+Rendered blogs/_blog (5.1ms)
+Rendered blogs/_blog (18.3ms)
+Rendered blogs/_search (1.2ms)
+Completed in 38ms (View: 28, DB: 3) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing GalleryController#index (for 127.0.0.1 at 2009-06-18 23:39:10) [GET]
+Rendering template within layouts/application
+Rendering gallery/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/gallery]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-18 23:39:12) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-18 23:40:52) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 82ms (View: 79, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-18 23:40:58) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-18 23:41:34) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 20ms (View: 18, DB: 0) | 200 OK [http://localhost/showcase]

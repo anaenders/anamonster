@@ -346,15 +346,15 @@ h2.album_name {
   color: #000;
 }
 
-.yellow { background-color: #fffb80 }
+.yellow { background-color: #fffa7f }
 
-.green{ background-color: #a5e070 }
+.green{ background-color: #b4ef7f }
 
-.blue { background-color: #97ccfc }
+.blue { background-color: #98ccfe }
 
-.orange { background-color: #ffca80 }
+.orange { background-color: #ffca7f }
 
-.red { background-color: #ff8080 }
+.red { background-color: #ff7f7f }
 
 .image_holder img { float: left }
 
@@ -386,6 +386,13 @@ h2.album_name {
   float: left;
   padding: 10px;
   color: #fff;
+}
+
+#current {
+  opacity: 0.2;
+  /* for IE */
+  filter: alpha(opacity=70);
+  /* CSS3 standard */
 }
 
 /********************************************

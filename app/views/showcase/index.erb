@@ -1,91 +1,120 @@
+<style type="text/css">
+  .image_holder { display: none }
+  .blue.hover { background-color: #319afd }
+  .yellow.hover { background-color: #fff600 }
+  .green.hover { background-color: #69e000 }
+  .orange.hover { background-color: #ff9600 }
+  .red.hover { background-color: #ff0000 }
+</style>
+
+<script type="text/javascript">
+  $(function() {
+    var showing = null;
+    $('.site_container').click(function() {
+      var num = $(this).attr('rel');
+      if (showing != num) {
+        $('.image_holder').hide('slow');
+        showing = num;
+      } else {
+        showing = null;
+      }
+      $('#showcase_' + num).slideToggle('slow');
+      return false;
+    });
+    
+    $('.site_container').hover(
+      function() { $(this).addClass('hover'); },
+      function() { $(this).removeClass('hover'); }
+    );
+  });
+</script>
+
 <div class="padding">
-
-    <div class="image_holder">
-      <%= image_tag('large_thornton.png') %>
-      <div class="project_description">
-        <p class="name">Project name: Thornton Tomasetti<span class="url">url: <%= link_to('www.thorntontomasetti.com', 'www.thorntontomasetti.com') %></span></p>
-        <p class="description">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consectetur mauris sed velit. Vivamus eleifend quam ac erat.</p>
-      </div>
+  <div class="image_holder" id="showcase_1">
+    <%= image_tag('large_thornton.png') %>
+    <div class="project_description">
+      <p class="name">Project name: Thornton Tomasetti<span class="url">url: <%= link_to('www.thorntontomasetti.com', 'www.thorntontomasetti.com') %></span></p>
+      <p class="description">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consectetur mauris sed velit. Vivamus eleifend quam ac erat.</p>
     </div>
-    <div class="image_holder">
-      <%= image_tag('large_liz.png') %>
-      <div class="project_description">
-        <p class="name">Project name: Liz Claiborne<span class="url">url: <%= link_to('http://www.lizclaiborneinc.com/', 'http://www.lizclaiborneinc.com/') %></span></p>        
-        <p class="description">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consectetur mauris sed velit. Vivamus eleifend quam ac erat.</p>
-      </div>
+  </div>
+  <div class="image_holder" id="showcase_2">
+    <%= image_tag('large_liz.png') %>
+    <div class="project_description">
+      <p class="name">Project name: Liz Claiborne<span class="url">url: <%= link_to('http://www.lizclaiborneinc.com/', 'http://www.lizclaiborneinc.com/') %></span></p>        
+      <p class="description">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consectetur mauris sed velit. Vivamus eleifend quam ac erat.</p>
     </div>
+  </div>
+  
+  <div class="site_container yellow" rel="1">
+    <%= link_to(image_tag('small_thornton.png', :alt => 'thornton tomasetti'), '#') %>
+  </div>
+  <div class="site_container green" rel = "2">
+    <%= link_to(image_tag('small_liz.png', :alt => 'liz claiborne'), '#') %>
+  </div>
+  
+  <div class="image_holder" id="showcase_3">
+    <%= image_tag('large_citibabes.png') %>
+    <div class="project_description">
+      <p class="name">Project name: Citibabes<span class="url">url: <%= link_to('www.citibabes.com', 'www.citibabes.com') %></span></p>
+      <p class="description">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consectetur mauris sed velit. Vivamus eleifend quam ac erat.</p>
+    </div>
+  </div>    
+  <div class="image_holder" id="showcase_4">
+    <%= image_tag('large_mally.png') %>
+    <div class="project_description">
+      <p class="name">Project name: Mally Beauty<span class="url">url: <%= link_to('www.mallybeauty.com', 'www.mallybeauty.com') %></span></p>
+      <p class="description">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consectetur mauris sed velit. Vivamus eleifend quam ac erat.</p>
+    </div>
+  </div>
+  
+  <div class="site_container blue" rel="3">
+    <%= link_to(image_tag('small_citibabes.png', :alt => 'citibabes'), '#') %>
+  </div>
+  <div class="site_container orange" rel="4">
+    <%= link_to(image_tag('small_mally.png', :alt => 'mally'), '#') %>
+  </div>
+  
+  <div class="image_holder" id="showcase_5">
+    <%= image_tag('large_kates.png') %>
+    <div class="project_description">
+      <p class="name">Project name: Kates Paperie<span class="url">url: <%= link_to('www.katespaperie.com', 'www.katespaperie.com') %></span></p>
+      <p class="description">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consectetur mauris sed velit. Vivamus eleifend quam ac erat.</p>
+    </div>
+  </div>
+  <div class="image_holder" id="showcase_6">  
+    <%= image_tag('large_kimara.png') %>
+    <div class="project_description">
+      <p class="name">Project name: Kimara<span class="url">url: <%= link_to('www.kimara.com', 'www.kimara.com') %></span></p>
+      <p class="description">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consectetur mauris sed velit. Vivamus eleifend quam ac erat.</p>
+    </div>
+  </div>
     
-    <div class="site_container yellow">
-      <a href="#" target="_blank"><img src="/images/small_thornton.png" alt="thornton tomasetti" /></a>
+  <div class="site_container red" rel="5">
+    <%= link_to(image_tag('small_kates.png', :alt => 'kates'), '#') %>
+  </div>
+  <div class="site_container yellow" rel="6">
+    <%= link_to(image_tag('small_kimara.png', :alt => 'kimara'), '#') %>
+  </div>
+  
+  <div class="image_holder" id="showcase_7">
+    <%= image_tag('large_cinemax.png') %>
+    <div class="project_description">
+      <p class="name">Project name: Cinemax<span class="url">url: <%= link_to('www.cinemax.com', 'www.cinemax.com') %></span></p>
+      <p class="description">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consectetur mauris sed velit. Vivamus eleifend quam ac erat.</p>
     </div>
-    <div class="site_container green">
-      <a href="#" target="_blank"><img src="/images/small_liz.png" alt="liz claiborne" /></a>
+  </div>
+  <div class="image_holder" id="showcase_8">
+    <%= image_tag('large_summitsprings.png') %>
+    <div class="project_description">
+      <p class="name">Project name: Summit Springs<span class="url">url: <%= link_to('www.summitsprings.com', 'www.summitsprings.com') %></span></p>
+      <p class="description">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consectetur mauris sed velit. Vivamus eleifend quam ac erat.</p>
     </div>
-    
-    <div class="image_holder">
-      <%= image_tag('large_citibabes.png') %>
-      <div class="project_description">
-        <p class="name">Project name: Citibabes<span class="url">url: <%= link_to('www.citibabes.com', 'www.citibabes.com') %></span></p>
-        <p class="description">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consectetur mauris sed velit. Vivamus eleifend quam ac erat.</p>
-      </div>
-    </div>    
-    <div class="image_holder">
-      <%= image_tag('large_mally.png') %>
-      <div class="project_description">
-        <p class="name">Project name: Mally Beauty<span class="url">url: <%= link_to('www.mallybeauty.com', 'www.mallybeauty.com') %></span></p>
-        <p class="description">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consectetur mauris sed velit. Vivamus eleifend quam ac erat.</p>
-      </div>
-    </div>
-    
-    <div class="site_container blue">
-      <a href="#"><img src="/images/small_citibabes.png" alt="citibabes" /></a>
-    </div>
-    <div class="site_container orange">
-      <a href="#"><img src="/images/small_mally.png" alt="mally" /></a>
-    </div>
-    
-    <div class="image_holder">
-      <%= image_tag('large_kates.png') %>
-      <div class="project_description">
-        <p class="name">Project name: Kates Paperie<span class="url">url: <%= link_to('www.katespaperie.com', 'www.katespaperie.com') %></span></p>
-        <p class="description">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consectetur mauris sed velit. Vivamus eleifend quam ac erat.</p>
-      </div>
-    </div>
-    <div class="image_holder">  
-      <%= image_tag('large_kimara.png') %>
-      <div class="project_description">
-        <p class="name">Project name: Kimara<span class="url">url: <%= link_to('www.kimara.com', 'www.kimara.com') %></span></p>
-        <p class="description">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consectetur mauris sed velit. Vivamus eleifend quam ac erat.</p>
-      </div>
-    </div>
-      
-    <div class="site_container red">
-      <a href="#"><img src="/images/small_kates.png" alt="kates" /></a>
-    </div>
-    <div class="site_container yellow">
-      <a href="#"><img class="last" src="/images/small_kimara.png" alt="kimara" /></a>
-    </div>
-    
-    <div class="image_holder">
-      <%= image_tag('large_cinemax.png') %>
-      <div class="project_description">
-        <p class="name">Project name: Cinemax<span class="url">url: <%= link_to('www.cinemax.com', 'www.cinemax.com') %></span></p>
-        <p class="description">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consectetur mauris sed velit. Vivamus eleifend quam ac erat.</p>
-      </div>
-    </div>
-    <div class="image_holder">
-      <%= image_tag('large_summitsprings.png') %>
-      <div class="project_description">
-        <p class="name">Project name: Summit Springs<span class="url">url: <%= link_to('www.summitsprings.com', 'www.summitsprings.com') %></span></p>
-        <p class="description">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consectetur mauris sed velit. Vivamus eleifend quam ac erat.</p>
-      </div>
-    </div>
-    
-    <div class="site_container green">
-      <a href="#"><img src="/images/small_cinemax.png" alt="cinemax" /></a>
-    </div>
-    <div class="site_container blue">
-      <a href="#"><img class="last" src="/images/small_summitsprings.png" alt="summit springs" /></a>
-    </div>
-
+  </div>
+  
+  <div class="site_container green" rel="7">
+    <%= link_to(image_tag('small_cinemax.png', :alt => 'cinemax'), '#') %>
+  </div>
+  <div class="site_container blue" rel="8">
+    <%= link_to(image_tag('small_summitsprings.png', :alt => 'summit springs'), '#') %>
+  </div>
 </div>
