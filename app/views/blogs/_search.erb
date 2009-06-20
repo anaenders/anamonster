@@ -61,17 +61,8 @@
       <td class = "weekend other_month">4</td>
     </tr>
   </table>
-  <%= image_tag('header_images.png', :alt => 'calendar', :class => 'search_header') %>
-  <div id="thumb_pics">
-    <%= image_tag('blog_thumb1.png', :alt => 'blog pic') %>
-    <%= image_tag('blog_thumb2.png', :alt => 'blog pic') %>
-    <%= image_tag('blog_thumb3.png', :alt => 'blog pic') %>
-    <%= image_tag('blog_thumb4.png', :alt => 'blog pic') %>
-    <%= image_tag('blog_thumb5.png', :alt => 'blog pic') %>
-    <%= image_tag('blog_thumb6.png', :alt => 'blog pic') %>
-    <%= image_tag('blog_thumb1.png', :alt => 'blog pic') %>
-    <%= image_tag('blog_thumb2.png', :alt => 'blog pic') %>
-  </div>
-  <%= image_tag('header_tags.png', :alt => 'popular tags', :class => 'search_header') %>
-  <span class="tags"><%= link_to('buns', '#') %><%= link_to('toronto  ', '#') %><%= link_to('tobers', '#') %><%= link_to('chocolate chip cookies', '#') %></span>
+
+  <%= render :partial => 'photo_search' %>
+
+  <%= render :partial => 'tag_search' %>
 </div>

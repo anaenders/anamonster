@@ -1,8 +1,10 @@
 class BlogsController < ApplicationController
 
+  before_filter :load_search_photo_thumbs
   before_filter :set_section
   before_filter :load_blog, :only => [ :show, :edit, :update, :destroy ]
   before_filter :login_required, :only => [ :edit, :new, :create, :update, :destroy ]
+  before_filter :load_calendar, :only => [ :index, :show ]
 
   def index
     @blogs = Blog.paginate(:per_page => 2, :page => params[:page] || 1, :order => 'created_at DESC')
@@ -36,6 +38,25 @@ class BlogsController < ApplicationController
     redirect_to(blogs_url)
   end
   
+  def search
+    @by = params[:by]
+    @value = params[:value]
+    @blogs = case @by
+     when 'tag': Blog.find_tagged_with(@value)
+     when 'keyword': Blog.all(:conditions => [ 'LOWER(title) LIKE ? OR LOWER(content) LIKE ?', "%#{@value}%", "%#{@value}%"] )
+     when 'date': Blog.for_day(params[:year].to_i, params[:month].to_i, params[:day].to_i)
+     else []
+    end
+    
+    if @blogs.size == 1
+      @blog = @blogs.first
+      load_calendar
+      render :action => :show and return
+    end
+    
+    load_calendar
+  end
+  
   # For AJAX which creates new form fields.
   def new_photo_field
     render :partial => 'blog_photo_fields', :locals => { :num => params[:num] }
@@ -48,6 +69,20 @@ class BlogsController < ApplicationController
   
   def set_section
     set_current_section(:blog)
+  end
+  
+  def load_search_photo_thumbs
+    @blog_search_thumbs = BlogPhoto.all(:conditions => { :parent_id => nil }, :order => 'created_at DESC', :limit => 8)
+  end
+
+  
+  def load_calendar
+    @year  = params[:yr] ? params[:yr].to_i : (@blog ? @blog.created_at.year  : Date.today.year)
+    @month = params[:mo] ? params[:mo].to_i : (@blog ? @blog.created_at.month : Date.today.month)
+    @previous = { :year => @month == 1  ? @year - 1 : @year, :month => @month == 1  ? 12 : @month - 1 }
+    @next     = { :year => @month == 12 ? @year + 1 : @year, :month => @month == 12 ? 1  : @month + 1 }
+    
+    @selected_days = Blog.for_month(@year, @month).collect { |b| b.created_at.mday }.uniq
   end
   
 end
