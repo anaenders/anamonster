@@ -43,10 +43,12 @@
       </div>
       <div id="footer">
         <div id="footer_navigation">
-          <%= link_to('contact', 'contact', :class => 'contact') %>
+          <%= link_to('contact', '/contact', :class => 'contact') %>
           <div id="search">
-            <%= text_field_tag 'year', nil %>
-            <%= link_to('search', '#') %>
+            <% form_tag(blog_search_path(:by => 'keyword'), :id => 'search_form') do |f| %>
+              <%= text_field_tag(:value, '', :class => 'search') %>
+              <%= link_to_function('search', "$('#search_form').submit()") %>
+            <% end %>
           </div>
           <p>&#169; Copyright 2009. Ana Carter. All rights reserved</p>
         </div>

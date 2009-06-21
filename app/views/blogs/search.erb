@@ -1,22 +1,23 @@
-<div id = "blog_display" class="main_content">
-  <p class = "light">
-    <strong><%= @blogs.size %></strong> blog entries were 
-    <% if @by == 'tag' %>
-      found tagged with <strong>"<%= @value %>."</strong>
-    <% elsif @by == 'keyword' %>
-      found containing text <strong>"<%= @value %>."</strong>
-    <% elsif @by == 'date' %>
-      created on <strong><%= Date.new(params[:year].to_i, params[:month].to_i, params[:day].to_i).strftime('%B %d, %Y') %></strong>
-    <% end %>
-  </p>
-  
-  <div class = "clear"></div>
-  
-  <% @blogs.each_with_index do |blog, num| %>
-    <div class = "search_result">
-      <div class = "result_num"><%= num + 1 %>.</div>
+<div class="padding">
+  <div id="blog_container">
+
+    <h2 div class="search_results">
+      <strong><%= @blogs.size %></strong> blog entries were 
+      <% if @by == 'tag' %>
+        found tagged with <strong>"<%= @value %>."</strong>
+      <% elsif @by == 'keyword' %>
+        found containing text <strong>"<%= @value %>."</strong>
+      <% elsif @by == 'date' %>
+        created on <strong><%= Date.new(params[:year].to_i, params[:month].to_i, params[:day].to_i).strftime('%B %d, %Y') %></strong>
+      <% end %>
+    </h3>
+    
+    <% @blogs.each_with_index do |blog, num| %>
+
+      
+    
+    <div class="search_blog_text">
       <h4><%= link_to(highlight(blog.title, @value), blog_path(blog)) %></h4>
-      <div class = "clear"></div>
       <p class = "result_preview">
       <% if @by == 'keyword' %>
         <%= highlight(excerpt(markdown(blog.image_replaced_content).gsub(/<\/?[^>]*>/, ''), @value, :radius => 50), @value) %></p>
@@ -24,11 +25,12 @@
         <%= truncate(markdown(blog.image_replaced_content).gsub(/<\/?[^>]*>/, ''), 200) %>
       <% end %>
       </p>
-      <div class = "clear"></div>
     </div>
-  <% end %>
-  
-  <div class = "clear"></div>
-</div>
+    <% end %>
 
-<%= render :partial => 'search' %>
+
+  </div>
+  
+  <%= render :partial => 'search' %>
+   
+</div>

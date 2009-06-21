@@ -24,7 +24,7 @@ class BlogPhoto < ActiveRecord::Base
     :content_type => :image, 
     :storage      => :file_system, 
     :max_size     => 10000.kilobytes,
-    :resize_to    => '250>x1000',
+    :resize_to    => '250>x255>',
     :thumbnails   => {
       :thumb        => 'crop: 50x50'
     }
