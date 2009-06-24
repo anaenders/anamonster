@@ -237,7 +237,10 @@ span.tags a { margin-right: 8px }
   line-height: 1.7em;
 }
 
-#description h3 { margin-bottom: 10px }
+#description p {
+  float: left;
+  margin-top: 10px;
+}
 
 #description h3, #resume h3 {
   font-family: GeosansLight;
@@ -298,6 +301,8 @@ p.job_description {
   color: #1263f9;
   font-weight: normal;
 }
+
+th abbr { border: 0px }
 
 #calendar tr.month { font-size: 12px;}
 
