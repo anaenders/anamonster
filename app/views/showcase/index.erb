@@ -7,31 +7,7 @@
   .red.hover { background-color: #ff0000 }
 </style>
 
-<script type="text/javascript">
-  $(function() {
-    var showing = null;
-    $('.small_image').click(function() {
-      var num = $(this).attr('rel');
-      if (showing == num) {
-        $('#showcase_' + num).slideToggle('slow');
-        showing = null;
-      } else {
-        $('#showcase_' + showing).slideToggle('slow');
-        $('#showcase_' + num).slideToggle('slow');  
-        showing = num;
-      }
-      return false;
-    });
-    
-    $('.small_image').hover(
-      function() { $(this).addClass('hover'); },
-      function() { $(this).removeClass('hover'); }
-    );
-  });
-</script>
-
-<div class="padding">
-  
+<div class="padding">  
   <div class="small_image yellow" rel="1">
     <%= link_to(image_tag('small_thornton.png', :alt => 'thornton tomasetti'), '#') %>
   </div>
@@ -42,15 +18,15 @@
   <div class="large_image" id="showcase_1">
     <%= image_tag('large_thornton.png') %>
     <div class="project_description">
-      <p class="name">Project name: Thornton Tomasetti<span class="url">url: <%= link_to('www.thorntontomasetti.com', 'www.thorntontomasetti.com') %></span></p>
+      <p class="name">Project name: Thornton Tomasetti<span class="url">url: <%= link_to('www.thorntontomasetti.com', 'www.thorntontomasetti.com', :target => '_blank') %></span></p>
       <p class="description">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consectetur mauris sed velit. Vivamus eleifend quam ac erat.</p>
     </div>
   </div>
   <div class="large_image" id="showcase_2">
     <%= image_tag('large_liz.png') %>
     <div class="project_description">
-      <p class="name">Project name: Liz Claiborne<span class="url">url: <%= link_to('http://www.lizclaiborneinc.com/', 'http://www.lizclaiborneinc.com/') %></span></p>        
-      <p class="description">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consectetur mauris sed velit. Vivamus eleifend quam ac erat.</p>
+      <p class="name">Project name: Liz Claiborne<span class="url">url: <%= link_to('www.lizclaiborne.com', 'www.lizclaiborne.com', :target => '_blank') %></span></p>        
+      <p class="description">Description: Collaborated with <%= link_to('Intersect NYC', 'www.intersectnyc.com', :target => '_blank') %> to develop and style much of the user interface to achieve the company's new vision and relaunching of the Liz brand.</p>
     </div>
   </div>
   
@@ -64,15 +40,15 @@
   <div class="large_image" id="showcase_3">
     <%= image_tag('large_citibabes.png') %>
     <div class="project_description">
-      <p class="name">Project name: Citibabes<span class="url">url: <%= link_to('www.citibabes.com', 'www.citibabes.com') %></span></p>
-      <p class="description">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consectetur mauris sed velit. Vivamus eleifend quam ac erat.</p>
+      <p class="name">Project name: Citibabes<span class="url">url: <%= link_to('www.citibabes.com', 'www.citibabes.com', :target => '_blank') %></span></p>
+      <p class="description">Description: A one stop shop for city parents on the go, this vibrant site supports a community as well as e-commerce. Developed and styled all front end pages in partnership with <%= link_to ('Intersect NYC', 'www.intersectnyc.com') %>.</p>
     </div>
   </div>    
   <div class="large_image" id="showcase_4">
     <%= image_tag('large_mally.png') %>
     <div class="project_description">
-      <p class="name">Project name: Mally Beauty<span class="url">url: <%= link_to('www.mallybeauty.com', 'www.mallybeauty.com') %></span></p>
-      <p class="description">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consectetur mauris sed velit. Vivamus eleifend quam ac erat.</p>
+      <p class="name">Project name: Mally Beauty<span class="url">url: <%= link_to('www.mallybeauty.com', 'www.mallybeauty.com', :target => '_blank') %></span></p>
+      <p class="description">Description: This site is all about the fan base. In addition to a very rich online community and an extensive line of products, webisodes are a key experience for the user. Partnered with <%= link_to ('Intersect NYC', 'www.intersectnyc.com') %> to develop and style user interface.</p>
     </div>
   </div>
   
@@ -86,14 +62,14 @@
   <div class="large_image" id="showcase_5">
     <%= image_tag('large_kates.png') %>
     <div class="project_description">
-      <p class="name">Project name: Kates Paperie<span class="url">url: <%= link_to('www.katespaperie.com', 'www.katespaperie.com') %></span></p>
-      <p class="description">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consectetur mauris sed velit. Vivamus eleifend quam ac erat.</p>
+      <p class="name">Project name: Kates Paperie<span class="url">url: <%= link_to('www.katespaperie.com', 'www.katespaperie.com', :target => '_blank') %></span></p>
+      <p class="description">Description: A leader in the industry of all things stationary</p>
     </div>
   </div>
   <div class="large_image" id="showcase_6">  
     <%= image_tag('large_kimara.png') %>
     <div class="project_description">
-      <p class="name">Project name: Kimara<span class="url">url: <%= link_to('www.kimara.com', 'www.kimara.com') %></span></p>
+      <p class="name">Project name: Kimara<span class="url">url: <%= link_to('www.kimara.com', 'www.kimara.com', :target => '_blank') %></span></p>
       <p class="description">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consectetur mauris sed velit. Vivamus eleifend quam ac erat.</p>
     </div>
   </div>
@@ -108,14 +84,14 @@
   <div class="large_image" id="showcase_7">
     <%= image_tag('large_cinemax.png') %>
     <div class="project_description">
-      <p class="name">Project name: Cinemax<span class="url">url: <%= link_to('www.cinemax.com', 'www.cinemax.com') %></span></p>
+      <p class="name">Project name: Cinemax<span class="url">url: <%= link_to('www.cinemax.com', 'www.cinemax.com', :target => '_blank') %></span></p>
       <p class="description">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consectetur mauris sed velit. Vivamus eleifend quam ac erat.</p>
     </div>
   </div>
   <div class="large_image" id="showcase_8">
     <%= image_tag('large_summitsprings.png') %>
     <div class="project_description">
-      <p class="name">Project name: Summit Springs<span class="url">url: <%= link_to('www.summitsprings.com', 'www.summitsprings.com') %></span></p>
+      <p class="name">Project name: Summit Springs<span class="url">url: <%= link_to('www.summitsprings.com', 'www.summitsprings.com', :target => '_blank') %></span></p>
       <p class="description">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consectetur mauris sed velit. Vivamus eleifend quam ac erat.</p>
     </div>
   </div>

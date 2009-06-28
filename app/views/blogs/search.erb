@@ -2,19 +2,17 @@
   <div id="blog_container">
 
     <h2 div class="search_results">
-      <strong><%= @blogs.size %></strong> blog entries were 
+      <%= @blogs.size %> blog entries were 
       <% if @by == 'tag' %>
-        found tagged with <strong>"<%= @value %>."</strong>
+        found tagged with "<%= @value %>."
       <% elsif @by == 'keyword' %>
-        found containing text <strong>"<%= @value %>."</strong>
+        found containing text "<%= @value %>."
       <% elsif @by == 'date' %>
-        created on <strong><%= Date.new(params[:year].to_i, params[:month].to_i, params[:day].to_i).strftime('%B %d, %Y') %></strong>
+        created on <%= Date.new(params[:year].to_i, params[:month].to_i, params[:day].to_i).strftime('%B %d, %Y') %>
       <% end %>
     </h3>
     
     <% @blogs.each_with_index do |blog, num| %>
-
-      
     
     <div class="search_blog_text">
       <h4><%= link_to(highlight(blog.title, @value), blog_path(blog)) %></h4>
