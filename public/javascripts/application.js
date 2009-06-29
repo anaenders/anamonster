@@ -32,5 +32,17 @@ $(function() {
     function() { $(this).addClass('hover'); },
     function() { $(this).removeClass('hover'); }
   );
-	
+  
+  //Contact
+  $('#error').click(function () {
+    $('#error').hide();
+    $('.message').show();
+    $('#contact_message').show();
+  });
+  
+  $('#success').click(function () { 
+    $('#success').hide();
+    $('.message').show();
+    $('#contact_message').show();
+  });
 });

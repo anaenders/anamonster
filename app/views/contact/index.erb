@@ -8,8 +8,8 @@
         <p class="message">message:</p>
         <%= f.text_area(:message, :rows => 6, :cols => 44) %>
         <%= image_submit_tag('button_submit.png', :class => 'submit') %>
-        <div id = "error">Sorry, you were unable to send your message.</div>
-        <div id = "success">Your message has been sent. Thanks!!</div>
+        <div id = "error">Oops, you were unable to send your message. try again please!<br /><span>click here.</span></div>
+        <div id = "success">Your message has been sent. Thanks gnrrgn!!<br /><span>click here to send new message.</span></div>
       <% end %>
     </div>
     <%= image_tag('anamonster-yelling.png', :alt => 'anamonster', :class => 'screaming_monster') %>

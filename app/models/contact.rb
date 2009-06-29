@@ -9,17 +9,17 @@ class Contact
   
   def valid?
     if @name.blank?
-      @error_message = 'Please enter your name.'
+      @error_message = 'Oops, you didn&apos;t enter your name.<br /><span>try again please! click here</span>!'
       return false
     end
     
     if !@email.blank? && !@email.match(Authentication.email_regex)
-      @error_message = 'Your email is not in a valid format.'
+      @error_message = 'Looks like your email is not in a valid format.<br /><span>try again please! click here</span>!'
       return false
     end
     
     if @message.blank?
-      @error_message = 'Please enter your message.'
+      @error_message = 'Oops, you didn&apos;t enter a message.<br /><span>click here and try again please</span>!'
       return false
     end
     

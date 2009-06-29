@@ -36005,3 +36005,1498 @@ Message:
 
 ok, here it is
 Completed in 19ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 19:11:25) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"ok, here it is", "name"=>"", "email"=>""}}
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 19:19:48) [GET]
+Rendering template within layouts/application
+Rendering contact/index
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 19:19:50) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"ok, here it is", "name"=>"", "email"=>""}}
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 19:23:19) [GET]
+Rendering template within layouts/application
+Rendering contact/index
+Completed in 86ms (View: 84, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 19:23:23) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"ok, here it is", "name"=>"ana buns", "email"=>""}}
+Sent mail to ana.carter@alumni.cmu.edu
+
+From: contact@anamonster.com
+To: ana.carter@alumni.cmu.edu
+Subject: anamonster Contact from ana buns
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Message posted through anamonster.com:
+
+From: ana buns
+Email: 
+
+Message:
+
+ok, here it is
+Completed in 19ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 19:26:38) [GET]
+Rendering template within layouts/application
+Rendering contact/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 19:26:54) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"my message here.... blah blah", "name"=>"ana buns", "email"=>""}}
+Sent mail to ana.carter@alumni.cmu.edu
+
+From: contact@anamonster.com
+To: ana.carter@alumni.cmu.edu
+Subject: anamonster Contact from ana buns
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Message posted through anamonster.com:
+
+From: ana buns
+Email: 
+
+Message:
+
+my message here.... blah blah
+Completed in 12ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 19:27:34) [GET]
+Rendering template within layouts/application
+Rendering contact/index
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 19:27:36) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"my message here.... blah blah", "name"=>"ana buns", "email"=>""}}
+Sent mail to ana.carter@alumni.cmu.edu
+
+From: contact@anamonster.com
+To: ana.carter@alumni.cmu.edu
+Subject: anamonster Contact from ana buns
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Message posted through anamonster.com:
+
+From: ana buns
+Email: 
+
+Message:
+
+my message here.... blah blah
+Completed in 65ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 19:27:49) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"my message here.... blah blah", "name"=>"", "email"=>""}}
+Completed in 7ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 19:31:11) [GET]
+Rendering template within layouts/application
+Rendering contact/index
+Completed in 13ms (View: 10, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 19:31:24) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"my message here.... blah blah", "name"=>"", "email"=>"bruwi"}}
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 19:31:40) [GET]
+Rendering template within layouts/application
+Rendering contact/index
+Completed in 14ms (View: 12, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 19:31:51) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"my message here.... blah blah", "name"=>"ana buns", "email"=>"bruwi"}}
+Completed in 7ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 19:32:34) [GET]
+Rendering template within layouts/application
+Rendering contact/index
+Completed in 13ms (View: 10, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 19:32:37) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"my message here.... blah blah", "name"=>"ana buns", "email"=>"bruwi"}}
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 19:33:05) [GET]
+Rendering template within layouts/application
+Rendering contact/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AboutController#index (for 127.0.0.1 at 2009-06-28 19:40:18) [GET]
+Rendering template within layouts/application
+Rendering about/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/about]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing GalleryController#index (for 127.0.0.1 at 2009-06-28 19:40:21) [GET]
+Rendering template within layouts/application
+Rendering gallery/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/gallery]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowcaseController#index (for 127.0.0.1 at 2009-06-28 19:40:23) [GET]
+Rendering template within layouts/application
+Rendering showcase/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/showcase]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-06-28 19:40:30) [GET]
+  [4;35;1mBlogPhoto Load (0.5ms)[0m   [0mSELECT * FROM `blog_photos` WHERE (`blog_photos`.`parent_id` IS NULL) ORDER BY created_at DESC LIMIT 8[0m
+  [4;36;1mBlog Load (0.5ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (created_at > '2009-06-01 00:00:00' AND created_at < '2009-06-30 23:59:59') [0m
+  [4;35;1mBlog Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+  [4;36;1mBlog Load (0.4ms)[0m   [0;1mSELECT * FROM `blogs` ORDER BY created_at DESC LIMIT 0, 2[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `blogs` [0m
+Rendering template within layouts/application
+Rendering blogs/index
+  [4;36;1mBlogPhoto Load (0.9ms)[0m   [0;1mSELECT * FROM `blog_photos` WHERE (`blog_photos`.blog_id = 10) [0m
+  [4;35;1mBlogPhoto Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `blog_photos`[0m
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered blogs/_blog (23.1ms)
+  [4;36;1mBlogPhoto Load (0.3ms)[0m   [0;1mSELECT * FROM `blog_photos` WHERE (`blog_photos`.blog_id = 8) [0m
+Rendered blogs/_blog (6.8ms)
+Rendered blogs/_calendar_search (9.8ms)
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 2) [0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 10) [0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 1) [0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 7) [0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 8) [0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 4) [0m
+Rendered blogs/_photo_search (6.5ms)
+  [4;35;1mTag Load (1.7ms)[0m   [0mSELECT tags.id, tags.name, COUNT(*) AS count FROM `tags` INNER JOIN taggings ON tags.id = taggings.tag_id INNER JOIN blogs ON blogs.id = taggings.taggable_id WHERE (taggings.taggable_type = 'Blog') GROUP BY tags.id, tags.name HAVING COUNT(*) > 0[0m
+Rendered blogs/_tag_search (4.0ms)
+Rendered blogs/_search (21.1ms)
+Completed in 116ms (View: 47, DB: 13) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 19:44:10) [GET]
+Rendering template within layouts/application
+Rendering contact/index
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 19:44:13) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"", "name"=>"", "email"=>""}}
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 19:45:52) [GET]
+Rendering template within layouts/application
+Rendering contact/index
+Completed in 13ms (View: 10, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 19:46:10) [GET]
+Rendering template within layouts/application
+Rendering contact/index
+Completed in 11ms (View: 8, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 19:46:14) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"", "name"=>"", "email"=>""}}
+Completed in 65ms (View: 60, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (1.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 19:47:48) [GET]
+Rendering template within layouts/application
+Rendering contact/index
+Completed in 9ms (View: 7, DB: 1) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 19:47:50) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"", "name"=>"", "email"=>""}}
+Completed in 9ms (View: 2, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 19:47:59) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"", "name"=>"ana buns", "email"=>""}}
+Completed in 7ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 19:48:06) [GET]
+Rendering template within layouts/application
+Rendering contact/index
+Completed in 15ms (View: 11, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 19:48:19) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"vruvB; UORW", "name"=>"ana buns", "email"=>"aecarter@gmail.com"}}
+Sent mail to ana.carter@alumni.cmu.edu
+
+From: contact@anamonster.com
+To: ana.carter@alumni.cmu.edu
+Subject: anamonster Contact from ana buns
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Message posted through anamonster.com:
+
+From: ana buns
+Email: aecarter@gmail.com
+
+Message:
+
+vruvB; UORW
+Completed in 13ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 19:49:56) [GET]
+Rendering template within layouts/application
+Rendering contact/index
+Completed in 19ms (View: 16, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 19:49:59) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"vruvB; UORW", "name"=>"ana buns", "email"=>"aecarter@gmail.com"}}
+Sent mail to ana.carter@alumni.cmu.edu
+
+From: contact@anamonster.com
+To: ana.carter@alumni.cmu.edu
+Subject: anamonster Contact from ana buns
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Message posted through anamonster.com:
+
+From: ana buns
+Email: aecarter@gmail.com
+
+Message:
+
+vruvB; UORW
+Completed in 12ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 19:50:13) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"vruvB; UORW", "name"=>"ana buns", "email"=>"aecarter@gmail.com"}}
+Sent mail to ana.carter@alumni.cmu.edu
+
+From: contact@anamonster.com
+To: ana.carter@alumni.cmu.edu
+Subject: anamonster Contact from ana buns
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Message posted through anamonster.com:
+
+From: ana buns
+Email: aecarter@gmail.com
+
+Message:
+
+vruvB; UORW
+Completed in 12ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 19:54:28) [GET]
+Rendering template within layouts/application
+Rendering contact/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 19:54:31) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"vruvB; UORW", "name"=>"ana buns", "email"=>"aecarter@gmail.com"}}
+Sent mail to ana.carter@alumni.cmu.edu
+
+From: contact@anamonster.com
+To: ana.carter@alumni.cmu.edu
+Subject: anamonster Contact from ana buns
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Message posted through anamonster.com:
+
+From: ana buns
+Email: aecarter@gmail.com
+
+Message:
+
+vruvB; UORW
+Completed in 12ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 19:55:02) [GET]
+Rendering template within layouts/application
+Rendering contact/index
+Completed in 19ms (View: 16, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 19:55:04) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"vruvB; UORW", "name"=>"ana buns", "email"=>"aecarter@gmail.com"}}
+Sent mail to ana.carter@alumni.cmu.edu
+
+From: contact@anamonster.com
+To: ana.carter@alumni.cmu.edu
+Subject: anamonster Contact from ana buns
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Message posted through anamonster.com:
+
+From: ana buns
+Email: aecarter@gmail.com
+
+Message:
+
+vruvB; UORW
+Completed in 12ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 19:55:34) [GET]
+Rendering template within layouts/application
+Rendering contact/index
+Completed in 13ms (View: 11, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 19:58:52) [GET]
+Rendering template within layouts/application
+Rendering contact/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 19:58:55) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"vruvB; UORW", "name"=>"ana buns", "email"=>"aecarter@gmail.com"}}
+Sent mail to ana.carter@alumni.cmu.edu
+
+From: contact@anamonster.com
+To: ana.carter@alumni.cmu.edu
+Subject: anamonster Contact from ana buns
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Message posted through anamonster.com:
+
+From: ana buns
+Email: aecarter@gmail.com
+
+Message:
+
+vruvB; UORW
+Completed in 12ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 19:59:22) [GET]
+Rendering template within layouts/application
+Rendering contact/index
+Completed in 9ms (View: 7, DB: 1) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 19:59:26) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"vruvB; UORW", "name"=>"ana buns", "email"=>"aecarter@gmail.com"}}
+Sent mail to ana.carter@alumni.cmu.edu
+
+From: contact@anamonster.com
+To: ana.carter@alumni.cmu.edu
+Subject: anamonster Contact from ana buns
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Message posted through anamonster.com:
+
+From: ana buns
+Email: aecarter@gmail.com
+
+Message:
+
+vruvB; UORW
+Completed in 18ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 20:00:11) [GET]
+Rendering template within layouts/application
+Rendering contact/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 20:00:14) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"vruvB; UORW", "name"=>"ana buns", "email"=>"aecarter@gmail.com"}}
+Sent mail to ana.carter@alumni.cmu.edu
+
+From: contact@anamonster.com
+To: ana.carter@alumni.cmu.edu
+Subject: anamonster Contact from ana buns
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Message posted through anamonster.com:
+
+From: ana buns
+Email: aecarter@gmail.com
+
+Message:
+
+vruvB; UORW
+Completed in 13ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 20:00:44) [GET]
+Rendering template within layouts/application
+Rendering contact/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 20:00:47) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"vruvB; UORW", "name"=>"ana buns", "email"=>"aecarter@gmail.com"}}
+Sent mail to ana.carter@alumni.cmu.edu
+
+From: contact@anamonster.com
+To: ana.carter@alumni.cmu.edu
+Subject: anamonster Contact from ana buns
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Message posted through anamonster.com:
+
+From: ana buns
+Email: aecarter@gmail.com
+
+Message:
+
+vruvB; UORW
+Completed in 14ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 20:02:03) [GET]
+Rendering template within layouts/application
+Rendering contact/index
+Completed in 9ms (View: 7, DB: 1) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 20:02:05) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"vruvB; UORW", "name"=>"ana buns", "email"=>"aecarter@gmail.com"}}
+Sent mail to ana.carter@alumni.cmu.edu
+
+From: contact@anamonster.com
+To: ana.carter@alumni.cmu.edu
+Subject: anamonster Contact from ana buns
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Message posted through anamonster.com:
+
+From: ana buns
+Email: aecarter@gmail.com
+
+Message:
+
+vruvB; UORW
+Completed in 12ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 20:02:34) [GET]
+Rendering template within layouts/application
+Rendering contact/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 20:02:36) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"vruvB; UORW", "name"=>"ana buns", "email"=>"aecarter@gmail.com"}}
+Sent mail to ana.carter@alumni.cmu.edu
+
+From: contact@anamonster.com
+To: ana.carter@alumni.cmu.edu
+Subject: anamonster Contact from ana buns
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Message posted through anamonster.com:
+
+From: ana buns
+Email: aecarter@gmail.com
+
+Message:
+
+vruvB; UORW
+Completed in 19ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 20:02:53) [GET]
+Rendering template within layouts/application
+Rendering contact/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 20:02:54) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"vruvB; UORW", "name"=>"ana buns", "email"=>"aecarter@gmail.com"}}
+Sent mail to ana.carter@alumni.cmu.edu
+
+From: contact@anamonster.com
+To: ana.carter@alumni.cmu.edu
+Subject: anamonster Contact from ana buns
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Message posted through anamonster.com:
+
+From: ana buns
+Email: aecarter@gmail.com
+
+Message:
+
+vruvB; UORW
+Completed in 12ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 20:03:20) [GET]
+Rendering template within layouts/application
+Rendering contact/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 20:03:23) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"vruvB; UORW", "name"=>"ana buns", "email"=>"aecarter@gmail.com"}}
+Sent mail to ana.carter@alumni.cmu.edu
+
+From: contact@anamonster.com
+To: ana.carter@alumni.cmu.edu
+Subject: anamonster Contact from ana buns
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Message posted through anamonster.com:
+
+From: ana buns
+Email: aecarter@gmail.com
+
+Message:
+
+vruvB; UORW
+Completed in 12ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 20:04:28) [GET]
+Rendering template within layouts/application
+Rendering contact/index
+Completed in 61ms (View: 7, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 20:04:32) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"vruvB; UORW", "name"=>"ana buns", "email"=>"aecarter@gmail.com"}}
+Sent mail to ana.carter@alumni.cmu.edu
+
+From: contact@anamonster.com
+To: ana.carter@alumni.cmu.edu
+Subject: anamonster Contact from ana buns
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Message posted through anamonster.com:
+
+From: ana buns
+Email: aecarter@gmail.com
+
+Message:
+
+vruvB; UORW
+Completed in 13ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 20:04:52) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"vruvB; UORW", "name"=>"ana buns", "email"=>"aecarter@gmail.com"}}
+Sent mail to ana.carter@alumni.cmu.edu
+
+From: contact@anamonster.com
+To: ana.carter@alumni.cmu.edu
+Subject: anamonster Contact from ana buns
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Message posted through anamonster.com:
+
+From: ana buns
+Email: aecarter@gmail.com
+
+Message:
+
+vruvB; UORW
+Completed in 12ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 20:04:54) [GET]
+Rendering template within layouts/application
+Rendering contact/index
+Completed in 13ms (View: 10, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 20:04:56) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"vruvB; UORW", "name"=>"ana buns", "email"=>"aecarter@gmail.com"}}
+Sent mail to ana.carter@alumni.cmu.edu
+
+From: contact@anamonster.com
+To: ana.carter@alumni.cmu.edu
+Subject: anamonster Contact from ana buns
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Message posted through anamonster.com:
+
+From: ana buns
+Email: aecarter@gmail.com
+
+Message:
+
+vruvB; UORW
+Completed in 12ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 20:05:39) [GET]
+Rendering template within layouts/application
+Rendering contact/index
+Completed in 20ms (View: 17, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 20:05:40) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"vruvB; UORW", "name"=>"ana buns", "email"=>"aecarter@gmail.com"}}
+Sent mail to ana.carter@alumni.cmu.edu
+
+From: contact@anamonster.com
+To: ana.carter@alumni.cmu.edu
+Subject: anamonster Contact from ana buns
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Message posted through anamonster.com:
+
+From: ana buns
+Email: aecarter@gmail.com
+
+Message:
+
+vruvB; UORW
+Completed in 12ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 20:05:49) [GET]
+Rendering template within layouts/application
+Rendering contact/index
+Completed in 17ms (View: 14, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 20:05:58) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"vruvB; UORW", "name"=>"ana buns", "email"=>"aecarter@gmail.com"}}
+Sent mail to ana.carter@alumni.cmu.edu
+
+From: contact@anamonster.com
+To: ana.carter@alumni.cmu.edu
+Subject: anamonster Contact from ana buns
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Message posted through anamonster.com:
+
+From: ana buns
+Email: aecarter@gmail.com
+
+Message:
+
+vruvB; UORW
+Completed in 19ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 20:06:55) [GET]
+Rendering template within layouts/application
+Rendering contact/index
+Completed in 11ms (View: 8, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 20:06:56) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"vruvB; UORW", "name"=>"ana buns", "email"=>"aecarter@gmail.com"}}
+Sent mail to ana.carter@alumni.cmu.edu
+
+From: contact@anamonster.com
+To: ana.carter@alumni.cmu.edu
+Subject: anamonster Contact from ana buns
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Message posted through anamonster.com:
+
+From: ana buns
+Email: aecarter@gmail.com
+
+Message:
+
+vruvB; UORW
+Completed in 12ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 20:08:17) [GET]
+Rendering template within layouts/application
+Rendering contact/index
+Completed in 74ms (View: 72, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 20:08:21) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"vruvB; UORW", "name"=>"ana buns", "email"=>"aecarter@gmail.com"}}
+Sent mail to ana.carter@alumni.cmu.edu
+
+From: contact@anamonster.com
+To: ana.carter@alumni.cmu.edu
+Subject: anamonster Contact from ana buns
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Message posted through anamonster.com:
+
+From: ana buns
+Email: aecarter@gmail.com
+
+Message:
+
+vruvB; UORW
+Completed in 13ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 20:23:34) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"vruvB; UORW", "name"=>"ana buns", "email"=>"aecarter@gmail.com"}}
+Sent mail to ana.carter@alumni.cmu.edu
+
+From: contact@anamonster.com
+To: ana.carter@alumni.cmu.edu
+Subject: anamonster Contact from ana buns
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Message posted through anamonster.com:
+
+From: ana buns
+Email: aecarter@gmail.com
+
+Message:
+
+vruvB; UORW
+Completed in 13ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 20:25:25) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"", "name"=>"ana buns", "email"=>"aecarter@gmail.com"}}
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 20:42:24) [GET]
+Rendering template within layouts/application
+Rendering contact/index
+Completed in 21ms (View: 17, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 20:42:26) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"", "name"=>"ana buns", "email"=>"aecarter@gmail.com"}}
+Completed in 5ms (View: 1, DB: 1) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 20:43:14) [GET]
+Rendering template within layouts/application
+Rendering contact/index
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 20:43:16) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"", "name"=>"ana buns", "email"=>"aecarter@gmail.com"}}
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 21:06:20) [GET]
+Rendering template within layouts/application
+Rendering contact/index
+Completed in 13ms (View: 10, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 21:06:24) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"huiwr", "name"=>"ana buns", "email"=>"aecarter@gmail.com"}}
+Sent mail to ana.carter@alumni.cmu.edu
+
+From: contact@anamonster.com
+To: ana.carter@alumni.cmu.edu
+Subject: anamonster Contact from ana buns
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Message posted through anamonster.com:
+
+From: ana buns
+Email: aecarter@gmail.com
+
+Message:
+
+huiwr
+Completed in 12ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 21:08:50) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"huiwr", "name"=>"ana buns", "email"=>"aecarter@gmail.com"}}
+Sent mail to ana.carter@alumni.cmu.edu
+
+From: contact@anamonster.com
+To: ana.carter@alumni.cmu.edu
+Subject: anamonster Contact from ana buns
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Message posted through anamonster.com:
+
+From: ana buns
+Email: aecarter@gmail.com
+
+Message:
+
+huiwr
+Completed in 13ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 21:08:53) [GET]
+Rendering template within layouts/application
+Rendering contact/index
+Completed in 19ms (View: 16, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 21:08:56) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"", "name"=>"", "email"=>""}}
+Completed in 58ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 21:09:14) [GET]
+Rendering template within layouts/application
+Rendering contact/index
+Completed in 15ms (View: 12, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 21:09:18) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"", "name"=>"", "email"=>""}}
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 21:13:07) [GET]
+Rendering template within layouts/application
+Rendering contact/index
+Completed in 15ms (View: 11, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 21:13:11) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"", "name"=>"", "email"=>""}}
+Completed in 8ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 21:14:02) [GET]
+Rendering template within layouts/application
+Rendering contact/index
+Completed in 16ms (View: 13, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 21:14:11) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"nuow", "name"=>"ana buns", "email"=>"aecarter@gmail.com"}}
+Sent mail to ana.carter@alumni.cmu.edu
+
+From: contact@anamonster.com
+To: ana.carter@alumni.cmu.edu
+Subject: anamonster Contact from ana buns
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Message posted through anamonster.com:
+
+From: ana buns
+Email: aecarter@gmail.com
+
+Message:
+
+nuow
+Completed in 13ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 21:14:48) [GET]
+Rendering template within layouts/application
+Rendering contact/index
+Completed in 14ms (View: 12, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 21:14:51) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"nuow", "name"=>"ana buns", "email"=>"aecarter@gmail.com"}}
+Sent mail to ana.carter@alumni.cmu.edu
+
+From: contact@anamonster.com
+To: ana.carter@alumni.cmu.edu
+Subject: anamonster Contact from ana buns
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Message posted through anamonster.com:
+
+From: ana buns
+Email: aecarter@gmail.com
+
+Message:
+
+nuow
+Completed in 13ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 21:15:15) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"", "name"=>"ana buns", "email"=>"aecarter@gmail.com"}}
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 21:16:41) [GET]
+Rendering template within layouts/application
+Rendering contact/index
+Completed in 20ms (View: 17, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 21:16:43) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"", "name"=>"ana buns", "email"=>"aecarter@gmail.com"}}
+Completed in 8ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 21:25:07) [GET]
+Rendering template within layouts/application
+Rendering contact/index
+Completed in 13ms (View: 10, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 21:25:18) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"jriowg huirw9 etvw", "name"=>"", "email"=>"aecarter@gmail.com"}}
+Completed in 9ms (View: 2, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 21:25:34) [GET]
+Rendering template within layouts/application
+Rendering contact/index
+Completed in 13ms (View: 11, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 21:25:36) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"jriowg huirw9 etvw", "name"=>"", "email"=>"aecarter@gmail.com"}}
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 21:25:46) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"jriowg huirw9 etvw", "name"=>"ana buns", "email"=>"aecarter@gmail.com"}}
+Sent mail to ana.carter@alumni.cmu.edu
+
+From: contact@anamonster.com
+To: ana.carter@alumni.cmu.edu
+Subject: anamonster Contact from ana buns
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Message posted through anamonster.com:
+
+From: ana buns
+Email: aecarter@gmail.com
+
+Message:
+
+jriowg huirw9 etvw
+Completed in 12ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 21:26:31) [GET]
+Rendering template within layouts/application
+Rendering contact/index
+Completed in 15ms (View: 13, DB: 1) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 21:26:33) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"jriowg huirw9 etvw", "name"=>"ana buns", "email"=>"aecarter@gmail.com"}}
+Sent mail to ana.carter@alumni.cmu.edu
+
+From: contact@anamonster.com
+To: ana.carter@alumni.cmu.edu
+Subject: anamonster Contact from ana buns
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Message posted through anamonster.com:
+
+From: ana buns
+Email: aecarter@gmail.com
+
+Message:
+
+jriowg huirw9 etvw
+Completed in 12ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 21:27:44) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"jriowg huirw9 etvw", "name"=>"ana buns", "email"=>""}}
+Sent mail to ana.carter@alumni.cmu.edu
+
+From: contact@anamonster.com
+To: ana.carter@alumni.cmu.edu
+Subject: anamonster Contact from ana buns
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Message posted through anamonster.com:
+
+From: ana buns
+Email: 
+
+Message:
+
+jriowg huirw9 etvw
+Completed in 12ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 21:27:50) [GET]
+Rendering template within layouts/application
+Rendering contact/index
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 21:27:52) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"jriowg huirw9 etvw", "name"=>"ana buns", "email"=>""}}
+Sent mail to ana.carter@alumni.cmu.edu
+
+From: contact@anamonster.com
+To: ana.carter@alumni.cmu.edu
+Subject: anamonster Contact from ana buns
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Message posted through anamonster.com:
+
+From: ana buns
+Email: 
+
+Message:
+
+jriowg huirw9 etvw
+Completed in 12ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 21:28:01) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"jriowg huirw9 etvw", "name"=>"", "email"=>""}}
+Completed in 8ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 21:28:33) [GET]
+Rendering template within layouts/application
+Rendering contact/index
+Completed in 13ms (View: 10, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 21:28:37) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"jriowg huirw9 etvw", "name"=>"ana buns", "email"=>""}}
+Sent mail to ana.carter@alumni.cmu.edu
+
+From: contact@anamonster.com
+To: ana.carter@alumni.cmu.edu
+Subject: anamonster Contact from ana buns
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Message posted through anamonster.com:
+
+From: ana buns
+Email: 
+
+Message:
+
+jriowg huirw9 etvw
+Completed in 12ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 21:28:49) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"jriowg huirw9 etvw", "name"=>"", "email"=>""}}
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 21:31:10) [GET]
+Rendering template within layouts/application
+Rendering contact/index
+Completed in 15ms (View: 12, DB: 1) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 21:31:12) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"jriowg huirw9 etvw", "name"=>"", "email"=>""}}
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 21:46:05) [GET]
+Rendering template within layouts/application
+Rendering contact/index
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 21:46:09) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"jriowg huirw9 etvw", "name"=>"", "email"=>""}}
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 21:46:11) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"jriowg huirw9 etvw", "name"=>"", "email"=>""}}
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 21:46:14) [GET]
+Rendering template within layouts/application
+Rendering contact/index
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 21:46:20) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"bv3tbo ", "name"=>"", "email"=>""}}
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 21:46:22) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"bv3tbo ", "name"=>"", "email"=>""}}
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 21:46:37) [GET]
+Rendering template within layouts/application
+Rendering contact/index
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 21:49:15) [GET]
+Rendering template within layouts/application
+Rendering contact/index
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 21:49:19) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"bv3tbo ", "name"=>"", "email"=>""}}
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 21:50:10) [GET]
+Rendering template within layouts/application
+Rendering contact/index
+Completed in 12ms (View: 10, DB: 1) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 21:50:23) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"nurwo hurwo'", "name"=>"ana buns", "email"=>"aecarter@gmail.com"}}
+Sent mail to ana.carter@alumni.cmu.edu
+
+From: contact@anamonster.com
+To: ana.carter@alumni.cmu.edu
+Subject: anamonster Contact from ana buns
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Message posted through anamonster.com:
+
+From: ana buns
+Email: aecarter@gmail.com
+
+Message:
+
+nurwo hurwo'
+Completed in 67ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 21:52:47) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"nurwo hurwo'", "name"=>"ana buns", "email"=>"aecarter@gmail.com"}}
+Sent mail to ana.carter@alumni.cmu.edu
+
+From: contact@anamonster.com
+To: ana.carter@alumni.cmu.edu
+Subject: anamonster Contact from ana buns
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Message posted through anamonster.com:
+
+From: ana buns
+Email: aecarter@gmail.com
+
+Message:
+
+nurwo hurwo'
+Completed in 13ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 21:52:55) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"nurwo hurwo'", "name"=>"", "email"=>"aecarter@gmail.com"}}
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 21:53:40) [GET]
+Rendering template within layouts/application
+Rendering contact/index
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 21:53:42) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"nurwo hurwo'", "name"=>"", "email"=>"aecarter@gmail.com"}}
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 21:55:26) [GET]
+Rendering template within layouts/application
+Rendering contact/index
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 21:55:29) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"nurwo hurwo'", "name"=>"", "email"=>"aecarter@gmail.com"}}
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 21:56:57) [GET]
+Rendering template within layouts/application
+Rendering contact/index
+Completed in 13ms (View: 10, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 21:57:01) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"nurwo hurwo'", "name"=>"", "email"=>"aecarter@gmail.com"}}
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 21:57:05) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"nurwo hurwo'", "name"=>"", "email"=>"aecarter@gmail.com"}}
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 21:58:15) [GET]
+Rendering template within layouts/application
+Rendering contact/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 21:58:19) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"nurwo hurwo'", "name"=>"", "email"=>"aecarter@gmail.com"}}
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 21:58:55) [GET]
+Rendering template within layouts/application
+Rendering contact/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 21:58:57) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"nurwo hurwo'", "name"=>"", "email"=>"aecarter@gmail.com"}}
+Completed in 60ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 21:59:38) [GET]
+Rendering template within layouts/application
+Rendering contact/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 21:59:42) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"nurwo hurwo'", "name"=>"", "email"=>"aecarter@gmail.com"}}
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 22:00:22) [GET]
+Rendering template within layouts/application
+Rendering contact/index
+Completed in 13ms (View: 10, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 22:00:25) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"nurwo hurwo'", "name"=>"", "email"=>"aecarter@gmail.com"}}
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 22:01:58) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"nurwo hurwo'", "name"=>"", "email"=>"cnuewgy"}}
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 22:02:08) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"nurwo hurwo'", "name"=>"ana buns", "email"=>"cnuewgy"}}
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 22:02:43) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"", "name"=>"ana buns", "email"=>"cnuewgy"}}
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 22:02:54) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"", "name"=>"ana buns", "email"=>"aecarter@gmail.com"}}
+Completed in 60ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2009-06-28 22:03:02) [POST]
+  Parameters: {"authenticity_token"=>"Mf5VwyX7QcqFDkGzVP8/G6hrme6a0zAGelje02kwZzU=", "contact"=>{"message"=>"vtsr", "name"=>"ana buns", "email"=>"aecarter@gmail.com"}}
+Sent mail to ana.carter@alumni.cmu.edu
+
+From: contact@anamonster.com
+To: ana.carter@alumni.cmu.edu
+Subject: anamonster Contact from ana buns
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Message posted through anamonster.com:
+
+From: ana buns
+Email: aecarter@gmail.com
+
+Message:
+
+vtsr
+Completed in 13ms (View: 1, DB: 0) | 200 OK [http://localhost/contact]

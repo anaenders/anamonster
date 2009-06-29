@@ -1,6 +1,6 @@
 class ContactController < ApplicationController
 
-  # before_filter :set_section
+  before_filter :set_section
   
   def index
     if request.post?
@@ -9,13 +9,17 @@ class ContactController < ApplicationController
         Mailer.deliver_contact(@contact)
         render :update do |page|
           page << "$('#error').fadeOut(function() {
+            $('.message').hide();
+            $('#contact_message').hide();
             $('#success').fadeIn();
           })"
         end
       else
         render :update do |page|
-          page << "$('#error').html('#{h(@contact.error_message)}')"
+          page << "$('#error').html('#{@contact.error_message}')"
           page << "$('#success').fadeOut(function() {
+            $('.message').hide();
+            $('#contact_message').hide();
             $('#error').fadeIn();
           })"
         end
@@ -24,8 +28,8 @@ class ContactController < ApplicationController
   end
   
   protected
-  # def set_section
-  #   set_current_section(:contact)
-  # end
+  def set_section
+    set_current_section(:contact)
+  end
 
 end
