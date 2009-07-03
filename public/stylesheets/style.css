@@ -336,6 +336,11 @@ th abbr { border: 0px }
  *	gallery							                    *
 \********************************************/
 
+#wrapper {
+  float: left;
+  width: 100%;
+}
+
 #large_image { 
   width: 640px;
   float: left;
@@ -396,8 +401,9 @@ h2.album_name {
 }
 
 .thumbs {
-  width: 740px;
-  margin: 0 30px;
+  width: 730px;
+  margin: 0 35px;
+  float: left;
 }
 
 .thumbs img {
@@ -415,6 +421,8 @@ h2.album_name {
 .thumb_holder a.left_arrow { left: 5px }
 
 .thumb_holder a.right_arrow { right: 5px }
+
+.admin_album_links, span.album_details { float: left; margin: 12px 10px 0 0; }
 
 /********************************************
  *	showcase   							                *
@@ -634,3 +642,49 @@ span.contact {
 .admin_links {
   clear: both;
 }
+
+.main_content {
+  width: 760px;
+  padding: 0 20px;
+}
+
+.main_content h4 {
+  margin-bottom: 5px;
+  float: left;
+  width: 139px;
+  text-align: right;
+}
+
+.main_content input, .main_content textarea {
+  border: 1px solid #dedede;
+  padding: 1px;
+  background-color: #fcfafc
+}
+
+.edit_photos { border-bottom: 1px dotted #ccc; margin-bottom: 20px;}
+
+.main_content label { text-align: right }
+
+#album_name { margin-left: 15px }
+
+.photo_details input, .photo_details textarea { width: 590px;}
+
+#update_success, #update_failure { margin-bottom: 20px;}
+
+.edit_photo_thumb, .edit_photos .admin_links { float: left }
+
+.edit_photo_left { float: left; margin-right: 10px }
+
+.photo_details { margin-bottom: 30px; float: left; width: 680px;}
+
+.edit_photos { margin-top: 30px }
+
+.photo_details label { margin-right: 15px; width: 65px; float: left;}
+
+.new_photo label{ float: left; margin-right: 15px; width: 135px }
+
+.new_photo p, .photo_details p { width: 100%; margin-bottom: 5px;}
+
+#new_photos a { margin-bottom: 20px; float: left; }
+
+.new_photo { margin-bottom: 20px;}

@@ -1,0 +1,50 @@
+<script type = "text/javascript">
+  var num_photos = 1;
+  function add_photo_field() {
+    num_photos++;
+    <%= remote_function(:url => { :action => 'new_photo_field' }, :with => "'num=' + num_photos", :update => :new_photos, :position => :before) %>
+  }
+  
+  $(function() {
+    $('.autosaveable').blur(function() {
+      $(this).parents('form').trigger('ajaxsubmit');
+      $(this).effect("highlight", { color: 'orange' }, 1000);
+      $(this).effect("pulsate", { times: 1 }, 500);
+    });
+  });
+</script>
+
+<div class="main_content">
+  
+  <div id = "update_success" style = "display: none">Your update has been saved.</div>
+  <div id = "update_failure" style = "display: none">Your update has been saved.</div>
+  
+  <h4>Photo Album Name:</h4>
+  <% form_for @album, :html => { :id => 'album_name_form' } do |f| %>
+    <script type = "text/javascript">
+      $(function() {
+        console.log($('#album_name_form'));
+        $('#album_name_form').bind('ajaxsubmit', function() {
+          console.log('triggering ajaxsubmit');
+          <%= remote_function(:url => album_path(@album), :method => 'put', :with => "$(this).serialize()") %>  
+          return false;
+        });
+      });
+    </script>
+    <%= f.text_field(:name, :size => 47, :class => 'autosaveable') %>
+  <% end %>
+  <div class = "clear"></div>
+  <div class = "edit_photos">
+    <% @album.photos.sort{|a, b| a.position <=> b.position }.each do |photo| %>
+      <%= render :partial => 'photo', :object => photo %>
+    <% end %>
+  </div>
+  <% form_for(@album, :html => { :multipart => true }) do |f| %>
+    <%= render :partial => 'photo_fields', :locals => { :num => @album.photos.size + 1 } %>
+    <div id = "new_photos">
+      <%= link_to_function('+ Add Another Photo', "add_photo_field()") %>
+      <div class="clear"></div>
+      <%= f.submit "Save New Photos" %>
+    </div>
+  <% end %>
+</div>

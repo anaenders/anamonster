@@ -1,0 +1,23 @@
+<% if album %>
+  <% logger.debug("album.photos = #{album.photos.inspect}") %>
+  <% album.photos.each do |photo| %>
+    <div class = "gallery_image" rel = "<%= photo.id %>">
+      <%= image_tag(photo.thumb_url, :width  => photo.thumb_width, :height => photo.thumb_height) %>
+    </div>
+
+    <div id = "photo_filename_<%= photo.id %>" style = "display: none"><%= photo.public_filename %></div>
+    <div id = "photo_height_<%= photo.id %>" style = "display: none"><%= photo.height %></div>
+    <div id = "photo_width_<%= photo.id %>" style = "display: none"><%= photo.width %></div>
+
+    <div id = "photo_data_<%= photo.id %>" style = "display: none">
+      <% if photo.title %><%= photo.title %><% end %>
+      <% if photo.description %><%= photo.description %><% end %>
+    </div>
+  <% end %>
+
+  <script type = "text/javascript">
+    $(function() {
+      $('.gallery_image:first').click();
+    });
+  </script>
+<% end %>

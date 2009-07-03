@@ -1,0 +1,6 @@
+<div class = "new_photo">
+  <p><label>File:</label><%= file_field_tag("album[attachable][#{num}][uploaded_data]", :size => 60) %></p>
+  <p><label>Title:</label><%= text_field_tag("album[attachable][#{num}][title]", '', :size => 86) %></p>
+  <p><label>Description:</label><%= text_area_tag("album[attachable][#{num}][description]", '', :rows => 1, :cols => 74) %></p>
+  <%= hidden_field_tag("album[attachable[#{num}][position]]", num) %>
+</div>

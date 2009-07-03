@@ -1,0 +1,32 @@
+<div class = "edit_photo_left">
+  <div class = "edit_photo_thumb">
+    <%= image_tag(photo.thumb_url, :width => photo.thumb_width, :height => photo.thumb_height) %>
+  </div>
+  <div class = "admin_links">
+    <%= link_to 'delete', photo_path(photo), :method => :delete, :confirm => 'Are you sure?' %><br />
+    <% if photo.is_cover_photo? %>
+      Cover Photo
+    <% else %>
+      <% form_for(photo.album, :html => { :id => "album_cover_#{photo.id}" }) do |f| %>
+        <%= hidden_field_tag 'album[cover_photo_id]', photo.id %>
+        <%= link_to_function 'make cover', "$('#album_cover_#{photo.id}').submit()" %>
+      <% end %>
+    <% end %>
+  </div>
+</div>
+<div class = "photo_details">
+  <% form_for(photo, :html => { :id => "photo_form_#{photo.id}" }) do |f| %>
+    <script type = "text/javascript">
+      $(function() {
+        $('#photo_form_<%= photo.id %>').bind('ajaxsubmit', function() {
+          <%= remote_function(:url => photo_path(photo), :method => 'put', :with => "$(this).serialize()") %>  
+          return false;
+        });
+      });
+    </script>
+    <%= hidden_field_tag(:id) %>
+    <p><label>Title:</label><%= f.text_field(:title, :size => 50, :class => 'autosaveable') %></p>
+    <p><label>Description:</label><%= f.text_area(:description, :rows => 1, :cols => 50, :class => 'autosaveable') %></p>
+  <% end %>
+</div>
+<div class = "clear"></div>
