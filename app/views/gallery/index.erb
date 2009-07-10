@@ -1,47 +1,120 @@
 <% num_albums_at_once = 14 %>
 
 <script type = "text/javascript">
+  function set_button_states() {
+    if (first_photo == 1) {
+      $('#previous img').attr('src', $('#previous img').attr('src').replace('arrow_left.png', 'arrow_left_ghosted.png'));
+    } else {
+      $('#previous img').attr('src', $('#previous img').attr('src').replace('_ghosted', ''));
+    }
 
-  $(function() {
-    $('.gallery_image').live('click', function() {
+    if (last_photo == album_size) {
+      $('#next img').attr('src', $('#next img').attr('src').replace('arrow_right.png', 'arrow_right_ghosted.png'));
+    } else {
+      $('#next img').attr('src', $('#next img').attr('src').replace('_ghosted', ''));
+    }    
+  }
+
+  var album_size = 0;
+  var first_photo = 0;
+  var last_photo = 0;
+  var currently_sliding = false;
+  var num_to_slide = 0;
+
+  //Changing between pictures
+  $(function(){
+    $('.gallery_image').live('click', function(){
       var img = $(this);
-      // $('.gallery_image').css('border', '0px').css('background-color', '#CCCCCC').css('margin-top', 0).css('margin-left', 0);
-      // $('.gallery_image').find('img').css('opacity', 1);
-      // $(this).css('border', '1px solid black').css('background-color', 'white').css('margin-top', -2).css('margin-left', -2);
-      // $(this).find('img').css('opacity', 0.5);
-
+      $('.gallery_image img').removeClass('selected');
+      img.find('img').addClass('selected');
       var id = img.attr('rel');
       var width = parseInt($('#photo_width_' + id).html());
       var height = parseInt($('#photo_height_' + id).html());
             
       $('#large_image').html('');
-      $('#large_image').append(
-        $(document.createElement('div'))
+      if ($('#photo_data_' + id).html().replace(/\s*/, '') != '') {
+        $('#large_image').append(
+          $(document.createElement('div'))
             .attr('class', 'description')
             .append(
-                $(document.createElement('p')).html($('#photo_data_' + id).html())
+              $(document.createElement('p')).html($('#photo_data_' + id).html())
             )
-        );
+          );
+      }        
       $('#large_image').append($(document.createElement('img')).attr('src', $('#photo_filename_' + id).html()).css({ width: width, height: height }));
-      
-      // $('#picture').find('img').css('margin-top', (parseInt($('#picture').css('height')) - height) / 2);
-      // var minX = parseInt($('.pictures').offset().left);
-      // var maxX = parseInt($('.pictures').offset().left) + parseInt($('.pictures').css('width'));
-      // var minY = parseInt($('.pictures').offset().top);
-      // var maxY = parseInt($('.pictures').offset().top) + parseInt($('.pictures').css('height'));
-      // var x = parseInt(currentX);
-      // var y = parseInt(currentY);
-      // if (x >= minX && x <= maxX && y >= minY && y <= maxY) {
-      //   $('#image_data').show();
-      // }
+      $('#large_image').find('img').css('margin-top', (parseInt($('#large_image').css('height')) - height) / 2);
     });
   });
+  
+  //Changing between albums
+  $(function() {
+    $('.album').click(function() {
+      <%= remote_function(:url => { :action => 'album'}, :with => "'id=' + $(this).attr('rel')", :update => 'thumbs') %>
+    });
+  });
+
+  //Sliding thumbnails     
+  $('#next').live('click', function() {
+    if (currently_sliding) {
+      return false;
+    }
+    var position = parseInt($('.thumb_holder').find('.thumbs').css("left"));
+    if (last_photo < album_size) {
+      currently_sliding = true;
+      num_to_slide = Math.min(13, album_size - last_photo);
+      $(".thumb_holder").find('.thumbs').animate(
+        { left: position - num_to_slide * 57 },
+        1500,
+        function() {
+          currently_sliding = false;
+        }
+      );
+      first_photo = first_photo + num_to_slide;
+      last_photo = last_photo + num_to_slide;
+    }
+    set_button_states();
+    return false;
+  });
+  
+  $('#previous').live('click', function() { 
+    if (currently_sliding) {
+      return false;
+    }
+    var position = parseInt($('.thumb_holder').find('.thumbs').css("left"));
+    if (first_photo > 1) {
+      currently_sliding = true;
+      num_to_slide = Math.min(13, first_photo-1);
+      $(".thumb_holder").find('.thumbs').animate(
+        { left: position + num_to_slide * 57 },
+        1500,
+        function() {
+          currently_sliding = false;
+        }
+      );
+      first_photo = first_photo - num_to_slide;
+      last_photo = last_photo - num_to_slide;
+    }
+    
+    set_button_states();
+    return false;
+  });
+
+  
+  //Large image hover text
+  // $(function(){
+  //   $('#large_image').hover(function(){
+  //      $('.description').slideDown("medium");
+  //    },
+  //    function() {
+  //      $('.description').slideUp("medium");      
+  //    });
+  // });   
 </script>
 
 <div id="wrapper">
   <div id="large_image">
     <% if @albums.first && first_photo = @albums.first.photos.first %>
-      <div class="description"><p><%= first_photo.title %> <%= first_photo.description %></p></div>
+      <div class="description"><p><%= first_photo.title %>&nbsp;<%= first_photo.description %></p></div>
       <%= image_tag(first_photo.public_filename) %>
     <% end %>
   </div>
@@ -49,30 +122,12 @@
   <div id="menu"> 
     <%= image_tag('gallery_up_ghosted.png', :alt => 'up') %>    
     <% @albums.each_with_index do |album, i| %>
-      <div id = "album_<%= i %>" <%= i >= num_albums_at_once ? 'style = "display: block"' : '' %> >
-        <a href = "#" rel = "<%= album.id %>"><%= image_tag(album.cover_photo_url) %></a>
+      <div class = "album" <%= i >= num_albums_at_once ? 'style = "display: block"' : '' %> rel = "<%= album.id %>">
+        <a href = "#"><%= image_tag(album.cover_photo_url) %></a>
       </div>
     <% end %>   
-    <%= image_tag('gallery_down.png', :alt => 'down') %>
+    <%= image_tag('gallery_down_ghosted.png', :alt => 'down') %>
   </div>
 </div>
 
-<% @albums.each_with_index do |album, i| %>
-  <div class = "album_title" rel = "<%= album.id %>" style = "<%= i > 0 ? 'display: none' : '' %>">
-    <h2 class="album_name"><%= album.name %></h2>
-    <span class="album_details"><%= album.date %></span>
-    <% if_authorized? do %>
-      <div class = "admin_album_links">
-        <%= link_to('edit',   edit_album_path(album)) %> |
-        <%= link_to('delete', album_path(album), :method => :delete, :confirm => 'Are you sure?') %> | 
-        <%= link_to('Create New Album', new_album_path) %>
-      </div>
-    <% end %>
-  </div>
-<% end %>
-
-<div class="thumb_holder">
-  <%= link_to(image_tag('arrow_left.png', :alt => 'prev'), '#', :class => 'left_arrow') %>
-  <div class="thumbs"><%= render :partial => 'album', :object => @albums.first %></div>
-  <%= link_to(image_tag('arrow_right_ghosted.png', :alt => 'next'), '#', :class => 'right_arrow') %>
-</div>
+<%= render :partial => 'album', :object => @albums.first %>

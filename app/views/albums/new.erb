@@ -8,13 +8,15 @@
 
 <div class="main_content">
   <% form_for(@album, :html => { :multipart => true }) do |f| %>
-    <h4>Photo Album Name:</h4>
-    <%= f.text_field(:name, :size => 61) %>
-    <div class = "clear"></div>
+    <div class="album_header">
+      <h4>Photo Album Name:</h4>
+      <%= f.text_field(:name, :size => 61) %>
+    </div>
     <%= render :partial => 'photo_fields', :locals => { :num => 1 } %>
-    <div id = "new_photos">
-      <%= f.submit "Create Album" %>
+    <div id = "new_photos">      
       <%= link_to_function('+ Add Another Photo', "add_photo_field()") %>
+      <div class="clear"></div>
+      <%= f.submit "Create Album" %>
     </div>
   <% end %>
 </div>

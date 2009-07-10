@@ -18,21 +18,22 @@
   
   <div id = "update_success" style = "display: none">Your update has been saved.</div>
   <div id = "update_failure" style = "display: none">Your update has been saved.</div>
-  
-  <h4>Photo Album Name:</h4>
-  <% form_for @album, :html => { :id => 'album_name_form' } do |f| %>
-    <script type = "text/javascript">
-      $(function() {
-        console.log($('#album_name_form'));
-        $('#album_name_form').bind('ajaxsubmit', function() {
-          console.log('triggering ajaxsubmit');
-          <%= remote_function(:url => album_path(@album), :method => 'put', :with => "$(this).serialize()") %>  
-          return false;
+  <div class="album_header">
+    <h4>Photo Album Name:</h4>
+    <% form_for @album, :html => { :id => 'album_name_form' } do |f| %>
+      <script type = "text/javascript">
+        $(function() {
+          console.log($('#album_name_form'));
+          $('#album_name_form').bind('ajaxsubmit', function() {
+            console.log('triggering ajaxsubmit');
+            <%= remote_function(:url => album_path(@album), :method => 'put', :with => "$(this).serialize()") %>  
+            return false;
+          });
         });
-      });
-    </script>
-    <%= f.text_field(:name, :size => 47, :class => 'autosaveable') %>
-  <% end %>
+      </script>
+      <%= f.text_field(:name, :size => 47, :class => 'autosaveable') %>
+    <% end %>
+  </div>
   <div class = "clear"></div>
   <div class = "edit_photos">
     <% @album.photos.sort{|a, b| a.position <=> b.position }.each do |photo| %>

@@ -301,7 +301,9 @@ th abbr { border: 0px }
 
 #calendar tr.month a { color: #1263f9; font-size: 8px  }
 
-#calendar th, #calendar td { padding: 2px }
+#calendar th { font-size: 9px; padding: 2px 2px 8px 2px}
+
+#calendar td { padding: 2px }
 
 #calendar td { background-color: #f8ecf8 }
 
@@ -344,6 +346,7 @@ th abbr { border: 0px }
 #large_image { 
   width: 640px;
   float: left;
+  height: 480px;
 }
 
 #menu {
@@ -351,9 +354,9 @@ th abbr { border: 0px }
   float: left;
 }
 
-#large_image img { float: left;}
+#large_image img { padding: 0; margin: 0;}
 
-#large_image { position: relative }
+#large_image { position: relative; text-align: center; background-color: #ddd; }
 
 #large_image .description {
   position: absolute;
@@ -371,6 +374,7 @@ th abbr { border: 0px }
   width: 630px; 
   opacity: 1;
   color: #89e8ff;
+  text-align: left;
 }
 
 #menu img.gallery_scroll { margin-bottom: 2px}
@@ -401,26 +405,37 @@ h2.album_name {
 }
 
 .thumbs {
-  width: 730px;
-  margin: 0 35px;
+  width: 10000px;
   float: left;
+  height: 52px;
+  position: absolute;
+  left: 0px;
+}
+
+.thumb_window {
+  width: 736px;
+  height: 52px;
+  overflow: hidden;
+  position: relative;
+  margin-left: 32px;
 }
 
 .thumbs img {
   float: left;
-  margin-right: 10px;
+  margin-right: 7px;
+  cursor: pointer;
 }
 
-.thumbs img.selected { border: 1px solid #ff0000 }
+.thumbs img.selected { border: 1px solid #ff0000; margin: -2 -2 0 0; }
 
-.thumb_holder a.left_arrow, .thumb_holder a.right_arrow {
+.thumb_holder a#previous, .thumb_holder a#next {
   position: absolute;
   top: 10px;
 } 
 
-.thumb_holder a.left_arrow { left: 5px }
+.thumb_holder a#previous { left: 5px }
 
-.thumb_holder a.right_arrow { right: 5px }
+.thumb_holder a#next { right: 5px }
 
 .admin_album_links, span.album_details { float: left; margin: 12px 10px 0 0; }
 
@@ -665,9 +680,9 @@ span.contact {
 
 .main_content label { text-align: right }
 
-#album_name { margin-left: 15px }
+#album_name { margin-left: 15px; float: left; }
 
-.photo_details input, .photo_details textarea { width: 590px;}
+.photo_details input, .photo_details textarea { width: 601px;}
 
 #update_success, #update_failure { margin-bottom: 20px;}
 
@@ -675,16 +690,18 @@ span.contact {
 
 .edit_photo_left { float: left; margin-right: 10px }
 
-.photo_details { margin-bottom: 30px; float: left; width: 680px;}
+.photo_details { margin-bottom: 30px; float: left; width: 685px;}
 
-.edit_photos { margin-top: 30px }
+.album_header { margin-bottom: 30px; float: left; width: 760px; }
 
 .photo_details label { margin-right: 15px; width: 65px; float: left;}
 
-.new_photo label{ float: left; margin-right: 15px; width: 135px }
+.new_photo label{ float: left; margin-right: 15px; width: 139px }
 
 .new_photo p, .photo_details p { width: 100%; margin-bottom: 5px;}
 
 #new_photos a { margin-bottom: 20px; float: left; }
 
-.new_photo { margin-bottom: 20px;}
+.new_photo { margin-bottom: 20px; float: left;}
+
+.new_photo textarea, .new_photo input { width: 601px;}

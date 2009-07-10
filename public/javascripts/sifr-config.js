@@ -58,18 +58,18 @@ sIFR.replace(geosans, {
 //   css: '.sIFR-root { font-size: 14px; color: #000000 }'
 // });
 
-sIFR.replace(geosans, {
-  selector: '#calendar th',
-  wmode: 'transparent',
-  css: [
-    '.sIFR-root { font-size: 12px; color: #1263f9; text-align: center }',
-    'a:link { color: #1263f9 }',    
-    'a:visited { color: #1263f9 }',  
-    'a:hover { color: #1263f9 }', 
-    'a:active { color: #1263f9 }',
-    'a { text-decoration: none }'
-  ]
-});
+// sIFR.replace(geosans, {
+//   selector: '#calendar th',
+//   wmode: 'transparent',
+//   css: [
+//     '.sIFR-root { font-size: 12px; color: #1263f9; text-align: center }',
+//     'a:link { color: #1263f9 }',    
+//     'a:visited { color: #1263f9 }',  
+//     'a:hover { color: #1263f9 }', 
+//     'a:active { color: #1263f9 }',
+//     'a { text-decoration: none }'
+//   ]
+// });
 
 // sIFR.replace(geosans, {
 //   selector: '#calendar td',
