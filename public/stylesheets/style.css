@@ -79,7 +79,6 @@ img.logo {
   float: left;
   position: relative;
   width: 100%;
-  min-height: 500px;
   padding: 35px 0 20px 0;
   background-color: #fff;
 }
@@ -354,6 +353,19 @@ th abbr { border: 0px }
   float: left;
 }
 
+.gallery_window {
+  position: relative;
+  height: 434px;
+  margin-top: 24px;
+  overflow: hidden;
+}
+
+.gallery_thumbs {
+  height: 1000px;
+  position: absolute;
+  top: 0;
+}
+
 #large_image img { padding: 0; margin: 0;}
 
 #large_image { position: relative; text-align: center; background-color: #ddd; }
@@ -508,6 +520,8 @@ h2.album_name {
  *	contact   							                *
 \********************************************/
 
+#contact_holder { height: 500px;}
+
 .contactBG { 
   position: absolute;
   right: 100px;
@@ -569,6 +583,8 @@ p.message {
   right: 100px;
   z-index: 500;
   width: auto;
+  border: none;
+  padding: 0;
 }
 
 .contact_form #error, .contact_form #success {
