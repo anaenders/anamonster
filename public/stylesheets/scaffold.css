@@ -1,10 +1,4 @@
-body { background-color: #fff; color: #333; }
-
-body, p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size:   13px;
-  line-height: 18px;
-}
+body { background-color: #fff; }
 
 pre {
   background-color: #eee;
@@ -12,43 +6,36 @@ pre {
   font-size: 11px;
 }
 
-a { color: #000; }
-a:visited { color: #666; }
-a:hover { color: #fff; background-color:#000; }
+.fieldWithErrors input, .fieldWithErrors textarea { background-color: #fdefef }
 
-.fieldWithErrors {
-  padding: 2px;
-  background-color: red;
-  display: table;
+#errorExplanation { margin-bottom: 20px }
+
+#errorExplanation ul {  
+  list-style-type:none; 
+  padding-left: 2em;
+  border: 1px solid #ff0000;
+  padding-bottom: 3px;
 }
 
-#errorExplanation {
-  width: 400px;
-  border: 2px solid red;
-  padding: 7px;
-  padding-bottom: 12px;
-  margin-bottom: 20px;
-  background-color: #f0f0f0;
+#errorExplanation ul li {
+  font-size: 10px;
+  list-style: square;
+  padding-top: 3px;
 }
 
 #errorExplanation h2 {
   text-align: left;
-  font-weight: bold;
-  padding: 5px 5px 5px 15px;
+  font-weight: normal;
+  padding: 0 10px;
   font-size: 12px;
-  margin: -7px;
-  background-color: #c00;
+  background-color: #ff0000;
   color: #fff;
 }
 
 #errorExplanation p {
   color: #333;
-  margin-bottom: 0;
+  margin: 10px 0;
   padding: 5px;
 }
 
-#errorExplanation ul li {
-  font-size: 12px;
-  list-style: square;
-}
 

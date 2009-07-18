@@ -21,7 +21,7 @@ body {
 a { text-decoration: none }
 a:link { color: #f131c6 }    
 a:visited { color: #f131c6 } 
-a:hover {	color:#f999e4 }   
+a:hover { color: #f999e4 }  
 a:active { color: #f999e4 }
 
 img { border: none }
@@ -106,6 +106,8 @@ img#bottom_margin { bottom: 1px }
   width: 530px;
   margin-right: 30px;
 }
+
+#blog_container a:hover { color: #fff; background-color:#000; } 
 
 #blog_container h3, #blog_container h2, h3.search_results { font-weight: normal }
 
@@ -213,7 +215,7 @@ span.tags a { margin-right: 8px }
   padding: 2px;
 }
 
-#new_blog input, #new_blog textarea { width: 754px; margin-bottom: 10px; }
+#new_blog input, #new_blog textarea { width: 752px; margin-bottom: 10px; }
 
 /********************************************
  *	about         					                *
@@ -224,6 +226,10 @@ span.tags a { margin-right: 8px }
   margin-bottom: 20px;
   width: 100%;
 }
+
+#resume a { color: #fff; background-color:#000 }
+
+#resume a:hover { color: #f131c6 }
 
 #about_me img { float: left; margin-right: 20px }
 
@@ -277,13 +283,17 @@ p.job_description {
   width: 200px;
 }
 
+span.tags { float: left }
+
+span.tags a:hover { color: #fff; background-color:#000 } 
+
 .search_header {
   float: left;
   margin-bottom: 20px;
 }
 
 #calendar {
-  width: 100%;
+  width: 200px;
   background-color: #e7eefb;
   margin-bottom: 25px;
   font-size: 10px;
@@ -450,6 +460,8 @@ h2.album_name {
 .thumb_holder a#next { right: 5px }
 
 .admin_album_links, span.album_details { float: left; margin: 12px 10px 0 0; }
+
+.admin_album_links a:hover { color: #fff; background-color:#000 }
 
 /********************************************
  *	showcase   							                *
@@ -622,7 +634,7 @@ p.message {
 
 #footer {
   float:left;
-	width: 100%;
+	width: 800px;
 	height: 60px;
 	background-color: #000;
 	color: #fff;
@@ -692,7 +704,13 @@ span.contact {
   background-color: #fcfafc
 }
 
+.blog_photo_edit a { margin-top: 10px }
+
+.blog_photo_edit { padding-bottom: 10px;}
+
 .edit_photos { border-bottom: 1px dotted #ccc; margin-bottom: 20px;}
+
+.blog_photo_edit, .blog_photo_edit a { float: left; width: 100% }
 
 .main_content label { text-align: right }
 
