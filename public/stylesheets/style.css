@@ -227,6 +227,8 @@ span.tags a { margin-right: 8px }
   width: 100%;
 }
 
+#about_me a:hover { color: #fff; background-color:#000 }
+
 #resume a { color: #fff; background-color:#000 }
 
 #resume a:hover { color: #f131c6 }
@@ -283,7 +285,7 @@ p.job_description {
   width: 200px;
 }
 
-span.tags { float: left }
+span.tags { float: left; margin-bottom: 20px; }
 
 span.tags a:hover { color: #fff; background-color:#000 } 
 
@@ -385,7 +387,7 @@ th abbr { border: 0px }
   top: 0;
   left: 0;
   background-color: #000;
-  opacity: 0.5;
+  opacity: 0.8;
   /* for IE */
   filter: alpha(opacity=50);
   /* CSS3 standard */
@@ -722,7 +724,7 @@ span.contact {
 
 .edit_photo_thumb, .edit_photos .admin_links { float: left }
 
-.edit_photo_left { float: left; margin-right: 10px }
+.edit_photo_left { float: left; margin-bottom: 10px; width: 70px;}
 
 .photo_details { margin-bottom: 30px; float: left; width: 685px;}
 
