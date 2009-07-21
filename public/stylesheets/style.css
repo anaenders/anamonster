@@ -461,7 +461,7 @@ h2.album_name {
 
 .thumb_holder a#next { right: 5px }
 
-.admin_album_links, span.album_details { float: left; margin: 12px 10px 0 0; }
+.admin_album_links, span.album_details { float: right; margin: 12px 10px 0 0; }
 
 .admin_album_links a:hover { color: #fff; background-color:#000 }
 
