@@ -32,7 +32,7 @@ img { border: none }
 	height: 0px;
 }
 
-img, div, input { behavior: url("scripts/iepngfix.htc") }
+img, div, input { behavior: url("javascripts/iepngfix.htc") }
 
 /********************************************
  *	header									                *
@@ -44,12 +44,13 @@ img, div, input { behavior: url("scripts/iepngfix.htc") }
 	height: 77px;
 	width: 100%;
 	background-color: #000;
+	z-index: 100;
 }
 
 #navigation {
-  float: right;
-	position: relative;
-	margin-top: 58px;
+  position: absolute;
+	top: 58px;
+	right: 0;
 	z-index: 100;
 }
 
@@ -73,6 +74,7 @@ img.logo {
   position: absolute;
   bottom: 0px;
   left: 20px;
+  z-index: 100;
 }
 
 #content {
@@ -95,7 +97,7 @@ img#top_margin, #bottom_margin {
 
 img#top_margin { top: 1px }
 
-img#bottom_margin { bottom: 1px }
+img#bottom_margin { top: 0px }
 
 /********************************************
  *	blog    								                *
@@ -105,6 +107,7 @@ img#bottom_margin { bottom: 1px }
   float: left;
   width: 530px;
   margin-right: 30px;
+  display: inline;
 }
 
 #blog_container a:hover { color: #fff; background-color:#000; } 
@@ -263,6 +266,7 @@ span.tags a { margin-right: 8px }
 #resume p {
   float: left;
   line-height: 1.5em;
+  display: inline;
 }
 
 #resume p.date {
@@ -300,7 +304,7 @@ span.tags a:hover { color: #fff; background-color:#000 }
   margin-bottom: 25px;
   font-size: 10px;
   text-align: center;
-  padding: 10px;
+  border: 10px solid #e7eefb;
 }
 
 #calendar th { 
@@ -420,6 +424,7 @@ h2.album_name {
   float: left;
   line-height: 1em;
   margin-bottom: 5px;
+  display: inline;
 }
 
 .thumb_holder {
@@ -461,7 +466,11 @@ h2.album_name {
 
 .thumb_holder a#next { right: 5px }
 
-.admin_album_links, span.album_details { float: right; margin: 12px 10px 0 0; }
+.admin_album_links, span.album_details { 
+  float: right; 
+  margin: 12px 10px 0 0; 
+  display: inline;
+}
 
 .admin_album_links a:hover { color: #fff; background-color:#000 }
 
@@ -473,12 +482,17 @@ h2.album_name {
   width: 378px;
   margin: 1px;
   float: left;
+  display: inline;
+  height: 140px;
 }
 
 .small_image img {
-  padding: 20px 0 20px 0;
+  /*padding: 20px 0 20px 0;*/
   float: left;
-  margin-left: 20px;
+  margin: 20px;
+  width: 340px;
+  height: 100px;
+  display: inline;
 }
 
 .yellow { background-color: #fffa7f }
@@ -502,6 +516,7 @@ h2.album_name {
   position: absolute;
   z-index: 10;
   bottom: 0px;
+  left: 0px;
   height: 60px;
   width: 100%;
   opacity: 0.7;
@@ -554,7 +569,7 @@ h2.album_name {
 }
 
 .contact_form input {
-  border: 1px solid #F8F8F8;
+  border: 1px solid #eee;
   position: absolute;
   width: 200px;
   padding: 2px;
@@ -584,7 +599,7 @@ p.message {
 
 .contact_form textarea {
   position: absolute;
-  border: 1px solid #f8f8f8;
+  border: 1px solid #eee;
   padding: 2px;
   top: 193px;
   right: 106px;
@@ -640,6 +655,8 @@ p.message {
 	height: 60px;
 	background-color: #000;
 	color: #fff;
+	padding-top: 7px;
+	position: relative;
 }
 
 #footer a { color: #fff }
@@ -655,18 +672,19 @@ p.message {
 
 #search input, span.search_button { position: absolute }
 
-#search input {
+#search input.search {
   top: 10px;
   left: 20px;
   width: 125px;
-  height: 12px;
-  border: none;
+  border: 0;
   padding: 2px;
+  height: 12px;
 }
 
 span.search_button {
   top: 8px;
   left: 163px;
+  z-index: 100;
 }
 
 span.contact { 

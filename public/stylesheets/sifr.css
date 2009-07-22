@@ -106,6 +106,7 @@ media type, in order not to have the printed text come out weird.
   .sIFR-active #resume h3 {
     visibility: hidden;
     height: 1.2em;
+    width: 760px;
   }
 /*  .sIFR-active p.name label, .sIFR-active p.email label {
     visibility: hidden;

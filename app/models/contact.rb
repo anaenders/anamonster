@@ -9,7 +9,7 @@ class Contact
   
   def valid?
     if @name.blank?
-      @error_message = 'Oops, you didn&apos;t enter your name.<br />Try again please! <span>click here</span>!'
+      @error_message = 'Oops, you didn&#8217;t enter your name.<br />Try again please! <span>click here</span>!'
       return false
     end
     
@@ -19,7 +19,7 @@ class Contact
     end
     
     if @message.blank?
-      @error_message = 'Oops, you didn&apos;t enter a message.<br />Try again please! <span>click here</span>!'
+      @error_message = 'Oops, you didn&#8217;t enter a message.<br />Try again please! <span>click here</span>!'
       return false
     end
     
