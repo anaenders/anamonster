@@ -178,18 +178,6 @@ span.current { color: #f131c6 }
   margin: 10px 0;
 }
 
-span.tags a { margin-right: 8px }
-
-.tag_1 { font-size: 11px }
-
-.tag_2 { font-size: 13px; }
-
-.tag_3 { font-size: 15px }
-
-.tag_4 { font-size: 17px;}
-
-.tag_5 { font-size: 19px;}
-
 .highlight { background-color: #d7f3fe; padding: 2px; font-weight: normal;}
 
 #new_blog { float: left; width: 760px;}
@@ -291,7 +279,19 @@ p.job_description {
 
 span.tags { float: left; margin-bottom: 20px; }
 
-span.tags a:hover { color: #fff; background-color:#000 } 
+span.tags a { margin-right: 8px; color: #fff; background-color:#000 } 
+
+span.tags a:hover { color: #f131c6; }
+
+.tag_1 { font-size: 11px }
+
+.tag_2 { font-size: 13px; }
+
+.tag_3 { font-size: 15px }
+
+.tag_4 { font-size: 17px;}
+
+.tag_5 { font-size: 19px;}
 
 .search_header {
   float: left;
