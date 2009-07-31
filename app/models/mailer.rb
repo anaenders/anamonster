@@ -1,6 +1,6 @@
 class Mailer < ActionMailer::Base
   def contact(contact)
-    recipients 'ana.carter@alumni.cmu.edu'
+    recipients 'aecarter@gmail.com'
     from       'contact@anamonster.com'
     subject    "anamonster Contact from #{contact.name}"
     body       :contact => contact
