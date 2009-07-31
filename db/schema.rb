@@ -9,7 +9,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090607172113) do
+ActiveRecord::Schema.define(:version => 20090726230331) do
+
+  create_table "albums", :force => true do |t|
+    t.string   "name"
+    t.integer  "cover_photo_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "position"
+  end
 
   create_table "blog_photos", :force => true do |t|
     t.integer  "blog_id"
@@ -44,6 +52,22 @@ ActiveRecord::Schema.define(:version => 20090607172113) do
   end
 
   add_index "comments", ["blog_id"], :name => "index_comments_on_blog_id"
+
+  create_table "photos", :force => true do |t|
+    t.integer  "album_id"
+    t.string   "title"
+    t.text     "description"
+    t.integer  "position"
+    t.integer  "parent_id"
+    t.string   "content_type"
+    t.string   "filename"
+    t.string   "thumbnail"
+    t.integer  "size"
+    t.integer  "width"
+    t.integer  "height"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "taggings", :force => true do |t|
     t.integer  "tag_id"

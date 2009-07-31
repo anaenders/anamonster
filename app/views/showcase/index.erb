@@ -1,0 +1,98 @@
+<style type="text/css">
+/*  .large_image { display: none }*/
+  .blue.hover { background-color: #319afd }
+  .yellow.hover { background-color: #fff600 }
+  .green.hover { background-color: #69e000 }
+  .orange.hover { background-color: #ff9600 }
+  .red.hover { background-color: #ff0000 }
+</style>
+
+<div class="padding">  
+  <div class="small_image yellow" rel="1">
+    <%= link_to(image_tag('small_thornton.png', :alt => 'thornton tomasetti'), '#') %>
+  </div>
+  <div class="small_image green" rel = "2">
+    <%= link_to(image_tag('small_liz.png', :alt => 'liz claiborne'), '#') %>
+  </div>
+  
+  <div class="large_image" id="showcase_1">
+    <%= image_tag('large_thornton.png') %>
+    <div class="project_description">
+      <p class="name">Project name: Thornton Tomasetti<span class="url">url: <%= link_to('www.thorntontomasetti.com', 'www.thorntontomasetti.com', :target => '_blank') %></span></p>
+      <p class="description">Description: Partnered with <%= link_to('Intersect NYC', 'www.intersectnyc.com', :target => '_blank') %> to style and develop the user interface for this site, which features a search engine for navigating through this structural engineering firm's vast portfolio.</p>
+    </div>
+  </div>
+  <div class="large_image" id="showcase_2">
+    <%= image_tag('large_liz.png') %>
+    <div class="project_description">
+      <p class="name">Project name: Liz Claiborne<span class="url">url: <%= link_to('www.lizclaiborne.com', 'www.lizclaiborne.com', :target => '_blank') %></span></p>        
+      <p class="description">Description: Collaborated with <%= link_to('Intersect NYC', 'www.intersectnyc.com', :target => '_blank') %> to develop and style much of the user interface to achieve the company's new vision and relaunching of the Liz brand.</p>
+    </div>
+  </div>
+  
+  <div class="small_image blue" rel="3">
+    <%= link_to(image_tag('small_citibabes.png', :alt => 'citibabes'), '#') %>
+  </div>
+  <div class="small_image orange" rel="4">
+    <%= link_to(image_tag('small_mally.png', :alt => 'mally'), '#') %>
+  </div>
+  
+  <div class="large_image" id="showcase_3">
+    <%= image_tag('large_citibabes.png') %>
+    <div class="project_description">
+      <p class="name">Project name: Citibabes<span class="url">url: <%= link_to('www.citibabes.com', 'www.citibabes.com', :target => '_blank') %></span></p>
+      <p class="description">Description: This vibrant site is a one stop shop for city parents on the go. Developed and styled all front end pages in partnership with <%= link_to ('Intersect NYC', 'www.intersectnyc.com', :target => '_blank') %>.</p>
+    </div>
+  </div>    
+  <div class="large_image" id="showcase_4">
+    <%= image_tag('large_mally.png') %>
+    <div class="project_description">
+      <p class="name">Project name: Mally Beauty<span class="url">url: <%= link_to('www.mallybeauty.com', 'www.mallybeauty.com', :target => '_blank') %></span></p>
+      <p class="description">Description: In addition to a rich online community and an extensive line of beauty products, webisodes are a key experience for the user. Partnered with <%= link_to ('Intersect NYC', 'www.intersectnyc.com', :target => '_blank') %> to develop and style user interface.</p>
+    </div>
+  </div>
+  
+  <div class="small_image red" rel="5">
+    <%= link_to(image_tag('small_kates.png', :alt => 'kates'), '#') %>
+  </div>
+  <div class="small_image yellow" rel="6">
+    <%= link_to(image_tag('small_kimara.png', :alt => 'kimara'), '#') %>
+  </div>
+  
+  <div class="large_image" id="showcase_5">
+    <%= image_tag('large_kates.png') %>
+    <div class="project_description">
+      <p class="name">Project name: Kates Paperie<span class="url">url: <%= link_to('www.katespaperie.com', 'www.katespaperie.com', :target => '_blank') %></span></p>
+      <p class="description">Description: Partnered with <%= link_to ('Intersect NYC', 'www.intersectnyc.com', :target => '_blank') %> to develop the user interface for a client recognized as a leader in the industry of all things stationary.</p>
+    </div>
+  </div>
+  <div class="large_image" id="showcase_6">  
+    <%= image_tag('large_kimara.png') %>
+    <div class="project_description">
+      <p class="name">Project name: Kimara<span class="url">url: <%= link_to('www.kimara.com', 'www.kimara.com', :target => '_blank') %></span></p>
+      <p class="description">Description: Worked with <%= link_to ('Intersect NYC', 'www.intersectnyc.com', :target => '_blank') %> in styling the front end of this high end beauty product e-commerce site.</p>
+    </div>
+  </div>
+  
+  <div class="small_image green" rel="7">
+    <%= link_to(image_tag('small_cinemax.png', :alt => 'cinemax'), '#') %>
+  </div>
+  <div class="small_image blue" rel="8">
+    <%= link_to(image_tag('small_summitsprings.png', :alt => 'summit springs'), '#') %>
+  </div>
+  
+  <div class="large_image" id="showcase_7">
+    <%= image_tag('large_cinemax.png') %>
+    <div class="project_description">
+      <p class="name">Project name: Cinemax<span class="url">url: <%= link_to('www.cinemax.com', 'www.cinemax.com', :target => '_blank') %></span></p>
+      <p class="description">Description: Collaborated with <%= link_to('Creativelab NY', 'www.creativelabny.com', :target => '_blank') %> in re-skinning HBO's cinemax home page via xml and flash.</p>
+    </div>
+  </div>
+  <div class="large_image" id="showcase_8">
+    <%= image_tag('large_summitsprings.png') %>
+    <div class="project_description">
+      <p class="name">Project name: Summit Springs<span class="url">url: <%= link_to('www.summitsprings.com', 'www.summitsprings.com', :target => '_blank') %></span></p>
+      <p class="description">Description: Partnered with <%= link_to('Atrium Media NY', 'www.atriummediany.com', :target => '_blank') %> in redesigning and developing this site including both front end and back end programming.</p>
+    </div>
+  </div>
+</div>

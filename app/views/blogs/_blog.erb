@@ -1,0 +1,12 @@
+  <h3><%= blog.created_at.strftime("%a %B %d %H:%M:%S %Y") %></h3>
+  <h2><%=h blog.title %></h2>
+  <div class = "blog_text">
+    <%= markdown(blog.image_replaced_content) %>
+    <% if_authorized? do %>
+      <div class="admin_links">
+        <%= link_to 'Edit', edit_blog_path(blog) %> | 
+        <%= link_to 'Delete', blog, :confirm => 'Are you sure?', :method => :delete %>
+      </div>
+    <% end %>
+    <div class = "clear"></div>
+  </div>

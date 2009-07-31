@@ -11,7 +11,7 @@ module UsersHelper
   # <%= if_authorized?(:destroy, @user) do link_to 'Destroy', @user, :confirm => 'Are you sure?', :method => :delete end %> 
   #
   #
-  def if_authorized?(action, resource, &block)
+  def if_authorized?(action = nil, resource = nil, &block)
     if authorized?(action, resource)
       yield action, resource
     end

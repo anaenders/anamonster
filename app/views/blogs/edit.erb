@@ -1,5 +1,7 @@
-<h1>Editing blogs</h1>
-
-<%= render :partial => 'form', :locals => { :submit_button => 'Update' } %>
-
-<%= link_to 'Show', @blog %> | <%= link_to 'Back', blogs_path %>
+<div class="padding">
+  <div id="new_blog">
+    <h1>Editing blogs</h1>
+    <%= render :partial => 'form', :locals => { :submit_button => 'Update' } %>
+    <%= link_to 'Show', @blog %><span>|</span<%= link_to 'Back', blogs_path %>
+  </div>
+</div>

@@ -21,6 +21,17 @@ class Blog < ActiveRecord::Base
   has_many :blog_photos, :dependent => :destroy
   after_save :save_attachments
   
+  def self.for_month(year, month)
+    start_time = DateTime.civil(year, month)
+    end_time   = DateTime.civil(year, month, days_in_month(year, month), 23, 59, 59)
+    all(:conditions => [ 'created_at > ? AND created_at < ?', start_time, end_time ] )
+  end
+  
+  def self.for_day(year, month, day)
+    start_time = DateTime.civil(year, month, day)
+    end_time   = DateTime.civil(year, month, day, 23, 59, 59)
+    all(:conditions => [ 'created_at > ? AND created_at < ?', start_time, end_time ] )
+  end
 
   def photo_by_filename(filename)
     blog_photos.each do |blog_photo|
@@ -38,12 +49,16 @@ class Blog < ActiveRecord::Base
       if !(photo = photo_by_filename($1))
         ''
       else
-        "<p style = \"text-align: #{$2}\"><img src = \"#{photo.public_filename}\"  style = \"float: none\" /></p>"
+        "<img src = \"#{photo.public_filename}\" />"
       end
     end
   end
   
   protected  
+  def self.days_in_month(year, month)
+    (Date.new(year, 12, 31) << (12-month)).day
+  end
+
   def save_attachments
     if @attachments
       @attachments.each do |attachment|

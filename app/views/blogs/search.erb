@@ -1,0 +1,34 @@
+<div class="padding">
+  <div id="blog_container">
+
+    <h2 div class="search_results">
+      <%= @blogs.size %> blog entries were 
+      <% if @by == 'tag' %>
+        found tagged with "<%= @value %>."
+      <% elsif @by == 'keyword' %>
+        found containing text "<%= @value %>."
+      <% elsif @by == 'date' %>
+        created on <%= Date.new(params[:year].to_i, params[:month].to_i, params[:day].to_i).strftime('%B %d, %Y') %>
+      <% end %>
+    </h2>
+    
+    <% @blogs.each_with_index do |blog, num| %>
+    
+    <div class="search_blog_text">
+      <h4><%= link_to(highlight(blog.title, @value), blog_path(blog)) %></h4>
+      <p class = "result_preview">
+      <% if @by == 'keyword' %>
+        <%= highlight(excerpt(markdown(blog.image_replaced_content).gsub(/<\/?[^>]*>/, ''), @value, :radius => 50), @value) %></p>
+      <% else %>
+        <%= truncate(markdown(blog.image_replaced_content).gsub(/<\/?[^>]*>/, ''), 200) %>
+      <% end %>
+      </p>
+    </div>
+    <% end %>
+
+
+  </div>
+  
+  <%= render :partial => 'search' %>
+   
+</div>
