@@ -9,6 +9,7 @@ html, * {
 
 body {
 	background-image: url('/images/bg.png');
+	background-attachment: fixed;
 	background-repeat: repeat;
 	height: 100%;
 	width: 100%;
@@ -32,7 +33,7 @@ img { border: none }
 	height: 0px;
 }
 
-img, div, input { behavior: url("javascripts/iepngfix.htc") }
+img, div, input { behavior: url("/javascripts/iepngfix.htc") }
 
 /********************************************
  *	header									                *
@@ -214,7 +215,7 @@ span.current { color: #f131c6 }
 
 #about_me, #resume {
   float: left;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   width: 100%;
 }
 
@@ -224,16 +225,16 @@ span.current { color: #f131c6 }
 
 #resume a:hover { color: #f131c6 }
 
-#about_me img { float: left; margin-right: 20px }
+#about_me img { float: left; margin: 0 20px 10px 0 }
 
 #description {
   float: left;
-  width: 477px;
+/*  width: 477px;*/
   line-height: 1.7em;
 }
 
 #description p {
-  float: left;
+/*  float: left;*/
   margin-top: 10px;
 }
 
@@ -244,7 +245,7 @@ span.current { color: #f131c6 }
   float: left;
 }
 
-#resume h3 { margin: 15px 0; width: 760px; }
+#resume h3 { margin: 10px 0; width: 760px; }
 
 #resume h3.header {
   border-bottom: 1px solid #999;
@@ -376,6 +377,8 @@ th abbr { border: 0px }
   overflow: hidden;
 }
 
+#thumbs { float: left; width: 100% }
+
 .gallery_thumbs {
   height: 1000px;
   position: absolute;
@@ -479,8 +482,8 @@ h2.album_name {
 \********************************************/
 
 .small_image {
-  width: 378px;
-  margin: 1px;
+  width: 380px;
+  margin-bottom: 1px;
   float: left;
   display: inline;
   height: 140px;
@@ -510,6 +513,7 @@ h2.album_name {
 .large_image {
   float: left;
   position: relative;
+  margin-bottom: 1px;
 }
 
 .project_description {
@@ -517,7 +521,7 @@ h2.album_name {
   z-index: 10;
   bottom: 0px;
   left: 0px;
-  height: 60px;
+  height: 63px;
   width: 100%;
   opacity: 0.7;
   /* for IE */
@@ -533,7 +537,7 @@ h2.album_name {
 .project_description p.description { width: 500px }
 
 .project_description p {
-  float: left;
+  float: right;
   padding: 10px;
   color: #fff;
 }
@@ -604,6 +608,8 @@ p.message {
   top: 193px;
   right: 106px;
   z-index: 200;
+  width: 360px;
+  height: 100px;
 }
 
 .contact_form input.submit {
@@ -662,9 +668,9 @@ p.message {
 #footer a { color: #fff }
 
 #search {
-  background-image:url('/images/search_BG.png');
+  background-image:url('/images/search_BG.jpg');
   float: left;
-  width: 221px;
+  width: 223px;
   height: 29px;
   margin-left: 10px;
   position: relative;
@@ -679,6 +685,8 @@ p.message {
   border: 0;
   padding: 2px;
   height: 12px;
+  font-size: 10px;
+  vertical-align: top;
 }
 
 span.search_button {
@@ -694,6 +702,7 @@ span.contact {
 
 #footer_navigation p  {
   float: right;
+  text-align: right;
   margin: 10px 20px 0 0;
   width: auto;
 }
@@ -714,7 +723,7 @@ span.contact {
 .main_content h4 {
   margin-bottom: 5px;
   float: left;
-  width: 139px;
+  width: 133px;
   text-align: right;
 }
 
@@ -734,7 +743,9 @@ span.contact {
 
 .main_content label { text-align: right }
 
-#album_name { margin-left: 15px; float: left; }
+#album_name { margin: 0 0 5px 18px; float: left; width: 601px;}
+
+.position { margin-left: 18px; width: 50px;}
 
 .photo_details input, .photo_details textarea { width: 601px;}
 

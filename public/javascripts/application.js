@@ -15,6 +15,7 @@ $(function(){
 	
 	// Showcase
 	var showing = null;
+	$('.large_image').css("display", "none");
   $('.small_image').click(function(){
     var num = $(this).attr('rel');
     if (showing == num) {

@@ -1,5 +1,9 @@
 <div class="padding">
-  <%= render :partial => 'blog', :object => @blog %>
-  <%= render :partial => 'search' %>
-  
+  <div id="blog_container">
+    <%= render :partial => 'blog', :object => @blog %>
+    <% if_authorized? do %>
+      <%= link_to 'New blog', new_blog_path %>
+    <% end %>
+  </div>
+  <%= render :partial => 'search' %> 
 </div>

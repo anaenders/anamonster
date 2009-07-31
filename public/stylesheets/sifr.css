@@ -92,7 +92,7 @@ media type, in order not to have the printed text come out weird.
 	}
   .sIFR-active #footer_navigation p {
     visibility: hidden;
-    width:250px;
+    width:300px;
   }
   .sIFR-active h2.album_name {
     visibility: hidden;

@@ -31,7 +31,10 @@
           });
         });
       </script>
-      <%= f.text_field(:name, :size => 47, :class => 'autosaveable') %>
+      <%= f.text_field(:name, :class => 'autosaveable') %>
+      
+      <h4>Position:</h4>
+      <%= f.text_field(:position, :class => 'autosaveable position') %>
     <% end %>
   </div>
   <div class = "clear"></div>

@@ -3,7 +3,7 @@ class GalleryController < ApplicationController
   before_filter :set_section
 
   def index
-    @albums = Album.all(:order => 'created_at DESC')
+    @albums = Album.all(:order => 'position DESC')
   end
   
   def album

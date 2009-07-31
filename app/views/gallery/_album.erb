@@ -17,7 +17,7 @@
       <div class="thumbs">
         <% if album %>
           <% logger.debug("album.photos = #{album.photos.inspect}") %>
-          <% album.photos.each do |photo| %>
+          <% album.photos.sort{|a, b| a.position <=> b.position }.each do |photo| %>
             <div class = "gallery_image" rel = "<%= photo.id %>">
               <%= image_tag(photo.thumb_url, :width  => photo.thumb_width, :height => photo.thumb_height) %>
             </div>
