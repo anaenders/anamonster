@@ -385,6 +385,8 @@ th abbr { border: 0px }
   top: 0;
 }
 
+.gallery_thumbs img { width: 160px; height: 30px }
+
 #large_image img { padding: 0; margin: 0;}
 
 #large_image { position: relative; text-align: center; background-color: #ddd; }
