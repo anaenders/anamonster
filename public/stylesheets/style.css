@@ -27,8 +27,8 @@ body {
 a { text-decoration: none }
 a:link { color: #f131c6 }    
 a:visited { color: #f131c6 } 
-a:hover { color: #f999e4 }  
-a:active { color: #f999e4 }
+a:hover { color: #000 }  
+a:active { color: #000 }
 
 img { border: none }
 
@@ -116,7 +116,7 @@ img#bottom_margin { top: 0px }
   display: inline;
 }
 
-#blog_container a:hover { color: #fff; background-color:#000; } 
+#blog_container a:hover { color: #000 } 
 
 #blog_container h3, #blog_container h2, h3.search_results { font-weight: normal }
 
@@ -224,11 +224,11 @@ span.current { color: #f131c6 }
   width: 100%;
 }
 
-#about_me a:hover { color: #fff; background-color:#000 }
+#about_me a:hover { color: #000 }
 
-#resume a { color: #fff; background-color:#000 }
+#resume a { color: #f131c6 }
 
-#resume a:hover { color: #f131c6 }
+#resume a:hover { color: #000 }
 
 #about_me img { float: left; margin: 0 20px 10px 0 }
 
@@ -248,6 +248,7 @@ span.current { color: #f131c6 }
   font-size: 16px;
   font-weight: normal;
   float: left;
+  height: 1.5em;
 }
 
 #resume h3 { margin: 10px 0; width: 760px; }
@@ -285,9 +286,9 @@ p.job_description {
 
 span.tags { float: left; margin-bottom: 20px; }
 
-span.tags a { margin-right: 8px; color: #fff; background-color:#000 } 
+/*span.tags a { margin-right: 8px; color: #fff; background-color:#000 } 
 
-span.tags a:hover { color: #f131c6; }
+span.tags a:hover { color: #f131c6; }*/
 
 .tag_1 { font-size: 11px }
 
@@ -540,6 +541,11 @@ h2.album_name {
 .project_description p.name { width: 218px }
 
 .project_description span.url { clear: both; float: left; margin-top: 5px; }
+
+.project_description a:link { color: #f131c6 }    
+.project_description a:visited { color: #f131c6 } 
+.project_description a:hover { color: #fff }  
+.project_description a:active { color: #fff }
 
 .project_description p.description { width: 500px }
 
