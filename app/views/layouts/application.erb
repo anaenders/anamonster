@@ -43,7 +43,6 @@
       </div>
       <div id="footer">
         <%= image_tag('/images/margin.png', :alt => 'anamonster', :id => 'bottom_margin') %>
-        <%= link_to(image_tag('rss_logo.png', :alt => 'RSS', :class => 'rss'), '/feed.xml') %>
         <div id="footer_navigation">
           <span class='contact'><%= link_to('contact', '/contact') %></span>
           <div id="search">
@@ -54,6 +53,7 @@
           </div>
           <p>&#169; Copyright 2009. Ana Carter. All rights reserved</p>
         </div>
+        <%= link_to(image_tag('rss_logo.png', :alt => 'RSS', :class => 'rss', :target => '_blank'), '/feed.xml') %>
       </div>
   </div>
   <script type="text/javascript">

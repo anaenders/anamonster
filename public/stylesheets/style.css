@@ -713,14 +713,14 @@ span.contact {
   margin: 10px 0 0 20px;
 }
 
-.rss { float: right; margin: 5px 10px;}
+.rss { float: right; margin: 5px 20px 0 10px}
 
 #footer_navigation { width: 750px; float: left;}
 
 #footer_navigation p  {
   float: right;
   text-align: right;
-  margin: 10px 20px 0 0;
+  margin-top: 10px;
   width: auto;
 }
 
