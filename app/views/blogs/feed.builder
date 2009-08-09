@@ -8,7 +8,7 @@ xml.rss :version=>'2.0' do
       xml.item do
         xml.title(blog.title)
         xml.link(blog_path(blog, :only_path => false))
-        xml.description(truncate(strip_tags(markdown(blog.image_replaced_content)), 500))
+        xml.description(truncate(strip_tags(markdown(blog.image_replaced_content)), 300))
         xml.pubDate(blog.created_at.to_s(:rfc822))
         xml.guid(blog_path(blog, :only_path => false))
       end
