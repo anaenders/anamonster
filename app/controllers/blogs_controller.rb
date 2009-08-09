@@ -14,6 +14,11 @@ class BlogsController < ApplicationController
   def edit; end
   def new; @blog = Blog.new; end
 
+  def feed
+    @blogs = Blog.all(:order => 'created_at DESC', :limit => 5)
+    render :layout => false
+  end
+
   def create
     @blog = Blog.new(params[:blog])
     if @blog.save

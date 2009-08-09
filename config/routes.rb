@@ -7,6 +7,9 @@ ActionController::Routing::Routes.draw do |map|
   map.blog_calendar_day '/blogs/search/:by/:year/:month/:day', :controller => 'blogs', :action => 'search'
   map.blog_search '/blogs/search/:by', :controller => 'blogs', :action => 'search'
   
+  # RSS
+  map.blog_rss '/feed.xml', :controller => 'blogs', :action => 'feed'
+  
   # Login
   map.logout '/logout', :controller => 'sessions', :action => 'destroy'
   map.login '/login', :controller => 'sessions', :action => 'new'
