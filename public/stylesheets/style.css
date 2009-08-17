@@ -671,7 +671,7 @@ p.message {
 #footer {
   float:left;
 	width: 800px;
-	height: 60px;
+	height: 63px;
 	background-color: #000;
 	color: #fff;
 	padding-top: 7px;
@@ -716,7 +716,7 @@ span.search_button {
 
 span.contact { 
   float: left;
-  margin: 10px 0 0 20px;
+  margin: 7px 0 0 20px;
 }
 
 .rss { float: right; margin: 5px 20px 0 10px}
