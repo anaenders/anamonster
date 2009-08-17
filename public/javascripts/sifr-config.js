@@ -6,7 +6,7 @@ sIFR.replace(geosans, {
   selector: '#blog_container h3',
   wmode: 'transparent',
   css: [
-    '.sIFR-root { font-size: 16px; color: #d2e1fe }',
+    '.sIFR-root { font-size: 16px; color: #946565 }',
     'a:link { color: #d2e1fe }',    
     'a:visited { color: #d2e1fe }',  
     'a:hover { color: #000000 }', 
@@ -21,18 +21,18 @@ sIFR.replace(geosans, {
   css: '.sIFR-root { font-size: 18px; color: #000000 }'
 });
 
-sIFR.replace(geosans, {
-  selector: 'span.contact, span.search_button',
-  wmode: 'transparent',
-  css: [
-    '.sIFR-root { font-size: 14px; color: #ffffff }',
-    'a:link { color: #ffffff }',    
-    'a:visited { color: #ffffff }',  
-    'a:hover { color: #ffffff }', 
-    'a:active { color: #ffffff }',
-    'a { text-decoration: none }'
-  ]
-});
+// sIFR.replace(geosans, {
+//   selector: 'span.contact, span.search_button',
+//   wmode: 'transparent',
+//   css: [
+//     '.sIFR-root { font-size: 14px; color: #ffffff }',
+//     'a:link { color: #ffffff }',    
+//     'a:visited { color: #ffffff }',  
+//     'a:hover { color: #ffffff }', 
+//     'a:active { color: #ffffff }',
+//     'a { text-decoration: none }'
+//   ]
+// });
 
 sIFR.replace(geosans, {
   selector: '#footer_navigation p',

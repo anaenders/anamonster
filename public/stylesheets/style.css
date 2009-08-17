@@ -121,8 +121,8 @@ img#bottom_margin { top: 0px }
 #blog_container h3, #blog_container h2, h3.search_results { font-weight: normal }
 
 #blog_container h3, #blog_container h3 a {
-  background-color: #f131c6;
-  color: #d2e1fe;
+  background-image:url('/images/h3_bg.png');
+  color: #946565;
   font-size: 16px;
   padding-left: 2px;
   width: 528px;
@@ -678,6 +678,12 @@ p.message {
 	position: relative;
 }
 
+#mini_me {
+  position: absolute;
+  top: 7px;
+  left: 20px;
+}
+
 #footer a { color: #fff }
 
 #search {
@@ -715,7 +721,7 @@ span.contact {
 
 .rss { float: right; margin: 5px 20px 0 10px}
 
-#footer_navigation { width: 740px; float: left;}
+#footer_navigation { width: 683px; float: right;}
 
 #footer_navigation p  {
   float: right;
