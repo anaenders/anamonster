@@ -734,9 +734,9 @@ span.contact {
  *	admin   								                *
 \********************************************/
 
-.admin_links {
-  clear: both;
-}
+.new_blog { z-index: 100 }
+
+.admin_links { clear: both }
 
 .main_content {
   width: 760px;

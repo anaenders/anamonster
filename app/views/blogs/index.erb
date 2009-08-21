@@ -7,7 +7,7 @@
     <% end %>
     
     <% if_authorized? do %>
-      <%= link_to 'New blog', new_blog_path %>
+      <%= link_to 'New blog', new_blog_path, :class="new_blog" %>
     <% end %>
   </div>
   
