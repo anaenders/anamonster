@@ -684,8 +684,6 @@ p.message {
   left: 20px;
 }
 
-#footer a { color: #fff }
-
 #search {
   background-image:url('/images/search_BG.jpg');
   float: left;
@@ -714,14 +712,21 @@ span.search_button {
   z-index: 100;
 }
 
+.search_button a { color: #fff }
+
 span.contact { 
   float: left;
-  margin: 7px 0 0 20px;
+  margin: 9px 0 0 20px;
 }
+
+span.contact a:link { color: #fff }
+span.contact a:visited { color: #fff }
+span.contact a:hover { color: #f131c6 }
+span.contact a:active { color: #f131c6 }
 
 .rss { float: right; margin: 5px 20px 0 10px}
 
-#footer_navigation { width: 683px; float: right;}
+#footer_navigation { width: 740px; float: right;}
 
 #footer_navigation p  {
   float: right;
