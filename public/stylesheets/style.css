@@ -143,6 +143,7 @@ img#bottom_margin { top: 0px }
   border: 1px solid #f131c6;
   padding: 20px;
   margin-bottom: 30px;
+  background-color: #fffbfb;
 }
 
 #blog_container .search_blog_text p { margin-bottom: 0px }
