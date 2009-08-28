@@ -231,17 +231,26 @@ span.current { color: #f131c6 }
 
 #resume a:hover { color: #000 }
 
-#about_me img { float: left; margin: 0 20px 10px 0 }
+#about_me img { float: left; margin: 60px 20px 10px 75px }
 
 #description {
   float: left;
-/*  width: 477px;*/
+  height: 400px;
   line-height: 1.7em;
+  background-image: url('/images/about_me_BG.png');
+  position: relative;
 }
 
+.about_text { margin-top: 90px;}
+
 #description p {
-/*  float: left;*/
-  margin-top: 10px;
+  margin: 10px 40px 0 40px;
+}
+
+#description h3 {
+  position: absolute;
+  top: 60px;
+  left: 354px;
 }
 
 #description h3, #resume h3 {

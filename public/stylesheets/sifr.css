@@ -101,7 +101,7 @@ media type, in order not to have the printed text come out weird.
   .sIFR-active #description h3 {
     visibility: hidden;
     height: 1.5em;
-    width: 477px;
+    width: 375px;
   }
   .sIFR-active #resume h3 {
     visibility: hidden;
