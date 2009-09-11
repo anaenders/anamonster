@@ -516,15 +516,15 @@ h2.album_name {
   display: inline;
 }
 
-.yellow { background-color: #fffa7f }
+.yellow { background-color: #fff966 }
 
-.green{ background-color: #b4ef7f }
+.green{ background-color: #7ee621 }
 
-.blue { background-color: #98ccfe }
+.blue { background-color: #62b3ff }
 
 .orange { background-color: #ffca7f }
 
-.red { background-color: #ff7f7f }
+.red { background-color: #f63c3c }
 
 .large_image img { float: left }
 
@@ -532,6 +532,8 @@ h2.album_name {
   float: left;
   position: relative;
   margin-bottom: 1px;
+  width: 760px;
+  height: 280px;
 }
 
 .project_description {
@@ -550,7 +552,7 @@ h2.album_name {
 
 .project_description p.name { width: 218px }
 
-.project_description span.url { clear: both; float: left; margin-top: 5px; }
+.project_description span.url { clear: both; float: left; margin-top: 0px; }
 
 .project_description a:link { color: #f131c6 }    
 .project_description a:visited { color: #f131c6 } 
