@@ -516,15 +516,15 @@ h2.album_name {
   display: inline;
 }
 
-.yellow { background-color: #fff966 }
+.yellow { background-color: #fcfa64 }
 
-.green{ background-color: #7ee621 }
+.green{ background-color: #c5da4a }
 
-.blue { background-color: #62b3ff }
+.blue { background-color: #d2dbdc }
 
-.orange { background-color: #ffca7f }
+.orange { background-color: #f9ca86 }
 
-.red { background-color: #f63c3c }
+.red { background-color: #f7a9a9 }
 
 .large_image img { float: left }
 

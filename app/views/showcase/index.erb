@@ -1,31 +1,51 @@
 <style type="text/css">
 /*  .large_image { display: none }*/
-  .blue.hover { background-color: #4ca6fb }
-  .yellow.hover { background-color: #fff600 }
-  .green.hover { background-color: #69e000 }
-  .orange.hover { background-color: #fabb63 }
-  .red.hover { background-color: #f12121 }
+  .blue.hover { background-color: #cfe5ed }
+  .yellow.hover { background-color: #f9f590 }
+  .green.hover { background-color: #d0e555 }
+  .orange.hover { background-color: #f8d5a2 }
+  .red.hover { background-color: #f4c1c1 }
 </style>
 
 <div class="padding">  
+  
+  <div class="small_image orange" rel="10">
+    <%= link_to(image_tag('small_chilewich.png', :alt => 'chilewich'), '#') %>
+  </div>  
   <div class="small_image red" rel="9">
     <%= link_to(image_tag('small_falchi_teaser.png', :alt => 'carlos falchi'), '#') %>
   </div>
-  <div class="small_image yellow" rel="8">
-    <%= link_to(image_tag('small_thornton.png', :alt => 'thornton tomasetti'), '#') %>
-  </div>
-  
+
+  <div class="large_image" id="showcase_10">
+    <%= image_tag('large_chilewich.png') %>
+    <div class="project_description">
+      <p class="name">Project name: Chilewich
+        <span class="url">url: <%= link_to('http://www.chilewich.com', 'http:www.chilewich.com', :target => '_blank') %></span>
+      </p>
+      <p class="description">Description: Partnered with <%= link_to('Intersect NYC', 'http://www.intersectnyc.com', :target => '_blank') %> 
+        to develop this striking and elegant e-commerce site, which emphasizes craftmanship and well made designs focusing on materials and textiles. 
+      </p>
+    </div>
+  </div> 
   <div class="large_image" id="showcase_9">
     <%= image_tag('large_falchi_teaser.png') %>
     <div class="project_description">
       <p class="name">Project name: Carlos Falchi (Teaser Site)
-        <span class="url">url: <%= link_to('http://http://www.carlosfalchi.com', 'http://http://www.carlosfalchi.com', :target => '_blank') %></span>
+        <span class="url">url: <%= link_to('http://www.carlosfalchi.com', 'http://www.carlosfalchi.com', :target => '_blank') %></span>
       </p>
       <p class="description">Description: Created the user interface for this temporary site for the fashion designer, Carlos Falchi. Partnered with 
         <%= link_to('Intersect NYC', 'http://www.intersectnyc.com', :target => '_blank') %>. 
       </p>
     </div>
   </div>
+
+  <div class="small_image yellow" rel="8">
+    <%= link_to(image_tag('small_thornton.png', :alt => 'thornton tomasetti'), '#') %>
+  </div>
+  <div class="small_image green" rel ="7">
+    <%= link_to(image_tag('small_liz.png', :alt => 'liz claiborne'), '#') %>
+  </div>
+
   <div class="large_image" id="showcase_8">
     <%= image_tag('large_thornton.png') %>
     <div class="project_description">
@@ -38,14 +58,6 @@
       </p>
     </div>
   </div>
- 
-  <div class="small_image green" rel ="7">
-    <%= link_to(image_tag('small_liz.png', :alt => 'liz claiborne'), '#') %>
-  </div>
-  <div class="small_image blue" rel="6">
-    <%= link_to(image_tag('small_citibabes.png', :alt => 'citibabes'), '#') %>
-  </div>
-
   <div class="large_image" id="showcase_7">
     <%= image_tag('large_liz.png') %>
     <div class="project_description">
@@ -57,6 +69,14 @@
       </p>
     </div>
   </div>
+
+  <div class="small_image blue" rel="6">
+    <%= link_to(image_tag('small_citibabes.png', :alt => 'citibabes'), '#') %>
+  </div>
+  <div class="small_image orange" rel="5">
+    <%= link_to(image_tag('small_mally.png', :alt => 'mally'), '#') %>
+  </div>
+
   <div class="large_image" id="showcase_6">
     <%= image_tag('large_citibabes.png') %>
     <div class="project_description">
@@ -68,14 +88,6 @@
       </p>
     </div>
   </div>
-
-  <div class="small_image orange" rel="5">
-    <%= link_to(image_tag('small_mally.png', :alt => 'mally'), '#') %>
-  </div>
-  <div class="small_image red" rel="4">
-    <%= link_to(image_tag('small_kates.png', :alt => 'kates'), '#') %>
-  </div>
-   
   <div class="large_image" id="showcase_5">
     <%= image_tag('large_mally.png') %>
     <div class="project_description">
@@ -88,6 +100,15 @@
       </p>
     </div>
   </div>
+
+
+  <div class="small_image red" rel="4">
+    <%= link_to(image_tag('small_kates.png', :alt => 'kates'), '#') %>
+  </div>
+  <div class="small_image yellow" rel="3">
+    <%= link_to(image_tag('small_kimara.png', :alt => 'kimara'), '#') %>
+  </div>
+
   <div class="large_image" id="showcase_4">
     <%= image_tag('large_kates.png') %>
     <div class="project_description">
@@ -99,14 +120,6 @@
       </p>
     </div>
   </div>
-
-  <div class="small_image yellow" rel="3">
-    <%= link_to(image_tag('small_kimara.png', :alt => 'kimara'), '#') %>
-  </div>
-  <div class="small_image green" rel="2">
-    <%= link_to(image_tag('small_cinemax.png', :alt => 'cinemax'), '#') %>
-  </div>
-
   <div class="large_image" id="showcase_3">  
     <%= image_tag('large_kimara.png') %>
     <div class="project_description">
@@ -118,6 +131,14 @@
       </p>
     </div>
   </div>
+
+  <div class="small_image green" rel="2">
+    <%= link_to(image_tag('small_cinemax.png', :alt => 'cinemax'), '#') %>
+  </div>
+  <div class="small_image blue" rel="1">
+    <%= link_to(image_tag('small_summitsprings.png', :alt => 'summit springs'), '#') %>
+  </div>
+  
   <div class="large_image" id="showcase_2">
     <%= image_tag('large_cinemax.png') %>
     <div class="project_description">
@@ -129,11 +150,6 @@
       </p>
     </div>
   </div>
-
-  <div class="small_image blue" rel="1">
-    <%= link_to(image_tag('small_summitsprings.png', :alt => 'summit springs'), '#') %>
-  </div>
-  
   <div class="large_image" id="showcase_1">
     <%= image_tag('large_summitsprings.png') %>
     <div class="project_description">
