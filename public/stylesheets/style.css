@@ -140,7 +140,7 @@ img#bottom_margin { top: 0px }
 #blog_container p { margin-bottom: 8px }
 
 .blog_text {
-  border: 1px solid #f131c6;
+  border: 1px solid #E2F1F4;
   padding: 20px;
   margin-bottom: 30px;
   background-color: #fffbfb;
@@ -162,7 +162,7 @@ img#bottom_margin { top: 0px }
 
 .blog_text img {
   float: left;
-  margin: 5px 10px 10px 0;
+  margin: 5px 20px 10px 0;
 }
 
 .pagination {
@@ -237,7 +237,7 @@ span.current { color: #f131c6 }
   float: left;
   height: 400px;
   line-height: 1.7em;
-  background-image: url('/images/about_me_BG2.png');
+  background-image: url('/images/about_me_BG3.png');
   position: relative;
 }
 
