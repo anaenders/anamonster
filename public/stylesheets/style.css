@@ -751,7 +751,7 @@ span.contact a:active { color: #f131c6 }
  *	admin   								                *
 \********************************************/
 
-.new_blog { z-index: 100 }
+#blog_container .new_blog { z-index: 100 }
 
 .admin_links { clear: both }
 
