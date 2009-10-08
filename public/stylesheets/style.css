@@ -114,6 +114,7 @@ img#bottom_margin { top: 0px }
   width: 530px;
   margin-right: 30px;
   display: inline;
+  position: relative;
 }
 
 #blog_container a:hover { color: #000 } 
@@ -751,7 +752,12 @@ span.contact a:active { color: #f131c6 }
  *	admin   								                *
 \********************************************/
 
-#blog_container .new_blog { z-index: 100 }
+#blog_container .new_blog { 
+  z-index: 100;
+  position: absolute;
+  bottom: 0px;
+  left: 0px; 
+}
 
 .admin_links { clear: both }
 
