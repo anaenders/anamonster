@@ -4,13 +4,13 @@
   //Button states for album thumbnails
   function set_album_button_states() {
     if (first_photo == 1) {
-      $('#previous img').attr('src', $('#previous img').attr('src').replace('arrow_left.png', 'arrow_left_ghosted.png'));
+      $('#previous img').attr('src', $('#previous img').attr('src').replace('arrow_left.jpg', 'arrow_left_ghosted.jpg'));
     } else {
       $('#previous img').attr('src', $('#previous img').attr('src').replace('_ghosted', ''));
     }
 
     if (last_photo == album_size) {
-      $('#next img').attr('src', $('#next img').attr('src').replace('arrow_right.png', 'arrow_right_ghosted.png'));
+      $('#next img').attr('src', $('#next img').attr('src').replace('arrow_right.jpg', 'arrow_right_ghosted.jpg'));
     } else {
       $('#next img').attr('src', $('#next img').attr('src').replace('_ghosted', ''));
     }
@@ -177,7 +177,7 @@
   </div>
 
   <div id="menu"> 
-    <%= link_to(image_tag('gallery_down_off.png', :alt => 'down'), '#',:id => 'gallery_down') %>
+    <%= link_to(image_tag('gallery_down_off.jpg', :alt => 'down'), '#',:id => 'gallery_down') %>
     <div class="gallery_window">
       <div class="gallery_thumbs">
         <% @albums.each_with_index do |album, i| %>
@@ -187,7 +187,7 @@
         <% end %> 
       </div>  
     </div>
-    <%= link_to(image_tag("gallery_up_#{@albums.size > num_albums_at_once ? 'on' : 'off'}.png", :alt => 'up'), '#', :id => 'gallery_up') %> 
+    <%= link_to(image_tag("gallery_up_#{@albums.size > num_albums_at_once ? 'on' : 'off'}.jpg", :alt => 'up'), '#', :id => 'gallery_up') %> 
   </div>
 </div>
 
