@@ -238,7 +238,7 @@ span.current { color: #f131c6 }
   float: left;
   height: 400px;
   line-height: 1.7em;
-  background-image: url('/images/about_me_BG3.png');
+  background-image: url('/images/about_me_BG3.jpg');
   position: relative;
 }
 
@@ -726,6 +726,11 @@ span.search_button {
 }
 
 .search_button a { color: #fff }
+
+.search_button a:link { color: #fff }    
+.search_button a:visited { color: #fff } 
+.search_button a:hover { color: #fff }  
+.search_button a:active { color: #fff }
 
 span.contact { 
   float: left;

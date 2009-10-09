@@ -12,10 +12,10 @@
   </div>
   
   <%= render :partial => 'search' %>
-  
-  <%= will_paginate(@blogs,
-      :previous_label => image_tag((@blogs.previous_page ? 'previous.png' : 'previous_ghosted.png'), :alt => 'previous'),
-      :next_label     => image_tag((@blogs.next_page ? 'next.png' : 'next_ghosted.png'), :alt => 'next'),
-      :inner_window   => 3
-  ) %> 
 </div>
+
+<%= will_paginate(@blogs,
+    :previous_label => image_tag((@blogs.previous_page ? 'previous.png' : 'previous_ghosted.png'), :alt => 'previous'),
+    :next_label     => image_tag((@blogs.next_page ? 'next.png' : 'next_ghosted.png'), :alt => 'next'),
+    :inner_window   => 3
+) %>
