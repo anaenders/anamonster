@@ -176,7 +176,7 @@ img#bottom_margin { top: 0px }
 
 .pagination a { color: #000 }
 
-span.current { color: #f131c6 }
+.pagination span.current { color: #f131c6 }
 
 .pagination img { vertical-align: middle; }
 
