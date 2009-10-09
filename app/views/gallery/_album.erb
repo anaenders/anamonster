@@ -12,7 +12,7 @@
   </div>
 
   <div class="thumb_holder">
-    <%= link_to(image_tag('arrow_left_ghosted.png', :alt => 'prev'), '#', :id => 'previous') %>
+    <%= link_to(image_tag('arrow_left_ghosted.jpg', :alt => 'prev'), '#', :id => 'previous') %>
     <div class="thumb_window">
       <div class="thumbs">
         <% if album %>
@@ -34,7 +34,7 @@
         <% end %>
       </div>
     </div>
-    <%= link_to(image_tag("arrow_right#{album.size > 13 ? '' : '_ghosted'}.png", :alt => 'next'), '#', :id => 'next') %>
+    <%= link_to(image_tag("arrow_right#{album.size > 13 ? '' : '_ghosted'}.jpg", :alt => 'next'), '#', :id => 'next') %>
   </div>
   
   <script type = "text/javascript">
