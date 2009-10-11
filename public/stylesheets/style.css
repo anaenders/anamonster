@@ -9,6 +9,7 @@ html, * {
 
 body {
 	background-image: url('/images/bg.png');
+	background-color: #2c2c2c;
 	background-attachment: fixed;
 	background-repeat: repeat;
 	height: 100%;
@@ -224,14 +225,27 @@ img#bottom_margin { top: 0px }
   float: left;
   margin-bottom: 10px;
   width: 100%;
+  position: relative;
 }
 
+.download_link {
+  position: absolute;
+  top:11px;
+  right: 0px;
+  color: #000;
+}
+
+.download_link span {
+  background-color: #ecfafc;
+  margin: 0 0 0 3px;
+  padding: 2px;
+}
+
+#resume .download_link span a { color: #7e7e7e }
+#resume .download_link span a:hover { color: #ccc }
 #about_me a:hover { color: #000 }
-
 #resume a { color: #f131c6 }
-
 #resume a:hover { color: #000 }
-
 #about_me img { float: left; margin: 60px 20px 10px 75px }
 
 #description {
