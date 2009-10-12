@@ -11,6 +11,8 @@ Rails::Initializer.run do |config|
     require 'bluecloth'
   end
   
+  config.gem 'twitter4r', :lib => 'twitter', :version => '0.3.1'
+  
   config.time_zone = 'Eastern Time (US & Canada)'
 
   config.action_controller.session = {

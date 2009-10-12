@@ -1,5 +1,6 @@
 class ApplicationController < ActionController::Base
   include AuthenticatedSystem
+  include TwitterHelper
   
   helper :all
   

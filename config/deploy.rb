@@ -18,6 +18,7 @@ role :db,  '67.23.26.253', :primary => true
 namespace :deploy do
   task :after_update_code do
     link_up_assets
+    link_twitter_config
     cleanup
   end
 
@@ -37,6 +38,10 @@ namespace :deploy do
     
     run "mkdir -p #{release_path}/tmp/attachment_fu"
     run "chmod 777 #{release_path}/tmp/attachment_fu"
+  end
+  
+  task :link_twitter_config do
+    run "ln -nfs #{shared_path}/config/twitter.yml #{release_path}/config/twitter.yml"
   end
 end
 
