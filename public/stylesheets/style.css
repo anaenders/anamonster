@@ -399,6 +399,9 @@ th abbr { border: 0px }
   color: #67afc2;
 }
 
+.tweet a:link, .tweet a:visited { color: #67afc2 }
+.tweet a:hover, .tweet a:active { color: #a6c0c7 }
+
 .tweet img {
   position: absolute;
   top: 3px;
