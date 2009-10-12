@@ -382,6 +382,30 @@ th abbr { border: 0px }
 #thumb_pics img.last { margin: 0 }
 
 /********************************************
+ *	tweets        					                *
+\********************************************/
+
+.tweet {
+  background-color: #fffbfb;
+  position: relative;
+  width: 200px;
+  float: left;
+  margin-bottom: 10px;
+}
+
+.tweet p {
+  float: left;
+  margin: 5px 35px 5px 5px;
+  color: #8ba1a7;
+}
+
+.tweet img {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+}
+
+/********************************************
  *	gallery							                    *
 \********************************************/
 
