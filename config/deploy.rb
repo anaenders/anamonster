@@ -41,7 +41,7 @@ namespace :deploy do
   end
   
   task :link_twitter_config do
-    run "ln -nfs #{shared_path}/twitter.yml #{release_path}/config/twitter.yml"
+    run "ln -nfs #{shared_path}/config/twitter.yml #{release_path}/config/twitter.yml"
   end
 end
 
