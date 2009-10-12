@@ -40,7 +40,7 @@ namespace :deploy do
     run "chmod 777 #{release_path}/tmp/attachment_fu"
   end
   
-  task :link_twitter_config
+  task :link_twitter_config do
     run "ln -nfs #{shared_path}/twitter.yml #{release_path}/config/twitter.yml"
   end
 end
