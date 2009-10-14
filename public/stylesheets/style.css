@@ -237,7 +237,10 @@ img.reply_button { margin: 0 10px 0 0 }
 img.post_button { margin: 0 3px 0 0 }
 .reply span { margin-top: 5px }
 .show_hide { float: right }
-.show_hide a { color: #319afd; font-size: 10px; }
+.show_hide a { font-size: 10px; }
+
+#blog_container .show_hide a:link, #blog_container .show_hide a:visited { color: #319afd }
+#blog_container .show_hide a:hover, #blog_container .show_hide a:active { color: #A6C0C7 }
 
 .comments_wrapper {
   background-image: url(/images/textarea.png);
