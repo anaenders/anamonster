@@ -9,4 +9,23 @@
       </div>
     <% end %>
     <div class = "clear"></div>
+    <div class="reply">
+      <%= link_to(image_tag('reply.png', :alt => 'reply', :class => 'reply_button'), "#") %>
+      <span>comments 2 </span>
+      <div class="show_hide"><%= link_to 'show', '#' %>&nbsp;|&nbsp;<%= link_to 'hide', '#' %></div>
+      <div class="comments_wrapper">
+        <textarea id="reply_content"></textarea>
+      </div>
+      <div class="post_delete">
+        <%= link_to(image_tag('post.png', :alt => 'post', :class => 'post_button'), "#") %>
+        <%= link_to(image_tag('delete.png', :alt => 'delete'), "#") %>
+      </div>
+      <div class="comments">
+        <p>dolor sit amet, consectetur adipiscing elit. Nam consectetur mauris sed velit. Vivamus 
+          eleifend quam ac erat. Nunc eget dolor et lorem rutrum dignissim. Curabitur feugiat mauris eget ipsum.</p>
+      </div>
+      <div class="comments">
+        <p>Vivamus eleifend quam ac erat. Nunc eget dolor et lorem rutrum dignissim. Curabitur feugiat mauris eget ipsum.</p>
+      </div>
+    </div>
   </div>

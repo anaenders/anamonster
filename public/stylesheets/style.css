@@ -119,6 +119,7 @@ img#bottom_margin { top: 0px }
 }
 
 #blog_container a:hover { color: #000 } 
+#blog_container h3 { float: left }
 
 #blog_container h3, #blog_container h2, h3.search_results { font-weight: normal }
 
@@ -137,6 +138,7 @@ img#bottom_margin { top: 0px }
   font-size: 18px;
   margin: 10px 0;
   width: 528px;
+  float: left;
 }
 
 #blog_container p { margin-bottom: 8px }
@@ -146,6 +148,8 @@ img#bottom_margin { top: 0px }
   padding: 20px;
   margin-bottom: 30px;
   background-color: #fffbfb;
+  float: left;
+  width: 490px;
 }
 
 #blog_container .search_blog_text p { margin-bottom: 0px }
@@ -216,6 +220,51 @@ img#bottom_margin { top: 0px }
 }
 
 #new_blog input, #new_blog textarea { width: 752px; margin-bottom: 10px; }
+
+/********************************************
+ *	blog replies  					                *
+\********************************************/
+
+.reply {
+  float: left;
+  border-top: 1px solid #deebed;
+  width: 490px;
+  padding-top: 10px;
+}
+
+.reply img { margin: 0px }
+img.reply_button { margin: 0 10px 0 0 }
+img.post_button { margin: 0 3px 0 0 }
+.reply span { margin-top: 5px }
+.show_hide { float: right }
+.show_hide a { color: #319afd; font-size: 10px; }
+
+.comments_wrapper {
+  background-image: url(/images/textarea.png);
+  float: left;
+  margin: 15px 0 10px 0;
+  height: 86px;
+  width: 490px;
+}
+
+textarea#reply_content {
+  margin: 2px;
+  width: 480px;
+  height: 75px;
+  padding: 2px;
+  border: 1px solid #fff; 
+  background-color: #fff;
+}
+
+.post_delete { float: right }
+.comments p { margin: 10px }
+
+.comments {
+  background-color: #f5f5f5;
+  width: 490px;
+  float: left;
+  margin-top: 10px;
+}
 
 /********************************************
  *	about         					                *
