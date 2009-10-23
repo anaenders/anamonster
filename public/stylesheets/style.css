@@ -282,9 +282,10 @@ textarea#reply_content {
 
 .download_link {
   position: absolute;
-  top:11px;
+  top: 11px;
   right: 0px;
   color: #000;
+  z-index: 300;
 }
 
 .download_link span {
@@ -309,10 +310,7 @@ textarea#reply_content {
 }
 
 .about_text { margin-top: 90px;}
-
-#description p {
-  margin: 10px 40px 0 40px;
-}
+#description p { margin: 10px 40px 0 40px }
 
 #description h3 {
   position: absolute;
