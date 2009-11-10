@@ -1,9 +1,15 @@
 <%= image_tag('header_tweets.png', :alt => 'tweets', :class => 'search_header') %>
 <span class="tags">
+  <% begin %>
   <% @twitter.timeline_for(:me, :count => 5) do |status| %>
     <div class="tweet">
       <%= link_to(image_tag('twitter_bird.png', :alt => 'bird'), "http://www.twitter.com/#{status.user.screen_name}") %>
       <p><%= link_to(status.text, "http://www.twitter.com/#{status.user.screen_name}") %></p>
+    </div>
+  <% end %>
+  <% rescue Twitter::RESTError => e %>
+    <div class = "tweet">
+      Unable to connect to twitter.
     </div>
   <% end %>
 </span>

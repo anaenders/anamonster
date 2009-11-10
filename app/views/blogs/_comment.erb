@@ -1,0 +1,11 @@
+<div class="comment" id = "comment_<%= comment.id %>" rel="<%= comment.blog.id %>" style = "display: <%= defined?(visible) ? 'block' : 'none' %>">
+  <% if_authorized? do %>
+    <%= link_to_remote(
+      image_tag('delete.png', :alt => 'delete', :class => 'delete_button'),
+      :url => delete_comment_path(comment.id),
+      :confirm => 'Are you sure?'
+    ) %>
+  <% end %>
+  <p><%= comment.content %></p>
+  <p class = "author">&#150;&nbsp;<%= comment.user_name %></p>
+</div>

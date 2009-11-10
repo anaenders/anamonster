@@ -40,4 +40,21 @@ $(function(){
     $('.message').show();
     $('#contact_message').show();
   });
+  
+  //Blog comments  
+  $('.show_hide a').click(function() {
+    if ($(this).html() == 'hide') {
+      $(this).html('show');
+      $('.comment[rel="' + $(this).attr('rel') + '"]').hide();
+    } else {
+      $(this).html('hide');
+      $('.comment[rel="' + $(this).attr('rel') + '"]').show();
+    }
+    return false;
+  });
+  
+  $('a.reply_link').click(function() { 
+    $('.textfield_wrapper[rel="' + $(this).attr('rel') + '"]').toggle();
+    return false;
+  });
 });

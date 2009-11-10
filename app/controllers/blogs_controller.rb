@@ -68,6 +68,37 @@ class BlogsController < ApplicationController
     render :partial => 'blog_photo_fields', :locals => { :num => params[:num] }
   end
   
+  def post_comment
+    rel = params[:comment][:blog_id]
+    @comment = Comment.new(params[:comment])
+    if @comment.save
+      render :update do |page|
+        page.insert_html(
+          :before, "new_blog_drop_#{rel}",
+          :partial => 'comment',
+          :object  => @comment,
+          :locals  => { :visible => true }
+        )
+        page.replace_html("comment_count_#{rel}", @comment.blog.comments.size)
+        page.replace_html("comment_errors_#{rel}", '')
+        page << "$('.textfield_wrapper[rel=\"#{rel}\"]').toggle();"
+        page << "$('.textfield_wrapper[rel=\"#{rel}\"] .reply_content').val('');"
+      end
+    else
+      render :update do |page|
+        page.replace_html("comment_errors_#{rel}", @comment.errors.full_messages.join('<br />'))
+      end
+    end
+  end
+  
+  def delete_comment
+    @comment = Comment.find(params[:id])
+    @comment.destroy
+    render :update do |page|
+      page.remove "comment_#{params[:id]}"
+    end
+  end
+  
   protected
   def load_blog
     @blog = Blog.find(params[:id])

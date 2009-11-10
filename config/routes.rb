@@ -6,6 +6,8 @@ ActionController::Routing::Routes.draw do |map|
   map.blog_new_photo_field '/blog/new_photo_field', :controller => 'blogs', :action => 'new_photo_field'
   map.blog_calendar_day '/blogs/search/:by/:year/:month/:day', :controller => 'blogs', :action => 'search'
   map.blog_search '/blogs/search/:by', :controller => 'blogs', :action => 'search'
+  map.post_comment '/blogs/post_comment', :controller => 'blogs', :action => 'post_comment'
+  map.delete_comment '/blogs/delete_comment/:id', :controller => 'blogs', :action => 'delete_comment'
   
   # RSS
   map.blog_rss '/feed.xml', :controller => 'blogs', :action => 'feed'

@@ -1,31 +1,39 @@
-  <h3><%= blog.created_at.strftime("%a %B %d %H:%M:%S %Y") %></h3>
-  <h2><%=h blog.title %></h2>
-  <div class = "blog_text">
-    <%= markdown(blog.image_replaced_content) %>
-    <% if_authorized? do %>
-      <div class="admin_links">
-        <%= link_to 'Edit', edit_blog_path(blog) %> | 
-        <%= link_to 'Delete', blog, :confirm => 'Are you sure?', :method => :delete %>
-      </div>
+<h3><%= blog.created_at.strftime("%a %B %d %H:%M:%S %Y") %></h3>
+<h2><%=h blog.title %></h2>
+<div class = "blog_text">
+  <%= markdown(blog.image_replaced_content) %>
+  <% if_authorized? do %>
+    <div class="admin_links">
+      <%= link_to 'Edit', edit_blog_path(blog) %> | 
+      <%= link_to 'Delete', blog, :confirm => 'Are you sure?', :method => :delete %>
+    </div>
+  <% end %>
+  <div class = "clear"></div>
+  <div class="reply">
+    <%= link_to(image_tag('reply.png', :alt => 'reply', :class => 'reply_button'), "#", :class => 'reply_link', :rel => blog.id) %>
+    <span>comments <span id = "comment_count_<%= blog.id %>"><%= blog.comments.size %></span></span>
+    <% if blog.comments.size > 0 %>
+      <div class="show_hide" rel="<%= blog.id %>"><%= link_to 'show', '#', :rel => blog.id %></div>
     <% end %>
-    <div class = "clear"></div>
-    <!-- <div class="reply">
-      <%= link_to(image_tag('reply.png', :alt => 'reply', :class => 'reply_button'), "#") %>
-      <span>comments 2 </span>
-      <div class="show_hide"><%= link_to 'show', '#' %>&nbsp;|&nbsp;<%= link_to 'hide', '#' %></div>
-      <div class="comments">
-        <p>dolor sit amet, consectetur adipiscing elit. Nam consectetur mauris sed velit. Vivamus 
-          eleifend quam ac erat. Nunc eget dolor et lorem rutrum dignissim. Curabitur feugiat mauris eget ipsum.</p>
-      </div>
-      <div class="comments">
-        <p>Vivamus eleifend quam ac erat. Nunc eget dolor et lorem rutrum dignissim. Curabitur feugiat mauris eget ipsum.</p>
-      </div>
-      <div class="comments_wrapper">
-        <textarea id="reply_content"></textarea>
-      </div>
-      <div class="post_delete">
-        <%= link_to(image_tag('post.png', :alt => 'post', :class => 'post_button'), "#") %>
-        <%= link_to(image_tag('delete.png', :alt => 'delete'), "#") %>
-      </div>
-    </div> -->
+    <div class="comments_reply_wrapper" id = "comment_reply_<%= blog.id %>">
+      <% blog.comments.sort {|a,b| a.created_at <=> b.created_at }.each do |comment| %>
+        <%= render :partial => 'comment', :object => comment %>
+      <% end %>
+      <div id = "new_blog_drop_<%= blog.id %>"></div>
+      <% remote_form_for(:comment, @comment || Comment.new(:blog => blog), :url => { :action => 'post_comment' }) do |f| %>
+        <div id = "comment_errors_<%= blog.id %>" class = "post_error"></div>
+        <%= f.hidden_field :blog_id %>
+        <div class="textfield_wrapper" rel="<%= blog.id %>">
+          <div class="reply_textfield">
+            <%= f.text_area :content, :class => 'reply_content' %>
+          </div>
+          <div class="userinfo">
+            *name: <%= f.text_field :user_name, :class => 'username' %>
+            *email: <%= f.text_field :email, :class => 'useremail' %>
+          </div>
+          <div class="post_delete"><%= image_submit_tag('post.png') %></div>
+        </div>
+      <% end %>
+    </div>
   </div>
+</div>
