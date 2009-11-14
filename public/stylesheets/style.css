@@ -141,7 +141,7 @@ img#bottom_margin { top: 0px }
   float: left;
 }
 
-#blog_container p { margin-bottom: 8px; float: left; width: 470px; }
+#blog_container p { margin-bottom: 0px; float: left; width: 470px; }
 
 .blog_text {
   border: 1px solid #E2F1F4;

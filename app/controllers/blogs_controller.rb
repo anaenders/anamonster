@@ -72,6 +72,7 @@ class BlogsController < ApplicationController
     rel = params[:comment][:blog_id]
     @comment = Comment.new(params[:comment])
     if @comment.save
+      Mailer.deliver_comment(@comment)
       render :update do |page|
         page.insert_html(
           :before, "new_blog_drop_#{rel}",

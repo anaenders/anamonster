@@ -43,8 +43,8 @@ $(function(){
   
   //Blog comments  
   $('.show_hide a').click(function() {
-    if ($(this).html() == 'hide') {
-      $(this).html('show');
+    if ($(this).html() == 'hide comments') {
+      $(this).html('show comments');
       $('.comment[rel="' + $(this).attr('rel') + '"]').hide();
     } else {
       $(this).html('hide');
