@@ -47,7 +47,7 @@ $(function(){
       $(this).html('show comments');
       $('.comment[rel="' + $(this).attr('rel') + '"]').hide();
     } else {
-      $(this).html('hide');
+      $(this).html('hide comments');
       $('.comment[rel="' + $(this).attr('rel') + '"]').show();
     }
     return false;

@@ -231,6 +231,7 @@ img#bottom_margin { top: 0px }
   width: 490px;
   padding-top: 10px;
   position: relative;
+  margin-top: 5px;
 }
 
 .reply img { margin: 0px }
