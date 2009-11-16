@@ -2,6 +2,9 @@ RAILS_GEM_VERSION = '2.3.2' unless defined? RAILS_GEM_VERSION
 
 require File.join(File.dirname(__FILE__), 'boot')
 
+ENV['RECAPTCHA_PUBLIC_KEY']  = "6Lf7bAkAAAAAAN1cKNqfQbtGzfkGOzsEkoopPqVI"
+ENV['RECAPTCHA_PRIVATE_KEY'] = "6Lf7bAkAAAAAACuVQcYqezrCWu1BqxFj8wRdBTQK"
+
 Rails::Initializer.run do |config|
   
   begin

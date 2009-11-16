@@ -27,6 +27,7 @@
           <div class="reply_textfield">
             <%= f.text_area :content, :class => 'reply_content' %>
           </div>
+          <%= recaptcha_tags(:ajax => true, :display => { :theme => 'blackglass' }) %>
           <div class="userinfo">
             *name: <%= f.text_field :user_name, :class => 'username' %>
             *email: <%= f.text_field :email, :class => 'useremail' %>

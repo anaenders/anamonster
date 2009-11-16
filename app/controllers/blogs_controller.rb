@@ -71,7 +71,8 @@ class BlogsController < ApplicationController
   def post_comment
     rel = params[:comment][:blog_id]
     @comment = Comment.new(params[:comment])
-    if @comment.save
+    captcha_valid = verify_recaptcha
+    if captcha_valid && @comment.save
       Mailer.deliver_comment(@comment)
       render :update do |page|
         page.insert_html(
@@ -84,10 +85,19 @@ class BlogsController < ApplicationController
         page.replace_html("comment_errors_#{rel}", '')
         page << "$('.textfield_wrapper[rel=\"#{rel}\"]').toggle();"
         page << "$('.textfield_wrapper[rel=\"#{rel}\"] .reply_content').val('');"
+        page << "Recaptcha.reload();"
       end
     else
-      render :update do |page|
-        page.replace_html("comment_errors_#{rel}", @comment.errors.full_messages.join('<br />'))
+      if !captcha_valid
+        render :update do |page|
+          page.replace_html("comment_errors_#{rel}", 'Your captcha response does not match, please try again')
+          page << "Recaptcha.reload();"
+        end        
+      else
+        render :update do |page|
+          page.replace_html("comment_errors_#{rel}", @comment.errors.full_messages.join('<br />'))
+          page << "Recaptcha.reload();"
+        end
       end
     end
   end
