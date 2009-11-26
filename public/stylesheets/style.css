@@ -152,12 +152,13 @@ img#bottom_margin { top: 0px }
   width: 490px;
 }
 
-#blog_container .search_blog_text p { margin-bottom: 0px; float: left; }
+#blog_container .search_blog_text p { margin-bottom: 0px; }
 
 .search_blog_text {
   border: 1px solid #f131c6;
   padding: 10px;
   margin-bottom: 20px;
+  float: left;
 }
 
 .search_blog_text h4 { 
