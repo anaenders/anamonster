@@ -7,6 +7,7 @@ module Recaptcha
       key   = options[:public_key] ||= ENV['RECAPTCHA_PUBLIC_KEY']
       raise RecaptchaError, "No public key specified." unless key
       error = options[:error] ||= (defined? flash ? flash[:recaptcha_error] : "")
+      ajax_div = options[:ajax_div] || 'dynamic_recaptcha'
       uri   = options[:ssl] ? RECAPTCHA_API_SECURE_SERVER : RECAPTCHA_API_SERVER
       html  = ""
       if options[:display]
@@ -15,10 +16,10 @@ module Recaptcha
         html << %{</script>\n}
       end
       if options[:ajax]
-        html << %{<div id="dynamic_recaptcha"></div>}
+        html << %{<div id="#{ajax_div}"></div>}
         html << %{<script type="text/javascript" src="#{uri}/js/recaptcha_ajax.js"></script>\n}
         html << %{<script type="text/javascript">\n}
-        html << %{  Recaptcha.create('#{key}', document.getElementById('dynamic_recaptcha')#{options[:display] ? ',RecaptchaOptions' : ''});}
+        html << %{  Recaptcha.create('#{key}', document.getElementById('#{ajax_div}')#{options[:display] ? ',RecaptchaOptions' : ''});}
         html << %{</script>\n}
       else
         html << %{<script type="text/javascript" src="#{uri}/challenge?k=#{key}}
