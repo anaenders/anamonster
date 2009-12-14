@@ -59,11 +59,10 @@ img, div, input { behavior: url("/javascripts/iepngfix.htc") }
 	top: 58px;
 	right: 0;
 	z-index: 100;
+	height: 50px;
 }
 
-.nav_links img {
-  float: right;
-}
+.nav_links img { float: right; }
 
 /********************************************
  *	home									                  *
@@ -103,7 +102,6 @@ img#top_margin, #bottom_margin {
 }
 
 img#top_margin { top: 1px }
-
 img#bottom_margin { top: 0px }
 
 /********************************************
@@ -120,7 +118,6 @@ img#bottom_margin { top: 0px }
 
 #blog_container a:hover { color: #000 } 
 #blog_container h3 { float: left }
-
 #blog_container h3, #blog_container h2, h3.search_results { font-weight: normal }
 
 #blog_container h3, #blog_container h3 a {
@@ -141,7 +138,7 @@ img#bottom_margin { top: 0px }
   float: left;
 }
 
-#blog_container p { margin-bottom: 0px; float: left; width: 470px; }
+#blog_container p { margin-bottom: 10px; width: 470px; }
 
 .blog_text {
   border: 1px solid #E2F1F4;
@@ -173,17 +170,14 @@ img#bottom_margin { top: 0px }
 }
 
 .pagination {
-  position: absolute;
-  bottom: 20px;
-  left: 0px;
+  float: left;
+  padding-top: 8px;
   width: 100%;
   text-align: center;
 }
 
 .pagination a { color: #000 }
-
 .pagination span.current { color: #f131c6 }
-
 .pagination img { vertical-align: middle; }
 
 .pagination ul {
@@ -193,11 +187,8 @@ img#bottom_margin { top: 0px }
 }
 
 .highlight { background-color: #d7f3fe; padding: 2px; font-weight: normal;}
-
 #new_blog { float: left; width: 760px;}
-
 #new_blog h1, #login h1 { font-size: 20px }
-
 #login p { line-height: 2em }
 
 #new_blog h1, #new_blog h4, #login h1, #login p  {
@@ -207,7 +198,6 @@ img#bottom_margin { top: 0px }
 }
 
 #new_blog a { margin-bottom: 10px; float: left;}
-
 #new_blog span { float: left; margin: 0 5px }
 
 #new_blog input#blog_submit {
@@ -238,7 +228,7 @@ img#bottom_margin { top: 0px }
 .reply img { margin: 0px }
 img.reply_button { margin: 0 10px 0 0 }
 img.post_button { margin: 0 3px 0 0 }
-.reply span { margin-top: 5px }
+.reply span { margin-top: 5px; font-size: 10px; color: #000; }
 .show_hide { position: absolute; top: 5px; right: 0px;}
 .show_hide a { font-size: 10px; }
 
@@ -291,7 +281,6 @@ textarea.reply_content {
 }
 
 #blog_container p.author { text-align: right; color: #f58989; font-size: 10px; margin: 0 10px 5px 10px; }
-
 .reply img.delete_button { position: absolute; right: -19px; top: 0px; }
 
 /********************************************
@@ -431,21 +420,14 @@ p.job_description {
   width: 200px;
 }
 
-span.tags { float: left; margin-bottom: 20px; }
+span.tags { float: left; margin-bottom: 20px; text-align: center; }
+span.tags a { line-height: 18px; }
 
-/*span.tags a { margin-right: 8px; color: #fff; background-color:#000 } 
-
-span.tags a:hover { color: #f131c6; }*/
-
-.tag_1 { font-size: 11px }
-
-.tag_2 { font-size: 13px; }
-
+.tag_1 { font-size: 10px }
+.tag_2 { font-size: 12px }
 .tag_3 { font-size: 15px }
-
-.tag_4 { font-size: 17px;}
-
-.tag_5 { font-size: 19px;}
+.tag_4 { font-size: 18px }
+.tag_5 { font-size: 21px }
 
 .search_header {
   float: left;
@@ -499,13 +481,14 @@ th abbr { border: 0px }
   margin-bottom: 25px;
 }
 
-#thumb_pics img { float: left; width: 50px; height: 50px; }
-
+#thumb_pics a,#thumb_pics img { float: left; width: 50px; height: 50px; }
 #thumb_pics img.last { margin: 0 }
 
 /********************************************
  *	tweets        					                *
 \********************************************/
+
+span..tweets { float: left; width: 200px; }
 
 .tweet {
   background-color: #fffbfb;
@@ -519,8 +502,10 @@ th abbr { border: 0px }
   float: left;
   margin: 5px 25px 5px 5px;
   color: #67afc2;
+  width: 170px;
 }
 
+.tweet_info { color: #979696; float: left; padding: 5px 25px 5px 5px; font-size: 10px; }
 .tweet a:link, .tweet a:visited { color: #67afc2 }
 .tweet a:hover, .tweet a:active { color: #a6c0c7 }
 
