@@ -7,61 +7,108 @@
         <p>Thank you for visiting my site! As a web developer, I specialize in the front end user interface experience providing web compliant xhtml, css, 
           Javascript and to a lesser extent, Ruby on Rails. My background as a designer and my interest in client and server side programming make me a 
           valuable member of any development team.</p> 
-        <p>Outside of the professional realm, I'm an opinionated nerd. I love fuzzy kitties and puppies (especially french 
-          bulldogs!), and I aspire to have a nice big house one day where I can put my passion for interior design to use.</p>
+        <p>Outside of the professional realm, I'm a shy yet opinionated nerd. I love fuzzy kitties and puppies (especially french 
+          bulldogs!), and I hope to one day have a nice big house where I can put my passion for interior design to use.</p>
         <p>Please feel free to glance at my <%= link_to('portfolio', '/showcase') %> and <%= link_to('contact me', '/contact') %> if you have any 
-          questions or comments.</p><p>&nbsp;&diams;&nbsp;Sincerely, Ana Carter&nbsp;&diams;&nbsp;</p>
-        <!-- <p>old: I'm surrounded by nerds. I work with them and I even live with one. But I'm not a nerd, no I'm too cool for that. Sure, 
-          I prefer to stay home and read most nights rather than going out clubbing or whatever kids do these days. I am not adverse to 
-          watching movies like Krull and i've even enjoyed learning to play Magic the Gathering, but I am not a nerd. I also have a severe 
-          case of obsessive compulsive disorder forcing me to clean my apartment to an impeccable degree. And I love fuzzy kitties and puppies. 
-          I aspire to have a nice big house one day where my French Bulldog (who's name shall be McGruber) and I can roam freely and happily.
-          That's me in a nut shell. Here's me as a professional:
-          I am a designer and developer interested in user interfaces and website implementation. My experience ranges from the design phase to 
-          front-end development as well as some minor back-end programming. I am well versed in graphic design tools such as photoshop and illustrator 
-          and I have experience developing in xhtml, css, javascript, and to a lesser extent ruby on rails, php and mysql.
-          Please feel free to take a glance at my portfolio and contact me if you have any questions or comments.</p> -->
+          questions or comments.<span>&nbsp;&diams;&nbsp;Sincerely, Ana Carter&nbsp;&diams;&nbsp;</span></p>
         </div>
     </div>
   </div>
   <div id="resume">
-    <h3 class="header">resume</h3>
-    <div class="download_link">&rarr;<span><a href="/ana_carter_resume.pdf">download resume</a></span></div>
-    <h3>education</h3>
-    <p>Parsons School of Design, New York, NY : one year of a Masters of Fine Arts in Design + Technology</p>
-    <p class="date">Sep 2007 - May 2008</p>
-    <div class="clear"></div>
-    <p>Carnegie Mellon University, Pittsburgh, PA : B.A. European Studies and Music Performance</p>
-    <p class="date">Dec 2005</p>
-    <div class="clear"></div>
-    <p>Centre International D’Etudes Français, Angers, France : Certificate in Intensive Language Studies in French</p>
-    <p class="date">Summer 2005</p>
-    <h3>skills</h3>
-    <p>• Proficient in Macintosh and Windows platforms</p>
-    <div class="clear"></div>
-    <p>• XHTML, CSS, JavaScript, beginner PHP, MySQL, ruby on rails</p>
-    <div class="clear"></div>
-    <p>• Adobe applications include Photoshop, Illustrator, InDesign</p>
-    <div class="clear"></div>
-    <p>• Strong design and typography skills</p>
-    <h3>recent experience</h3>
-    <p><%= link_to('Intersect NY', 'http://www.intersectnyc.com/', :target => '_blank') %> : Front End Developer</p>
-    <p class="date">Sep 2008 - Present<br />New York, NY</p>
-    <p class="job_description">As a member of the development team, I work closely with the designers, back end programmers, and software engineer in 
-      producing custom sites and content management software.</p>
-    <div class="clear"></div>
-    <p><%= link_to('Creativelab NY', 'http://www.creativelabny.com', :target => '_blank') %> : Design Intern</p>
-    <p class="date">July 2008 - Aug 2008<br />DUMBO, NY</p>
-    <p class="job_description">Image post production and animation work using Photoshop. Signage and typographic design consistent with visual language 
-      of pre-recorded video. Web design and development, such as collaborating in re-skinning HBO's cinemax. Photo shoot, and set design assistant.</p>
-    <div class="clear"></div>
-    <p><%= link_to('Atrium Media NY', 'http://www.atriummediany.com', :target => '_blank') %> : Freelance Developer</p>
-    <p class="date">Aug 2008<br />New York, NY</p>
-    <p class="job_description">Partially designed and fully developed front and back end of housing community site.</p>
-    <div class="clear"></div>
-    <p><%= link_to('City Joinery, LLC', 'http://www.cityjoinery.com', :target => '_blank') %> : Junior woodworker and website manager</p>
-    <p class="date">Feb 2006 – Feb 2007</p>
-    <p class="job_description">Photo retouching, layout and image editing using Photoshop and Illustrator. Proofreading and editing written content 
-      for web and brochure. Database and website content management. Assisted in the production of custom wood furniture from milling to finishing.</p>
+    <h5 class="category_title">resume</h5>
+    <div class="download_link">&rarr;<span><%= link_to('download resume', '/ana_carter_resume.pdf', :target => '_blank') %></span></div>
+    <table id="my_resume" cellspacing="0" cellpadding="0">
+      <tr><td class="category_title" colspan="2">education</td></tr>
+      <tr>
+        <td class="school_job">Parsons School of Design</td>
+        <td class="right_col">May 2008</td>
+      </tr>
+      <tr>
+        <td class="td_description bottom_padding">completed one year of the Masters of Fine Arts in Design + Technology</td>
+        <td class="right_col bottom_padding">New York, NY</td>
+      <tr>
+        <td class="school_job">Carnegie Mellon University</td>
+        <td class="right_col">Dec 2005</td>
+      </tr>
+      <tr>
+        <td class="td_description bottom_padding">B.A. European Studies and Music Performance</td>
+        <td class="right_col bottom_padding">Pittsburgh, PA</td>
+      </tr>
+      <tr>
+        <td class="school_job">Centre International D’Etudes Français</td>
+        <td class="right_col">Summer 2004</td>
+      </tr>
+      <tr>
+        <td class="td_description">Certificate in Intensive Language Studies in French</td>
+        <td class="right_col">Angers, France</td>
+      </tr>
+      <tr><td class="category_title" colspan="2">skills</td></tr>
+      <tr>
+        <td colspan="2">
+          <ul>
+            <li>XHTML, CSS, intermediate JavaScript, beginner PHP, MySQL, ruby on rails</li>
+            <li>Proficient in Macintosh and Windows platforms</li>
+            <li>Adobe applications include Photoshop, Illustrator, InDesign</li>
+            <li>Strong design and typography skills</li>
+          </ul>
+        </td>
+      </tr>
+      <tr><td class="category_title" colspan="2">recent experience</td></tr>
+      <tr>
+        <td class="school_job"><%= link_to('Intersect NY', 'http://www.intersectnyc.com/', :target => '_blank') %> : Front End Developer</td>
+        <td class="right_col">Sep 2008 - Present</td>
+      </tr>
+      <tr>
+        <td class="td_description bottom_padding">
+          As a member of the development team, I work closely with the designers, back end programmers, and software engineer in 
+          producing custom sites and content management software.
+        </td>
+        <td class="right_col">New York, NY</td>
+      </tr>
+      <tr>
+        <td class="school_job"><%= link_to('Creativelab NY', 'http://www.creativelabny.com', :target => '_blank') %> : Design Intern</td>
+        <td class="right_col">July 2008 - Aug 2008</td>
+      </tr>
+      <tr>
+        <td class="td_description bottom_padding">
+          Image post production and animation work using Photoshop. Signage and typographic design consistent with visual language 
+          of pre-recorded video. Web design and development, such as collaborating in re-skinning HBO's Cinemax. Photo shoot, and 
+          set design assistant.
+        </td>
+        <td class="right_col">DUMBO, NY</td>
+      </tr>
+      <tr>
+        <td class="school_job"><%= link_to('Atrium Media NY', 'http://www.atriummediany.com', :target => '_blank') %> : Freelance Developer</td>
+        <td class="right_col">Aug 2008</td>
+      </tr>
+      <tr>
+        <td class="td_description bottom_padding">
+          Partially designed and fully developed front and back end of housing community site.
+        </td>
+        <td class="right_col">New York, NY</td>
+      </tr>
+      <tr>
+        <td class="school_job"><%= link_to('City Joinery, LLC', 'http://www.cityjoinery.com', :target => '_blank') %> : Junior woodworker and website manager</td>
+        <td class="right_col">Feb 2006 – Feb 2007</td>
+      </tr>
+      <tr>
+        <td class="td_description">
+          Photo retouching, layout and image editing using Photoshop and Illustrator. Proofreading and editing written content for web and 
+          brochure. Database and website content management. Assisted in the production of custom wood furniture from milling to finishing.
+        </td>
+        <td class="right_col">DUMBO, NY</td>
+      </tr>
+      <tr><td class="category_title" colspan="2">additional information</td></tr>
+      <tr>
+        <td colspan="2">
+          <ul>
+            <li>fluent in spanish</li>
+            <li>love traveling</li>
+            <li>enjoy interior design</li>
+            <li>love puppies and kittens</li>
+          </ul>
+        </td>
+      </tr>
+    </table>
   </div>
 </div>

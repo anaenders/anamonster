@@ -1,5 +1,4 @@
 <style type="text/css">
-/*  .large_image { display: none }*/
   .blue.hover { background-color: #cfe5ed }
   .yellow.hover { background-color: #f9f590 }
   .green.hover { background-color: #d0e555 }
@@ -9,13 +8,26 @@
 
 <div class="padding">  
 
+  <div class="small_image green" rel="12">
+    <%= link_to(image_tag('small_orsella.png', :alt => 'orsella reyes'), '#') %>
+  </div>
   <div class="small_image blue" rel="11">
     <%= link_to(image_tag('small_bandb.png', :alt => 'bond &#38; bowery'), '#') %>
-  </div>
-  <div class="small_image orange" rel="10">
-    <%= link_to(image_tag('small_chilewich.png', :alt => 'chilewich'), '#') %>
   </div>  
 
+  <div class="large_image" id="showcase_12">
+    <%= image_tag('large_orsella.jpg') %>
+    <div class="project_description">
+      <p class="name">Project name: Orsella Reyes
+        <span class="url">url: <%= link_to('http://www.orsella.com', 'http://www.orsella.com', :target => '_blank') %></span>
+      </p>
+      <p class="description">
+        Description: This was a christmas gift for my long time friend. I was going for the stylish, sophisticated and professional look, 
+        since those are the words I would use to describe her. This was an exercise in designing and programming a rails site from the ground up. 
+        Collaborated with <%= link_to('Ian Enders', 'http://www.addictedtoian.com', :target => '_blank') %> for backend and ajax support. 
+      </p>
+    </div>
+  </div>
   <div class="large_image" id="showcase_11">
     <%= image_tag('large_bandb.jpg') %>
     <div class="project_description">
@@ -28,6 +40,15 @@
       </p>
     </div>
   </div>
+
+
+  <div class="small_image orange" rel="10">
+    <%= link_to(image_tag('small_chilewich.png', :alt => 'chilewich'), '#') %>
+  </div>  
+  <div class="small_image red" rel="9">
+    <%= link_to(image_tag('small_falchi_teaser.png', :alt => 'carlos falchi'), '#') %>
+  </div>
+
   <div class="large_image" id="showcase_10">
     <%= image_tag('large_chilewich.jpg') %>
     <div class="project_description">
@@ -39,14 +60,6 @@
       </p>
     </div>
   </div>
-
-  <div class="small_image red" rel="9">
-    <%= link_to(image_tag('small_falchi_teaser.png', :alt => 'carlos falchi'), '#') %>
-  </div>
-  <div class="small_image yellow" rel="8">
-    <%= link_to(image_tag('small_thornton.png', :alt => 'thornton tomasetti'), '#') %>
-  </div>
-
   <div class="large_image" id="showcase_9">
     <%= image_tag('large_falchi_teaser.jpg') %>
     <div class="project_description">
@@ -58,6 +71,14 @@
       </p>
     </div>
   </div>
+
+  <div class="small_image yellow" rel="8">
+    <%= link_to(image_tag('small_thornton.png', :alt => 'thornton tomasetti'), '#') %>
+  </div>
+  <div class="small_image green" rel ="7">
+    <%= link_to(image_tag('small_liz.png', :alt => 'liz claiborne'), '#') %>
+  </div>
+
   <div class="large_image" id="showcase_8">
     <%= image_tag('large_thornton.jpg') %>
     <div class="project_description">
@@ -70,14 +91,6 @@
       </p>
     </div>
   </div>
-
-  <div class="small_image green" rel ="7">
-    <%= link_to(image_tag('small_liz.png', :alt => 'liz claiborne'), '#') %>
-  </div>
-  <div class="small_image blue" rel="6">
-    <%= link_to(image_tag('small_citibabes.png', :alt => 'citibabes'), '#') %>
-  </div>
-
   <div class="large_image" id="showcase_7">
     <%= image_tag('large_liz.jpg') %>
     <div class="project_description">
@@ -89,6 +102,14 @@
       </p>
     </div>
   </div>
+
+  <div class="small_image blue" rel="6">
+    <%= link_to(image_tag('small_citibabes.png', :alt => 'citibabes'), '#') %>
+  </div>
+  <div class="small_image orange" rel="5">
+    <%= link_to(image_tag('small_mally.png', :alt => 'mally'), '#') %>
+  </div>
+
   <div class="large_image" id="showcase_6">
     <%= image_tag('large_citibabes.jpg') %>
     <div class="project_description">
@@ -100,14 +121,6 @@
       </p>
     </div>
   </div>
-
-  <div class="small_image orange" rel="5">
-    <%= link_to(image_tag('small_mally.png', :alt => 'mally'), '#') %>
-  </div>
-  <div class="small_image red" rel="4">
-    <%= link_to(image_tag('small_kates.png', :alt => 'kates'), '#') %>
-  </div>
-
   <div class="large_image" id="showcase_5">
     <%= image_tag('large_mally.jpg') %>
     <div class="project_description">
@@ -120,6 +133,14 @@
       </p>
     </div>
   </div>
+
+  <div class="small_image red" rel="4">
+    <%= link_to(image_tag('small_kates.png', :alt => 'kates'), '#') %>
+  </div>
+  <div class="small_image yellow" rel="3">
+    <%= link_to(image_tag('small_kimara.png', :alt => 'kimara'), '#') %>
+  </div>
+
   <div class="large_image" id="showcase_4">
     <%= image_tag('large_kates.jpg') %>
     <div class="project_description">
@@ -131,14 +152,6 @@
       </p>
     </div>
   </div>
-
-  <div class="small_image yellow" rel="3">
-    <%= link_to(image_tag('small_kimara.png', :alt => 'kimara'), '#') %>
-  </div>
-  <div class="small_image green" rel="2">
-    <%= link_to(image_tag('small_cinemax.png', :alt => 'cinemax'), '#') %>
-  </div>
-
   <div class="large_image" id="showcase_3">  
     <%= image_tag('large_kimara.jpg') %>
     <div class="project_description">
@@ -149,7 +162,15 @@
         the front end of this high end beauty product e-commerce site.
       </p>
     </div>
-  </div>  
+  </div>
+
+  <div class="small_image green" rel="2">
+    <%= link_to(image_tag('small_cinemax.png', :alt => 'cinemax'), '#') %>
+  </div>
+  <div class="small_image blue" rel="1">
+    <%= link_to(image_tag('small_summitsprings.png', :alt => 'summit springs'), '#') %>
+  </div>
+
   <div class="large_image" id="showcase_2">
     <%= image_tag('large_cinemax.jpg') %>
     <div class="project_description">
@@ -161,20 +182,15 @@
       </p>
     </div>
   </div>
-
-  <div class="small_image blue" rel="1">
-    <%= link_to(image_tag('small_summitsprings.png', :alt => 'summit springs'), '#') %>
-  </div>
-
-  <div class="large_image" id="showcase_1">
-    <%= image_tag('large_summitsprings.jpg') %>
-    <div class="project_description">
-      <p class="name">Project name: Summit Springs
-        <span class="url">url: <%= link_to('http://www.summitsprings.com', 'http://www.summitsprings.com', :target => '_blank') %></span>
-      </p>
-      <p class="description">Description: Partnered with <%= link_to('Atrium Media NY', 'http://www.atriummediany.com', :target => '_blank') %> in 
-        redesigning and developing this site including both front end and back end programming.
-      </p>
+    <div class="large_image" id="showcase_1">
+      <%= image_tag('large_summitsprings.jpg') %>
+      <div class="project_description">
+        <p class="name">Project name: Summit Springs
+          <span class="url">url: <%= link_to('http://www.summitsprings.com', 'http://www.summitsprings.com', :target => '_blank') %></span>
+        </p>
+        <p class="description">Description: Partnered with <%= link_to('Atrium Media NY', 'http://www.atriummediany.com', :target => '_blank') %> in 
+          redesigning and developing this site including both front end and back end programming.
+        </p>
+      </div>
     </div>
   </div>
-</div>

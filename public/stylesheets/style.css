@@ -360,23 +360,24 @@ img#recaptcha_whatsthis { position: absolute; top: 42px; right: -172px; }
 #about_me a:hover { color: #000 }
 #resume a { color: #f131c6 }
 #resume a:hover { color: #000 }
-#about_me img { float: left; margin: 60px 20px 10px 75px }
+#about_me img { float: left; margin: 35px 20px 10px 25px }
 
 #description {
   float: left;
-  height: 400px;
+  height: 289px;
   line-height: 1.7em;
-  background-image: url('/images/about_me_BG3.jpg');
+  background-image: url('/images/about_me_BG4.png');
   position: relative;
 }
 
-.about_text { margin-top: 90px;}
-#description p { margin: 10px 40px 0 40px }
+.about_text { margin-top: 60px;}
+#description p { margin: 5px 35px 0 40px }
+#description p span { float: right; margin-top: 12px; }
 
 #description h3 {
   position: absolute;
-  top: 60px;
-  left: 354px;
+  top: 33px;
+  left: 304px;
 }
 
 #description h3, #resume h3 {
@@ -410,6 +411,14 @@ p.job_description {
   width: 580px;
   margin: 10px 0 10px 30px;
 }
+
+#my_resume { width: 760px; float: left; border-top: 1px dotted #454545; }
+td.right_col { width: 150px; text-align: right; color: #BBBBBB; vertical-align: top; }
+td.category_title, #resume h5 { text-transform: uppercase; color: #454545; padding: 8px 0; font-size: 11px; font-weight: normal; }
+#my_resume ul { float: left; padding-left: 1.5em; }
+td.td_description { padding-left: 10px; }
+.bottom_padding { padding-bottom: 5px; }
+.school_job { color: #454545; }
 
 /********************************************
  *	search features					                *
@@ -500,9 +509,10 @@ span..tweets { float: left; width: 200px; }
 
 .tweet p {
   float: left;
-  margin: 5px 25px 5px 5px;
+  display: inline;
+  margin: 5px 35px 5px 5px;
   color: #67afc2;
-  width: 170px;
+  width: 160px;
 }
 
 .tweet_info { color: #979696; float: left; padding: 5px 25px 5px 5px; font-size: 10px; }
@@ -700,14 +710,11 @@ h2.album_name {
 }
 
 .project_description p.name { width: 218px }
-
 .project_description span.url { clear: both; float: left; margin-top: 0px; }
-
 .project_description a:link { color: #f131c6 }    
 .project_description a:visited { color: #f131c6 } 
 .project_description a:hover { color: #fff }  
 .project_description a:active { color: #fff }
-
 .project_description p.description { width: 500px }
 
 .project_description p {
