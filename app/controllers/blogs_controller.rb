@@ -83,7 +83,7 @@ class BlogsController < ApplicationController
         )
         page.replace_html("comment_count_#{rel}", @comment.blog.comments.size)
         page.replace_html("comment_errors_#{rel}", '')
-        page << "$('.textfield_wrapper[rel=\"#{rel}\"]').toggle();"
+        page << "$('.comment[rel=\"#{rel}\"]').show();"
         page << "$('.textfield_wrapper[rel=\"#{rel}\"] .reply_content').val('');"
         page << "Recaptcha.reload();"
       end

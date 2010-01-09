@@ -1,4 +1,4 @@
-<div class="comment" id = "comment_<%= comment.id %>" rel="<%= comment.blog.id %>" style = "display: <%= defined?(visible) ? 'block' : 'none' %>">
+<div class="comment" id = "comment_<%= comment.id %>" rel="<%= comment.blog.id %>" <% if !params[:reply] %> style="display: none" <% end %>>
   <% if_authorized? do %>
     <%= link_to_remote(
       image_tag('delete.png', :alt => 'delete', :class => 'delete_button'),

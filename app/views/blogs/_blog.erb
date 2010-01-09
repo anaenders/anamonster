@@ -10,20 +10,32 @@
   <% end %>
   <div class = "clear"></div>
   <div class="reply">
-    <%= link_to(image_tag('reply.png', :alt => 'reply', :class => 'reply_button'), "#", :class => 'reply_link', :rel => blog.id) %>
+    <% if defined?(link_reply) && link_reply == true %>
+      <%= link_to(image_tag('reply.png', :alt => 'reply', :class => 'reply_button'), "/blogs/#{blog.id}?reply=1#reply") %>
+    <% else %>
+      <%= link_to(
+        image_tag('reply.png', :alt => 'reply', :class => 'reply_button'),
+        "#",
+        :class => 'reply_link',
+        :rel   => blog.id
+      ) %>
+    <% end %>
     <span>comments <span id = "comment_count_<%= blog.id %>"><%= blog.comments.size %></span></span>
     <% if blog.comments.size > 0 %>
-      <div class="show_hide" rel="<%= blog.id %>"><%= link_to 'show comments', '#', :rel => blog.id %></div>
+      <div class="show_hide" rel="<%= blog.id %>">
+        <%= link_to params[:reply] ? 'hide comments' : 'show comments', '#', :rel => blog.id %>
+      </div>
     <% end %>
     <div class="comments_reply_wrapper" id = "comment_reply_<%= blog.id %>">
       <% blog.comments.sort {|a,b| a.created_at <=> b.created_at }.each do |comment| %>
         <%= render :partial => 'comment', :object => comment %>
       <% end %>
       <div id = "new_blog_drop_<%= blog.id %>"></div>
+      <a name = "reply"></a>
       <% remote_form_for(:comment, @comment || Comment.new(:blog => blog), :url => { :action => 'post_comment' }) do |f| %>
         <div id = "comment_errors_<%= blog.id %>" class = "post_error"></div>
         <%= f.hidden_field :blog_id %>
-        <div class="textfield_wrapper" rel="<%= blog.id %>">
+        <div class="textfield_wrapper" rel="<%= blog.id %>" <% if !params[:reply] %> style="display: none" <% end %>>
           <div class="reply_textfield">
             <%= f.text_area :content, :class => 'reply_content' %>
           </div>

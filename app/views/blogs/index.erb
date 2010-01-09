@@ -1,7 +1,7 @@
 <div class="padding">
   <div id="blog_container">
     <% if @blogs %>
-      <%= render :partial => 'blog', :collection => @blogs %>
+      <%= render :partial => 'blog', :collection => @blogs, :locals => { :link_reply => @blogs.size > 1 } %>
     <% else %>
       <%= render :partial => 'blog', :object => @blog %>
     <% end %>
