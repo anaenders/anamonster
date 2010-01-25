@@ -352,7 +352,7 @@ img#recaptcha_whatsthis { position: absolute; top: 42px; right: -172px; }
 }
 
 .download_link span {
-  background-color: #ecfafc;
+  background-color: #94f2ff;
   margin: 0 0 0 3px;
   padding: 2px;
 }
@@ -415,12 +415,14 @@ p.job_description {
 }
 
 #my_resume { width: 760px; float: left; border-top: 1px dotted #454545; }
+#my_resume span { color: #F131C6; }
 td.right_col { width: 150px; text-align: right; color: #BBBBBB; vertical-align: top; }
 td.category_title, #resume h5 { text-transform: uppercase; color: #454545; padding: 8px 0; font-size: 11px; font-weight: normal; }
 #my_resume ul { float: left; padding-left: 1.5em; }
 td.td_description { padding-left: 10px; }
 .bottom_padding { padding-bottom: 5px; }
 .school_job { color: #454545; }
+.section_separator { border-bottom: 1px dotted #ccc; }
 
 /********************************************
  *	search features					                *
