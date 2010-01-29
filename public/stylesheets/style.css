@@ -504,7 +504,7 @@ th abbr { border: 0px }
 span..tweets { float: left; width: 200px; }
 
 .tweet {
-  background-color: #fffbfb;
+  background-color: #f0fcf3;
   position: relative;
   width: 200px;
   float: left;
@@ -528,6 +528,8 @@ span..tweets { float: left; width: 200px; }
   top: 3px;
   right: 3px;
 }
+
+.tweet.alt { background-color: #EFFFFF; }
 
 /********************************************
  *	gallery							                    *
