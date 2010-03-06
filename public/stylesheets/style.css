@@ -717,7 +717,7 @@ h2.album_name {
   background-color: #000;
 }
 
-.project_description p.name { width: 218px }
+.project_description p.name { width: 228px }
 .project_description span.url { clear: both; float: left; margin-top: 0px; }
 .project_description a:link { color: #f131c6 }    
 .project_description a:visited { color: #f131c6 } 
@@ -726,8 +726,8 @@ h2.album_name {
 .project_description p.description { width: 500px }
 
 .project_description p {
-  float: right;
-  padding: 10px;
+  float: left;
+  padding: 10px 0px 10px 10px;
   color: #fff;
 }
 

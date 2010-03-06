@@ -6,178 +6,163 @@
   .red.hover { background-color: #f4c1c1 }
 </style>
 
-<div class="padding">  
-  <div class="small_image yellow" rel="13">
-    <%= link_to(image_tag('small_lss.png', :alt => 'lucky style spotter'), '#') %>
-  </div>
-  <div class="small_image green" rel="12">
-    <%= link_to(image_tag('small_orsella.png', :alt => 'orsella reyes'), '#') %>
-  </div>
+<% color = [ 'yellow', 'green', 'blue', 'orange', 'red' ] %>
 
-  <div class="large_image" id="showcase_13">
-    <%= image_tag('large_lss.jpg') %>
-    <div class="project_description">
-      <p class="name">Project name: Lucky Style Spotter
-        <span class="url">url: <%= link_to('http://www.luckystylespotter.com', 'http://www.luckystylespotter.com', :target => '_blank') %></span>
-      </p>
-      <p class="description">
-        Description: Partnered with <%= link_to('Intersect NYC', 'http://www.intersectnyc.com', :target => '_blank') %> in fully restyling the 
-        front end of this fashion setting user base driven site. 
-      </p>
+<% showcase = [
+{
+   :small_image    => 'small_coolercleanse',
+   :alt_name       => 'cooler cleanse',
+   :large_image    => 'large_coolerclease',
+   :project_name   => 'Cooler Cleanse',
+   :url            => 'http://www.coolercleanse.com',
+   :description    => "Partnered with #{link_to('Intersect NYC', 'http://www.intersectnyc.com', :target => '_blank')} in developing the
+   front end of this detox juice-centric e-commerce site."
+ },
+{
+   :small_image    => 'small_chilewich_wholesale',
+   :alt_name       => 'chilewich wholesale',
+   :large_image    => 'large_chilewich_wholesale',
+   :project_name   => 'Chilewich Wholesale',
+   :url            => 'http://www.chilewich.com/wholesale',
+   :description    => "Developed the user interface in partnership with #{link_to('Intersect NYC', 'http://www.intersectnyc.com', :target => '_blank')}. This is a sub 
+   site integrated in #{link_to('http://www.chilewich.com', 'http://www.intersectnyc.com', :target => '_blank')}, targeted at wholesale partners (B2B)."
+ },
+ {
+   :small_image    => 'small_lss',
+   :alt_name       => 'lucky style spotter',
+   :large_image    => 'large_lss',
+   :project_name   => 'Lucky Style Spotter',
+   :url            => 'http://stylespotter.luckymag.com',
+   :description    => "Partnered with #{link_to('Intersect NYC', 'http://www.intersectnyc.com', :target => '_blank')} in fully restyling the 
+   front end of this fashion setting user base driven site."
+ },
+ {
+   :small_image    => 'small_orsella',
+   :alt_name       => 'orsella reyes',
+   :large_image    => 'large_orsella',
+   :project_name   => 'Orsella Reyes',
+   :url            => 'http://www.orsella.com',
+   :description    => "This was a christmas gift for my long time friend. I was going for the stylish, sophisticated and professional look, 
+   since those are the words I would use to describe her. This was an exercise in designing and programming a rails site from the ground up. 
+   Collaborated with #{link_to('Ian Enders', 'http://www.addictedtoian.com', :target => '_blank')} for backend and ajax support."
+ },
+ {
+   :small_image    => 'small_bandb',
+   :alt_name       => 'bond &#38; bowery',
+   :large_image    => 'large_bandb',
+   :project_name   => 'Bond &#38; Bowery',
+   :url            => 'http://www.bondandbowery.com',
+   :description    => "Hired by #{link_to('Intersect NYC', 'http://www.intersectnyc.com', :target => '_blank')} 
+     to re-style this vast site written almost entirely in php. Wrote new html, re-formatted existing html, wrote basic php, and javascript 
+     to re-design the entire user interface."
+ },
+ {
+   :small_image    => 'small_chilewich',
+   :alt_name       => 'chilewich',
+   :large_image    => 'large_chilewich',
+   :project_name   => 'Chilewich',
+   :url            => 'http://www.chilewich.com',
+   :description    => "Description: Partnered with #{link_to('Intersect NYC', 'http://www.intersectnyc.com', :target => '_blank')} 
+     to develop this striking and elegant e-commerce site, which emphasizes craftmanship and well made designs focusing on materials and textiles."
+ },
+ {
+   :small_image    => 'small_falchi_teaser',
+   :alt_name       => 'carlos falchi',
+   :large_image    => 'large_falchi_teaser',
+   :project_name   => 'Carlos Falchi',
+   :url            => 'http://www.carlosfalchi.com',
+   :description    => "Description: Created the user interface for this temporary site for the fashion designer, Carlos Falchi. Partnered with 
+      #{link_to('Intersect NYC', 'http://www.intersectnyc.com', :target => '_blank')}."
+ },
+ {
+   :small_image    => 'small_thornton',
+   :alt_name       => 'thornton tomasetti',
+   :large_image    => 'large_thornton',
+   :project_name   => 'Thornton Tomasetti',
+   :url            => 'http://www.thorntontomasetti.com',
+   :description    => "Partnered with #{link_to('Intersect NYC', 'http://www.intersectnyc.com', :target => '_blank')} 
+      to style and develop the user interface for this site, which features a search engine for navigating through this structural engineering 
+      firm's vast portfolio."
+ }, 
+ {
+   :small_image    => 'small_liz',
+   :alt_name       => 'liz claiborne',
+   :large_image    => 'large_liz',
+   :project_name   => 'Liz Claiborne',
+   :url            => 'http://www.lizclaiborne.com',
+   :description    => "Collaborated with #{link_to('Intersect NYC', 'http://www.intersectnyc.com', :target => '_blank')} 
+      to develop and style much of the user interface to achieve the company's new vision and relaunching of the Liz brand."
+ },
+ {
+   :small_image    => 'small_citibabes',
+   :alt_name       => 'citibabes',
+   :large_image    => 'large_citibabes',
+   :project_name   => 'Citibabes',
+   :url            => 'http://www.citibabes.com',
+   :description    => "Description: This vibrant site is a one stop shop for city parents on the go. Developed and styled all front end 
+      pages in partnership with #{link_to ('Intersect NYC', 'http://www.intersectnyc.com', :target => '_blank')}."
+ },
+ {
+   :small_image    => 'small_mally',
+   :alt_name       => 'mally',
+   :large_image    => 'large_mally',
+   :project_name   => 'Mally Beauty',
+   :url            => 'http://www.mallybeauty.com',
+   :description    => "Description: In addition to a rich online community and an extensive line of beauty products, webisodes are a key 
+      experience for the user. Partnered with #{link_to ('Intersect NYC', 'http://www.intersectnyc.com', :target => '_blank')} to develop 
+      and style user interface."
+ },
+ {
+   :small_image    => 'small_kates',
+   :alt_name       => 'kates',
+   :large_image    => 'large_kates',
+   :project_name   => 'Kates Paperie',
+   :url            => 'http://www.katespaperie.com',
+   :description    => "Partnered with #{link_to ('Intersect NYC', 'http://www.intersectnyc.com', :target => '_blank')} to 
+      develop the user interface for a client recognized as a leader in the industry of all things stationary."
+ },
+ {
+   :small_image    => 'small_kimara',
+   :alt_name       => 'kimara',
+   :large_image    => 'large_kimara',
+   :project_name   => 'Kimara',
+   :url            => 'http://www.kimara.com',
+   :description    => "Description: Worked with #{link_to ('Intersect NYC', 'http://www.intersectnyc.com', :target => '_blank')} in styling 
+     the front end of this high end beauty product e-commerce site."
+ }
+] %>
+
+<div class="padding">
+  <% i = 0 %>
+  <% showcase.each_slice(2) do |slice| %>
+    <div class="small_image <%= color[i % 5] %>" rel="<%= i %>">
+      <%= link_to(image_tag("#{slice[0][:small_image]}.png", :alt => slice[0][:alt_name]), '#') %>
     </div>
-  </div>
-  <div class="large_image" id="showcase_12">
-    <%= image_tag('large_orsella.jpg') %>
-    <div class="project_description">
-      <p class="name">Project name: Orsella Reyes
-        <span class="url">url: <%= link_to('http://www.orsella.com', 'http://www.orsella.com', :target => '_blank') %></span>
-      </p>
-      <p class="description">
-        Description: This was a christmas gift for my long time friend. I was going for the stylish, sophisticated and professional look, 
-        since those are the words I would use to describe her. This was an exercise in designing and programming a rails site from the ground up. 
-        Collaborated with <%= link_to('Ian Enders', 'http://www.addictedtoian.com', :target => '_blank') %> for backend and ajax support. 
-      </p>
+    <% if slice.size > 1 %>
+      <div class="small_image <%= color[(i + 1) % 5] %>" rel="<%= i + 1 %>">
+        <%= link_to(image_tag("#{slice[1][:small_image]}.png", :alt => slice[1][:alt_name]), '#') %>
+      </div>
+    <% end %>
+    <div class="large_image" id="showcase_<%= i %>">
+      <%= image_tag("#{slice[0][:large_image]}.jpg", :alt => slice[0][:alt_name]) %>
+      <div class="project_description">
+        <p class="description">Description: <%= slice[0][:description] %></p>
+        <p class="name">Project name: <%= slice[0][:project_name] %>
+          <span class="url">url: <%= link_to(slice[0][:url], slice[0][:url], :target => '_blank') %></span>
+        </p>
+      </div>
     </div>
-  </div>
-
-
-  <div class="small_image blue" rel="11">
-    <%= link_to(image_tag('small_bandb.png', :alt => 'bond &#38; bowery'), '#') %>
-  </div>
-  <div class="small_image orange" rel="10">
-    <%= link_to(image_tag('small_chilewich.png', :alt => 'chilewich'), '#') %>
-  </div>  
-
-  <div class="large_image" id="showcase_11">
-    <%= image_tag('large_bandb.jpg') %>
-    <div class="project_description">
-      <p class="name">Project name: Bond &#38; Bowery
-        <span class="url">url: <%= link_to('http://www.bondandbowery.com', 'http://www.bondandbowery.com', :target => '_blank') %></span>
-      </p>
-      <p class="description">Description: Hired by <%= link_to('Intersect NYC', 'http://www.intersectnyc.com', :target => '_blank') %> 
-        to re-style this vast site written almost entirely in php. Wrote new html, re-formatted existing html, wrote basic php, and javascript 
-        to re-design the entire user interface.
-      </p>
-    </div>
-  </div>
-  <div class="large_image" id="showcase_10">
-    <%= image_tag('large_chilewich.jpg') %>
-    <div class="project_description">
-      <p class="name">Project name: Chilewich
-        <span class="url">url: <%= link_to('http://www.chilewich.com', 'http://www.chilewich.com', :target => '_blank') %></span>
-      </p>
-      <p class="description">Description: Partnered with <%= link_to('Intersect NYC', 'http://www.intersectnyc.com', :target => '_blank') %> 
-        to develop this striking and elegant e-commerce site, which emphasizes craftmanship and well made designs focusing on materials and textiles. 
-      </p>
-    </div>
-  </div>
-
-  <div class="small_image red" rel="9">
-    <%= link_to(image_tag('small_falchi_teaser.png', :alt => 'carlos falchi'), '#') %>
-  </div>
-  <div class="small_image yellow" rel="8">
-    <%= link_to(image_tag('small_thornton.png', :alt => 'thornton tomasetti'), '#') %>
-  </div>
-
-  <div class="large_image" id="showcase_9">
-    <%= image_tag('large_falchi_teaser.jpg') %>
-    <div class="project_description">
-      <p class="name">Project name: Carlos Falchi (Teaser Site)
-        <span class="url">url: <%= link_to('http://www.carlosfalchi.com', 'http://www.carlosfalchi.com', :target => '_blank') %></span>
-      </p>
-      <p class="description">Description: Created the user interface for this temporary site for the fashion designer, Carlos Falchi. Partnered with 
-        <%= link_to('Intersect NYC', 'http://www.intersectnyc.com', :target => '_blank') %>. 
-      </p>
-    </div>
-  </div>
-  <div class="large_image" id="showcase_8">
-    <%= image_tag('large_thornton.jpg') %>
-    <div class="project_description">
-      <p class="name">Project name: Thornton Tomasetti
-        <span class="url">url: <%= link_to('http://www.thorntontomasetti.com', 'http://www.thorntontomasetti.com', :target => '_blank') %></span>
-      </p>
-      <p class="description">Description: Partnered with <%= link_to('Intersect NYC', 'http://www.intersectnyc.com', :target => '_blank') %> 
-        to style and develop the user interface for this site, which features a search engine for navigating through this structural engineering 
-        firm's vast portfolio.
-      </p>
-    </div>
-  </div>
-
-  <div class="small_image green" rel ="7">
-    <%= link_to(image_tag('small_liz.png', :alt => 'liz claiborne'), '#') %>
-  </div>
-  <div class="small_image blue" rel="6">
-    <%= link_to(image_tag('small_citibabes.png', :alt => 'citibabes'), '#') %>
-  </div>
-
-  <div class="large_image" id="showcase_7">
-    <%= image_tag('large_liz.jpg') %>
-    <div class="project_description">
-      <p class="name">Project name: Liz Claiborne
-        <span class="url">url: <%= link_to('http://www.lizclaiborne.com', 'http://www.lizclaiborne.com', :target => '_blank') %></span>
-      </p>        
-      <p class="description">Description: Collaborated with <%= link_to('Intersect NYC', 'http://www.intersectnyc.com', :target => '_blank') %> 
-        to develop and style much of the user interface to achieve the company's new vision and relaunching of the Liz brand.
-      </p>
-    </div>
-  </div>
-  <div class="large_image" id="showcase_6">
-    <%= image_tag('large_citibabes.jpg') %>
-    <div class="project_description">
-      <p class="name">Project name: Citibabes
-        <span class="url">url: <%= link_to('http://www.citibabes.com', 'http://www.citibabes.com', :target => '_blank') %></span>
-      </p>
-      <p class="description">Description: This vibrant site is a one stop shop for city parents on the go. Developed and styled all front end 
-        pages in partnership with <%= link_to ('Intersect NYC', 'http://www.intersectnyc.com', :target => '_blank') %>.
-      </p>
-    </div>
-  </div>
-
-  <div class="small_image orange" rel="5">
-    <%= link_to(image_tag('small_mally.png', :alt => 'mally'), '#') %>
-  </div>
-  <div class="small_image red" rel="4">
-    <%= link_to(image_tag('small_kates.png', :alt => 'kates'), '#') %>
-  </div>
-
-  <div class="large_image" id="showcase_5">
-    <%= image_tag('large_mally.jpg') %>
-    <div class="project_description">
-      <p class="name">Project name: Mally Beauty
-        <span class="url">url: <%= link_to('http://www.mallybeauty.com', 'http://www.mallybeauty.com', :target => '_blank') %></span>
-      </p>
-      <p class="description">Description: In addition to a rich online community and an extensive line of beauty products, webisodes are a key 
-        experience for the user. Partnered with <%= link_to ('Intersect NYC', 'http://www.intersectnyc.com', :target => '_blank') %> to develop 
-        and style user interface.
-      </p>
-    </div>
-  </div>
-  <div class="large_image" id="showcase_4">
-    <%= image_tag('large_kates.jpg') %>
-    <div class="project_description">
-      <p class="name">Project name: Kates Paperie
-        <span class="url">url: <%= link_to('http://www.katespaperie.com', 'http://www.katespaperie.com', :target => '_blank') %></span>
-      </p>
-      <p class="description">Description: Partnered with <%= link_to ('Intersect NYC', 'http://www.intersectnyc.com', :target => '_blank') %> to 
-        develop the user interface for a client recognized as a leader in the industry of all things stationary.
-      </p>
-    </div>
-  </div>
-
-  <div class="small_image yellow" rel="3">
-    <%= link_to(image_tag('small_kimara.png', :alt => 'kimara'), '#') %>
-  </div>
-
-  <div class="large_image" id="showcase_3">  
-    <%= image_tag('large_kimara.jpg') %>
-    <div class="project_description">
-      <p class="name">Project name: Kimara
-        <span class="url">url: <%= link_to('http://www.kimara.com', 'http://www.kimara.com', :target => '_blank') %></span>
-      </p>
-      <p class="description">Description: Worked with <%= link_to ('Intersect NYC', 'http://www.intersectnyc.com', :target => '_blank') %> in styling 
-        the front end of this high end beauty product e-commerce site.
-      </p>
-    </div>
-  </div>
-
+    <% if slice.size > 1 %>
+      <div class="large_image" id="showcase_<%= i + 1 %>">
+        <%= image_tag("#{slice[1][:large_image]}.jpg", :alt => slice[1][:alt_name]) %>
+        <div class="project_description">
+          <p class="description">Description: <%= slice[1][:description] %></p>
+          <p class="name">Project name: <%= slice[1][:project_name] %>
+            <span class="url">url: <%= link_to(slice[1][:url], slice[1][:url], :target => '_blank') %></span>
+          </p>
+        </div>
+      </div>
+    <% end %>    
+    <% i += 2 %>
+  <% end %>
 </div>
