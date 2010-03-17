@@ -1,13 +1,13 @@
 <style type="text/css">
-/*  .blue.hover { background-color: #cfe5ed }
+/*.blue.hover { background-color: #cfe5ed }
   .yellow.hover { background-color: #f9f590 }
   .green.hover { background-color: #d0e555 }
   .orange.hover { background-color: #f8d5a2 }
   .red.hover { background-color: #f4c1c1 }*/
-  .black.hover { border: 1px dotted #ff0000; }
+  .small_image img.hover { border: 1px solid #f5857c; }
 </style>
 
-<% color = [ 'black' ] %> <!-- 'yellow', 'green', 'blue', 'orange', 'red' -->
+<%# color = [ 'yellow', 'green', 'blue', 'orange', 'red' ] %>
 
 <% showcase = [
 {
@@ -136,11 +136,11 @@
 <div class="padding">
   <% i = 0 %>
   <% showcase.each_slice(2) do |slice| %>
-    <div class="small_image black" rel="<%= i %>">
+    <div class="small_image" rel="<%= i %>">
       <%= link_to(image_tag("#{slice[0][:small_image]}.png", :alt => slice[0][:alt_name]), '#') %>
     </div>
     <% if slice.size > 1 %>
-      <div class="small_image black" rel="<%= i + 1 %>">
+      <div class="small_image" rel="<%= i + 1 %>">
         <%= link_to(image_tag("#{slice[1][:small_image]}.png", :alt => slice[1][:alt_name]), '#') %>
       </div>
     <% end %>

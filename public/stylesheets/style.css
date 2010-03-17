@@ -667,23 +667,22 @@ h2.album_name {
 \********************************************/
 
 .small_image {
-  width: 378px;
+  width: 380px;
   margin: 0px;
   float: left;
   display: inline;
   height: 140px;
+  background-image:url('/images/grid.jpg');
 }
 
 .small_image img {
-  /*padding: 20px 0 20px 0;*/
   float: left;
-  margin: 20px;
+  margin: 19px;
   width: 340px;
   height: 100px;
   display: inline;
+  border: 1px solid #fff;
 }
-
-.black { background-image:url('/images/circles.jpg'); border: 1px solid #fff; }
 
 /*.yellow { background-color: #fcfa64 }
 .green{ background-color: #c5da4a }

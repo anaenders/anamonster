@@ -29,7 +29,7 @@ $(function(){
     return false;
   });
   
-  $('.small_image').hover(
+  $('.small_image img').hover(
     function() { $(this).addClass('hover'); },
     function() { $(this).removeClass('hover'); }
   );
