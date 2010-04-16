@@ -705,7 +705,6 @@ h2.album_name {
   z-index: 10;
   bottom: 0px;
   left: 0px;
-  min-height: 50px;
   width: 100%;
   opacity: 0.7;
   /* for IE */
@@ -714,18 +713,19 @@ h2.album_name {
   background-color: #000;
 }
 
-.project_description p.name { width: 228px }
+.project_description p.name { width: 228px; }
 .project_description span.url { clear: both; float: left; margin-top: 0px; }
 .project_description a:link { color: #f131c6 }    
 .project_description a:visited { color: #f131c6 } 
 .project_description a:hover { color: #fff }  
 .project_description a:active { color: #fff }
-.project_description p.description { width: 500px }
+.project_description p.description { width: 495px; border-right: 1px solid #bbb; }
 
 .project_description p {
   float: left;
-  padding: 10px 0px 10px 10px;
+  padding: 2px 5px 2px 10px;
   color: #fff;
+  margin: 5px 0;
 }
 
 #current {
