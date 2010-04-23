@@ -40,12 +40,7 @@
   <script type = "text/javascript">
     //Album headers
     $(function() {
-      $('.gallery_image:first').click();
-      sIFR.replace(geosans, {
-        selector: 'h2.album_name',
-        wmode: 'transparent',
-        css: '.sIFR-root { font-size: 25px; color: #F131C6 }'
-      });
+      Cufon.replace(['h2, h3'], { fontFamily: 'AvantGarde-Cnd' });
       
       album_size = <%= album.photos.size %>;
       first_photo = 1;
