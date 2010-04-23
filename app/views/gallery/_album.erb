@@ -40,6 +40,8 @@
   <script type = "text/javascript">
     //Album headers
     $(function() {
+      $('.gallery_image:first').click();
+      
       Cufon.replace(['h2, h3'], { fontFamily: 'AvantGarde-Cnd' });
       
       album_size = <%= album.photos.size %>;
