@@ -9,8 +9,17 @@
 	<meta name="verify-v1" content="q4uHVk3iBJUR2UWXCCij6cPooh3s9VoMEX/OIDipEZY=" />
 	<meta name="verify-v1" content="AGWN6FoiMO8MzjDpbhfx0TRxVzJyw3N/wqCn37Nob8o=" />
 	<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
-	<%= javascript_include_tag :defaults, 'sifr', 'sifr-config' %>
-	<%= stylesheet_link_tag 'style', 'sifr', 'scaffold' %>
+	
+	<%= stylesheet_link_tag 'style' %>	
+	
+	<%= javascript_include_tag 'jquery.js' %>
+	<%= javascript_include_tag 'jquery-ui.js' %>
+	<%= javascript_include_tag 'jrails.js' %>	
+	<%= javascript_include_tag 'cufon-yui.js' %>
+	<%= javascript_include_tag 'AvantGarde_600.font.js' %>
+	<%= javascript_include_tag 'AvantGarde-Cnd_400.font.js' %>
+	<%= javascript_include_tag 'application.js' %>
+	
 	<%= auto_discovery_link_tag(:rss, :controller => 'blogs', :action => 'feed') %>
 </head>
 <body>
@@ -61,5 +70,6 @@
         </div>
       </div>
   </div>
+  <script type="text/javascript"> Cufon.now(); </script>
 </body>
 </html>

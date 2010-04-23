@@ -1,4 +1,6 @@
-<%= image_tag('header_images.png', :alt => 'calendar', :class => 'search_header') %>
+<%# image_tag('header_images.png', :alt => 'calendar', :class => 'search_header') %>
+<h3>images</h3>
+
 <div id="thumb_pics">
   <% @blog_search_thumbs.each do |thumb| %>
     <%= link_to(image_tag(thumb.public_filename(:thumb), :alt => ''), thumb.blog) %>

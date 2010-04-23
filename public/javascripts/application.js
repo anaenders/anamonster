@@ -1,3 +1,5 @@
+Cufon.replace(['h2, h3'], { fontFamily: 'AvantGarde-Cnd' });
+
 $(function(){
 	// Hover on/off for navigation.
 	$('.nav_links img, .footer_links img').each(function(){
