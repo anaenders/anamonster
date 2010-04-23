@@ -122,7 +122,7 @@ img#bottom_margin { top: 0px }
 
 #blog_container h3, #blog_container h3 a {
   background-image:url('/images/h3_bg.png');
-  color: #946565;
+  color: #000;
   font-size: 13px;
   padding-left: 5px;
   width: 525px;
