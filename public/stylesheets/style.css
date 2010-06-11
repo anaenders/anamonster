@@ -672,13 +672,13 @@ h2.album_name {
   margin: 0px;
   float: left;
   display: inline;
-  height: 140px;
+  height: 136px;
   background-image:url('/images/grid.jpg');
 }
 
 .small_image img {
   float: left;
-  margin: 19px;
+  margin: 17px 19px;
   width: 340px;
   height: 100px;
   display: inline;
