@@ -437,7 +437,7 @@ td.td_description { padding-left: 10px; }
   font-size: 15px;
 }
 
-span.tags { float: left; margin-bottom: 20px; text-align: center; }
+span.tags { float: left; margin-bottom: 20px; text-align: center; font-family: arial; }
 span.tags a { line-height: 18px; }
 
 .tag_1 { font-size: 10px }
