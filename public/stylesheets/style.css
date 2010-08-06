@@ -138,7 +138,7 @@ img#bottom_margin { top: 0px }
   float: left;
 }
 
-#blog_container p { margin-bottom: 10px; width: 470px; }
+#blog_container p { margin-bottom: 10px; }
 
 .blog_text {
   border: 1px solid #E2F1F4;
@@ -925,7 +925,7 @@ span.contact a:active { color: #f131c6 }
   left: 0px; 
 }
 
-.admin_links { clear: both }
+.admin_links { clear: both; float: left; width: 100%; }
 
 .main_content {
   width: 760px;

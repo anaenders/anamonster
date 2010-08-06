@@ -120,7 +120,7 @@ class BlogsController < ApplicationController
   end
   
   def load_search_photo_thumbs
-    @blog_search_thumbs = BlogPhoto.all(:conditions => { :parent_id => nil }, :order => 'created_at DESC', :limit => 8)
+    @blog_search_thumbs = BlogPhoto.all(:conditions => { :parent_id => nil }, :order => 'created_at DESC', :limit => 12)
   end
 
   
