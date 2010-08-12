@@ -83,6 +83,8 @@ img.logo {
   z-index: 100;
 }
 
+.logo2 { position: absolute; bottom: 0px; right: 20px }
+
 #content {
   float: left;
   position: relative;
