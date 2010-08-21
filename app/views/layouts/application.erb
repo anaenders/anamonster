@@ -32,43 +32,47 @@
   var pageTracker = _gat._getTracker("UA-10030932-1");
   pageTracker._trackPageview();
   } catch(err) {}</script>
-  <div id="main">    
-      <div id="header">
-        <%= link_to(image_tag('logo.png', :alt => 'anamonster', :class => 'logo'), '/') %>
-        <div id="navigation">
-          <div class="nav_links">  
-            <% [ ['about', '/about' ], [ 'gallery', '/gallery' ], [ 'showcase', '/showcase' ], [ 'blog', '/' ] ].each do |nav| %>
-              <% on_off = (nav[0] == get_current_section) ? '_on.png' : '_off.png' %>
-              <%= link_to(image_tag('button_'+ nav[0] + on_off), nav[1]) %>
-            <% end %>             
-          </div>      
-        </div>    
-      </div>
-			<% if flash[:message] %>
-			  <div class="message"><%= h flash[:message] %></div>
-			<% elsif flash[:warning] %>
-			  <div class="message warning"><%= h flash[:warning] %></div>
-			<% elsif flash[:error] %>
-			  <div class="message warning"><%= h flash[:error] %></div>
-			<% end %>
-			<div id="content">
-			  <%= image_tag('/images/margin.png', :alt => 'anamonster', :id => 'top_margin') %>
-        <%= yield %>
-      </div>
-      <div id="footer">
-        <%= image_tag('/images/margin.png', :alt => 'anamonster', :id => 'bottom_margin') %>
-        <%= link_to(image_tag('rss_logo.png', :alt => 'RSS', :class => 'rss', :target => '_blank'), '/feed.xml') %>
-        <div id="footer_navigation">
-          <span class='contact'><%= link_to('contact me', '/contact') %></span>
-          <div id="search">
-            <% form_tag(blog_search_path(:by => 'keyword'), :id => 'search_form') do |f| %>
-              <%= text_field_tag(:value, '', :class => 'search') %>
-              <span class="search_button"><%= link_to_function('search', "$('#search_form').submit()") %></span>
-            <% end %>
+  <div id="bgwrapper">
+    <div id="main">
+      <div class="content_wrapper">    
+        <div id="header">
+          <%= link_to(image_tag('logo.png', :alt => 'anamonster', :class => 'logo'), '/') %>
+          <div id="navigation">
+            <div class="nav_links">  
+              <% [ ['about', '/about' ], [ 'gallery', '/gallery' ], [ 'showcase', '/showcase' ], [ 'blog', '/' ] ].each do |nav| %>
+                <% on_off = (nav[0] == get_current_section) ? '_on.png' : '_off.png' %>
+                <%= link_to(image_tag('button_'+ nav[0] + on_off), nav[1]) %>
+              <% end %>             
+            </div>      
+          </div>    
+        </div>
+  			<% if flash[:message] %>
+  			  <div class="message"><%= h flash[:message] %></div>
+  			<% elsif flash[:warning] %>
+  			  <div class="message warning"><%= h flash[:warning] %></div>
+  			<% elsif flash[:error] %>
+  			  <div class="message warning"><%= h flash[:error] %></div>
+  			<% end %>
+  			<div id="content">
+  			  <%= image_tag('/images/margin.png', :alt => 'anamonster', :id => 'top_margin') %>
+          <%= yield %>
+        </div>
+        <div id="footer">
+          <%= image_tag('/images/margin.png', :alt => 'anamonster', :id => 'bottom_margin') %>
+          <%= link_to(image_tag('rss_logo.png', :alt => 'RSS', :class => 'rss', :target => '_blank'), '/feed.xml') %>
+          <div id="footer_navigation">
+            <span class='contact'><%= link_to('contact me', '/contact') %></span>
+            <div id="search">
+              <% form_tag(blog_search_path(:by => 'keyword'), :id => 'search_form') do |f| %>
+                <%= text_field_tag(:value, '', :class => 'search') %>
+                <span class="search_button"><%= link_to_function('search', "$('#search_form').submit()") %></span>
+              <% end %>
+            </div>
+            <p>&#169; Copyright <%= Time.now.year %>. Ana Carter. All rights reserved</p>
           </div>
-          <p>&#169; Copyright <%= Time.now.year %>. Ana Carter. All rights reserved</p>
         </div>
       </div>
+    </div>
   </div>
   <script type="text/javascript"> Cufon.now(); </script>
 </body>
