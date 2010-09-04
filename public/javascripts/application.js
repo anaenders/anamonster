@@ -23,11 +23,15 @@ $(function(){
     var num = $(this).attr('rel');
     if (showing == num) {
       $('#showcase_' + num).slideToggle('slow');
+      $('#showcase_' + num + ' .project_description').hide();
       showing = null;
     } else {
       $('#showcase_' + showing).slideToggle('slow');
-      $('#showcase_' + num).slideToggle('slow');  
-      showing = num;
+      $('#showcase_' + showing + ' .project_description').hide();
+      $('#showcase_' + num).slideToggle('slow', function() {
+        $('#showcase_' + num + ' .project_description').fadeIn(2000);
+        showing = num;
+      }); 
     }
     return false;
   });

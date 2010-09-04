@@ -731,6 +731,7 @@ h2.album_name {
   filter: alpha(opacity=70);
   /* CSS3 standard */
   background-color: #000;
+  display: none;
 }
 
 .project_description p.name { width: 228px; }
