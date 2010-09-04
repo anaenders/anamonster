@@ -29,7 +29,7 @@ $(function(){
       $('#showcase_' + showing).slideToggle('slow');
       $('#showcase_' + showing + ' .project_description').hide();
       $('#showcase_' + num).slideToggle('slow', function() {
-        $('#showcase_' + num + ' .project_description').fadeIn(2000);
+        $('#showcase_' + num + ' .project_description').fadeIn(1000);
         showing = num;
       }); 
     }
