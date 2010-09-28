@@ -1,5 +1,5 @@
 <script type = "text/javascript">
-  var num_photos = 1;
+  var num_photos = 30;
   function add_photo_field() {
     num_photos++;
     <%= remote_function(:url => { :action => 'new_photo_field' }, :with => "'num=' + num_photos", :update => :new_photos, :position => :before) %>
@@ -12,11 +12,13 @@
       <h4>Photo Album Name:</h4>
       <%= f.text_field(:name, :size => 61) %>
     </div>
-    <%= render :partial => 'photo_fields', :locals => { :num => 1 } %>
+    <% (1..30).each do |field_row| %>
+      <%= render :partial => 'photo_fields', :locals => { :num => field_row } %>
+    <% end %>
     <div id = "new_photos">      
       <%= link_to_function('+ Add Another Photo', "add_photo_field()") %>
       <div class="clear"></div>
       <%= f.submit "Create Album" %>
     </div>
-  <% end %>
+  <% end %> 
 </div>

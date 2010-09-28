@@ -162,6 +162,7 @@
     $('.album').click(function() {
       $('.album').find('img').css('opacity', 1);
       $(this).find('img').css('opacity', 0.5);
+      return false;
     });
     
     $('.album:first').click();
