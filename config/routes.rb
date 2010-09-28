@@ -39,7 +39,7 @@ ActionController::Routing::Routes.draw do |map|
   map.gallery '/gallery', :controller => 'gallery'
   map.gallery_album '/gallery/album/:id', :controller => 'gallery', :action => 'album'
   map.gallery_album '/gallery/photo/:id', :controller => 'gallery', :action => 'photo'
-  map.resources :albums # For admin only
+  map.resources :albums, :collection => 'list_albums' # For admin only
   map.new_photo_field '/albums/new_photo_field', :controller => 'albums', :action => 'new_photo_field'
   map.resources :photos # For admin only
 

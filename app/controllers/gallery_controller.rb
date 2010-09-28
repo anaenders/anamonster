@@ -3,7 +3,8 @@ class GalleryController < ApplicationController
   before_filter :set_section
 
   def index
-    @albums = Album.all(:order => 'position DESC')
+    @albums = Album.all(:order => 'position DESC', :conditions => { :is_active => true })
+    logger.debug(@albums.inspect)
   end
   
   def album

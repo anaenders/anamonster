@@ -12,6 +12,10 @@ class AlbumsController < ApplicationController
   end
 
   def edit; end
+  
+  def list_albums
+    @albums = Album.all(:order => 'position DESC')
+  end
 
   def create
     @album = Album.new(params[:album])

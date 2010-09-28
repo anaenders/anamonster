@@ -4,8 +4,9 @@
     <span class="album_details"><%= album.date %></span>
     <% if_authorized? do %>
       <div class = "admin_album_links">
-        <%= link_to('edit',   edit_album_path(album)) %> |
-        <%= link_to('delete', album_path(album), :method => :delete, :confirm => 'Are you sure?') %> | 
+        <%= link_to('edit',   edit_album_path(album)) %>&nbsp;&nbsp;|&nbsp;&nbsp;
+        <%= link_to('delete', album_path(album), :method => :delete, :confirm => 'Are you sure?') %>&nbsp;&nbsp;|&nbsp;&nbsp;
+        <%= link_to('list all albums', :controller => 'albums', :action => 'list_albums') %>&nbsp;&nbsp;|&nbsp;&nbsp;
         <%= link_to('Create New Album', new_album_path) %>
       </div>
     <% end %>
