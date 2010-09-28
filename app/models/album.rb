@@ -1,13 +1,15 @@
 # == Schema Information
-# Schema version: 20090501023904
+# Schema version: 20100928035415
 #
 # Table name: albums
 #
 #  id             :integer(4)      not null, primary key
 #  name           :string(255)
+#  cover_photo_id :integer(4)
 #  created_at     :datetime
 #  updated_at     :datetime
-#  cover_photo_id :integer(4)
+#  position       :integer(4)
+#  is_active      :boolean(1)
 #
 
 class Album < ActiveRecord::Base

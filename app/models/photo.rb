@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 20090501023904
+# Schema version: 20100928035415
 #
 # Table name: photos
 #

@@ -35,6 +35,9 @@
       
       <h4>Position:</h4>
       <%= f.text_field(:position, :class => 'autosaveable position') %>
+      <div class="clear"></div>
+      <h4>Active?</h4>
+      <%= f.check_box(:is_active, :style => 'margin-left: 18px') %>
     <% end %>
   </div>
   <div class = "clear"></div>
