@@ -37,7 +37,8 @@
       <%= f.text_field(:position, :class => 'autosaveable position') %>
       <div class="clear"></div>
       <h4>Active?</h4>
-      <%= f.check_box(:is_active, :style => 'margin-left: 18px') %>
+      <%= f.check_box(:is_active, :style => 'margin-left: 18px') %>&nbsp;&nbsp;
+      <%= link_to('list all albums', :controller => 'albums', :action => 'list_albums') %>
     <% end %>
   </div>
   <div class = "clear"></div>

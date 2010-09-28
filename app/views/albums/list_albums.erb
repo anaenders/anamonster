@@ -1,8 +1,11 @@
 <div class="main_content">
   <div class="album_header">
     <h4>All Albums</h4>
-    <% @albums.each_with_index do |album, i| %>
-        <a href = "#"><%= image_tag(album.cover_photo_url) %></a>
-    <% end %>
+    <div class="clear"></div>
+    <div style="margin: 10px 0 0 107px">
+      <% @albums.each_with_index do |album, i| %>
+          <a href = "#"><%= link_to(image_tag(album.cover_photo_url), edit_album_path(album)) %></a>
+      <% end %>
+    </div>
   </div>
 </div>
