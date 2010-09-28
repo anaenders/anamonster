@@ -1,5 +1,5 @@
 <script type = "text/javascript">
-  var num_photos = 1;
+  var num_photos = <%= @album.photos.size + 1 %>;
   function add_photo_field() {
     num_photos++;
     <%= remote_function(:url => { :action => 'new_photo_field' }, :with => "'num=' + num_photos", :update => :new_photos, :position => :before) %>
