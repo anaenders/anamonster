@@ -692,7 +692,10 @@ h2.album_name {
   float: left;
   display: inline;
   height: 136px;
-  background-image:url('/images/grid.jpg');
+  /*background-image:url('/images/grid.jpg');*/
+	-moz-box-shadow: 0 0 30px #ddd;
+  -webkit-box-shadow: 0 0 30px #ddd;
+  box-shadow: 0 0 30px #ddd;
 }
 
 .small_image img {
