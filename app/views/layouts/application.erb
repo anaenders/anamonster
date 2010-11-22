@@ -19,6 +19,7 @@
 	<%= javascript_include_tag 'AvantGarde_600.font.js' %>
 	<%= javascript_include_tag 'AvantGarde-Cnd_400.font.js' %>
 	<%= javascript_include_tag 'application.js' %>
+	<%= javascript_include_tag 'resize_background.js' %>
 	
 	<%= auto_discovery_link_tag(:rss, :controller => 'blogs', :action => 'feed') %>
 </head>
@@ -32,7 +33,10 @@
   var pageTracker = _gat._getTracker("UA-10030932-1");
   pageTracker._trackPageview();
   } catch(err) {}</script>
-  <div id="bgwrapper">
+  <div id="container">
+    <div id='background'>
+      <%= image_tag('', :style => 'display: none')%><!-- loaded randomly by javascript -->
+    </div>
     <div id="main">
       <div class="content_wrapper">    
         <div id="header">
