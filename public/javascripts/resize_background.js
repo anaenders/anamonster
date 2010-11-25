@@ -6,7 +6,7 @@ $(function() {
 var ShowBackground = function() {
 	
 	var backgroundFilePrefix = "/images/background";
-	var index = Math.floor(Math.random() * 7) + 1;
+	var index = Math.floor(Math.random() * 6) + 1;
 	var img = backgroundFilePrefix + index + ".jpg"
 			
 	return {
