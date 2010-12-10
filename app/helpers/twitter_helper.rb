@@ -1,10 +1,11 @@
 module TwitterHelper
   
-  def load_twitter_client
-#    @twitter = Twitter::Client.from_config("#{RAILS_ROOT}/config/twitter.yml")
-  end
+  # def load_twitter_client
+  #  @twitter = Twitter::Client.from_config("#{RAILS_ROOT}/config/twitter.yml")
+  # end
   
   def twitter_time(time, options = {})
+    time = Time.parse(time) if time.is_a?(String)
     start_date = options.delete(:start_date) || Time.new
     date_format = options.delete(:date_format) || :default
     delta_minutes = (start_date.to_i - time.to_i).floor / 60

@@ -14,7 +14,7 @@ Rails::Initializer.run do |config|
     require 'bluecloth'
   end
   
-  config.gem 'twitter4r', :lib => 'twitter', :version => '0.3.1'
+  config.gem 'twitter' , :version => '0.9.4'
   
   config.time_zone = 'Eastern Time (US & Canada)'
 

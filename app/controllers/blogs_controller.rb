@@ -5,7 +5,7 @@ class BlogsController < ApplicationController
   before_filter :load_blog, :only => [ :show, :edit, :update, :destroy ]
   before_filter :login_required, :only => [ :edit, :new, :create, :update, :destroy ]
   before_filter :load_calendar, :only => [ :index, :show ]
-  before_filter :load_twitter_client
+  # before_filter :load_twitter_client
 
   def index
     @blogs = Blog.paginate(:per_page => 2, :page => params[:page] || 1, :order => 'created_at DESC')

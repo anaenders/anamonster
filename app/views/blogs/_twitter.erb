@@ -4,15 +4,17 @@
 <span class="tweets">
   <% begin %>
   <% i = 0 %>
-  <% @twitter.timeline_for(:me, :count => 5) do |status| %>
+  <% Twitter::Search.new.from('anaecarter').each do |tweet| %>
     <%= i % 2 == 1 ? '<div class="tweet">' : '<div class="tweet alt">' %>
-      <%= link_to(image_tag('twitter_bird.png', :alt => 'bird'), "http://www.twitter.com/#{status.user.screen_name}") %>
-      <p><%= link_to(status.text, "http://www.twitter.com/#{status.user.screen_name}") %></p>
-      <span class = "tweet_info"><%= twitter_time(status.created_at) %> from <%= status.source %></span>
+      <%= link_to(image_tag('twitter_bird.png', :alt => 'bird'), "http://www.twitter.com/#{tweet.from_user}") %>
+      <p><%= link_to(tweet.text, "http://www.twitter.com/#{tweet.from_user}") %></p>
+      <% logger.debug "source = #{tweet.source}" %>
+      <span class = "tweet_info"><%= twitter_time(tweet.created_at) %> from <%= CGI.unescapeHTML(tweet.source) %></span>
     </div>
     <% i = i + 1 %>
   <% end %>
-  <% rescue Twitter::RESTError => e %>
+  <% rescue Exception => e %>
+    <% Rails.logger.warn "Tweety Error: #{e}" %>
     <div class = "tweet">
       <p>Unable to connect to twitter.</p>
     </div>
