@@ -206,7 +206,7 @@ img#bottom_margin { top: 0px }
 .blog_text iframe { float: left; width: 321px; margin-right: 15px; }
 
 .blog_text ol { padding-left: 20px; }
-.blog_img_no_margin img { margin-right: 0px; }
+.blog_text .blog_img_no_margin img { margin-right: 0px; }
 
 #blog_container .search_blog_text p { margin-bottom: 0px; }
 
