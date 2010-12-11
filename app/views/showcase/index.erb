@@ -18,7 +18,15 @@
    :large_image    => 'kenneth_cole',
    :project_name   => 'Kenneth Cole',
    :url            => 'http://www.wishlist.kennethcole.com/',
-   :description    => "For this rails application I implemented the user interface by writing erb/HTML views, stylesheets, and some javascript features to create a website, a facebook page, and an interface for mobile devices, namely Webkit and Blackberry. Partnered with #{link_to('Intersect NYC', 'http://www.intersectnyc.com', :target => '_blank')}."
+   :description    => "For this rails application I implemented the user interface by writing erb/HTML views, CSS, and some javascript features to create a website, a facebook page, and an interface for mobile devices, namely Webkit and Blackberry. Partnered with #{link_to('Intersect NYC', 'http://www.intersectnyc.com', :target => '_blank')}."
+ },
+{
+   :small_image    => 'bobbi_brown',
+   :alt_name       => 'Bobbi Brown',
+   :large_image    => 'bobbi_brown',
+   :project_name   => 'Bobbi Brown Cosmetics',
+   :url            => 'http://www.facebook.com/BobbiBrown?v=app_6009294086&ref=ts',
+   :description    => "As a temporary administrator for Bobbi Brown's facebook page, I created a custom tab called Beauty Rules and reconfigured third party HTML to work within the Facebook framework. Partnered with #{link_to('Intersect NYC', 'http://www.intersectnyc.com', :target => '_blank')}."
  },
 {
    :small_image    => 'yigalazrouel',
@@ -42,7 +50,7 @@
    :large_image    => 'lanecrawford',
    :project_name   => 'Lane Crawford Heritage 160',
    :url            => 'http://www.lanecrawford160.com/',
-   :description    => "Lane Crawford Heritage 160 is a micro site that lives under the umbrella site #{link_to('http://www.lanecrawford.com/', 'http://www.lanecrawford.com/', :target => '_blank')}. For this site, I wrote the Rails erb/HTML views and incorporated the XML, SWF and flash files. Developed in partnership with #{link_to('Intersect NYC', 'http://www.intersectnyc.com', :target => '_blank')}."
+   :description    => "Lane Crawford Heritage 160 is a micro site that lives under the umbrella site #{link_to('http://www.lanecrawford.com/', 'http://www.lanecrawford.com/', :target => '_blank')}. For this site, I wrote the Rails erb/HTML views and incorporated third party XML, SWF and flash files. Partnered with #{link_to('Intersect NYC', 'http://www.intersectnyc.com', :target => '_blank')}."
  },
 {
   :small_image    => 'grandsf',
@@ -208,7 +216,7 @@
         <div class="project_description">
           <p class="description">Description: <%= slice[1][:description] %></p>
           <p class="name">Project name: <%= slice[1][:project_name] %>
-            <span class="url">url: <%= link_to(slice[1][:url], slice[1][:url], :target => '_blank') %></span>
+            <span class="url">url:&nbsp;<%= link_to(slice[1][:url], slice[1][:url], :target => '_blank') %></span>
           </p>
         </div>
       </div>
