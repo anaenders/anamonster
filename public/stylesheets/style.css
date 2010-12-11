@@ -205,7 +205,8 @@ img#bottom_margin { top: 0px }
 .blog_text span { color: #F131C6; }
 .blog_text iframe { float: left; width: 321px; margin-right: 15px; }
 
-.blog_text ol { padding-left: 1.5em; }
+.blog_text ol { padding-left: 20px; }
+.blog_img_no_margin img { margin-right: 0px; }
 
 #blog_container .search_blog_text p { margin-bottom: 0px; }
 
@@ -277,7 +278,7 @@ img#bottom_margin { top: 0px }
 .reply {
   float: left;
   border-top: 1px solid #deebed;
-  width: 490px;
+  width: 500px;
   padding-top: 10px;
   position: relative;
   margin-top: 10px;
