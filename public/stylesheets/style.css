@@ -195,14 +195,17 @@ img#bottom_margin { top: 0px }
 
 .blog_text {
   border: 1px solid #E2F1F4;
-  padding: 20px;
+  padding: 20px 10px;
   margin-bottom: 30px;
   background-color: #fffbfb;
   float: left;
-  width: 490px;
+  width: 500px;
 }
 
+.blog_text span { color: #F131C6; }
 .blog_text iframe { float: left; width: 321px; margin-right: 15px; }
+
+.blog_text ol { padding-left: 1.5em; }
 
 #blog_container .search_blog_text p { margin-bottom: 0px; }
 
@@ -277,7 +280,7 @@ img#bottom_margin { top: 0px }
   width: 490px;
   padding-top: 10px;
   position: relative;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 .reply img { margin: 0px }
