@@ -304,7 +304,7 @@ img.post_button { margin: 0 3px 0 0 }
   width: 490px;
 }
 
-.textfield_wrapper { float: left; position: relative }
+.textfield_wrapper { float: left; position: relative; margin-left: 5px; }
 
 textarea.reply_content {
   margin: 2px;
@@ -380,7 +380,7 @@ img#recaptcha_reload { position: absolute; top: 9px; right: -172px; }
 img#recaptcha_switch_audio { position: absolute; top: 26px; right: -172px; }
 img#recaptcha_whatsthis { position: absolute; top: 42px; right: -172px; }
 #recaptcha_table .recaptcha_r4_c1 { background: none; width: 180px; }
-#recaptcha_table .recaptcha_image_cell { background-color: #FFFBFB }
+/*#recaptcha_table .recaptcha_image_cell { background-color: #FFFBFB }*/
 
 #recaptcha_table .recaptcha_input_area { 
   width: 150px !important; 
