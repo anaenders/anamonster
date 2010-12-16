@@ -174,30 +174,32 @@ img#bottom_margin { top: 0px }
 #blog_container h3, #blog_container h2, h3.search_results { font-weight: normal }
 
 #blog_container h3, #blog_container h3 a {
-  background-image:url('/images/h3_bg.png');
-  color: #000;
-  font-size: 13px;
-  padding-left: 5px;
-  width: 525px;
+/*  background-image:url('/images/h3_bg.png');*/
+  color: #03C0FC;
+  font-size: 12px;
+	float: right;
+	background-color: #FFFA61;
+	padding: 10px;
 }
 
 /*#blog_container h2.search_results { font-size: 16px; margin: 0 0 15px 0;}*/
 
 #blog_container h2, h2.search_results {
-  color: #000;
-  font-size: 16px;
+  color: #03C0FC;
+  font-size: 18px;
   margin: 10px 0;
-  width: 528px;
   float: left;
+	font-weight: bold;
 }
 
 #blog_container p { margin-bottom: 10px; }
 
 .blog_text {
-  border: 1px solid #E2F1F4;
-  padding: 20px 10px;
+  border-top: 1px solid #E2F1F4;
+	border-bottom: 1px solid #E2F1F4;
+  padding: 20px 15px;
   margin-bottom: 30px;
-  background-color: #fffbfb;
+/*  background-color: #fffbfb;*/
   float: left;
   width: 500px;
 }
@@ -1043,3 +1045,9 @@ span.contact a:active { color: #f131c6 }
 .new_photo { margin-bottom: 20px; float: left;}
 
 .new_photo textarea, .new_photo input { width: 601px;}
+
+/********************************************
+ *	flash messages					                *
+\********************************************/
+
+.message.warning, .message.success { padding: 5px; background-color: #FFFA61; color: #000; }

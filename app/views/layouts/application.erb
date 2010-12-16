@@ -50,8 +50,9 @@
             </div>      
           </div>    
         </div>
+        <div class="clear"></div>
   			<% if flash[:message] %>
-  			  <div class="message"><%= h flash[:message] %></div>
+  			  <div class="message success"><%= h flash[:message] %></div>
   			<% elsif flash[:warning] %>
   			  <div class="message warning"><%= h flash[:warning] %></div>
   			<% elsif flash[:error] %>

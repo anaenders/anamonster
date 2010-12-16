@@ -1,4 +1,4 @@
-Cufon.replace(['h2, #search_features h3'], { fontFamily: 'AvantGarde-Cnd' });
+Cufon.replace(['h2, #search_features h3'], { fontFamily: 'AvantGarde' });
 Cufon.replace(['#blog_container h3'], { fontFamily: 'AvantGarde' });
 
 $(function(){
