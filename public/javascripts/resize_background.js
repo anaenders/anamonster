@@ -1,23 +1,23 @@
 $(function() {
   ResizingBackground.init();
-	ShowBackground.init();
+	// ShowBackground.init();
 });
 
-var ShowBackground = function() {
-	
-	var backgroundFilePrefix = "/images/background";
-	var index = Math.floor(Math.random() * 6) + 1;
-	var img = backgroundFilePrefix + index + ".jpg"
-			
-	return {
-		init: function() {
-			var img = backgroundFilePrefix + index + ".jpg";
-			$('#background img').attr('src', img);
-			$('#background img').fadeIn();
-			$(window).trigger('ResizingBackground');
-		}
-	}
-}();
+// var ShowBackground = function() {
+// 	
+// 	var backgroundFilePrefix = "/images/background";
+// 	var index = Math.floor(Math.random() * 6) + 1;
+// 	var img = backgroundFilePrefix + index + ".jpg"
+// 			
+// 	return {
+// 		init: function() {
+// 			var img = backgroundFilePrefix + index + ".jpg";
+// 			$('#background img').attr('src', img);
+// 			$('#background img').fadeIn();
+// 			$(window).trigger('ResizingBackground');
+// 		}
+// 	}
+// }();
 
 var ResizingBackground = function() {
 
