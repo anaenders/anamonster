@@ -187,7 +187,7 @@ img#bottom_margin { top: 0px }
 #blog_container h2, h2.search_results {
   color: #03C0FC;
   font-size: 18px;
-  margin: 10px 0;
+  margin: 10px 0 0 0;
   float: left;
 	font-weight: bold;
 }
@@ -293,7 +293,7 @@ img.post_button { margin: 0 3px 0 0 }
 .show_hide { position: absolute; top: 5px; right: 0px;}
 .show_hide a { font-size: 10px; }
 
-#blog_container .show_hide a:link, #blog_container .show_hide a:visited { color: #319afd }
+#blog_container .show_hide a:link, #blog_container .show_hide a:visited { color: #03C0FC }
 #blog_container .show_hide a:hover, #blog_container .show_hide a:active { color: #A6C0C7 }
 
 .reply_textfield {
@@ -328,7 +328,7 @@ textarea.reply_content {
 
 .comment {
   background-color: #f5f5f5;
-  width: 490px;
+  width:500px;
   float: left;
   margin-bottom: 10px;
   position: relative;
