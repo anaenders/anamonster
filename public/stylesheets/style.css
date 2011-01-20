@@ -207,7 +207,7 @@ img#bottom_margin { top: 0px }
 .blog_text span { color: #F131C6; }
 .blog_text iframe { float: left; width: 321px; margin-right: 15px; }
 
-.blog_text ol { padding-left: 20px; }
+.blog_text ol, .blog_text ul { padding-left: 20px; }
 .blog_text .blog_img_no_margin img { margin-right: 0px; }
 
 #blog_container .search_blog_text p { margin-bottom: 0px; }
@@ -304,7 +304,7 @@ img.post_button { margin: 0 3px 0 0 }
   width: 490px;
 }
 
-.textfield_wrapper { float: left; position: relative; margin-left: 5px; }
+.textfield_wrapper { float: left; position: relative; margin-left: 5px; margin-top: 10px; display: none; }
 
 textarea.reply_content {
   margin: 2px;
@@ -324,7 +324,7 @@ textarea.reply_content {
 .userinfo { float: left }
 .post_delete input{ position: absolute; right: 0px; bottom: 2px; }
 .comment p { margin: 8px 10px }
-.comments_reply_wrapper { float: left; margin-top: 10px; }
+.comments_reply_wrapper { float: left; }
 
 .comment {
   background-color: #f5f5f5;
