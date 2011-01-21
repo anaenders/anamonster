@@ -1,5 +1,7 @@
-<h3><%= blog.created_at.strftime("%a %B %d %Y") %></h3>
-<h2><%=h blog.title %></h2>
+<div class="blog_header">
+  <h3><%= blog.created_at.strftime("%a %B %d %Y") %></h3>
+  <h2><%=h blog.title %></h2>
+</div>
 <div class = "blog_text">
   <%= markdown(blog.image_replaced_content) %>
   <% if_authorized? do %>

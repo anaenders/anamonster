@@ -200,10 +200,14 @@ img#bottom_margin { top: 0px }
 	border-bottom: 1px solid #E2F1F4;
   padding: 20px 15px;
   margin-bottom: 30px;
-/*  background-color: #fffbfb;*/
   float: left;
   width: 500px;
 }
+
+.blog_header { width: 100%; position: relative; height: 32px; }
+.blog_header h3, .blog_header h2 { position: absolute; top: 0px; }
+.blog_header h3 { right: 0px; }
+.blog_header h2 { left: 0px; }
 
 .blog_text span { color: #F131C6; }
 .blog_text iframe { float: left; width: 321px; margin-right: 15px; }
