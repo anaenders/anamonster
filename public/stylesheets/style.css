@@ -171,11 +171,10 @@ img#bottom_margin { top: 0px }
 
 #blog_container a:hover { color: #000 } 
 #blog_container h3 { float: left; height: 19px; }
-#blog_container h2 { width: 392px; }
+#blog_container h2 { width: 392px; text-align: middle; height: 39px; }
 #blog_container h3, #blog_container h2, h3.search_results { font-weight: normal }
 
 #blog_container h3, #blog_container h3 a {
-/*  background-image:url('/images/h3_bg.png');*/
   color: #03C0FC;
   font-size: 12px;
 	float: right;
@@ -183,14 +182,15 @@ img#bottom_margin { top: 0px }
 	padding: 10px;
 }
 
-/*#blog_container h2.search_results { font-size: 16px; margin: 0 0 15px 0;}*/
-
 #blog_container h2, h2.search_results {
   color: #03C0FC;
   font-size: 18px;
-  margin: 10px 0 0 0;
-  float: left;
 	font-weight: bold;
+}
+
+h2.search_results {
+	margin: 10px 0 0 0;
+	float: left;
 }
 
 #blog_container p { margin-bottom: 10px; }
@@ -204,7 +204,7 @@ img#bottom_margin { top: 0px }
   width: 500px;
 }
 
-.blog_header { width: 100%; position: relative; height: 32px; }
+.blog_header { width: 100%; position: relative; height: 39px; float: left; }
 .blog_header h3, .blog_header h2 { position: absolute; top: 0px; }
 .blog_header h3 { right: 0px; }
 .blog_header h2 { left: 0px; }
