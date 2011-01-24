@@ -2,17 +2,11 @@ require 'digest/sha2'
 
 module AttachFuPhaseOut
 
-  # Gets the public path to the file
-  # The optional thumbnail argument will output the thumbnail's filename.
-  def public_filename(thumbnail = nil)
-    full_filename(thumbnail).gsub %r(^#{Regexp.escape(Rails.root.join('public'))}), ''
-  end
-
-  protected
   def full_filename(thumbnail = nil)
     Rails.root.join('public', self.class.table_name, *partitioned_path(thumbnail_name_for(thumbnail))).to_s
   end
 
+  protected
   def thumbnail_name_for(thumbnail = nil)
     return filename if thumbnail.blank?
     ext = nil
