@@ -1,0 +1,4 @@
+%h3 images
+#thumb_pics
+  - @blog_search_thumbs.each do |thumb|
+    = link_to(image_tag(thumb.image.url(:thumb), :alt => ''), thumb.blog)

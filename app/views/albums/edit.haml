@@ -1,0 +1,39 @@
+- content_for :head do
+  = javascript_include_tag 'admin'
+.main_content
+  #update_success{:style => "display: none"} Your update has been saved.
+  #update_failure{:style => "display: none"} Your update has been saved.
+  .album_header
+    %h4 Photo Album Name:
+    = editable(:span, @album, :name, :style => 'margin-left: 18px')
+    .clear
+    %h4 Position:
+    = editable(:span, @album, :position, :class => 'position')
+    .clear
+    %h4 Active?
+    = editable(:span, @album, :is_active, :style => 'margin-left: 18px')
+    = link_to('list all albums', :controller => 'albums', :action => 'list_albums')
+  .clear
+  .edit_photos
+    - @album.photos.sort{|a, b| a.position <=> b.position }.each do |photo|
+      = render :partial => 'photo', :object => photo
+  #js_new_photo_form
+    #js_new_photo_errors
+    = form_for(Photo.new(:album => @album), :html => { :multipart => true }, :html => { :id => 'new_photo_form' }) do |f|
+      = f.hidden_field :album_id
+      .new_photo
+        %p
+          %label File:
+          = f.file_field(:image, :size => 60)
+        %p
+          %label Title:
+          = f.text_field(:title, :size => 86)
+        %p
+          %label Description:
+          = f.text_area(:description, :rows => 1, :cols => 74)
+        %p
+          %label Position:
+          = f.text_field(:position)
+      #new_photos
+        .clear
+        = f.submit "Save New Photos"

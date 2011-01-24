@@ -1,0 +1,46 @@
+.blog_header
+  %h3= blog.created_at.strftime("%a %B %d %Y")
+  %h2= h blog.title
+.blog_text
+  != markdown(blog.image_replaced_content)
+  - if user_signed_in?
+    .admin_links
+      = link_to 'Edit', edit_blog_path(blog)
+      |
+      \#{link_to 'Delete', blog, :confirm => 'Are you sure?', :method => :delete}
+  .clear
+  .reply
+    - if defined?(link_reply) && link_reply == true
+      = link_to(image_tag('reply.png', :alt => 'reply', :class => 'reply_button'), "/blogs/#{blog.id}?reply=1#reply")
+    - else
+      = link_to(                                                             |
+          image_tag('reply.png', :alt => 'reply', :class => 'reply_button'), |
+          "#",                                                               |
+          :class => 'reply_link',                                            |
+          :rel   => blog.id                                                  |
+        )                                                                    |
+    %span
+      comments
+      %span{:id => "comment_count_#{blog.id}"}= blog.comments.size
+    - if blog.comments.size > 0
+      .show_hide{:rel => blog.id}
+        = link_to params[:reply] ? 'hide comments' : 'show comments', '#', :rel => blog.id
+    .comments_reply_wrapper{:id => "comment_reply_#{blog.id}"}
+      - blog.comments.sort {|a,b| a.created_at <=> b.created_at }.each do |comment|
+        = render :partial => 'comment', :object => comment
+      %div{:id => "new_blog_drop_#{blog.id}"}
+      %a{:name => "reply"}
+      = form_for(:comment, @comment || Comment.new(:blog => blog), |
+        :url  => { :action => 'post_comment' },                    |
+        :html => { :id => 'blog_comment_form' }) do |f|            |
+        .post_error{:id => "comment_errors_#{blog.id}"}
+        = f.hidden_field :blog_id
+        
+        .textfield_wrapper{:rel => blog.id, :style => !params[:reply] ? 'display: none' : ''}
+          .reply_textfield
+            = f.text_area :content, :class => 'reply_content'
+          = recaptcha_tags(:ajax => true, :display => { :theme => 'blackglass' }).html_safe
+          .userinfo
+            *name: #{f.text_field :user_name, :class => 'username'}
+            *email: #{f.text_field :email, :class => 'useremail'}
+          .post_delete= image_submit_tag('post.png')

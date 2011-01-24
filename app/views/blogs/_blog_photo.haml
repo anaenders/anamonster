@@ -1,0 +1,6 @@
+.blog_photo_edit
+  = image_tag(blog_photo.image.url(:main))
+  %strong= link_to 'Delete Photo', blog_photo_path(blog_photo), :method => :delete, :confirm => 'Are you sure?'
+  %br/
+  To include in your blog, use the following text: \#{img:#{blog_photo.image_file_name} [align]} where align = left, right or center
+.clear

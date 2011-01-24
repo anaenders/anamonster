@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+
+Dir["#{File.join(File.dirname(__FILE__), '..', 'app', 'views')}/**/*.erb"].each do |file|
+  cmd = "html2haml -rx #{file} #{file.gsub(/\.erb$/, '.haml')}"
+  puts "running: #{cmd}"
+  `#{cmd}`
+  cmd = "rm #{file}"
+  puts "removing erb: #{cmd}"
+  `#{cmd}`
+end

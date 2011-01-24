@@ -1,29 +1,25 @@
 class PhotosController < ApplicationController
   
-  before_filter :login_required
+  before_filter :authenticate_user!
   before_filter :load_photo, :only => [ :edit, :update, :destroy ]
   
   def new; @photo = Photo.new; end
   def edit; end
 
   def create
-    @photo = Photo.new(params[:photo])
-    if @photo.save
-      flash[:notice] = 'Photo was successfully created.'
-      redirect_to(photos_url)
+    if (@photo = Photo.new(params[:photo])).save
+      render :partial => 'albums/photo', :object => @photo
     else
-      render :action => "index"
+      render :text => @photo.errors.full_messages.join('<br />'), :status => 400
     end
   end
 
   def update
     render :update do |page|
       if @photo.update_attributes(params[:photo])
-        page.show :update_success
-        page.hide :update_failure
+        render :nothing => true
       else
-        page.show :update_failure
-        page.hide :update_success
+        render :nothing => true, :status => '400'
       end
     end
   end

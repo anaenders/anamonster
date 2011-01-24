@@ -1,0 +1,13 @@
+.new_photo
+  %p
+    %label File:
+    = file_field_tag("album[attachable][#{num}][image]", :size => 60)
+  %p
+    %label Title:
+    = text_field_tag("album[attachable][#{num}][title]", '', :size => 86)
+  %p
+    %label Description:
+    = text_area_tag("album[attachable][#{num}][description]", '', :rows => 1, :cols => 74)
+  %p
+    %label Position:
+    = text_field_tag("album[attachable[#{num}][position]]", num)

@@ -1,0 +1,16 @@
+= form_for(@blog, :html => { :multipart => true }) do |f|
+  = f.error_messages
+  %h4 Title:
+  = f.text_field :title
+  %h4 Content:
+  = f.text_area :content, :rows => 20
+  %h4 Tags:
+  = f.text_field :tag_list, :size => 90
+  = render :partial => 'blog_photo_fields', :locals => { :num => 1 }
+  - if f.object.blog_photos.size > 0
+    .edit_photos
+      - f.object.blog_photos.each do |blog_photo|
+        = render :partial => 'blog_photo', :object => blog_photo
+  #new_photos.new_photos_entry
+    = link_to('+ Add Another Photo', '#', :class => 'new_photo_field')
+  = f.submit submit_button

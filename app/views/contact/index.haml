@@ -1,0 +1,24 @@
+.padding
+  #contact_holder
+    = image_tag('contact_BG.png', :alt => 'contact', :class => 'contactBG')
+    .contact_form
+      = form_for(:contact, @contact || Contact.new, :url => { :action => 'index' }, :remote => true) do |f|
+        %p.name
+          %label * name:
+          = f.text_field(:name, :size => 20)
+        %p.email
+          %label your email:
+          = f.text_field(:email, :size => 20)
+        %p.message * message:
+        = f.text_area(:message, :rows => 5, :cols => 43)
+        = image_submit_tag('button_submit.png', :class => 'submit')
+        #error
+          Oops, you were unable to send your message.
+          %br>/
+          try again please!
+          %span click here.
+        #success
+          Your message has been sent. Thanks gnrrgn!!
+          %br/
+          %span click here to send new message.
+    = image_tag('anamonster-yelling.png', :alt => 'anamonster', :class => 'screaming_monster')

@@ -1,0 +1,10 @@
+.main_content
+  = form_for(@album, :html => { :multipart => true }) do |f|
+    .album_header
+      %h4 Photo Album Name:
+      = f.text_field(:name, :size => 61)
+    - (1..30).each do |field_row|
+      = render :partial => 'photo_fields', :locals => { :num => field_row }
+    #new_photos
+      .clear
+      = f.submit "Create Album"

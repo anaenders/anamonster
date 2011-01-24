@@ -1,0 +1,7 @@
+.main_content
+  .album_header
+    %h2 All Albums
+    .clear
+    %div{:style => "margin: 10px 0 0 107px"}
+      - @albums.each_with_index do |album, i|
+        %a{:href => "#"}= link_to(image_tag(album.cover_photo_url), edit_album_path(album))

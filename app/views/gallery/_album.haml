@@ -1,0 +1,28 @@
+#thumbs
+  .album_title{:rel => album.id}
+    %h2.album_name= album.name
+    %span.album_details= album.date
+    - if user_signed_in?
+      .admin_album_links
+        = link_to('edit',   edit_album_path(album))
+        \&nbsp;&nbsp;|&nbsp;&nbsp;
+        \#{link_to('delete', album_path(album), :method => :delete, :confirm => 'Are you sure?')}&nbsp;&nbsp;|&nbsp;&nbsp;
+        \#{link_to('list all albums', list_albums_albums_path)}&nbsp;&nbsp;|&nbsp;&nbsp;
+        \#{link_to('Create New Album', new_album_path)}
+  .thumb_holder
+    = link_to(image_tag('arrow_left_ghosted.jpg', :alt => 'prev'), '#', :id => 'previous')
+    .thumb_window
+      .thumbs
+        - if album
+          - album.photos.sort{|a, b| (a.position || 0) <=> (b.position || 0) }.each do |photo|
+            .gallery_image{:rel => photo.id}
+              = image_tag(photo.image.url(:thumb), :width  => photo.image.width(:thumb), :height => photo.image.height(:thumb))
+            %div{:id => "photo_filename_#{photo.id}", :style => "display: none"}= photo.image.url(:main)
+            %div{:id => "photo_height_#{photo.id}", :style => "display: none"}= photo.height
+            %div{:id => "photo_width_#{photo.id}", :style => "display: none"}= photo.width
+            %div{:id => "photo_data_#{photo.id}", :style => "display: none"}
+              - if photo.title
+                = photo.title
+              - if photo.description
+                = photo.description
+    = link_to(image_tag("arrow_right#{album.size > 13 ? '' : '_ghosted'}.jpg", :alt => 'next'), '#', :id => 'next')

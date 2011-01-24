@@ -1,0 +1,11 @@
+.comment{:id => "comment_#{comment.id}", :rel => comment.blog.id, :style => !params[:reply] ? 'display: none' : ''}
+  - if user_signed_in?
+    = link_to(                                                                |
+        image_tag('delete.png', :alt => 'delete', :class => 'delete_button'), |
+        :url => delete_comment_path(comment.id),                              |
+        :confirm => 'Are you sure?',                                          |
+        :remote => true                                                       |
+      )                                                                       |
+  %p= comment.content
+  %p.author
+    &nbsp;#{comment.user_name}

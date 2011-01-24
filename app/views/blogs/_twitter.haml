@@ -1,0 +1,16 @@
+%h3 tweets
+%span.tweets
+  - begin
+    - i = 0
+    - Twitter.user_timeline('anaecarter', :count => 4).each do |tweet|
+      .tweet
+        = link_to(image_tag('twitter_bird.png', :alt => 'bird'), "http://www.twitter.com/#{tweet.from_user}")
+        %p= link_to(tweet.text, "http://www.twitter.com/#{tweet.from_user}")
+        %span.tweet_info
+          = twitter_time(tweet.created_at)
+          from #{CGI.unescapeHTML(tweet.source)}
+      - i = i + 1
+  - rescue Exception => e
+    - Rails.logger.warn "Tweety Error: #{e}"
+    .tweet
+      %p Unable to connect to twitter.

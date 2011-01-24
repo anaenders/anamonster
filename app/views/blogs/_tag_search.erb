@@ -1,8 +1,0 @@
-<%# image_tag('header_tags.png', :alt => 'popular tags', :class => 'search_header') %>
-<h3>tags</h3>
-
-<span class="tags">
-  <% tag_cloud Blog.tag_counts, %w(tag_1 tag_2 tag_3 tag_4 tag_5) do |tag, css_class| %>
-    <%= link_to(h(tag.name), blog_search_path(:by => 'tag', :value => tag.name), :class => "#{css_class}") %>
-  <% end %>
-</span>

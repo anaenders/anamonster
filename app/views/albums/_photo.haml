@@ -1,0 +1,23 @@
+.edit_photo_left
+  .edit_photo_thumb
+    = image_tag(photo.image.url(:thumb), :width => photo.image.width(:thumb), :height => photo.image.height(:thumb))
+  .admin_links
+    = link_to 'delete', photo_path(photo), :method => :delete, :confirm => 'Are you sure?'
+    %br/
+    - if photo.is_cover_photo?
+      Cover Photo
+    - else
+      = form_for(photo.album, :html => { :id => "album_cover_#{photo.id}" }) do |f|
+        = hidden_field_tag 'album[cover_photo_id]', photo.id
+        = link_to_function 'make cover', "$('#album_cover_#{photo.id}').submit()"
+.photo_details
+  %p
+    %label Title:
+    = editable(:span, photo, :title)
+  %p
+    %label Description:
+    = editable(:span, photo, :description)
+  %p
+    %label Position:
+    = editable(:span, photo, :position )
+.clear

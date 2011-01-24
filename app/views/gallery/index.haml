@@ -1,0 +1,17 @@
+#wrapper{"data-numalbums" => @albums.size}
+  #large_image
+    - if @albums.first && first_photo = @albums.first.photos.first
+      .description
+        %p
+          = first_photo.title
+          \&nbsp;#{first_photo.description}
+      = image_tag(first_photo.image.url(:main))
+  #menu
+    = link_to(image_tag('gallery_down_off.jpg', :alt => 'down'), '#',:id => 'gallery_down')
+    .gallery_window
+      .gallery_thumbs
+        - @albums.each_with_index do |album, i|
+          .album{:rel => album.id, :style => i >= 14 ? 'display: block' : ''}
+            %a{:href => "#"}= image_tag(album.cover_photo_url)
+  = link_to(image_tag("gallery_up_#{@albums.size > 14 ? 'on' : 'off'}.jpg", :alt => 'up'), '#', :id => 'gallery_up')
+= render :partial => 'album', :object => @albums.first

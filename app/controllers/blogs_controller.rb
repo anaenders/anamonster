@@ -3,12 +3,12 @@ class BlogsController < ApplicationController
   before_filter :load_search_photo_thumbs
   before_filter :set_section
   before_filter :load_blog, :only => [ :show, :edit, :update, :destroy ]
-  before_filter :login_required, :only => [ :edit, :new, :create, :update, :destroy ]
+  before_filter :authenticate_user!, :only => [ :edit, :new, :create, :update, :destroy ]
   before_filter :load_calendar, :only => [ :index, :show ]
-  # before_filter :load_twitter_client
+  skip_before_filter :verify_authenticity_token, :only => [ :destroy ]
 
   def index
-    @blogs = Blog.paginate(:per_page => 2, :page => params[:page] || 1, :order => 'created_at DESC')
+    @blogs = Blog.order('created_at DESC').all.paginate(:per_page => 2, :page => params[:page] || 1)
   end
   
   def show; end
@@ -16,7 +16,7 @@ class BlogsController < ApplicationController
   def new; @blog = Blog.new; end
 
   def feed
-    @blogs = Blog.all(:order => 'created_at DESC', :limit => 5)
+    @blogs = Blog.order('created_at DESC').limit(5).all
     render :layout => false
   end
 
@@ -73,32 +73,10 @@ class BlogsController < ApplicationController
     @comment = Comment.new(params[:comment])
     captcha_valid = verify_recaptcha
     if captcha_valid && @comment.save
-      Mailer.deliver_comment(@comment)
-      render :update do |page|
-        page.insert_html(
-          :before, "new_blog_drop_#{rel}",
-          :partial => 'comment',
-          :object  => @comment,
-          :locals  => { :visible => true }
-        )
-        page.replace_html("comment_count_#{rel}", @comment.blog.comments.size)
-        page.replace_html("comment_errors_#{rel}", '')
-        page << "$('.comment[rel=\"#{rel}\"]').show();"
-        page << "$('.textfield_wrapper[rel=\"#{rel}\"] .reply_content').val('');"
-        page << "Recaptcha.reload();"
-      end
+      Mailer.comment(@comment)
+      render :partial => 'comment', :object  => @comment, :locals  => { :visible => true }
     else
-      if !captcha_valid
-        render :update do |page|
-          page.replace_html("comment_errors_#{rel}", 'Your captcha response does not match, please try again')
-          page << "Recaptcha.reload();"
-        end        
-      else
-        render :update do |page|
-          page.replace_html("comment_errors_#{rel}", @comment.errors.full_messages.join('<br />'))
-          page << "Recaptcha.reload();"
-        end
-      end
+      render :status => '400', :text => !captcha_valid ? 'Your captcha response does not match, please try again' : @comment.errors.full_messages.join('<br />') 
     end
   end
   

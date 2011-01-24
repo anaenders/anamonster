@@ -13,7 +13,7 @@ class Contact
       return false
     end
     
-    if !@email.blank? && !@email.match(Authentication.email_regex)
+    if !@email.blank? && !@email.match(/\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i)
       @error_message = 'Looks like your email is not in a valid format.<br />Try again please! <span>click here</span>!'
       return false
     end

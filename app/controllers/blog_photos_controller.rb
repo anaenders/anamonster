@@ -1,7 +1,8 @@
 class BlogPhotosController < ApplicationController
   
-  before_filter :login_required
+  before_filter :authenticate_user!
   before_filter :load_blog_photo, :only => [ :edit, :update, :destroy ]
+  skip_before_filter :verify_authenticity_token, :only => [ :destroy ]
   
   def new; @blog_photo = BlogPhoto.new; end
   def edit; end

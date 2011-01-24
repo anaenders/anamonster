@@ -35,13 +35,13 @@ class Blog < ActiveRecord::Base
 
   def photo_by_filename(filename)
     blog_photos.each do |blog_photo|
-      return blog_photo if blog_photo.filename == filename
+      return blog_photo if blog_photo.image_file_name == filename
     end
     nil
   end
   
   def attachable=(params)
-    @attachments = params.keys.sort.inject([]) { |vals, k| vals.push(params[k]) }.reject {|a| a[:uploaded_data].blank? }.collect { |a| BlogPhoto.new(a) }
+    @attachments = params.keys.sort.inject([]) { |vals, k| vals.push(params[k]) }.reject {|a| a[:image].blank? }.collect { |a| BlogPhoto.new(a) }
   end
   
   def image_replaced_content
@@ -49,7 +49,7 @@ class Blog < ActiveRecord::Base
       if !(photo = photo_by_filename($1))
         ''
       else
-        "<img src = \"#{photo.public_filename}\" />"
+        "<img src = \"#{photo.image.url(:main)}\" />"
       end
     end
   end

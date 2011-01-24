@@ -1,49 +1,38 @@
-ActionController::Routing::Routes.draw do |map|
+Anamonster::Application.routes.draw do
 
-  # Blog
-  map.resources :blogs
-  map.resources :blog_photos
-  map.blog_new_photo_field '/blog/new_photo_field', :controller => 'blogs', :action => 'new_photo_field'
-  map.blog_calendar_day '/blogs/search/:by/:year/:month/:day', :controller => 'blogs', :action => 'search'
-  map.blog_search '/blogs/search/:by', :controller => 'blogs', :action => 'search'
-  map.post_comment '/blogs/post_comment', :controller => 'blogs', :action => 'post_comment'
-  map.delete_comment '/blogs/delete_comment/:id', :controller => 'blogs', :action => 'delete_comment'
-  
-  # RSS
-  map.blog_rss '/feed.xml', :controller => 'blogs', :action => 'feed'
-  
-  # Login
-  map.logout '/logout', :controller => 'sessions', :action => 'destroy'
-  map.login '/login', :controller => 'sessions', :action => 'new'
-  map.resource :session
-  
-  # Contact
-  map.contact '/contact', :controller => 'contact', :action => 'index'
-  
-  # About
-  map.link_category '/about/category/:category', :controller => 'about', :action => 'index'
-  map.resources :about
-  
-  # Sessions
-  map.logout '/logout', :controller => 'sessions', :action => 'destroy'
-  map.login '/login', :controller => 'sessions', :action => 'new'
-  map.register '/register', :controller => 'users', :action => 'create'
-  map.signup '/signup', :controller => 'users', :action => 'new'
-  map.resources :users
-  map.resource :session
-  
-  # Showcase
-  map.resources :showcase
-  
-  # Gallery
-  map.gallery '/gallery', :controller => 'gallery'
-  map.gallery_album '/gallery/album/:id', :controller => 'gallery', :action => 'album'
-  map.gallery_album '/gallery/photo/:id', :controller => 'gallery', :action => 'photo'
-  map.resources :albums, :collection => 'list_albums' # For admin only
-  map.new_photo_field '/albums/new_photo_field', :controller => 'albums', :action => 'new_photo_field'
-  map.resources :photos # For admin only
+  devise_for :users
 
-  # Default
-  map.root :controller => 'blogs'
+  resources :blogs
+  resources :blog_photos
 
+  match '/blog/new_photo_field' => 'blogs#new_photo_field', :as => :blog_new_photo_field
+  match '/blogs/search/:by/:year/:month/:day' => 'blogs#search', :as => :blog_calendar_day
+  match '/blogs/search/:by' => 'blogs#search', :as => :blog_search
+  match '/blogs/post_comment' => 'blogs#post_comment', :as => :post_comment
+  match '/blogs/delete_comment/:id' => 'blogs#delete_comment', :as => :delete_comment
+
+  match '/feed.xml' => 'blogs#feed', :as => :blog_rss
+
+  match '/contact' => 'contact#index', :as => :contact
+  match '/about/category/:category' => 'about#index', :as => :link_category
+
+  resources :about
+  resources :showcase
+
+  match '/gallery' => 'gallery#index', :as => :gallery
+  match '/gallery/album/:id' => 'gallery#album', :as => :gallery_album
+  match '/gallery/photo/:id' => 'gallery#photo', :as => :gallery_album
+
+  resources :albums do
+    collection do
+      get :list_albums
+    end
+  end
+
+  resources :photos
+
+  match '/admin/update_field' => 'admin#update_field'
+  
+  root :to => 'blogs#index'
+  
 end

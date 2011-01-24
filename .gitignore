@@ -1,3 +1,7 @@
 log/*
 public/photos/*
 config/twitter.yml
+.bundle
+db/*.sqlite3
+log/*.log
+tmp/**/*

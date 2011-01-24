@@ -20,7 +20,7 @@ class Album < ActiveRecord::Base
   after_save :save_attachments
     
   def attachable=(params)
-    @attachments = params.keys.sort.inject([]) { |vals, k| vals.push(params[k]) }.reject {|a| a[:uploaded_data].blank? }.collect { |a| Photo.new(a) }
+    @attachments = params.keys.sort.inject([]) { |vals, k| vals.push(params[k]) }.reject {|a| a[:image].blank? }.collect { |a| Photo.new(a) }
   end
   
   def size
@@ -37,7 +37,7 @@ class Album < ActiveRecord::Base
 
   def cover_photo_url
     return '' if !cover
-    cover.public_filename(:gallery_hero)
+    cover.image.url(:gallery_hero)
   end
   
   protected

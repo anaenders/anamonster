@@ -6,7 +6,7 @@ class ContactController < ApplicationController
     if request.post?
       @contact = Contact.new(params[:contact])
       if @contact.valid?
-        Mailer.deliver_contact(@contact)
+        Mailer.contact(@contact)
         render :update do |page|
           page << "$('#error').fadeOut(function() {
             $('.message').hide();

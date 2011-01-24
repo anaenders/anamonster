@@ -1,0 +1,14 @@
+.padding
+  #blog_container
+    - if @blogs
+      = render :partial => 'blog', :collection => @blogs, :locals => { :link_reply => @blogs.size > 1 }
+    - else
+      = render :partial => 'blog', :object => @blog
+    - if user_signed_in?
+      = link_to 'New blog', new_blog_path, :class => "new_blog"
+  = render :partial => 'search'
+= will_paginate(@blogs,                                                                                                   |
+      :previous_label => image_tag((@blogs.previous_page ? 'previous.png' : 'previous_ghosted.png'), :alt => 'previous'), |
+      :next_label     => image_tag((@blogs.next_page ? 'next.png' : 'next_ghosted.png'), :alt => 'next'),                 |
+      :inner_window   => 3                                                                                                |
+  )                                                                                                                       |

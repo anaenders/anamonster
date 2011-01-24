@@ -1,0 +1,4 @@
+%h3 tags
+%span.tags
+  - tag_cloud Blog.tag_counts, %w(tag_1 tag_2 tag_3 tag_4 tag_5) do |tag, css_class|
+    = link_to(h(tag.name), blog_search_path(:by => 'tag', :value => tag.name), :class => "#{css_class}")

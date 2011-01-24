@@ -1,0 +1,33 @@
+/ IMAGE SIZES ARE: 340X100 SMALL AND 760X280  LARGE
+:css
+  .small_image img.hover { border: 1px solid #f5857c; }
+.padding
+  - i = 0
+  - @showcase.each_slice(2) do |slice|
+    .small_image{:rel => i}
+      = link_to(image_tag("#{slice[0]['small_image']}.png", :alt => slice[0]['alt_name']), '#')
+    - if slice.size > 1
+      .small_image{:rel => i + 1}
+        = link_to(image_tag("#{slice[1]['small_image']}.png", :alt => slice[1]['alt_name']), '#')
+    .large_image{:id => "showcase_#{i}"}
+      = image_tag("#{slice[0]['large_image']}.jpg", :alt => slice[0]['alt_name'])
+      .project_description
+        %p.description
+          Description:
+          != slice[0]['description']
+        %p.name
+          Project name: #{slice[0]['project_name']}
+          %span.url
+            url: #{link_to(slice[0]['url'], slice[0]['url'], :target => '_blank')}
+    - if slice.size > 1
+      .large_image{:id => "showcase_#{i + 1}"}
+        = image_tag("#{slice[1]['large_image']}.jpg", :alt => slice[1]['alt_name'])
+        .project_description
+          %p.description
+            Description:
+            != slice[1]['description']
+          %p.name
+            Project name: #{slice[1]['project_name']}
+            %span.url
+              url:&nbsp;#{link_to(slice[1]['url'], slice[1]['url'], :target => '_blank')}
+    - i += 2

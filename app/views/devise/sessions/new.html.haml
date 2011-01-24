@@ -1,0 +1,13 @@
+.padding
+  #login
+    %h1 Log In
+    = form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f|
+      %p
+        = label_tag 'email'
+        %br/
+        = f.text_field :email
+      %p
+        = label_tag 'password'
+        %br/
+        = f.password_field :password
+      %p= submit_tag 'Log in'

@@ -1,0 +1,5 @@
+.padding
+  #new_blog
+    %h1 New blog
+    = render :partial => 'form', :locals => { :submit_button => 'Create' }
+    = link_to 'Back', blogs_path

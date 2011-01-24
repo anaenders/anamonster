@@ -1,0 +1,65 @@
+!!! Strict
+%html{:lang => "en", "xml:lang" => "en", :xmlns => "http://www.w3.org/1999/xhtml"}
+  %head
+    %title anamonster
+    %meta{:content => "view Ana Carter (web developer based in NYC and Toronto) a.k.a. anamonter's professional portfolio.", :name => "description"}/
+    %meta{:content => "anamonster, Ana Carter, ana carter's portfolio, anacarter, ana carter new york city, ana carter toronto", :name => "keywords"}/
+    %meta{:content => "Ana Carter", :name => "author"}/
+    %meta{:content => "text/html;charset=ISO-8859-1", "http-equiv" => "Content-Type"}/
+    %meta{:content => "q4uHVk3iBJUR2UWXCCij6cPooh3s9VoMEX/OIDipEZY=", :name => "verify-v1"}/
+    %meta{:content => "AGWN6FoiMO8MzjDpbhfx0TRxVzJyw3N/wqCn37Nob8o=", :name => "verify-v1"}/
+    %link{:href => "/images/favicon.ico", :rel => "shortcut icon", :type => "image/x-icon"}/
+    = stylesheet_link_tag 'style'
+    = javascript_include_tag 'jquery.js'
+    = javascript_include_tag 'jquery-ui.js'
+    = javascript_include_tag 'jquery.form'
+    = javascript_include_tag 'jquery.jeditable'
+    = javascript_include_tag 'rails'
+    = javascript_include_tag 'cufon-yui.js'
+    = javascript_include_tag 'AvantGarde_600.font.js'
+    = javascript_include_tag 'AvantGarde-Cnd_400.font.js'
+    = javascript_include_tag 'application.js'
+    = javascript_include_tag 'resize_background.js'
+    = javascript_include_tag 'blog'
+    = javascript_include_tag 'gallery'
+    = yield :head
+    = auto_discovery_link_tag(:rss, :controller => '/blogs', :action => 'feed')
+  %body
+    #container
+      #background
+        = image_tag('background1.jpg')
+        / loaded randomly by javascript
+      #main
+        .content_wrapper
+          #header
+            = link_to(image_tag('logo.png', :alt => 'anamonster', :class => 'logo'), '/')
+            #navigation
+              .nav_links
+                - [ ['about', '/about' ], [ 'gallery', '/gallery' ], [ 'showcase', '/showcase' ], [ 'blog', '/' ] ].each do |nav|
+                  - on_off = (nav[0] == get_current_section) ? '_on.png' : '_off.png'
+                  = link_to(image_tag('button_'+ nav[0] + on_off), nav[1])
+          .clear
+          - if flash[:message]
+            .message.success= h flash[:message]
+          - elsif flash[:warning]
+            .message.warning= h flash[:warning]
+          - elsif flash[:error]
+            .message.warning= h flash[:error]
+          #content
+            = image_tag('/images/margin.png', :alt => 'anamonster', :id => 'top_margin')
+            = yield
+          #footer
+            = image_tag('/images/margin.png', :alt => 'anamonster', :id => 'bottom_margin')
+            = link_to(image_tag('rss_logo.png', :alt => 'RSS', :class => 'rss', :target => '_blank'), '/feed.xml')
+            #footer_navigation
+              %span.contact= link_to('contact me', '/contact')
+              #search
+                = form_tag(blog_search_path(:by => 'keyword'), :id => 'search_form') do |f|
+                  = text_field_tag(:value, '', :class => 'search')
+                  %span.search_button= link_to_function('search', "$('#search_form').submit()")
+              %p
+                © Copyright #{Time.now.year}. Ana Carter. All rights reserved
+    :javascript
+      Cufon.now();
+
+    = render :partial => 'shared/analytics'
