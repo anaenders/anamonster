@@ -10,7 +10,7 @@ module AttachFuPhaseOut
 
   protected
   def full_filename(thumbnail = nil)
-    Rails.root.join(self.class.table_name, *partitioned_path(thumbnail_name_for(thumbnail))).to_s
+    Rails.root.join('public', self.class.table_name, *partitioned_path(thumbnail_name_for(thumbnail))).to_s
   end
 
   def thumbnail_name_for(thumbnail = nil)

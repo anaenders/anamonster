@@ -29,7 +29,7 @@ class ConvertImages < ActiveRecord::Migration
       model.send("#{prefix}_content_type=", attachment.content_type)
       model.send("#{prefix}_file_size=", attachment.size)
   
-      old_path = File.join(RAILS_ROOT, 'public', attachment.public_filename)
+      old_path = File.join(attachment.public_filename)
       new_path = model.send(prefix).path(:original)
       new_folder = File.dirname(new_path)
     

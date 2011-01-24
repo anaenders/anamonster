@@ -1,3 +1,5 @@
+require 'bundler/capistrano'
+
 set :application,            'anamonster'
 set :user,                   'root'
 set :runner,                 user
@@ -18,7 +20,6 @@ role :db,  '67.23.26.253', :primary => true
 namespace :deploy do
   task :after_update_code do
     link_up_assets
-    link_twitter_config
     cleanup
   end
 
@@ -32,16 +33,10 @@ namespace :deploy do
       run <<-CMD
       mkdir -p #{shared_path}/#{dir} &&
       rm -rf #{release_path}/public/#{dir} && 
-      ln -nfs #{shared_path}/#{dir} #{release_path}/public/#{dir}
+      ln -nfs #{shared_path}/#{dir} #{release_path}/public/#{dir} &&
+      ln -nfs #{shared_path}/stylesheet_cache #{release_path}/public/stylesheets/cache &&
+      ln -nfs #{shared_path}/javascript_cache #{release_path}/public/javascripts/cache
       CMD
     end
-    
-    run "mkdir -p #{release_path}/tmp/attachment_fu"
-    run "chmod 777 #{release_path}/tmp/attachment_fu"
-  end
-  
-  task :link_twitter_config do
-    run "ln -nfs #{shared_path}/config/twitter.yml #{release_path}/config/twitter.yml"
   end
 end
-
