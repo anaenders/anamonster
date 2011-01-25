@@ -1,0 +1,43 @@
+/***********************captcha***********************/
+
+#dynamic_recaptcha { width: 490px; margin-bottom: 10px; }
+
+#dynamic_recaptcha, #recaptcha_area #recaptcha_table #recaptcha_image, 
+#recaptcha_area, #recaptcha_table { float: left }
+
+#recaptcha_area { position: relative; }
+#recaptcha_table td.recaptcha_r4_c1 { height: 0px !important; }
+#recaptcha_area #recaptcha_table #recaptcha_image { border: 1px solid #E2F1F4 }
+
+.recaptchatable *, #recaptcha_area .recaptcha_input_area_text {
+  color: #7C7C7C !important;
+  font-family: "Lucida Grande","lucida sans",Arial,sans-serif;
+  font-size: 11px;
+}
+
+#recaptcha_area #recaptcha_response_field {
+  border: 1px solid #E2F1F4;
+  padding: 1px !important;
+  width: 144px !important;
+  font-size: 11px !important;
+}
+
+.recaptcha_r1_c1, .recaptcha_r2_c1, .recaptcha_r2_c2, 
+.recaptcha_r3_c1, .recaptcha_r3_c2, .recaptcha_r3_c3,
+.recaptcha_r4_c4, .recaptcha_r4_c2, .recaptcha_r7_c1, 
+.recaptcha_r8_c1
+{ display: none }
+
+img#recaptcha_reload { position: absolute; top: 9px; right: -172px; }
+img#recaptcha_switch_audio { position: absolute; top: 26px; right: -172px; }
+img#recaptcha_whatsthis { position: absolute; top: 42px; right: -172px; }
+#recaptcha_table .recaptcha_r4_c1 { background: none; width: 180px; }
+
+#recaptcha_table .recaptcha_input_area { 
+  width: 150px !important; 
+  height: 42px !important;
+  margin: 0px !important;
+  position: absolute !important;
+  top: 24px;
+  right: -142px;
+}

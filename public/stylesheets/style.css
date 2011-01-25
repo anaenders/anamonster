@@ -1,23 +1,4 @@
-/********************************************
- *	anamonster                  						*
-\********************************************/
-/*body {
-	background-image: url('/images/grid2.png');
-	background-color: #fff;
-	background-attachment: fixed;
-	background-repeat: repeat;
-	height: 100%;
-	width: 100%;
-	text-align: left;
-	font-family: "Lucida Grande", "lucida sans", Arial, sans-serif;
-	color: #7c7c7c;
-	font-size: 11px;
-  font-size-adjust: none;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 17px;
-}*/
+/***********************anamonster***********************/
 html, * {
   margin: 0;
   padding: 0; }
@@ -41,14 +22,6 @@ body {
   font-variant: normal;
   font-weight: normal; }
 
-/*#bgwrapper {
-  background-image:url("/images/bg2.png");
-  background-position:center top;
-  background-repeat:no-repeat;
-  overflow:hidden;
-  position:relative;
-  z-index:1;
-}*/
 #container {
   display: block;
   margin: 0 auto;
@@ -97,30 +70,6 @@ img {
 img, div, input {
   behavior: url("/javascripts/iepngfix.htc"); }
 
-/********************************************
- *	header									                *
-\********************************************/
-#header {
-  float: left;
-  position: relative;
-  height: 77px;
-  width: 100%;
-  background-color: #000;
-  z-index: 100; }
-
-#navigation {
-  position: absolute;
-  top: 58px;
-  right: 0;
-  z-index: 100;
-  height: 50px; }
-
-.nav_links img {
-  float: right; }
-
-/********************************************
- *	home									                  *
-\********************************************/
 #main {
   width: 800px;
   padding: 0 20px;
@@ -134,17 +83,6 @@ img, div, input {
   -moz-box-shadow: 0 0 30px #ddd;
   -webkit-box-shadow: 0 0 30px #ddd;
   box-shadow: 0 0 30px #ddd; }
-
-img.logo {
-  position: absolute;
-  bottom: 0px;
-  left: 20px;
-  z-index: 100; }
-
-.logo2 {
-  position: absolute;
-  bottom: 0px;
-  right: 20px; }
 
 #content {
   float: left;
@@ -167,9 +105,320 @@ img#top_margin {
 img#bottom_margin {
   top: 0px; }
 
-/********************************************
- *	blog    								                *
-\********************************************/
+@import url(variables.css);
+/***********************buttons***********************/
+.delete_button {
+  float: left;
+  width: 16px;
+  height: 16px;
+  margin: 2px 20px 2px 8px; }
+
+.add_asset {
+  float: right;
+  margin-bottom: 20px;
+  height: 30px;
+  width: 106px;
+  text-indent: -9999px;
+  border: 0px;
+  background: url("/images/btns/add_asset.png") 0px 0px; }
+  .add_asset:hover {
+    background-position: 0px -31px; }
+
+.add_adjustment {
+  float: right;
+  margin-bottom: 20px;
+  height: 30px;
+  width: 118px;
+  text-indent: -9999px;
+  border: 0px;
+  background: url("/images/btns/add_adjustment.png") 0px 0px; }
+  .add_adjustment:hover {
+    background-position: 0px -31px; }
+
+.save {
+  float: right;
+  margin-bottom: 20px;
+  height: 30px;
+  width: 81px;
+  text-indent: -9999px;
+  border: 0px;
+  background: url("/images/btns/save.png") 0px 0px; }
+  .save:hover {
+    background-position: 0px -31px; }
+
+.save-blk {
+  float: right;
+  margin-bottom: 20px;
+  height: 30px;
+  width: 87px;
+  text-indent: -9999px;
+  border: 0px;
+  background: url("/images/btns/save-blk.png") 0px 0px; }
+  .save-blk:hover {
+    background-position: 0px -31px; }
+
+.log-in {
+  float: right;
+  margin-bottom: 20px;
+  height: 30px;
+  width: 81px;
+  text-indent: -9999px;
+  border: 0px;
+  background: url("/images/btns/login.png") 0px 0px; }
+  .log-in:hover {
+    background-position: 0px -31px; }
+
+.submit {
+  float: right;
+  margin-bottom: 20px;
+  height: 30px;
+  width: 81px;
+  text-indent: -9999px;
+  border: 0px;
+  background: url("/images/btns/submit.png") 0px 0px;
+  margin-top: 10px; }
+  .submit:hover {
+    background-position: 0px -31px; }
+
+.last-month {
+  float: right;
+  margin-bottom: 20px;
+  height: 30px;
+  width: 326px;
+  text-indent: -9999px;
+  border: 0px;
+  background: url("/images/btns/last_month.png") 0px 0px; }
+  .last-month:hover {
+    background-position: 0px -31px; }
+
+.blog {
+  text-indent: -9999px;
+  border: none;
+  outline: 0px;
+  float: right;
+  width: 96px;
+  height: 19px;
+  background: url("/images/btns/navigation.png")-0px 0px; }
+  .blog:hover {
+    background-position: 0px -19px;
+    height: 33px; }
+  .blog.on {
+    background-position: 0px -19px;
+    height: 33px; }
+
+.showcase {
+  text-indent: -9999px;
+  border: none;
+  outline: 0px;
+  float: right;
+  width: 102px;
+  height: 19px;
+  background: url("/images/btns/navigation.png")-96px 0px; }
+  .showcase:hover {
+    background-position: -96px -19px;
+    height: 33px; }
+  .showcase.on {
+    background-position: -96px -19px;
+    height: 33px; }
+
+.gallery {
+  text-indent: -9999px;
+  border: none;
+  outline: 0px;
+  float: right;
+  width: 88px;
+  height: 19px;
+  background: url("/images/btns/navigation.png")-198px 0px; }
+  .gallery:hover {
+    background-position: -198px -19px;
+    height: 33px; }
+  .gallery.on {
+    background-position: -198px -19px;
+    height: 33px; }
+
+.about {
+  text-indent: -9999px;
+  border: none;
+  outline: 0px;
+  float: right;
+  width: 83px;
+  height: 19px;
+  background: url("/images/btns/navigation.png")-286px 0px; }
+  .about:hover {
+    background-position: -286px -19px;
+    height: 33px; }
+  .about.on {
+    background-position: -286px -19px;
+    height: 33px; }
+
+/***********************header***********************/
+#header {
+  float: left;
+  position: relative;
+  height: 77px;
+  width: 100%;
+  background-color: #000;
+  z-index: 100; }
+
+img.logo {
+  position: absolute;
+  bottom: 0px;
+  left: 20px;
+  z-index: 100; }
+
+.logo2 {
+  position: absolute;
+  bottom: 0px;
+  right: 20px; }
+
+#navigation {
+  position: absolute;
+  top: 58px;
+  right: 0;
+  z-index: 9999;
+  height: 50px;
+  width: 369px; }
+
+#navigation div {
+  float: right; }
+
+/***********************login***********************/
+#login h1 {
+  font-size: 20px; }
+
+#login p {
+  line-height: 2em;
+  font-weight: normal;
+  color: #000;
+  margin-bottom: 10px; }
+
+#login input {
+  border: 1px solid #999;
+  padding: 2px; }
+
+/***********************admin***********************/
+.admin_album_links, span.album_details {
+  float: right;
+  margin: 12px 10px 0 0;
+  display: inline; }
+
+.admin_album_links a:hover {
+  color: #fff;
+  background-color: #000; }
+
+#blog_container .new_blog {
+  z-index: 100;
+  position: absolute;
+  bottom: 0px;
+  left: 0px; }
+
+.admin_links {
+  clear: both;
+  float: left;
+  width: 100%; }
+
+.main_content {
+  width: 760px;
+  padding: 0 20px; }
+
+.main_content h4 {
+  margin-bottom: 5px;
+  float: left;
+  width: 133px;
+  text-align: right; }
+
+.main_content input, .main_content textarea {
+  border: 1px solid #dedede;
+  padding: 1px;
+  background-color: #fcfafc; }
+
+.blog_photo_edit a {
+  margin-top: 10px; }
+
+.blog_photo_edit {
+  padding-bottom: 10px; }
+
+.edit_photos {
+  border-bottom: 1px dotted #ccc;
+  margin-bottom: 20px; }
+
+.blog_photo_edit, .blog_photo_edit a {
+  float: left;
+  width: 100%; }
+
+.main_content label {
+  text-align: right; }
+
+#album_name {
+  margin: 0 0 5px 18px;
+  float: left;
+  width: 601px; }
+
+.position {
+  margin-left: 18px;
+  width: 50px;
+  float: left; }
+
+.photo_details p {
+  float: left; }
+
+.photo_details p span {
+  width: 601px;
+  float: left; }
+
+#update_success, #update_failure {
+  margin-bottom: 20px; }
+
+.edit_photo_thumb, .edit_photos .admin_links {
+  float: left; }
+
+.edit_photo_left {
+  float: left;
+  margin-bottom: 10px;
+  width: 70px; }
+
+.photo_details {
+  margin-bottom: 30px;
+  float: left;
+  width: 685px; }
+
+.album_header {
+  margin-bottom: 30px;
+  float: left;
+  width: 760px; }
+
+.photo_details label {
+  margin-right: 15px;
+  width: 65px;
+  float: left; }
+
+.new_photo label {
+  float: left;
+  margin-right: 15px;
+  width: 139px; }
+
+.new_photo p, .photo_details p {
+  width: 100%;
+  margin-bottom: 5px; }
+
+#new_photos a {
+  margin-bottom: 20px;
+  float: left; }
+
+.new_photo {
+  margin-bottom: 20px;
+  float: left; }
+
+.new_photo textarea, .new_photo input {
+  width: 601px; }
+
+/***********************errors***********************/
+.message.warning, .message.success {
+  padding: 5px;
+  background-color: #FFFA61;
+  color: #000; }
+
+/***********************blog***********************/
 #blog_container {
   float: left;
   width: 530px;
@@ -296,13 +545,10 @@ h2.search_results {
   float: left;
   width: 760px; }
 
-#new_blog h1, #login h1 {
+#new_blog h1 {
   font-size: 20px; }
 
-#login p {
-  line-height: 2em; }
-
-#new_blog h1, #new_blog h4, #login h1, #login p {
+#new_blog h1, #new_blog h4, #login h1 {
   font-weight: normal;
   color: #000;
   margin-bottom: 10px; }
@@ -319,7 +565,7 @@ h2.search_results {
   cursor: pointer;
   width: 100%; }
 
-#login input, #new_blog input, #new_blog textarea {
+#new_blog input, #new_blog textarea {
   border: 1px solid #999;
   padding: 2px; }
 
@@ -327,9 +573,7 @@ h2.search_results {
   width: 752px;
   margin-bottom: 10px; }
 
-/********************************************
- *	blog replies  					                *
-\********************************************/
+/***********************comments***********************/
 .reply {
   float: left;
   border-top: 1px solid #deebed;
@@ -411,7 +655,7 @@ textarea.reply_content {
   background-color: #f5f5f5;
   width: 500px;
   float: left;
-  margin-bottom: 10px;
+  margin-top: 10px;
   position: relative; }
 
 .post_error {
@@ -431,9 +675,7 @@ textarea.reply_content {
   right: -19px;
   top: 0px; }
 
-/********************************************
- *	captcha        					                *
-\********************************************/
+/***********************captcha***********************/
 #dynamic_recaptcha {
   width: 490px;
   margin-bottom: 10px; }
@@ -487,7 +729,6 @@ img#recaptcha_whatsthis {
   background: none;
   width: 180px; }
 
-/*#recaptcha_table .recaptcha_image_cell { background-color: #FFFBFB }*/
 #recaptcha_table .recaptcha_input_area {
   width: 150px !important;
   height: 42px !important;
@@ -496,9 +737,7 @@ img#recaptcha_whatsthis {
   top: 24px;
   right: -142px; }
 
-/********************************************
- *	about         					                *
-\********************************************/
+/***********************about***********************/
 #about_me, #resume {
   float: left;
   margin-bottom: 10px;
@@ -624,9 +863,7 @@ td.td_description {
 .section_separator {
   border-bottom: 1px dotted #ccc; }
 
-/********************************************
- *	search features					                *
-\********************************************/
+/***********************search***********************/
 #search_features {
   float: left;
   width: 200px; }
@@ -723,9 +960,7 @@ th abbr {
 #thumb_pics img.last {
   margin: 0; }
 
-/********************************************
- *	tweets        					                *
-\********************************************/
+/***********************tweets***********************/
 span.tweets {
   float: left;
   width: 200px; }
@@ -763,10 +998,7 @@ span.tweets {
   top: 3px;
   right: 3px; }
 
-/*.tweet.alt { background-color: #EFFFFF; }*/
-/********************************************
- *	gallery							                    *
-\********************************************/
+/***********************gallery***********************/
 #wrapper {
   float: left;
   width: 100%; }
@@ -886,18 +1118,7 @@ h2.album_name {
 .thumb_holder a#next {
   right: 5px; }
 
-.admin_album_links, span.album_details {
-  float: right;
-  margin: 12px 10px 0 0;
-  display: inline; }
-
-.admin_album_links a:hover {
-  color: #fff;
-  background-color: #000; }
-
-/********************************************
- *	showcase   							                *
-\********************************************/
+/***********************showcase***********************/
 .small_image {
   width: 380px;
   margin: 0px;
@@ -981,9 +1202,7 @@ h2.album_name {
   filter: alpha(opacity=70);
   /* CSS3 standard */ }
 
-/********************************************
- *	contact   							                *
-\********************************************/
+/***********************contact***********************/
 #contact_holder {
   height: 500px; }
 
@@ -1071,9 +1290,7 @@ p.message {
   left: 93px;
   z-index: 200; }
 
-/********************************************
- *	footer									                *
-\********************************************/
+/***********************footer***********************/
 #footer {
   float: left;
   width: 800px;
@@ -1158,120 +1375,3 @@ span.contact a:active {
   text-align: right;
   margin-top: 10px;
   width: auto; }
-
-/********************************************
- *	admin   								                *
-\********************************************/
-#blog_container .new_blog {
-  z-index: 100;
-  position: absolute;
-  bottom: 0px;
-  left: 0px; }
-
-.admin_links {
-  clear: both;
-  float: left;
-  width: 100%; }
-
-.main_content {
-  width: 760px;
-  padding: 0 20px; }
-
-.main_content h4 {
-  margin-bottom: 5px;
-  float: left;
-  width: 133px;
-  text-align: right; }
-
-.main_content input, .main_content textarea {
-  border: 1px solid #dedede;
-  padding: 1px;
-  background-color: #fcfafc; }
-
-.blog_photo_edit a {
-  margin-top: 10px; }
-
-.blog_photo_edit {
-  padding-bottom: 10px; }
-
-.edit_photos {
-  border-bottom: 1px dotted #ccc;
-  margin-bottom: 20px; }
-
-.blog_photo_edit, .blog_photo_edit a {
-  float: left;
-  width: 100%; }
-
-.main_content label {
-  text-align: right; }
-
-#album_name {
-  margin: 0 0 5px 18px;
-  float: left;
-  width: 601px; }
-
-.position {
-  margin-left: 18px;
-  width: 50px;
-  float: left; }
-
-.photo_details p {
-  float: left; }
-
-.photo_details p span {
-  width: 601px;
-  float: left; }
-
-#update_success, #update_failure {
-  margin-bottom: 20px; }
-
-.edit_photo_thumb, .edit_photos .admin_links {
-  float: left; }
-
-.edit_photo_left {
-  float: left;
-  margin-bottom: 10px;
-  width: 70px; }
-
-.photo_details {
-  margin-bottom: 30px;
-  float: left;
-  width: 685px; }
-
-.album_header {
-  margin-bottom: 30px;
-  float: left;
-  width: 760px; }
-
-.photo_details label {
-  margin-right: 15px;
-  width: 65px;
-  float: left; }
-
-.new_photo label {
-  float: left;
-  margin-right: 15px;
-  width: 139px; }
-
-.new_photo p, .photo_details p {
-  width: 100%;
-  margin-bottom: 5px; }
-
-#new_photos a {
-  margin-bottom: 20px;
-  float: left; }
-
-.new_photo {
-  margin-bottom: 20px;
-  float: left; }
-
-.new_photo textarea, .new_photo input {
-  width: 601px; }
-
-/********************************************
- *	flash messages					                *
-\********************************************/
-.message.warning, .message.success {
-  padding: 5px;
-  background-color: #FFFA61;
-  color: #000; }

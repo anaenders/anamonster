@@ -1,0 +1,89 @@
+/***********************about***********************/
+
+#about_me, #resume {
+  float: left;
+  margin-bottom: 10px;
+  width: 100%;
+  position: relative;
+}
+
+.download_link {
+  position: absolute;
+  top: 11px;
+  right: 0px;
+  color: #000;
+  z-index: 300;
+}
+
+.download_link span {
+  background-color: #94f2ff;
+  margin: 0 0 0 3px;
+  padding: 2px;
+}
+
+#resume .download_link span a { color: #7e7e7e }
+#resume .download_link span a:hover { color: #ccc }
+#about_me a:hover { color: #000 }
+#resume a { color: #f131c6 }
+#resume a:hover { color: #000 }
+#about_me img { float: left; margin: 35px 20px 10px 25px }
+
+#description {
+  float: left;
+  height: 289px;
+  line-height: 1.7em;
+  background-image: url('/images/about_me_BG4.png');
+  position: relative;
+}
+
+.about_text { margin-top: 60px;}
+#description p { margin: 5px 35px 0 40px }
+#description p span { float: right; margin-top: 12px; }
+
+#description h3 {
+  position: absolute;
+  top: 33px;
+  left: 304px;
+}
+
+#description h3, #resume h3 {
+  color: #000;
+  font-size: 16px;
+  font-weight: normal;
+  float: left;
+  height: 1.5em;
+}
+
+#resume h3 { margin: 10px 0; width: 760px; }
+
+#resume h3.header {
+  border-bottom: 1px solid #999;
+  padding-bottom: 5px;
+}
+
+#resume p {
+  float: left;
+  line-height: 1.5em;
+  display: inline;
+}
+
+#resume p.date {
+  float: right;
+  color: #bbb;
+  text-align: right;
+}
+
+p.job_description {
+  width: 580px;
+  margin: 10px 0 10px 30px;
+}
+
+#my_resume { width: 760px; float: left; border-top: 1px dotted #454545; }
+#my_resume span { color: #F131C6; }
+td.right_col { width: 150px; text-align: right; color: #BBBBBB; vertical-align: top; }
+td.category_title, #resume h5 { text-transform: uppercase; color: #454545; padding: 8px 0; font-size: 11px; font-weight: normal; }
+#my_resume ul { float: left; padding-left: 1.5em; }
+td.td_description { padding-left: 10px; }
+.bottom_padding { padding-bottom: 5px; }
+.school_job { color: #454545; }
+.section_separator { border-bottom: 1px dotted #ccc; }

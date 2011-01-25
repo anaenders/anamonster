@@ -1,0 +1,31 @@
+/***********************tweets***********************/
+
+span.tweets { float: left; width: 200px; }
+
+.tweet {
+  border:1px solid #ccc;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+  position: relative;
+  width: 200px;
+  float: left;
+  margin-bottom: 10px;
+}
+
+.tweet p {
+  float: left;
+  display: inline;
+  margin: 5px 35px 5px 5px;
+  color: #67afc2;
+  width: 160px;
+}
+
+.tweet_info { color: #979696; float: left; padding: 5px 25px 5px 5px; font-size: 10px; }
+.tweet a:link, .tweet a:visited { color: #67afc2 }
+.tweet a:hover, .tweet a:active { color: #a6c0c7 }
+
+.tweet img {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+}
