@@ -9,11 +9,35 @@
   width: 640px;
   float: left;
   height: 480px;
+  position: relative; 
+  text-align: center; 
+  background-color: #ddd;
+  img { padding: 0; margin: 0; }
+  .description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    @include opacity(0.8, 80);
+    p { 
+      padding: 5px;
+      width: 630px; 
+      opacity: 1;
+      color: #89e8ff;
+      text-align: left;
+    }
+  }
 }
 
 #menu {
   width: 160px;
   float: left;
+  img { 
+    float: left; 
+    margin-bottom: 1px;
+    &.gallery_scroll { margin-bottom: 2px }
+    &.selected { @include opacity(0.5, 50); }
+  }
 }
 
 .gallery_window {
@@ -29,46 +53,11 @@
   height: 1000px;
   position: absolute;
   top: 0;
-}
-
-.gallery_thumbs img { width: 160px; height: 30px }
-
-#large_image img { padding: 0; margin: 0;}
-
-#large_image { position: relative; text-align: center; background-color: #ddd; }
-
-#large_image .description {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #000;
-  opacity: 0.8;
-  /* for IE */
-  filter: alpha(opacity=50);
-  /* CSS3 standard */
-}
-
-#large_image .description p { 
-  padding: 5px;
-  width: 630px; 
-  opacity: 1;
-  color: #89e8ff;
-  text-align: left;
-}
-
-#menu img.gallery_scroll { margin-bottom: 2px}
-
-#menu img { float: left; margin-bottom: 1px;}
-
-#menu img.selected { 
-  opacity: 0.5;
-  /* for IE */
-  filter: alpha(opacity=50);
-  /* CSS3 standard */
+  img { width: 160px; height: 30px }
 }
 
 h2.album_name {
-  color: #f131c6;
+  color: $hot-pink;
   font-weight: normal;
   font-size: 25px;
   margin-left: 20px;
@@ -90,6 +79,12 @@ h2.album_name {
   height: 52px;
   position: absolute;
   left: 0px;
+  img {
+    float: left;
+    margin-right: 7px;
+    cursor: pointer;
+    &.selected { border: 1px solid #ff0000; margin: -2 -2 0 0; }
+  }
 }
 
 .thumb_window {
@@ -100,19 +95,7 @@ h2.album_name {
   margin-left: 32px;
 }
 
-.thumbs img {
-  float: left;
-  margin-right: 7px;
-  cursor: pointer;
+.thumb_holder a {
+  &#previous { position: absolute; top: 10px; left: 5px }
+  &#next { position: absolute; top: 10px; right: 5px }
 }
-
-.thumbs img.selected { border: 1px solid #ff0000; margin: -2 -2 0 0; }
-
-.thumb_holder a#previous, .thumb_holder a#next {
-  position: absolute;
-  top: 10px;
-} 
-
-.thumb_holder a#previous { left: 5px }
-
-.thumb_holder a#next { right: 5px }

@@ -1,16 +1,24 @@
 /***********************search***********************/
 
-#search_features { float: left; width: 200px; }
-#search_features h3 { 
-  margin-bottom: 10px; 
-  border-bottom: 1px solid #ddd; 
-  color: #000; 
-  padding-bottom: 10px; 
-  font-size: 15px;
+#search_features { 
+  float: left; 
+  width: 200px; 
+  h3 { 
+    margin-bottom: 10px; 
+    border-bottom: 1px solid #ddd; 
+    color: #000; 
+    padding-bottom: 10px; 
+    font-size: 13px;
+  }
 }
 
-span.tags { float: left; margin-bottom: 20px; text-align: center; font-family: arial; }
-span.tags a { line-height: 18px; }
+span.tags { 
+  float: left; 
+  margin-bottom: 20px; 
+  text-align: center; 
+  font-family: arial; 
+  a { line-height: 18px; }
+}
 
 .tag_1 { font-size: 10px }
 .tag_2 { font-size: 12px }
@@ -27,45 +35,35 @@ span.tags a { line-height: 18px; }
   font-size: 10px;
   text-align: center;
   border: 10px solid #e7eefb;
-}
-
-#calendar th { 
-  color: #1263f9;
-  font-weight: normal;
-}
-
-th abbr { border: 0px }
-
-#calendar tr.month a { color: #1263f9; font-size: 8px  }
-
-#calendar th { font-size: 9px; padding: 2px 2px 8px 2px}
-
-#calendar td { padding: 2px }
-
-#calendar td { background-color: #f8ecf8 }
-
-#calendar td.today {
-  background-color: #aab8d2;
-  color: #fff;
-}
-
-#calendar td.weekend { background-color: #e2d6e2 }
-
-#calendar td.other_month { 
-  background-color: #fafafa; 
-  color: #b6b6b6
-}
-
-#calendar td.blog_post a { 
-  color: #000; 
-  text-decoration: underline;
+  th { 
+    color: #1263f9;
+    font-weight: normal;
+    font-size: 9px; 
+    padding: 2px 2px 8px 2px;
+    abbr { border: 0px }
+  }
+  tr.month a { color: #1263f9; font-size: 8px }
+  td { 
+    padding: 2px; 
+    background-color: #f8ecf8; 
+    &.today {
+      background-color: #aab8d2;
+      color: #fff;
+    }
+    &.weekend { background-color: #e2d6e2 }
+    &.other_month { background-color: #fafafa; color: #b6b6b6 }
+    &.blog_post a { color: #000; text-decoration: underline; }
+  }
 }
 
 #thumb_pics {
   float: left;
   width: 100%;
   margin-bottom: 25px;
+  a, img { 
+    float: left; 
+    width: 50px; 
+    height: 50px; 
+    &.last { margin: 0 }
+  }
 }
-
-#thumb_pics a,#thumb_pics img { float: left; width: 50px; height: 50px; }
-#thumb_pics img.last { margin: 0 }

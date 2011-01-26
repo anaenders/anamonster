@@ -10,12 +10,6 @@
 	position: relative;
 }
 
-#mini_me {
-  position: absolute;
-  top: 7px;
-  left: 20px;
-}
-
 #search {
   background-image:url('/images/search_BG.jpg');
   float: left;
@@ -23,51 +17,57 @@
   height: 29px;
   margin-left: 10px;
   position: relative;
-}
-
-#search input, span.search_button { position: absolute }
-
-#search input.search {
-  top: 10px;
-  left: 20px;
-  width: 125px;
-  border: 0;
-  padding: 2px;
-  height: 12px;
-  font-size: 10px;
-  vertical-align: top;
+  span {
+    &.search_button { position: absolute }
+  }
+  input { 
+    position: absolute;
+    &.search {
+      top: 10px;
+      left: 20px;
+      width: 125px;
+      border: 0;
+      padding: 2px;
+      height: 12px;
+      font-size: 10px;
+      vertical-align: top;
+    } 
+  }
 }
 
 span.search_button {
   top: 8px;
   left: 163px;
   z-index: 100;
+  a { 
+    color: #fff; 
+    &:link { color: #fff }
+    &:visited { color: #fff }
+    &:hover { color: #fff }
+    &:active { color: #fff }
+  }
 }
-
-.search_button a { color: #fff }
-
-.search_button a:link { color: #fff }    
-.search_button a:visited { color: #fff } 
-.search_button a:hover { color: #fff }  
-.search_button a:active { color: #fff }
 
 span.contact { 
   float: left;
   margin: 9px 0 0 20px;
+  a {
+    &:link { color: #fff }
+    &:visited { color: #fff }
+    &:hover { color: $hot-pink }
+    &:active { color: $hot-pink }
+  }
 }
-
-span.contact a:link { color: #fff }
-span.contact a:visited { color: #fff }
-span.contact a:hover { color: #f131c6 }
-span.contact a:active { color: #f131c6 }
 
 .rss { float: right; margin: 5px 20px 0 10px}
 
-#footer_navigation { width: 740px; float: right;}
-
-#footer_navigation p  {
+#footer_navigation { 
+  width: 740px; 
   float: right;
-  text-align: right;
-  margin-top: 10px;
-  width: auto;
+  p {
+    float: right;
+    text-align: right;
+    margin-top: 10px;
+    width: auto;
+  }
 }
