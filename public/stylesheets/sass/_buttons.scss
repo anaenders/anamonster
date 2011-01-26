@@ -1,0 +1,49 @@
+/***********************buttons***********************/
+
+@mixin navigation($offset, $width) {
+	text-indent: -9999px;
+	border: none;
+	outline: 0px;
+	float: right;
+	width: $width;
+	height: 19px;
+	background: url('/images/btns/navigation.png') -$offset 0px;
+	&:hover { background-position: -$offset -19px; height: 33px  }
+	&.on { background-position: -$offset -19px; height: 33px }
+}
+
+@mixin button($image, $width) {
+	float: right; 
+	margin-bottom: 20px; 
+	height: 30px;
+	width: $width; 
+	text-indent: -9999px;
+	border: 0px;
+	background: url($image) 0px 0px;
+	&:hover { background-position: 0px -31px; }
+}
+
+@mixin button18($image, $offset) { 
+	height: 18px;
+	width: 18px;
+	text-indent: -9999px;
+	border: 0px;
+	background: url($image) -$offset 0px;
+	&:hover { background-position: -$offset -18px; }
+	&.chosen { background-position: -$offset -36px; }
+}
+
+.delete_button { float: left; width: 16px; height: 16px; margin: 2px 20px 2px 8px; }
+
+.add_asset { @include button('/images/btns/add_asset.png', 106px) }
+.add_adjustment { @include button('/images/btns/add_adjustment.png', 118px) }
+.save { @include button('/images/btns/save.png', 81px) }
+.save-blk { @include button('/images/btns/save-blk.png', 87px) }
+.log-in { @include button('/images/btns/login.png', 81px) }
+.submit { @include button('/images/btns/submit.png', 81px); margin-top: 10px }
+.last-month { @include button('/images/btns/last_month.png', 326px); }
+
+.blog { @include navigation(0px, 96px) }
+.showcase { @include navigation(96px, 102px) }
+.gallery { @include navigation(198px, 88px) }
+.about { @include navigation(286px, 83px) }

@@ -19,12 +19,10 @@
           :class => 'reply_link',                                            |
           :rel   => blog.id                                                  |
         )                                                                    |
-    %span
-      comments
-      %span{:id => "comment_count_#{blog.id}"}= blog.comments.size
     - if blog.comments.size > 0
       .show_hide{:rel => blog.id}
-        = link_to params[:reply] ? 'hide comments' : 'show comments', '#', :rel => blog.id
+        = link_to params[:reply] ? 'hide comment(s)' : 'show comment(s)', '#', :rel => blog.id
+        %span{:id => "comment_count_#{blog.id}"}= blog.comments.size
     .comments_reply_wrapper{:id => "comment_reply_#{blog.id}"}
       - blog.comments.sort {|a,b| a.created_at <=> b.created_at }.each do |comment|
         = render :partial => 'comment', :object => comment

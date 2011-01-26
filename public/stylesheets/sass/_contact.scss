@@ -1,0 +1,99 @@
+/***********************contact***********************/
+
+#contact_holder { height: 500px;}
+
+.contactBG { 
+  position: absolute;
+  right: 100px;
+  top: 34px;
+  z-index: 300; 
+}
+
+.contact_form {
+  position: relative;
+  z-index: 400;
+}
+
+.contact_form p {
+  position: absolute;
+  color: #000;
+}
+
+.contact_form input {
+  border: 1px solid #eee;
+  position: absolute;
+  width: 200px;
+  padding: 2px;
+  font-family: "Lucida Grande", "lucida sans", sans-serif;
+}
+
+p.name {
+  top: 10px;
+  left: 218px;
+}
+
+p.email {
+  top: 85px;
+  left: 115px;
+}
+
+p.name input, p.email input {
+  top: 18px;
+  left: 0px;
+  width: 240px;
+}
+
+p.message {
+  top: 172px;
+  right: 420px;
+}
+
+.contact_form textarea {
+  position: absolute;
+  border: 1px solid #eee;
+  padding: 2px;
+  top: 193px;
+  right: 106px;
+  z-index: 200;
+  width: 360px;
+  height: 100px;
+}
+
+.contact_form input.submit {
+  position: absolute;
+  top: 380px;
+  right: 100px;
+  z-index: 500;
+  width: auto;
+  border: none;
+  padding: 0;
+}
+
+.contact_form #error, .contact_form #success {
+  display: none;
+  position: absolute;
+  right: 91px;
+  width: 357px;
+  font-size: 14px;
+  padding: 20px;
+  top:190px;
+  text-align: center;
+  line-height: 1.7em;
+  cursor: pointer;
+}
+
+.contact_form #error span, .contact_form #success span {
+  font-weight: bold;
+  
+}
+
+.contact_form #success { color: #4bc3f5 }
+
+.contact_form #error { color: #fb8989 }
+
+.screaming_monster {
+  position: absolute;
+  bottom: 0px;
+  left: 93px;
+  z-index: 200;
+}

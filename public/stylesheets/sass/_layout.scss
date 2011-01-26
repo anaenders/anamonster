@@ -1,0 +1,93 @@
+/***********************anamonster***********************/
+
+html, * {
+	margin:0;
+	padding:0;
+}
+
+html, body { 
+	margin: 0px; 
+	padding: 0px; 
+	background-color: #fff; 
+	border: 0 none; 
+	height: 100%; 
+	width: 100%; 
+}
+
+body {
+	text-align: left;
+	color: #7c7c7c;
+	line-height: 17px;
+	font-family: "Lucida Grande", "lucida sans", Arial, sans-serif;
+	font-size: 11px;
+  font-size-adjust: none;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+}
+
+#container {
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	z-index: 3;
+}
+
+#background { height: 100%; position: absolute; width: 100%; top: 0px; left: 0px; }
+#background img { position: fixed; }
+#background img { width: 0px; height: 0px; }
+
+a { text-decoration: none }
+a:link { color: #f131c6 }    
+a:visited { color: #f131c6 } 
+a:hover { color: #000 }  
+a:active { color: #000 }
+
+img { border: none }
+
+.clear {
+	clear: both;
+	line-height: 0px;
+	height: 0px;
+}
+
+img, div, input { behavior: url("/javascripts/iepngfix.htc") }
+
+#main {
+	width: 800px;
+	padding: 0 20px;
+	margin: 0 auto 0 auto;
+	position: relative;
+	height: 100%;
+}
+
+.content_wrapper {
+  width: 100%;
+  float: left;
+  -moz-box-shadow: 0 0 30px #ddd;
+  -webkit-box-shadow: 0 0 30px #ddd;
+  box-shadow: 0 0 30px #ddd;
+}
+
+#content {
+  float: left;
+  position: relative;
+  width: 100%;
+  padding: 35px 0 20px 0;
+  background-color: #fff;
+}
+
+.padding {
+  padding: 0 20px;
+  width: 760px;
+}
+
+img#top_margin, #bottom_margin { 
+  position: absolute; 
+  left: 0;
+}
+
+img#top_margin { top: 1px }
+img#bottom_margin { top: 0px }

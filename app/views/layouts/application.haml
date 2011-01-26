@@ -34,10 +34,12 @@
           #header
             = link_to(image_tag('logo.png', :alt => 'anamonster', :class => 'logo'), '/')
             #navigation
-              .nav_links
-                - [ ['about', '/about' ], [ 'gallery', '/gallery' ], [ 'showcase', '/showcase' ], [ 'blog', '/' ] ].each do |nav|
-                  - on_off = (nav[0] == get_current_section) ? '_on.png' : '_off.png'
-                  = link_to(image_tag('button_'+ nav[0] + on_off), nav[1])
+              = link_to 'about', '/about', :class => get_current_section == 'about' ? 'about on' : 'about'
+              = link_to 'gallery', '/gallery', :class => get_current_section == 'gallery' ? 'gallery on' : 'gallery'
+              = link_to 'showcase', '/showcase', :class => get_current_section == 'showcase' ? 'showcase on' : 'showcase'
+              = link_to 'blog', '/', :class => get_current_section == 'blog' ? 'blog on' : 'blog'
+                
+
           .clear
           - if flash[:message]
             .message.success= h flash[:message]
