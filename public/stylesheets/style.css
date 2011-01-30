@@ -1100,6 +1100,7 @@ h2.album_name {
     border: 1px solid #fff; }
 
 .large_image {
+  display: none;
   float: left;
   position: relative;
   margin-bottom: 1px;

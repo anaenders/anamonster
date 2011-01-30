@@ -1,4 +1,12 @@
 -
+  small_image: satellite_records
+  alt_name: Satellite Records
+  large_image: satellite_records
+  project_name: Satellite Records
+  url: http://www.satelliterecords.com/
+  description: >
+      <a href = "http://www.satelliterecords.com">Satellite Recods</a> is a leader in the industry of digital download music targeted at DJ's all around the world. I partnered with <a href = "http://www.addictedtoian.com" target = "_blank">Ian Enders</a>, <a href = "http://www.intersectnyc.com" target = "_blank">Intersect NYC</a>, and the Satellite team in writing the erb/HTML views and CSS.
+-
   small_image: kenneth_cole
   alt_name: Kenneth Cole
   large_image: kenneth_cole

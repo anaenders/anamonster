@@ -1,0 +1,8 @@
+$hot-pink: #f131c6;
+
+@mixin opacity($decimal, $ie) {
+	opacity: $decimal;
+  /* for IE */
+  filter: alpha(opacity=$ie);
+  /* CSS3 standard */
+}
