@@ -7,6 +7,27 @@
   position: relative;
   a:hover { color: #000 }
   img { float: left; margin: 35px 20px 10px 25px }
+  #description {
+    float: left;
+    height: 360px;
+    line-height: 1.7em;
+    background-image: url('/images/about_me_BG5.png');
+    position: relative;
+    p { 
+      margin: 0px 35px 10px 40px; 
+      span { float: right; margin-top: 12px; }
+    }
+    h3 {
+      position: absolute;
+      top: 33px;
+      left: 304px;
+      color: #000;
+      font-size: 16px;
+      font-weight: normal;
+      float: left;
+      height: 1.5em;
+    }
+  }
 }
 
 #resume {
@@ -58,28 +79,6 @@
     }
   }
   h5 { text-transform: uppercase; color: #454545; padding: 8px 0; font-size: 11px; font-weight: normal; }
-}
-
-#description {
-  float: left;
-  height: 289px;
-  line-height: 1.7em;
-  background-image: url('/images/about_me_BG4.png');
-  position: relative;
-  p { 
-    margin: 5px 35px 0 40px; 
-    span { float: right; margin-top: 12px; }
-  }
-  h3 {
-    position: absolute;
-    top: 33px;
-    left: 304px;
-    color: #000;
-    font-size: 16px;
-    font-weight: normal;
-    float: left;
-    height: 1.5em;
-  }
 }
 
 .about_text { margin-top: 60px;}

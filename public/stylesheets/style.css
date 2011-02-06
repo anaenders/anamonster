@@ -747,6 +747,26 @@ img#recaptcha_whatsthis {
   #about_me img {
     float: left;
     margin: 35px 20px 10px 25px; }
+  #about_me #description {
+    float: left;
+    height: 360px;
+    line-height: 1.7em;
+    background-image: url("/images/about_me_BG5.png");
+    position: relative; }
+    #about_me #description p {
+      margin: 0px 35px 10px 40px; }
+      #about_me #description p span {
+        float: right;
+        margin-top: 12px; }
+    #about_me #description h3 {
+      position: absolute;
+      top: 33px;
+      left: 304px;
+      color: #000;
+      font-size: 16px;
+      font-weight: normal;
+      float: left;
+      height: 1.5em; }
 
 #resume {
   float: left;
@@ -796,27 +816,6 @@ img#recaptcha_whatsthis {
     padding: 8px 0;
     font-size: 11px;
     font-weight: normal; }
-
-#description {
-  float: left;
-  height: 289px;
-  line-height: 1.7em;
-  background-image: url("/images/about_me_BG4.png");
-  position: relative; }
-  #description p {
-    margin: 5px 35px 0 40px; }
-    #description p span {
-      float: right;
-      margin-top: 12px; }
-  #description h3 {
-    position: absolute;
-    top: 33px;
-    left: 304px;
-    color: #000;
-    font-size: 16px;
-    font-weight: normal;
-    float: left;
-    height: 1.5em; }
 
 .about_text {
   margin-top: 60px; }
@@ -954,7 +953,10 @@ span.tweets {
   display: inline;
   margin: 5px 35px 5px 5px;
   color: #67afc2;
-  width: 160px; }
+  width: 160px;
+  word-wrap: break-word; }
+  .tweet p a {
+    word-wrap: break-word; }
 
 .tweet_info {
   color: #979696;

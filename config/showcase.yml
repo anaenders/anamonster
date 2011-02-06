@@ -1,11 +1,25 @@
 -
+  small_image: ajaline
+  alt_name: Ajaline
+  large_image: ajaline
+  project_name: Ajaline
+  url: http://www.ajaline.com/
+  description: >
+      Partnered with <a href = "http://www.intersectnyc.com" target = "_blank">Intersect NYC</a> in producing the front end 
+      (erb/HTML views and CSS) for this exclusive high-end fine jewelry site. 
+      
+-
   small_image: satellite_records
   alt_name: Satellite Records
   large_image: satellite_records
   project_name: Satellite Records
   url: http://www.satelliterecords.com/
   description: >
-      <a href = "http://www.satelliterecords.com">Satellite Recods</a> is a leader in the industry of digital download music targeted at DJ's all around the world. I partnered with <a href = "http://www.addictedtoian.com" target = "_blank">Ian Enders</a>, <a href = "http://www.intersectnyc.com" target = "_blank">Intersect NYC</a>, and the Satellite team in writing the erb/HTML views and CSS.
+      <a href = "http://www.satelliterecords.com">Satellite Recods</a> is a major player in the industry of digital download music
+      with DJ's all around the world as its target audience. I contributed to the production of the front end (erb/HTML views and CSS)
+      in partnership with <a   href = "http://www.addictedtoian.com" target = "_blank">Ian Enders</a>,
+      <a href = "http://www.intersectnyc.com" target = "_blank">Intersect NYC</a>, and the Satellite team.
+      
 -
   small_image: kenneth_cole
   alt_name: Kenneth Cole

@@ -18,6 +18,8 @@ span.tweets { float: left; width: 200px; }
   margin: 5px 35px 5px 5px;
   color: #67afc2;
   width: 160px;
+  word-wrap: break-word;
+  a { word-wrap: break-word; }
 }
 
 .tweet_info { color: #979696; float: left; padding: 5px 25px 5px 5px; font-size: 10px; }
