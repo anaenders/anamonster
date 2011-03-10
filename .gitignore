@@ -5,3 +5,4 @@ config/twitter.yml
 db/*.sqlite3
 log/*.log
 tmp/**/*
+public/system/*
