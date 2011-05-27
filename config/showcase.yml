@@ -1,4 +1,31 @@
 -
+  small_image: mally
+  alt_name: Mally Beauty
+  large_image: mally
+  project_name: Mally Beauty
+  url: http://www.mallybeauty.com/
+  description: >
+      Mally Beauty take two, a redesign of the old mally previously presented in my showcase (scroll down). This redesign presents a slicker user interface and focuses heavily on social networking. Partnered with <a href = "http://www.intersectnyc.com" target = "_blank">Intersect NYC</a> to develop (HTML/Ruby, CSS and Javascript) the user interface.
+
+-
+  small_image: kayandy
+  alt_name: Kayandy
+  large_image: kayandy
+  project_name: Kayandy
+  url: http://www.kayandy.com/
+  description: >
+      I designed and collaborated with Ian in building this wedding site for my soon-to-be sister-in-law during her busy wedding planning days. This is a simple rails site inspired by the theme and colors of her wedding.
+      
+-
+  small_image: kicokids
+  alt_name: Kicokids
+  large_image: kicokids
+  project_name: Kicokids
+  url: http://www.kicokids.com/
+  description: >
+      Partnered with <a href = "http://www.intersectnyc.com" target = "_blank">Intersect NYC</a> to develop (HTML/Ruby, CSS and Javascript) the user interface.
+
+-
   small_image: ajaline
   alt_name: Ajaline
   large_image: ajaline
@@ -95,17 +122,17 @@
       HTML/Ruby as well as the CSS style sheet. Developed in partnership with
       <a href = "http://www.intersectnyc.com" target = "_blank">Intersect NYC</a>.
 -
-  small_image: pbp
-  alt_name: perfect bulldog puppies
-  large_image: pbp
-  project_name: Perfect Bulldog Puppies
-  url: http://www.perfectbulldogpuppies.com/
-  description: >
-      This site is for the breeder who brought us our Frenchie Butters. He specializes in
-      French and English Bulldogs and, after getting to know us, commissioned Ian and I
-      to design and build his site. Design and programming work done in collaboration
-      with <a href = "http://www.addictedtoian.com" target = "_blank">Ian Enders</a>.
--
+#   small_image: pbp
+#   alt_name: perfect bulldog puppies
+#   large_image: pbp
+#   project_name: Perfect Bulldog Puppies
+#   url: http://www.perfectbulldogpuppies.com/
+#   description: >
+#       This site is for the breeder who brought us our Frenchie Butters. He specializes in
+#       French and English Bulldogs and, after getting to know us, commissioned Ian and I
+#       to design and build his site. Design and programming work done in collaboration
+#       with <a href = "http://www.addictedtoian.com" target = "_blank">Ian Enders</a>.
+# -
   small_image: luckyzinc
   alt_name: zync lucky insider
   large_image: luckyzinc
